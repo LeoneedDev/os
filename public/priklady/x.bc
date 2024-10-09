@@ -1,6 +1,0 @@
-#! /usr/bin/bc -q
-print "vysledok 2+2 je:\n"
-print 2+2
-print "\n"
-quit
-
