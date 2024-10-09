@@ -1,0 +1,190 @@
+ 1572  cd cv6
+ 1573  ll
+ 1574  cd ..
+ 1575  mv cv6 cv6-7
+ 1576  clear
+ 1577  cd cv6-7/
+ 1578  ll
+ 1579  cd ..
+ 1580  cd cv4-5/
+ 1581  ll
+ 1582  vim 9-2.sh 
+ 1583  bash -xv 9-2.sh 
+ 1584  bash -xv ./9-2.sh 
+ 1585  cd ..
+ 1586  cd cv6-7/
+ 1587  ll
+ 1588  less awk.txt 
+ 1589  awk '{print}' zamestnanci.txt
+ 1590  cat zamestnanci.txt 
+ 1591  fg
+ 1592  awk '{print NR,$0}' zamestnanci.txt
+ 1593  fg
+ 1594  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1595  fg
+ 1596  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt 
+ 1597  fg
+ 1598  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 1599  fg
+ 1600  awk '\^z' zamestnanci.txt 
+ 1601  awk '/^z/' zamestnanci.txt 
+ 1602  fg
+ 1603  awk '!/^z/' zamestnanci.txt
+ 1604  man grep
+ 1605  awk '{print NR,$0}' zamestnanci.txt
+ 1606  grep -n zamestnanci.txt 
+ 1607  grep -n "" zamestnanci.txt 
+ 1608  fg
+ 1609  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1610  fg
+ 1611  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1612  fg
+ 1613  grep -n "" zamestnanci.txt 
+ 1614  fg
+ 1615  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1616  fg
+ 1617  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1618  fg
+ 1619  less access.log 
+ 1620  fg
+ 1621  vim access.log 
+ 1622  less awk.txt 
+ 1623  fg %1
+ 1624  awk '{sum+=($10/2^20)} END {print "vysledok: " $sum}' access.log 
+ 1625  awk '{sum+=($10/2^20)} END {print "vysledok: " sum}' access.log 
+ 1626  fg
+ 1627  less awk.txt 
+ 1628  awk '{sum+=$10} END {print sum/2^20"MB"}' access.log
+ 1629  fg
+ 1630  less awk.txt 
+ 1631  awk '{print $1}' access.log 
+ 1632  awk '{print $1}' access.log | sort 
+ 1633  awk '{print $1}' access.log | sort | uniq 
+ 1634  awk '{print $1}' access.log | sort | uniq -c
+ 1635  awk '{print $1}' access.log | sort | uniq -c | sort
+ 1636  awk '{print $1}' access.log | sort | uniq -c | sort -r
+ 1637  awk '{print $1}' access.log | sort | uniq -c | sort -nr 
+ 1638  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1639  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10
+ 1640  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | awk '{print $2}'
+ 1641  less awk.txt 
+ 1642  grep -R "android" /public/ucebnove/historia/ 
+ 1643  awk '/iPhone|android/{sum+=1} {sumAll+=1} END {print sum/sumAll*100"%"}' access.log
+ 1644  awk '/iPhone|android/{sum+=$10} {sumAll+=$10} END {print sum/sumAll*100"%"}' access.log
+ 1645  awk '{dataspolu+=$10}/android|iPhone/ {mobil+=1; data+=$10 } END{print  mobil/NR*100, "%", "z podielu dat: " data/dataspolu*100"%"}' /public/samples/access.log
+ 1646  less awk.txt 
+ 1647  awk '/404/ {print $7}' access.log
+ 1648  awk '/404/ {print $7}' access.log  | sort | uniq -c | sort -nr 
+ 1649  awk '/404/ {print $7}' access.log  | sort | uniq -c 
+ 1650  awk '/404/ {print $7}' access.log  | sort | uniq -c | sort -nr 
+ 1651  awk '/404/ {print $7}' access.log  | sort | uniq -c | sort -nr | head -1
+ 1652  awk '/404/ {print $7}' access.log  | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+ 1653  less awk.txt 
+ 1654  awk '{dataspolu+=$10}/Android|iPhone/ {mobil+=1; data+=$10 } END{print  mobil/NR*100, "%", "z podielu dat: " data/dataspolu*100"%"}' /public/samples/access.log
+ 1655  clear
+ 1656  ll
+ 1657  less awk.txt 
+ 1658  cd ../cv4-5/
+ 1659  vim 9-2.sh 
+ 1660  bash -xv ./9-2.sh 
+ 1661  set
+ 1662  clear
+ 1663  cd ..
+ 1664  cd cv6-7/
+ 1665  ll
+ 1666  less awk.txt 
+ 1667  cat zamestnanci.txt 
+ 1668  fg
+ 1669  awk '{print}' zamestnanci.txt
+ 1670  fg
+ 1671  awk '{print NR,$0}' zamestnanci.txt
+ 1672  fg
+ 1673  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1674  fg
+ 1675  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1676  fg
+ 1677  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 1678  fg
+ 1679  awk '/^z/' zamestnanci.txt
+ 1680  grep '^z' zamestnanci.txt 
+ 1681  fg
+ 1682  awk '!/^z/' zamestnanci.txt
+ 1683  grep -c '^z' zamestnanci.txt 
+ 1684  grep -i '^z' zamestnanci.txt 
+ 1685  grep -n '^z' zamestnanci.txt 
+ 1686  awk '{print NR,$0}' zamestnanci.txt
+ 1687  awk '/^z/ {print NR,$0}' zamestnanci.txt
+ 1688  fg
+ 1689  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1690  fg
+ 1691  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1692  fg
+ 1693  less awk.txt 
+ 1694  cat zamestnanci.txt 
+ 1695  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1696  fg
+ 1697  less awk.txt 
+ 1698  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1699  fg
+ 1700  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1701  less awk.txt 
+ 1702  fg
+ 1703  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1704  awk 'BEGIN { i = 0 } /^z|^b/ {sum+=$NF; i++} END { print "Priemerny plat = " sum/i" EUR" }' zamestnanci.txt
+ 1705  fg
+ 1706  jobs
+ 1707  fg %1
+ 1708  awk '{sum+=$10} END {print sum/2^20"MB"}' access.log
+ 1709  jobs
+ 1710  kill %2
+ 1711  jobs
+ 1712  fg %1
+ 1713  fg %2
+ 1714  jobs
+ 1715  kill %3
+ 1716  jobs
+ 1717  less awk.txt 
+ 1718  awk '{print $1}' access.log 
+ 1719  awk '{print $1}' access.log | sort
+ 1720  awk '{print $1}' access.log | sort | uniq
+ 1721  awk '{print $1}' access.log | sort | uniq -c
+ 1722  awk '{print $1}' access.log | sort | uniq -c | sort -n
+ 1723  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 1724  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1725  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10\
+ 1726  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10
+ 1727  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | awk '{print $2}'
+ 1728  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | awk '{print $2}' | rev
+ 1729  man rev
+ 1730  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | awk '{print $2}' | rev | rev
+ 1731  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | rev 
+ 1732  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 
+ 1733  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | tr
+ 1734  man tr
+ 1735  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | tr -s
+ 1736  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | tr -s " "
+ 1737  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | tr -s " " | cut -d " " -f 2
+ 1738  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | tr -s " " | cut -d " " -f 3
+ 1739  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head -10 | tr -s " " | cut -d " " -f 3
+ 1740  man cut
+ 1741  fobs
+ 1742  jobs
+ 1743  fg
+ 1744  awk '{dataspolu+=$10}/android|iPhone/ {mobil+=1; data+=$10 } END{print  mobil/NR*100, "%", "z podielu dat: " data/dataspolu*100"%"}' /public/samples/access.log
+ 1745  awk '{dataspolu+=$10}/Android|iPhone/ {mobil+=1; data+=$10 } END{print  mobil/NR*100, "%", "z podielu dat: " data/dataspolu*100"%"}' /public/samples/access.log
+ 1746  cleAR
+ 1747  clear
+ 1748  5.45 % z podielu dat: 5.93087%
+ 1749  fg
+ 1750  awk '{dataspolu+=$10}/Android|iPhone/ {mobil+=1; data+=$10 } END{print  mobil/NR*100, "%", "z podielu dat: " data/dataspolu*100"%"}' /public/samples/access.log
+ 1751  fg
+ 1752  jobs
+ 1753  less awk.txt 
+ 1754  fg %2
+ 1755  fg %1
+ 1756  fg %2
+ 1757  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+ 1758  awk '/404/ {print $7}' access.log 
+ 1759  awk '/404/ {print $7}' access.log | sort 
+ 1760  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr
+ 1761  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'

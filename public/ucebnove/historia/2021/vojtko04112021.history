@@ -1,0 +1,143 @@
+    1  reset
+    2  cd sieste/
+    3  for i in `awk '{print $1}' access.log | sort | uniq -c | sort -n | awk '{print $2}'`; do host $i | awk '{print $NF}'; done;
+    4  awk '{print $1}' access.log | sort | uniq -c | sort -n | awk '{print $2}'
+    5  awk '{print $1}' access.log | sort | uniq -c | sort -rn | head | awk '{print $2}'
+    6  cat awk.txt 
+    7  sudo apt install dnsutils
+    8  awk '{print $1}' access.log | sort | uniq -c | sort -rn | head | awk '{print $2}'
+    9  for i in `awk '{print $1}' access.log | sort | uniq -c | sort -rn | head | awk '{print $2}'`; do host $i | awk '{print $NF}'; done
+   10  less awk.txt 
+   11  for i in `awk '{print $1}' access.log | sort | uniq -c | sort -n | awk '{print $2}'`; do host $i | awk '{print $NF}'; done;
+   12  for i in `awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'`; do host $i | awk '{print $NF}'; done;
+   13  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{ system("host " $2)}' | awk '{ print $5 }'
+   14  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{ system("host " $2)}' | awk '{ print $NF }'
+   15  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{print $2; system("host " $2)}' | awk '{ print $NF }'
+   16  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{print $2 "system("host " $2)"}' | awk '{ print $NF }'
+   17  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{print $2 system("host " $2)}' | awk '{ print $NF }'
+   18  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{$2 system("host " $2)}' | awk '{ print $NF }'
+   19  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{print $2 system("host " $2)}' | awk '{ print $NF }'
+   20  cd ..
+   21  mkdir sieste/
+   22  mkdir siedme
+   23  cd siedme
+   24  cp /public/samples/input.txt .
+   25  cp /public/samples/sedinput.txt .
+   26  cp /public/samples/list.txt .
+   27  cp /public/priklady/sed.txt .
+   28  ls -la
+   29  sed -n '=p' sedinput.txt 
+   30  sed -n '=;p' sedinput.txt 
+   31  sed '=' sedinput.txt 
+   32  less sed.txt 
+   33  sed -n 'n;p' sedinput.txt 
+   34  sed -n 'n;p' list.txt 
+   35  sed 'n' list.txt 
+   36  sed -n 'n;7,16p' list.txt 
+   37  sed -n '7,16p;n' list.txt 
+   38  sed -n '8,16p;n' list.txt 
+   39  sed -n '8,16p' list.txt 
+   40  sed -n '7,16p' list.txt 
+   41  man sed
+   42  less sed.txt 
+   43  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;" | sed -n '4,12p'
+   44  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;"
+   45  sed -n '=;7,16p' list.txt
+   46  sed -n '7,16=;7,16p' list.txt
+   47  sed -n -e '7,16=;7,16p' list.txt
+   48  sed -n '7,16=;7,16p' list.txt
+   49  sed -n '7,16=;7,16p' list.txt | sed -n 'n;s\\n\ \'
+   50  sed -n '7,16=;7,16p' list.txt | sed -n 'n;s/\n/ /'
+   51  sed -n '7,16=;7,16p' list.txt | sed 'n;s/\n/ /'
+   52  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /'
+   53  sed -n -e '7,16=;7,16p' -e 'N;s/\n/ /' list.txt
+   54  sed -n -e '7,16=;7,16p;N;s/\n/ /' list.txt
+   55  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /'
+   56  sed -n '7,16=;7,16p' list.txt | sed 'N;N;s/\n/ /'
+   57  sed -n '7,16=;7,16p' list.txt | sed 'N;N;s/\n/ /g'
+   58  reset
+   59  less ../sieste/awk.txt 
+   60  history 
+   61  for i in `awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'`; do host $i | awk '{print $NF}'; done;
+   62  for i in `awk '{print $1}' ../sieste/access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'`; do host $i | awk '{print $NF}'; done;
+   63  history
+   64  history | grep system
+   65  awk '{ print $1 }' access.log | sort | uniq -c | sort -nr | head | awk '{ system("host " $2)}' | awk '{ print $NF }'
+   66  awk '{ print $1 }' ../sieste/access.log | sort | uniq -c | sort -nr | head | awk '{ system("host " $2)}' | awk '{ print $NF }'
+   67  ls -la
+   68  man sed
+   69  sed
+   70  sed ''
+   71  sed -n ''
+   72  sed '' sedinput.txt 
+   73  cat sedinput.txt 
+   74  sed 'p' sedinput.txt 
+   75  sed -n 'p' sedinput.txt 
+   76  sed -n '=;p' sedinput.txt 
+   77  sed '=;p' sedinput.txt 
+   78  sed -n '=;p' sedinput.txt 
+   79  sed -n '=;n;p' sedinput.txt 
+   80  sed -n '=;n;n;p' sedinput.txt 
+   81  sed -n 'n;n;p' sedinput.txt 
+   82  sed -n 'n;p' sedinput.txt 
+   83  sed -n 'p;n' sedinput.txt 
+   84  sed -n 'p;d' sedinput.txt 
+   85  sed -n 'd;p' sedinput.txt 
+   86  info sed
+   87  man sed
+   88  sed sedinput.txt 
+   89  sed '' sedinput.txt 
+   90  sed -n 'p' sedinput.txt
+   91  sed '' sedinput.txt
+   92  sed -n '=' sedinput.txt
+   93  sed -n '=;p' sedinput.txt
+   94  sed 'i vkladam pred riadok' sedinput.txt
+   95  sed -n 'i vkladam pred riadok' sedinput.txt
+   96  sed '3i vkladam pred riadok' sedinput.txt
+   97  sed '3,5i vkladam pred riadok' sedinput.txt
+   98  sed '3~2i vkladam pred riadok' sedinput.txt
+   99  sed '3~1i vkladam pred riadok' sedinput.txt
+  100  sed 'a vkladam za riadok' sedinput.txt
+  101  sed 'd vkladam za riadok' sedinput.txt
+  102  sed 'd' sedinput.txt
+  103  sed '3d' sedinput.txt
+  104  sed '' sedinput.txt
+  105  sed 's/hello/world/' sedinput.txt
+  106  sed 's/hello/world/g' sedinput.txt
+  107  echo 's/hello/world/g' > mojscript.sed
+  108  sed -f mojscript.sed sedinput.txt
+  109  less list.txt
+  110  sed '7,10d' list.txt
+  111  sed -n '7,10d;p' list.txt
+  112  sed '3s/Zuzka/Lucka/g' list.txt
+  113  sed '3s/Zuzka/Lucka/2' list.txt
+  114  sed '3s/Zuzka/Lucka/2g' list.txt
+  115  sed '3s/Zuzka, ja Ta milujem/Lucka, ja Ta milujem/g' list.txt
+  116  sed '3s/Zuzka\(, ja Ta milujem\)/Lucka\1/' list.txt
+  117  sed '3s/Zuzka\(, ja Ta milujem\)/\1Lucka\1/' list.txt
+  118  sed 's/Zuzka/ZUZKA/g;' list.txt
+  119  sed 's/Zuzka/\0/g;' list.txt
+  120  sed 's/Zuzka/&/g;' list.txt
+  121  sed 's/Zuzka/\U\0/g;' list.txt
+  122  sed 's/Zuzka/zUZKA/g' list.txt
+  123  sed 's/Zuzka/\U\l\0/g' list.txt
+  124  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+  125  sed 's/\(Zu\)\(zka\)/\L\1\U\2/g' list.txt
+  126  sed 's/^[Mm]ozno/nemozno/g' list.txt 
+  127  sed 's/\<[Mm]ozno\>/nemozno/' list.txt
+  128  sed -n 'n;7,16p' list.txt
+  129  sed -n '7,16p;n' list.txt
+  130  sed -n '1,7d;7,16p;n;16,19d' list.txt
+  131  sed -i 's/Zuzka/Lucka/g' list.txt
+  132  cat list.txt
+  133  sed -i 's/Lucka/Zuzka/g' list.txt
+  134  sed -n '=;7,16p' /public/samples/list.txt | sed 'N;s/\n/ /g' | sed -n '4,13p'
+  135  sed -n '=;7,16p' /public/samples/list.txt
+  136  sed -n '=;7,16p' /public/samples/list.txt | sed 'N;s/\n/ /g'
+  137  sed -n '=;7,16p' /public/samples/list.txt | sed 'N;s/\n/ /g' | sed -n '4,13p'
+  138  sed -n '7,16=;7,16p' /public/samples/list.txt | sed 'N;s/\n/ /g'
+  139  sed -n '7,16p' list.txt | awk '{print NR,$0}'
+  140  sed -n '7,16p' list.txt | awk 'BEGIN {NR=7} {print NR,$0}'
+  141  sed -n '7,16p' list.txt | awk 'BEGIN {NR=6} {print NR,$0}'
+  142  history
+  143  history > /public/ucebnove/historia/vojtko04112021.history

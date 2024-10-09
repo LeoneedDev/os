@@ -1,0 +1,75 @@
+   90  man
+   91  man man
+   92  man ls
+   93  ls
+   94  man ls
+   95  ls -a
+   96  ls -l
+   97  ls -l -a
+   98  ls -la
+   99  man ls
+  100  pwd
+  101  man pwd
+  102  ls /public
+  103  ls /
+  104  ls -la
+  105  ls -la /
+  106  ls -la /public
+  107  man mkdir
+  108  la
+  109  ls /public/
+  110  ls
+  111  mkdir totojetest
+  112  ls
+  113  rmdir totojetest/
+  114  ls
+  115  la
+  116  ls
+  117  man
+  118  man man
+  119  man ls
+  120  ls
+  121  man ls
+  122  ls -a
+  123  ls --all
+  124  ls -l
+  125  ls -a -l
+  126  ls -l -a
+  127  ls -la
+  128  ls .
+  129  ls -a .
+  130  man ls
+  131  ls -a ..
+  132  man pwd
+  133  pwd
+  134  ls -l ..
+  135  ls -l /public/
+  136  ls /public/ucebnove
+  137  man cd
+  138  help cd
+  139  pwd
+  140  ls ..
+  141  pwd
+  142  cd ..
+  143  ls ..
+  144  ls .
+  145  cd /public/
+  146  cd ucebnove/
+  147  cd ./historia/
+  148  ls
+  149  pwd
+  150  cd
+  151  pwd
+  152  cd -
+  153  cd
+  154  man mkdir
+  155  mkdir testcislojedna
+  156  ls
+  157  rmdir testcislojedna/
+  158  ls
+  159  man cp
+  160  man mv
+  161  man rm
+  162  man chmod
+  163  ls -la
+  164  exit

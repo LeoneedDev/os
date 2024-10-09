@@ -1,0 +1,271 @@
+ 1855  cp /public/priklady/ -r .
+ 1856  cd priklady/
+ 1857  vim *sh
+ 1858  vim *.sh
+ 1859  mkdir test
+ 1860  touch aaa bbb ccc AAA BBB CCC Aaa Bbb Ccc aAA bBB cCC
+ 1861  echo [A-Z]*
+ 1862  fg
+ 1863  for i in [A-Z]*; do echo $i; done
+ 1864  for i in [A-Z]*; do echo $i $(echo $i|tr 'A-Z' 'a-z'); done
+ 1865  for i in [A-Z]*; do echo mv $i $(echo $i|tr 'A-Z' 'a-z'); done
+ 1866  for i in [A-Z]*; do mv $i $(echo $i|tr 'A-Z' 'a-z'); done
+ 1867  ll
+ 1868  for i in [A-Z]*; do echo $i; done
+ 1869  mkdir test
+ 1870  cd test/
+ 1871  touch aaa bbb ccc AAA BBB CCC Aaa Bbb Ccc aAA bBB cCC
+ 1872  for i in [A-Z]*; do mv $i $(echo $i|tr 'A-Z' 'a-z'); done
+ 1873  ll
+ 1874  touch "ahoj svet"
+ 1875  touch "Ahoj svet"
+ 1876  for i in [A-Z]*; do echo $i; done
+ 1877  for i in [A-Z]*; do mv $i $(echo $i|tr 'A-Z' 'a-z'); done
+ 1878  for i in [A-Z]*; do echo mv $i $(echo $i|tr 'A-Z' 'a-z'); done
+ 1879  touch a b c
+ 1880  mkdir novy
+ 1881  mv a b c novy/
+ 1882  fg
+ 1883  for i in [A-Z]*; do echo mv "$i" "$(echo $i|tr 'A-Z' 'a-z')"; done
+ 1884  for i in [A-Z]*; do mv "$i" "$(echo $i|tr 'A-Z' 'a-z')"; done
+ 1885  vim
+ 1886  ll
+ 1887  for i in *; do mv "$i" "$(echo $i|tr 'A-Z' 'a-z')"; done
+ 1888  for i in *; do echo mv "$i" "$(echo $i|tr 'A-Z' 'a-z')"; done
+ 1889  fg
+ 1890  echo "$(echo "$(ls)")"
+ 1891  echo "`echo \"\`ls\`\"`"
+ 1892  fg
+ 1893  echo $0
+ 1894  echo $#
+ 1895  set
+ 1896  set ""
+ 1897  echo $#
+ 1898  unset
+ 1899  echo $#
+ 1900  echo $1
+ 1901  echo $#
+ 1902  fg
+ 1903  echo $1
+ 1904  cd ..
+ 1905  bash 5.sh 
+ 1906  bash 5.sh arg1 arg2 arg3 ... argN
+ 1907  fg
+ 1908  bash 5.sh arg1 arg2 arg3 ... argN
+ 1909  fg
+ 1910  set
+ 1911  psold=$PS1
+ 1912  PS1=$(fortune)
+ 1913  ls
+ 1914  PS1="-----> "
+ 1915  ls
+ 1916  PS1=$psold
+ 1917  set|grep PS1
+ 1918  PS1="\u@\h"
+ 1919  echo \033[00m
+ 1920  echo -e \033[00m
+ 1921  echo -e \\033[00m
+ 1922  echo -e \\033[00mdvsdfvbd
+ 1923  echo -e \\033[01;
+ 1924  PS1=$psold
+ 1925  fg
+ 1926  set
+ 1927  echo $_
+ 1928  ls .
+ 1929  echo $_
+ 1930  touch a totoJeVelmiDlhyNazovKtoriSaMiNechcePisatDvaKrat
+ 1931  vim $_
+ 1932  help set
+ 1933  set -x
+ 1934  sdfsda
+ 1935  set
+ 1936  set a
+ 1937  l
+ 1938  set -x
+ 1939  ls
+ 1940  fg
+ 1941  cd priklady/
+ 1942  ll
+ 1943  vim *.sh
+ 1944  set ahoj svet
+ 1945  echo $#
+ 1946  echo $@
+ 1947  echo $1
+ 1948  echo $2
+ 1949  echo $3
+ 1950  echo $4
+ 1951  fg
+ 1952  echo $1
+ 1953  shift
+ 1954  echo $1
+ 1955  echo $2
+ 1956  set {a-z}
+ 1957  echo $a
+ 1958  echo $1
+ 1959  set {a..z}
+ 1960  echo $1
+ 1961  echo $2
+ 1962  shift
+ 1963  echo $1
+ 1964  echo $2
+ 1965  while (( $#))
+do echo $1; shift; done
+ 1966  fg
+ 1967  help case
+ 1968  fg
+ 1969  bash 5.sh -h
+ 1970  fg
+ 1971  bash 5.sh -h
+ 1972  fg
+ 1973  bash 5.sh abc cba
+ 1974  bash 5.sh abc cba -h
+ 1975  bash 5.sh abc cba -h abc
+ 1976  fg
+ 1977  bash 5.sh abc cba sbsfg abc
+ 1978  fg
+ 1979  bash 5.sh abc cba -sbsfg abc
+ 1980  fg
+ 1981  help [[
+ 1982  help [
+ 1983  help test
+ 1984  fg
+ 1985  bash 5.sh abc cba -d abc
+ 1986  bash 5.sh abc cba -d abc gbhd fghdf
+ 1987  bash -v 5.sh abc cba -d abc gbhd fghdf
+ 1988  bash -x 5.sh abc cba -d abc gbhd fghdf
+ 1989  bash -xv 5.sh abc cba -d abc gbhd fghdf
+ 1990  fg
+ 1991  echo $-
+ 1992  fg
+ 1993  echo $-
+ 1994  bash -xv 5.sh abc cba -d abc gbhd fghdf
+ 1995  bash  5.sh abc cba -d abc gbhd fghdf
+ 1996  echo $-
+ 1997  PS2=--- bash  5.sh abc cba -d abc gbhd fghdf
+ 1998  bash -i < 5.sh
+ 1999  ps
+ 2000  PS1=---> bash -i < 5.sh
+ 2001  PS1=--->bash -i < 5.sh
+ 2002  PS1="--->" bash -i < 5.sh
+ 2003  fg
+ 2004  a=({a..z})
+ 2005  echo $a
+ 2006  a=({0..16})
+ 2007  echo $a
+ 2008  echo ${a[@]}
+ 2009  echo ${a[2]}
+ 2010  a=({a..z})
+ 2011  echo ${a[2]}
+ 2012  echo ${!a[@]}
+ 2013  for i ${a[@]}
+ 2014  for i in ${a[@]}; do echo $i; done
+ 2015  for i in ${!a[@]}; do echo $i; done
+ 2016  echo ${#a[@]}
+ 2017  echo ${#a[5]}
+ 2018  b=(bbb bb b)
+ 2019  echo ${#b[0]}
+ 2020  echo ${#b[1]}
+ 2021  echo ${#b[3]}
+ 2022  echo ${#b[2]}
+ 2023  ls
+ 2024  a=($(ls))
+ 2025  ls
+ 2026  echo ${a[@]}
+ 2027  fg
+ 2028  a=({a..z})
+ 2029  echo ${a[@]:2:7}
+ 2030  fg
+ 2031  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 2032  echo ${#zoznam}
+ 2033  echo ${#zoznam{@}}
+ 2034  echo ${#zoznam[@]}
+ 2035  zoznam1=( nuti ${zoznam[@]} posledny )
+ 2036  echo ${#zoznam[@]}
+ 2037  echo ${#zoznam1[@]}
+ 2038  echo zoznam1=\( nuti ${zoznam[@]} posledny \)
+ 2039  zoznam1=( nuti "${zoznam[@]}" posledny )
+ 2040  echo ${#zoznam1[@]}
+ 2041  zoznam1=nuti
+ 2042  for i in "${zoznam[^C}"; do zoznam+="$i"; done
+ 2043  for i in "${zoznam[@]}"; do zoznam+="$i"; done
+ 2044  echo ${zoznam1[@]}
+ 2045  echo ${#zoznam1[@]}
+ 2046  for i in "${zoznam[@]}"; do zoznam+=$i; done
+ 2047  echo ${#zoznam[@]}
+ 2048  zoznam1=(nuti)
+ 2049  for i in "${zoznam[@]}"; do zoznam+=$i; done
+ 2050  echo ${#zoznam[@]}
+ 2051  for i in "${zoznam[@]}"; do zoznam1+=$i; done
+ 2052  echo ${#zoznam[@]}
+ 2053  echo ${#zoznam1[@]}
+ 2054  for i in "${!zoznam[@]}"; do zoznam1[$((i+1))=${zoznam[$i]; done
+ 2055  for i in "${!zoznam[@]}"; do zoznam1[$((i+1))=${zoznam[$i]}; done
+ 2056  for i in "${!zoznam[@]}"; do zoznam1[$((i+1))]=${zoznam[$i]}; done
+ 2057  echo ${#zoznam1[@]}
+ 2058  fg
+ 2059  ifsold=$IFS
+ 2060  fg
+ 2061  for f in $(ls -l | head -3); do         echo $f; done
+ 2062  for f in "$(ls -l | head -3)"; do         echo $f; done
+ 2063  for f in "$(ls -l | head -3)"; do         echo $f done
+ 2064  ls -l
+ 2065  for f in $(ls -l | head -3); do         echo $f done
+ 2066  for f in $(ls -l | head -3); do         echo $f; done
+ 2067  echo $IFS
+ 2068  ls
+ 2069  ls|cat
+ 2070  ls
+ 2071  fg
+ 2072  set |grep IFS
+ 2073  IFS=$'\n'
+ 2074  for f in $(ls -l | head -3); do         echo $f; done
+ 2075  fg
+ 2076  IFS=/
+ 2077  for i in $(echo ahoj/svet/nazdar); do echo $i; done
+ 2078  IFS=-
+ 2079  for i in $(ls -l) echo $i; done
+ 2080  for i in $(ls -l); echo $i; done
+ 2081  for i in $(ls -l); do echo $i; done
+ 2082  for i in $(ls -l|head -n 3); do echo $i; done
+ 2083  ls -l|head -n 3
+ 2084  for i in $(ls -l|head -n 3); do echo -->$i<--; done
+ 2085  for i in $(ls -l|head -n 3); do echo "-->$i<--"; done
+ 2086  ls -l|head -n 3
+ 2087  IFS=$ifsold 
+ 2088  fg
+ 2089  echo $$
+ 2090  ps
+ 2091  echo $?
+ 2092  false
+ 2093  echo $?
+ 2094  ls sfdvbkhdfgvdf
+ 2095  echo $?
+ 2096  fg
+ 2097  source ~/.bashrc 
+ 2098  $(~/.bashrc)
+ 2099  $(cat ~/.bashrc)
+ 2100  fg
+ 2101  bash 9.sh 
+ 2102  fg
+ 2103  bash 9.sh 
+ 2104  fg
+ 2105  bash 9.sh 
+ 2106  fg
+ 2107  bash 9.sh 
+ 2108  fg
+ 2109  bash 9.sh 
+ 2110  fg
+ 2111  env
+ 2112  fg
+ 2113  bash 9.sh 
+ 2114  a=aaa bash 9.sh 
+ 2115  fg
+ 2116  bash -xv 9.sh 
+ 2117  fg
+ 2118  man builtin
+ 2119  man builtins
+ 2120  help export
+ 2121  help ((
+ 2122  help [[
+ 2123  help while
+ 2124  history |vim -

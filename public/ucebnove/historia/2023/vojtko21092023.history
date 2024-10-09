@@ -1,0 +1,203 @@
+    1  touch .hushlogin
+    2  exit
+    3  vim .inputrc
+    4  exit
+    5  less /etc/ssh/sshd_config
+    6  exit
+    7  reset
+    8  exit
+    9  hostname
+   10  pwd
+   11  help
+   12  help help
+   13  help pwd
+   14  man
+   15  man man
+   16  ls
+   17  man ls
+   18  ls -a
+   19  ls -al
+   20  pwd
+   21  mkdir novy_dir
+   22  ls -la
+   23  man rm
+   24  rm novy_dir/
+   25  rm -f novy_dir/
+   26  rm -r novy_dir/
+   27  ls -la
+   28  touch novy_file
+   29  ls -la
+   30  man touch
+   31  date
+   32  mna data
+   33  mna date
+   34  man date
+   35  time
+   36  ls -la
+   37  man ls
+   38  ls /usr
+   39  ls -la /usr
+   40  ls -la /
+   41  ls -la /dev
+   42  man cat
+   43  cat random
+   44  cat /dev/random
+   46  hexdump -C /dev/random 
+   47  ls -la dev
+   48  ls -la /dev
+   49  man cd
+   50  help cd
+   51  cd ..
+   52  ls -la
+   53  cd ~
+   54  cd ..
+   55  cd vojtko
+   56  cd ..
+   57  cd
+   58  cd ..
+   59  cd -
+   60  cd ?
+   61  cd ~
+   62  cd ../../dev
+   63  cd /home/vojtko
+   64  ls -la
+   65  man adduser
+   66  man useradd
+   67  sudo adduser mama 
+   68  man usermod
+   69  sudo usermod -aG sudo mama
+   70  groups mama
+   71  groups
+   72  man groups
+   73  less /etc/passwd
+   74  man passwd
+   75  man 5 passwd
+   76  man passwd
+   77  su root
+   78  ls -la
+   79  man chmod
+   80  chmod 600 novy_file 
+   81  man tr
+   82  echo "ahoj cau" > novy_file 
+   83  cat novy_file 
+   84  tr -d a novy_file 
+   85  tr -d 'a' novy_file 
+   86  tr -d 'a' < novy_file 
+   87  tr -d '\r' < novy_file 
+   88  tr -d '\r' < novy_file > novy_file_new
+   89  < novy_file tr -d '\r'
+   90  novy_file < tr -d '\r'
+   91  man less
+   92  man more
+   93  man wc
+   94  ls -la /public/
+   95  ls -la /public/prednasky/
+   96  less /public/prednasky/os_uvod.pdf 
+   97  cat /public/prednasky/os_uvod.pdf 
+   98  man scp
+   99  hostname
+  100  ls ..
+  101  pwd
+  102  echo ~
+  103  echo $HOME
+  104  ls
+  105  man ls
+  106  man
+  107  man man
+  108  man pwd
+  109  help
+  110  help help
+  111  help cd
+  112  help pwd
+  113  ls
+  114  man ls
+  115  ls -la
+  116  touch novy_file
+  117  ls -la
+  118  man touch
+  119  date
+  120  time
+  121  man bash
+  122  ls -la
+  123  cat novy_file
+  124  man cat
+  125  cat .bashrc 
+  126  vim .bashrc 
+  127  less .bashrc 
+  128  man less
+  129  man ls
+  130  ls -la novy_file
+  131  ls -la ..
+  132  ls -la /
+  133  ls -la bin
+  134  ls -la /bin
+  135  ls -la /bin/
+  136  ls -la /dev
+  137  ls -la /
+  138  ls -la /dev
+  139  hexdump -c random
+  140  hexdump -c /dev/random
+  141  hexdump -C /dev/random
+  142  hexdump -C /dev/null 
+  143  ls -la /dev/
+  144  help cd 
+  145  help cd | less
+  146  cd /
+  147  cd ~
+  148  cd /
+  149  cd
+  150  cd /home/vojtko
+  151  cd -
+  152  cd /
+  153  cd -
+  154  cd
+  155  cd ../mama/
+  156  ls -la ../mama/
+  157  ls -la ..
+  158  sudo ls -la ../mama/ 
+  159  ls -la /public/
+  160  ls -la /public/prednasky/
+  161  ls -la /public/
+  162  man useradd
+  163  man adduser
+  164  man user mod
+  165  man usermod
+  166  usermod -aG mama vojtko
+  167  sudo usermod -aG mama vojtko
+  168  groups
+  169  groups vojtko
+  170  reset
+  171  groups vojtko
+  172  groups
+  173  groups mama
+  174  man groups
+  175  apropos passw
+  176  apropos password
+  177  man apropos
+  178  man passwd
+  179  man 5 passwd
+  180  less /etc/passwd
+  181  man 5 passwd
+  182  less /etc/group
+  183  man sshd
+  187  less /etc/ssh/sshd_config
+  188  vim /etc/ssh/sshd_config
+  189  man chmod
+  190  chmod 600 novy_file
+  191  ls -la
+  192  chmod +x novy_file
+  193  ls -la
+  194  chmod -x novy_file
+  195  ls -la
+  196  chown mama:root novy_file
+  197  sudo chown mama:root novy_file
+  198  ls -la
+  199  man chown
+  200  man cp 
+  201  man mv
+  202  man rm
+  203  man mkdir
+  204  exit
+  205  history
+  206  ls -la /public/ucebnove/historia/
+  207  history | sudo tee /public/ucebnove/historia/vojtko21092023.history >/dev/null

@@ -1,0 +1,636 @@
+ 2177  sudo apt install man-db manpages-posix manpages-dev manpages-posix-dev
+ 2178  sudo apt-get install -y manpages-posix-dev
+ 2179  sudo apt-get update
+ 2180  sudo apt-get install build-essential
+ 2181  man 7 signal
+ 2182  man 5 signal
+ 2183  man signal
+ 2184  man 7 signal
+ 2185  ls 
+ 2186  cp -r /public/priklady/procesy/ ~/prveCviko
+ 2187  cp -r /public/priklady/signaly/ ~/prveCviko
+ 2188  cd /public/priklady/signaly/
+ 2189  ls
+ 2190  la
+ 2191  cd -
+ 2192  sudo cp -r /public/priklady/signaly/ ~/prveCviko
+ 2193  sudo cp -r /public/priklady/signaly/ ~/druheCviko
+ 2194  cp -r /public/priklady/signaly/ ~/druheCviko/
+ 2195  cp -r /public/priklady/procesy/ ~/druheCviko/
+ 2196  ls
+ 2197  cd prveCviko/
+ 2198  ls
+ 2199  cd ..
+ 2200  rm -r ./prveCviko/*
+ 2201  rm -r ./druheCviko/*
+ 2202  sudo rm -r ./druheCviko/*
+ 2203  ls
+ 2204  cd prveCviko/
+ 2205  ls
+ 2206  ls /public/priklady/procesy/
+ 2207  la /public/priklady/procesy/
+ 2208  cp -r /public/priklady/procesy/ ./procesy
+ 2209  ls
+ 2210  la /public/priklady/signaly/
+ 2211  sudo cp -r /public/priklady/signaly ./signaly
+ 2212  ls
+ 2213  cd procesy/
+ 2214  ls
+ 2215  cd ../signaly/
+ 2216  ls
+ 2217  la
+ 2218  ls
+ 2219  cd ..
+ 2220  ls
+ 2221  cd ..
+ 2222  ls
+ 2223  cd druheCviko/
+ 2224  ls
+ 2225  cd ..
+ 2226  rm druheCviko/
+ 2227  rmdir druheCviko/
+ 2228  ls
+ 2229  cp -rf prveCviko druheCviko
+ 2230  sudo cp -rf prveCviko druheCviko
+ 2231  ls
+ 2232  cd druheCviko/
+ 2233  ls
+ 2234  cd ..
+ 2235  ls
+ 2236  cd prveCviko/
+ 2237  ls
+ 2238  cd ..
+ 2239  ls
+ 2240  cd druheCviko/
+ 2241  ls
+ 2242  cd procesy/
+ 2243  ls
+ 2244  cd ..
+ 2245  cd pr
+ 2246  cd prveCviko/
+ 2247  ls
+ 2248  cd ..
+ 2249  ls
+ 2250  rm -rf prveCviko/
+ 2251  sudo rm -rf prveCviko/
+ 2252  ls
+ 2253  cd procesy/
+ 2254  ls
+ 2255  ls -la
+ 2256  cd ..
+ 2257  ls
+ 2258  cd signaly/
+ 2259  ls
+ 2260  la
+ 2261  ls
+ 2262  cd ..
+ 2263  ls
+ 2264  cd procesy/
+ 2265  ls
+ 2266  la
+ 2267  cd ..
+ 2268  ls
+ 2269  cd ..
+ 2270  ls
+ 2271  cd prveCviko/
+ 2272  ls
+ 2273  cd procesy/
+ 2274  la
+ 2275  cd ../signaly/
+ 2276  la
+ 2277  la ../../druheCviko/signaly/
+ 2278  chmod +r core 
+ 2279  sudo chmod +r core 
+ 2280  ls
+ 2281  vim core 
+ 2282  ls /public/priklady/signaly/
+ 2283  ls
+ 2284  la
+ 2285  cd ../..
+ 2286  cp ./prveCviko/signaly/core ./druheCviko/signaly/
+ 2287  cd ./druheCviko/signaly/
+ 2288  la
+ 2289  cd ../../prveCviko/
+ 2290  ls
+ 2291  rm -rf signaly/
+ 2292  sudo rm -rf signaly/
+ 2293  ls
+ 2294  cp ../druheCviko/signaly .
+ 2295  cp -r ../druheCviko/signaly .
+ 2296  ls
+ 2297  cd signaly/
+ 2298  ls
+ 2299  la
+ 2300  vim signaly.txt 
+ 2301  help trap
+ 2302  vim signaly.txt 
+ 2303  fg
+ 2304  trap -l
+ 2305  fg
+ 2306  man 7 signal
+ 2307  ls
+ 2308  cd ..
+ 2309  ls
+ 2310  cp -r prveCviko test
+ 2311  ls
+ 2312  cd test/
+ 2313  ls
+ 2314  cd signaly/
+ 2315  ls
+ 2316  cp /public/ucebnove/historia/grezo10112022.history ../
+ 2317  cd ..
+ 2318  ls
+ 2319  vim grezo10112022.history 
+ 2320  cd signaly/
+ 2321  ls
+ 2322  vim signaly.txt 
+ 2323  fg
+ 2324  man wait
+ 2325  help wait
+ 2326  man wait
+ 2327  fg
+ 2328  echo $$
+ 2329  echo $!
+ 2330  fg
+ 2331  echo $1
+ 2332  echo $!
+ 2333  top
+ 2334  top &
+ 2335  jobs
+ 2336  ps
+ 2337  kill -9 16021
+ 2338  ls
+ 2339  jobs
+ 2340  fg
+ 2341  echo $!
+ 2342  top
+ 2343  jobs
+ 2344  bg
+ 2345  jobs
+ 2346  bg 
+ 2347  jobs
+ 2348  ps
+ 2349  kill -9 $!
+ 2350  ls
+ 2351  jobs
+ 2352  help while
+ 2353  while 1; do echo "Ahoj"; sleep(1); done
+ 2354  while ((1)); do echo "Ahoj"; sleep(1); done
+ 2355  help while
+ 2356  while true; do echo "Ahoj"; sleep(1); done
+ 2357  help sleep
+ 2358  info sleep
+ 2359  man sleep
+ 2360  ls
+ 2361  vim losovac.sh 
+ 2362  vim vyberac.sh
+ 2363  while true; do echo "Ahoj"; sleep 1; done
+ 2364  let i=0; while true; do echo "Ahoj $i"; sleep 1; i+=1; done
+ 2365  var i=0; while true; do echo "Ahoj $i"; sleep 1; i+=1; done
+ 2366  let i=0; while true; do echo "Ahoj $i"; sleep 1; let i++; done
+ 2367  let i=0; while true; do echo "Ahoj $i"; sleep 1; i+=((i+1)); done
+ 2368  let i=0; while true; do echo "Ahoj $i"; sleep 1; i=((i+1)); done
+ 2369  let i=0; while true; do echo "Ahoj $i"; sleep 1; i=$((i+1)); done
+ 2370  let i=0; while true; do echo "Ahoj $i"; sleep 1; let i+=1; done
+ 2371  let i=0; while true; do echo "Ahoj $i"; sleep 1; let i++; done
+ 2372  bg
+ 2373  jobs
+ 2374  ps
+ 2375  fg
+ 2376  jobs
+ 2377  let i=0; while true; do echo "Ahoj $i"; sleep 1; let i++; done &
+ 2378  jobs
+ 2379  ps
+ 2380  jobs
+ 2381  ps aux
+ 2382  fg
+ 2383  jobs
+ 2384  fg 2
+ 2385  echo 'let i=0; while true; do echo "Ahoj $i"; sleep 1; let i++; done' > ahoj.sh
+ 2386  vim ahoj.sh 
+ 2387  bash ahoj.sh &
+ 2388  ps
+ 2389  ps aux
+ 2390  kill -9 16176
+ 2391  vim ahoj.sh 
+ 2392  bash ahoj.sh &
+ 2393  jobs
+ 2394  ps -eLf
+ 2395  ps aux --forrest
+ 2396  ps aux --forest
+ 2397  kill 16204
+ 2398  ls
+ 2399  chmod +x ahoj.sh 
+ 2400  ls
+ 2401  cp ahoj.sh ../../prveCviko/signaly/
+ 2402  cp ahoj.sh ../../druheCviko/signaly/
+ 2403  ls
+ 2404  ./ahoj.sh 
+ 2405  bg
+ 2406  jobs
+ 2407  echo $1
+ 2408  echo $!
+ 2409  echo $$
+ 2410  echo $!
+ 2411  kill -9 $!
+ 2412  jobs
+ 2413  fg
+ 2414  ls
+ 2415  la
+ 2416  vim  test.sh 
+ 2417  chmod +x losovac.sh nekoncim.sh vyberac.sh 
+ 2418  ls
+ 2419  la
+ 2420  ./nekoncim.sh 
+ 2421  kill -9 16253
+ 2422  jobs
+ 2423  ./nekoncim.sh 
+ 2424  kill -9 16267
+ 2425  ls
+ 2426  fg
+ 2427  vim nekoncim.sh 
+ 2428  fg
+ 2429  vim losovac.sh 
+ 2430  ./losovac.sh 
+ 2431  bg
+ 2432  jobs
+ 2433  trap -l
+ 2434  ps
+ 2435  kill 10 16273
+ 2436  kill -10 16273
+ 2437  ls
+ 2438  jobs
+ 2439  ./losovac.sh 
+ 2440  bg
+ 2441  ps
+ 2442  man kill
+ 2443  kill -s USR1 16277
+ 2444  ps
+ 2445  kill -9 losovac.sh 
+ 2446  killall losovac.sh
+ 2447  jobs
+ 2448  man kill
+ 2449  ./losovac.sh &
+ 2450  fg
+ 2451  jobs
+ 2452  ps
+ 2453  trap -l
+ 2454  kill -10 16323
+ 2455  kill -9 16323
+ 2456  fg
+ 2457  ./losovac.sh 
+ 2458  fg
+ 2459  vim vyberac.sh 
+ 2460  ./vyberac.sh 
+ 2461  jobs
+ 2462  echo $!
+ 2463  kill -9 $!
+ 2464  kill -9 16379
+ 2465  jobs
+ 2466  fg
+ 2467  vim vyberac.sh 
+ 2468  fg
+ 2469  ls
+ 2470  jobs
+ 2471  cd ../procesy/
+ 2472  ls
+ 2473  cd ..
+ 2474  ls
+ 2475  vim grezo10112022.history 
+ 2476  ls
+ 2477  cd /public/
+ 2478  ls
+ 2479  cd priklady/
+ 2480  ls
+ 2481  cd proces
+ 2482  cd procesy/
+ 2483  ls
+ 2484  cd ..
+ 2485  ls
+ 2486  cd ..
+ 2487  ls
+ 2488  cd ucebnove/
+ 2489  ls
+ 2490  cd ..
+ 2491  ls
+ 2492  cd ..
+ 2493  ls
+ 2494  cd 
+ 2495  cd test/
+ 2496  ls
+ 2497  cd procesy/
+ 2498  ls
+ 2499  vim 1.c 
+ 2500  ls
+ 2501  vim Makefile 
+ 2502  make
+ 2503  ls
+ 2504  rm *.exe
+ 2505  ls
+ 2506  make 1.c 
+ 2507  vim Makefile 
+ 2508  make
+ 2509  vim Makefile 
+ 2510  ls
+ 2511  vim 1.c 
+ 2512  ./1.exe 
+ 2513  ./2.exe 
+ 2514  vim 2.c 
+ 2515  exit
+ 2516  man 7 signal
+ 2517  sudo apt-get update
+ 2518  sudo apt install build-essential
+ 2519  man signal
+ 2520  man 7 signal
+ 2521  man signal
+ 2522  man 7 signal
+ 2523  man kill
+ 2524  help trap
+ 2525  trap -l
+ 2526  ps
+ 2527  man ps
+ 2528  top
+ 2529  man top
+ 2530  la
+ 2531  ls
+ 2532  ll
+ 2533  ls
+ 2534  cd prveCviko/
+ 2535  ls
+ 2536  cd ..
+ 2537  ls
+ 2538  mkdir tmp
+ 2539  ls
+ 2540  cd tmp/
+ 2541  ls
+ 2542  cp -r /public/priklady/signaly ~/tmp/signaly
+ 2543  sudo cp -r /public/priklady/signaly ~/tmp/signaly
+ 2544  ls
+ 2545  cd signaly/
+ 2546  ls
+ 2547  la
+ 2548  sudo rm -rf signaly
+ 2549  ls
+ 2550  sudo cp /public/priklady/signaly/core ./
+ 2551  ls
+ 2552  la
+ 2553  chmod +r core 
+ 2554  sudo chmod +r core 
+ 2555  la
+ 2556  chmod +x losovac.sh nekoncim.sh vyberac.sh 
+ 2557  la
+ 2558  less signaly.txt 
+ 2559  help wait
+ 2560  ls
+ 2561  fg
+ 2562  ls
+ 2563  jobs
+ 2564  less signaly.txt 
+ 2565  cd ..
+ 2566  ls
+ 2567  cd ..
+ 2568  ls
+ 2569  cd prveCviko/
+ 2570  ls
+ 2571  cd signaly/
+ 2572  ls
+ 2573  vim ahoj.sh 
+ 2574  vim signaly.txt 
+ 2575  ./ahoj.sh 
+ 2576  man jobs
+ 2577  help jobs
+ 2578  jobs
+ 2579  man fg
+ 2580  man bg
+ 2581  help bg
+ 2582  bg
+ 2583  ps
+ 2584  top
+ 2585  fg
+ 2586  jobs
+ 2587  \fg 2
+ 2588  jobs
+ 2589  ./ahoj.sh &
+ 2590  .
+ 2591  jobs
+ 2592  kill -9 ps
+ 2593  ps
+ 2594  ps aux
+ 2595  ps aux --forrest
+ 2596  ps -eLf
+ 2597  ps aux --forest
+ 2598  kill -9 17052
+ 2599  jobs
+ 2600  ls
+ 2601  fg
+ 2602  man ps
+ 2603  fg
+ 2604  less nekoncim.sh 
+ 2605  vim nekoncim.sh 
+ 2606  ls
+ 2607  chmod +x nekoncim.sh vyberac.sh 
+ 2608  la
+ 2609  ./nekoncim.sh 
+ 2610  jobs
+ 2611  ps
+ 2612  ./nekoncim.sh 
+ 2613  ps
+ 2614  killall nekoncim.sh
+ 2615  ps
+ 2616  jobs
+ 2617  fg
+ 2618  jobs
+ 2619  fg
+ 2620  ps
+ 2621  fg
+ 2622  vim nekoncim.sh 
+ 2623  trap -l
+ 2624  ls
+ 2625  fg
+ 2626  vim losovac.sh 
+ 2627  fg
+ 2628  ls
+ 2629  chmod +x losovac.sh 
+ 2630  ./losovac.sh 
+ 2631  fg
+ 2632  ./losovac.sh &
+ 2633  kill -10 17203
+ 2634  fg
+ 2635  kill -9 17203
+ 2636  ./losovac.sh &
+ 2637  ps
+ 2638  ps aux --fores
+ 2639  ps aux --forest
+ 2640  kill -9 17223
+ 2641  ps aux --forest
+ 2642  fg
+ 2643  ls
+ 2644  ps
+ 2645  killall losovac.sh
+ 2646  ps
+ 2647  killall sleep
+ 2648  jobs
+ 2649  ps
+ 2650  vim vyberac.sh 
+ 2651  ./vyberac.sh 
+ 2652  ps
+ 2653  fg
+ 2654  ps
+ 2655  jobs
+ 2656  fg 1
+ 2657  ls
+ 2658  ps
+ 2659  ps aux --forest
+ 2660  kill -9 17233
+ 2661  ps aux --forest
+ 2662  kill -9 17255
+ 2663  ps aux --forest
+ 2664  kill -9 17247
+ 2665  ps aux --forest
+ 2666  cd ..
+ 2667  ls
+ 2668  cd ..
+ 2669  ls
+ 2670  vim test/
+ 2671  cd test/
+ 2672  ls
+ 2673  cd ..
+ 2674  ls
+ 2675  rm -rf tmp
+ 2676  ls
+ 2677  druheeeeeeeee
+ 2678  man 7 signal
+ 2679  sudo apt-get update
+ 2680  sudo apt install build-essential
+ 2681  man 7 signal
+ 2682  man signal
+ 2683  man 7 signal
+ 2684  help trap
+ 2685  trap -l
+ 2686  man trap
+ 2687  help trap
+ 2688  trap -l -p
+ 2689  ls
+ 2690  mkdir tmp
+ 2691  ls
+ 2692  cd tmp/
+ 2693  l
+ 2694  ls
+ 2695  cp -r /public/priklady/signaly ./
+ 2696  sudo cp -r /public/priklady/signaly ./
+ 2697  l
+ 2698  ls
+ 2699  cd signaly/
+ 2700  ls
+ 2701  la
+ 2702  chmod +x losovac.sh nekoncim.sh vyberac.sh 
+ 2703  la
+ 2704  cd ..
+ 2705  ls
+ 2706  cd ..
+ 2707  ls
+ 2708  cd druheCviko/
+ 2709  ls
+ 2710  cd signaly/
+ 2711  ls
+ 2712  vim ahoj.sh 
+ 2713  ./ahoj.sh 
+ 2714  man ps
+ 2715  ps
+ 2716  ps aux
+ 2717  ps aux --forest
+ 2718  ps -eLf
+ 2719  ls
+ 2720  chmod +x losovac.sh nekoncim.sh vyberac.sh 
+ 2721  ls
+ 2722  la
+ 2723  vim signaly.txt 
+ 2724  help wait
+ 2725  jobs
+ 2726  fg 1
+ 2727  jobs
+ 2728  fg 2
+ 2729  jobs
+ 2730  fg
+ 2731  jobs
+ 2732  ./ahoj.sh 
+ 2733  bg
+ 2734  ps
+ 2735  fg
+ 2736  jobs
+ 2737  fg 4
+ 2738  jobs
+ 2739  fg
+ 2740  man kill
+ 2741  trap -l
+ 2742  kill -p PID
+ 2743  kill -s KILL PID
+ 2744  fg
+ 2745  vim nekoncim.sh 
+ 2746  ./nekoncim.sh 
+ 2747  vim nekoncim.sh 
+ 2748  kill -9 17790
+ 2749  jobs
+ 2750  job
+ 2751  jobs
+ 2752  vim nekoncim.sh 
+ 2753  fg
+ 2754  ./nekoncim.sh 
+ 2755  ./nekoncim.sh &
+ 2756  jobs
+ 2757  killall
+ 2758  fg
+ 2759  jobs
+ 2760  fg 5
+ 2761  fg 6
+ 2762  fg 7
+ 2763  jobs
+ 2764  ps aux
+ 2765  killall nekoncim.sh
+ 2766  jobs
+ 2767  man killall
+ 2768  jobs
+ 2769  fg
+ 2770  jobs
+ 2771  fg
+ 2772  ./nekoncim.sh &
+ 2773  man kill
+ 2774  trap -l
+ 2775  jobs
+ 2776  ps
+ 2777  kill -15 17914
+ 2778  jobs
+ 2779  ./nekoncim.sh &
+ 2780  ps
+ 2781  kill -15 17971
+ 2782  fg
+ 2783  ls
+ 2784  vim losovac.sh 
+ 2785  fg
+ 2786  ./losovac.sh 
+ 2787  fg
+ 2788  ./losovac.sh &
+ 2789  kill -10 18016
+ 2790  kill -9 18016
+ 2791  ps
+ 2792  ps aux
+ 2793  ps aux --forest
+ 2794  kill -9 18029
+ 2795  ps aux --forest
+ 2796  ls
+ 2797  f
+ 2798  fg
+ 2799  vim vyberac.sh 
+ 2800  ./vyberac.sh 
+ 2801  ps
+ 2802  kill -9 18284
+ 2803  jobs
+ 2804  vim vyberac.sh 
+ 2805  fg
+ 2806  cd ..
+ 2807  ls
+ 2808  rm -r tmp/
+ 2809  sudo rm -r tmp/
+ 2810  sudo rm -r test/
+ 2811  ls
+ 2812  history > sevcik11102022.history

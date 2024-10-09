@@ -1,0 +1,6 @@
+#! /bin/bash
+
+cp -R /public .
+git add .
+git commit -m 'autocommit $(date)'
+git push origin main

@@ -1,0 +1,269 @@
+  248  clear
+  249  man man
+  250  man less
+  251  less /public/zaciatocnik.txt 
+  252  aflkasflka
+  253  echo $PATH
+  254  cd .
+  255  ls -la
+  256  cd /public/
+  257  ls\
+  258  ls
+  259  ./ls
+  260  less ls
+  261  echo "zaskodnicke ls"
+  262  hexdump -C /dev/zero
+  263  hexdump -C /dev/urandom
+  264  ls -la 
+  265  cd /dev/
+  266  ll
+  267  cd
+  268  ll
+  269  man chmod
+  270  chmod +x nieco 
+  271  ll
+  272  alias
+  273  chmod -x nieco 
+  274  ll
+  275  chmod u+x nieco 
+  276  ll
+  277  chmod u-x nieco 
+  278  ll
+  279  chmod 664 nieco 
+  280  ll
+  281  chmod 764 nieco 
+  282  ll
+  283  chmod 664 nieco 
+  284  man chown
+  285  groups
+  286  man group[s
+  287  man groups
+  288  man sudo
+  289  w
+  290  man w
+  291  who
+  292  man who
+  293  man last
+  294  ls /public/samples/
+  295  less /public/samples/wtmp.2020
+  296  man last
+  297  last /public/samples/wtmp.2020
+  298  last -f /public/samples/wtmp.2020
+  299  ll
+  300  man adduser
+  301  less .profile
+  302  less .bashrc
+  303  ll
+  304  man mkdir
+  305  mkdir druhecviko1
+  306  ll
+  307  man history
+  308  history
+  309  whoami
+  310  man whoami
+  311  man su
+  312  su root
+  313  man ps
+  314  ps 
+  315  man ps
+  316  ps aux
+  317  jobs
+  318  fg
+  319  man jobs
+  320  help jobs
+  321  man fg
+  322  help fg
+  323  bg
+  324  help gh
+  325  help bg
+  326  man vim
+  327  ll
+  328  vim vimsubor
+  329  man vimtutor
+  330  vimtutor
+  331  ll 
+  332  ll | cat
+  333  cowsay "Ahoj student OSll | cat!"
+  334  echo $PATH
+  335  history
+  336  cd ~
+  337  echo ~
+  338  history
+  339  man bash
+  340  ll 
+  341  cowsay "Ahoj student OSll | cat!"
+  342  cowsay 'AHOJ STUDENT OS !!!!!!!!!!!'
+  343  sudo apt-get install cowsay
+  344  fortune
+  345  man fortune
+  346  sudo apt-get install fortune
+  347  sudo apt-get install fortune-off
+  348  sudo apt-get install fortunes-off
+  349  fortune -o
+  350  fortune -o | cowsay
+  351  find
+  352  man find
+  353  find /public -type f -and -name 'kw*' -print
+  354  cat /public/ucebnove/kw2.txt
+  355  find /public -type f -name 'kw*'
+  356  man find
+  357  find /public -type f -name 'kw*' -size 70c
+  358  find /public -type f -name 'kw*' -size +70c
+  359  find /public -type f -name 'kw*' -size +80c
+  360  find /public -type f -name 'kw*' -size +100c
+  361  find /public -type f -name 'kw*' -size +170c
+  362  find /public/ucebnove/ -type f -name 'kw*' -or -size +170c
+  363  find /public/ucebnove/ -type f ( -name 'kw*' -or -size +170c )
+  364  find /public/ucebnove/ -type f \( -name 'kw*' -or -size +170c \)
+  365  find /public/ -type f -and -name *kw* -and -size >50 -and { -size <100 -or -size >25 }
+  366  find /public/ -type f -and -name *kw* -and -size -50 -and { -size -100 -or -size +25 }
+  367  find /public/ -type f -and -name *kw* -and -size -50 -and \( -size -100 -or -size +25 \)
+  368  man file
+  369  file /public/ucebnove/kw9.txt
+  370  file /dev/urandom
+  371  file /dev/ptmx
+  372  find /public -type f -name 'kw*'
+  373  cat /public/ucebnove/kw2.txt
+  374  cat /public/ucebnove/kw3.txt 
+  375  cd /public/ucebnove/
+  376  ll
+  377  cd ..
+  378  ll
+  379  cd priklady/
+  380  ll
+  381  cat cow.sh
+  382  cd
+  383  clear
+  386  man man
+  387  man less
+  388  less /public/zaciatocnik.txt
+  389  asjfna
+  390  echo $PATH
+  391  cd .
+  392  cd
+  393  echo .
+  394  ll
+  395  cd /public/
+  396  ls
+  397  ll
+  398  ./ls
+  399  cat ./ls
+  400  echo zaskodnicke ls
+  401  echo $PATH
+  402  alia
+  403  alias
+  404  man alias
+  405  help alias
+  406  man adduser
+  407  cd
+  408  ll
+  409  less .profile
+  410  less .bashrc
+  411  echo $PATH
+  412  alias
+  413  ll
+  414  ll /dev/urandom
+  415  hexdump -C /dev/urandom
+  416  ll
+  417  man chmod 
+  418  chmod +x nieco
+  419  ll
+  420  chmod -x nieco
+  421  ll
+  422  chmod g-x nieco
+  423  ll
+  424  chmod g+x nieco
+  425  ll
+  426  chmod g-x nieco
+  427  ll
+  428  chmod 664 nieco
+  429  ll
+  430  chmod 777 nieco
+  431  ll
+  432* chmod  nieco
+  433  ll
+  434  chmod 664 nieco
+  435  ll
+  436  man chown
+  437  groups
+  438  man groups
+  439  man sudo
+  440  man su
+  441  w
+  442  man w
+  443  who
+  444  man who
+  445  man last 
+  446  ls /public/samples/
+  447  man last 
+  448  less /public/samples/wtmp.2020
+  449  last -f /public/samples/wtmp.2020
+  450  ll
+  451  man mkdir 
+  452  mkdir druhecviko2
+  453  ll
+  454  man history
+  455  man bash
+  456  history
+  457  ll
+  458  last -f /public/samples/wtmp.2020
+  459  whoami
+  460  man whoami
+  461  ps
+  462  man ps
+  463  ps aux
+  464  jobs
+  465  man jobs
+  466  help jobs
+  467  fg
+  468  help fg
+  469  help bg
+  470  man vim 
+  471  vimtutor
+  472  man vimtutor
+  473  vimtutor
+  474  man less
+  475  man find
+  476  find . -true -print
+  477  find
+  478  find /public/ucebnove/ -true -print
+  479  find /public/ucebnove/ - -print
+  480  find /public/ucebnove/ -type f -name  -print
+  481  find /public/ucebnove/ -type f -name 'kw*' -print
+  482  ll /public/ucebnove
+  483  find /public/ucebnove/ -type f -and -name 'kw*' -and -size 50b -print
+  484  man find
+  485  find /public/ucebnove/ -type f -and -name 'kw*' -and -size 50c -print
+  486  ll
+  487  sudo cp os1-4_2024.pdf /public/ucebnove/
+  488  ll /public/ucebnove
+  489  find /public/ucebnove/ -type f -name 'kw*' -or -size 50c -print
+  490  find /public/ucebnove/ -type f ( -name 'kw*' -or -size 50c ) -print
+  491  find /public/ucebnove/ -type f \( -name 'kw*' -or -size 50c \) -print
+  492  find /public/ucebnove/ -type f \( -name 'kw*' -or -size 544093c \) -print
+  493  find /public/ucebnove/ -type f \( -name 'kw*' -or -size +544093c \) -print
+  494  ll /public/ucebnove
+  495  find /public/ucebnove/ -type f \( -name 'kw*' -or -size +544093c -or -size 544093c \) -print
+  496  find /public/ucebnove/ -type f \( -name 'kw*' -or -size +544093c \) -print
+  497  man file 
+  498  file /public/ucebnove/kw5.txt
+  499  file /public/ucebnove/os_5_2.ppt
+  500  file /dev/urandom 
+  501  file /dev/tty 
+  502  file /dev/ptmx 
+  503  ll 
+  504  ll | cat
+  505  cowsay 'Ahoj student OS !!!!'
+  506  cowsay "Ahoj student OS cowsay 'Ahoj student OS !!!!'cowsay 'Ahoj student OS !!!!'"
+  507  sudo apt-get install cowsay
+  508  sudo apt-get install fortune
+  509  sudo apt-get install fortunes-off
+  510  man fortune
+  511  fortune
+  512  fortune -o
+  513  fortune -o | cowsay
+  514  sl
+  515  sudo apt-get install sl
+  516  sl
+  517  man sl
+  518  history > 25092024.history

@@ -1,0 +1,149 @@
+    1  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | sed 's/  */ /g' | cut -d " " -f3
+    2  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+    3  cd ..
+    4  mkdir cv7
+    5  cp /public/priklady/sed.txt cv7
+    6  cd cv7
+    7  less sed.txt 
+    8  man sed
+    9  info sed
+   10  less sed.txt 
+   11  cp /public/samples/sedinput.txt .
+   12  less sed.txt 
+   13  cp /public/samples/list.txt .
+   14  less /public/samples/list2.txt
+   15  less /public/samples/list.txt
+   16  less sed.txt 
+   17  man sed
+   18  sed -n '=;7,16p' list.txt
+   19  sed -n '7,16p;=' list.txt
+   20  sed -n 'n;7,16p;=' list.txt
+   21  sed -n '7,16p' list.txt
+   22  sed -n '=;7,16p' list.txt
+   23  sed -n '=;7,16p' list.txt | sed "N;;"
+   24  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g"
+   25  sed -n -e '=;7,16p' -e '7,16p' list.txt
+   26  sed -n -e '=;7,16p' list.txt
+   27  sed -n -e '=;7,16p;d' list.txt
+   28  sed -n -e '=;d;7,16p' list.txt
+   29  sed -e '=;d;7,16p' list.txt
+   30  sed '=;d;7,16p' list.txt
+   31  sed '=;7,16p' list.txt
+   32  sed -n '=;7,16p' list.txt
+   33  sed -n '=;1,7d;7,16p' list.txt
+   34  sed -n '7,16=;;7,16p' list.txt
+   35  sed -n '7,16=;7,16p' list.txt
+   36  sed -n '7,16{=;p}' list.txt
+   37  sed -n -e '7,16{=;p}' -e "N;s/\n/ /g" list.txt
+   38  sed -n -e '7,16{=;p}' list.txt
+   39  sed -n -e '7,16{=;p}' list.txt | sed 'N;s/\n/ /g'
+   40  sed -n '7,16{=;p}' list.txt | sed 'N;s/\n/ /g'
+   41  cd ../cv6
+   42  cd ../cv7
+   43  cp /public/priklady/signaly/ .
+   44  cp -r /public/priklady/signaly/ .
+   45  ls signaly/
+   46  less signaly/signaly.txt 
+   47  cd ../cv6
+   48  less awk.txt 
+   49  less access.log 
+   50  less awk.txt 
+   51  awk '/404/ {print $7}' access.log 
+   52  awk '/404/ {print $9 $7}' access.log 
+   53  awk '/404/ {print $7}' access.log 
+   54  awk '/404/ {print $9" "$7}' access.log 
+   55  awk '/404/ {print $9" "$7}' access.log | wc -l
+   56  awk '/404/ {print $9" "$7}' access.log | grep -c '\<404\>'
+   57  awk '/404/ {print $9" "$7}' access.log | grep -c '\<404\>' | sort
+   58  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort
+   59  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort | uniq -c
+   60  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort | uniq -c | sort -nr
+   61  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort | uniq -c | sort -nr | head -1
+   62  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort | uniq -c | sort -nr | head -1 | tr -d " "
+   63  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort | uniq -c | sort -nr | head -1
+   64  awk '/404/ {print $9" "$7}' access.log | grep '\<404\>' | sort | uniq -c | sort -nr | head -1 | awk '{print $3}'
+   65  cd ../cv7
+   66  less sed.txt 
+   67  less signaly/signaly.txt 
+   68  man 7 signal
+   69  man signal
+   70  less signaly/signaly.txt 
+   71  help trap
+   72  help trap | less
+   73  history
+   74  history > vojtko03112022.history
+  774  sed '' sedinput.txt
+  775  sed -n '' sedinput.txt
+  776  sed -n 'p' sedinput.txt
+  777  sed -n '=' sedinput.txt
+  778  sed -n '=;p' sedinput.txt
+  779  sed 'i vkladam pred riadok' sedinput.txt
+  780  sed '3i vkladam pred riadok' sedinput.txt
+  781  sed '3,4i vkladam pred riadok' sedinput.txt
+  782  sed '2~4i vkladam pred riadok' sedinput.txt
+  783  sed '2~4d' sedinput.txt
+  784  sed 's/hello/world/' sedinput.txt
+  785  sed '' sedinput.txt
+  786  sed 's/hello/world/2' sedinput.txt
+  787  sed 's/hello/world/g' sedinput.txt
+  788  sed '' list.txt 
+  789  sed '7,10d' list.txt 
+  790  sed '3s/Zuzka/Lucka/' list.txt 
+  791  sed '3s/Zuzka/Lucka/g' list.txt 
+  792  sed '3s/Zuzka/Lucka/2' list.txt 
+  793  sed 's/Zuzka\(, ja Ta milujem\)/Lucka\2/2' list.txt 
+  794  sed 's/Zuzka\(, ja Ta milujem\)/Lucka\1/2' list.txt 
+  795  sed 's/Zuzka\(, ja Ta milujem\)/Lucka\1/' list.txt 
+  796  sed 's/Zuzka\(, ja Ta milujem\)/Lucka\0/' list.txt 
+  797  sed 's/Zuzka/ZUZKA/' list.txt 
+  798  sed 's/Zuzka/ZUZKA/g' list.txt 
+  799  man sed
+  800  sed 's/\(Z\)\(uzka\)/\U\1/g' list.txt
+  801  sed 's/\(Z\)\(uzka\)/\U\0/g' list.txt
+  802  sed 's/\(Z\)\(uzka\)/\U&/g' list.txt
+  803  sed 's/Zuzka/\U&/g' list.txt
+  804  sed 's/Zuzka/\U\0/g' list.txt
+  805  sed 's/\(Z\)\(uzka\)/\U\1\U\2/g' list.txt
+  806  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+  807  sed 's/\([zZ]\)\(uzka\)/\L\1\U\2/g' list.txt
+  808  sed 's/\<\([zZ]\)\(uzka\)\>/\L\1\U\2/g' list.txt
+  809  sed 's/\<\([zZ]u\)\(zka\)\>/\L\1\U\2/g' list.txt
+  810  sed 's/Zuzka/\l\U/g' list.txt
+  811  sed 's/Zuzka/\l\U\0/g' list.txt
+  812  sed 's/Zuzka/\lU\0/g' list.txt
+  813  sed 's/Zuzka/\l\0/g' list.txt
+  814  sed 's/Zuzka/\l0\0/g' list.txt
+  815  sed 's/Zuzka/\l&/g' list.txt
+  816  sed 's/Zuzka/\Ul&/g' list.txt
+  817  sed 's/Zuzka/\U&/g' list.txt
+  818  sed 's/Zuzka/\lU/g' list.txt
+  819  sed 's/Zuzka/\l\U/g' list.txt
+  820  sed 's/Zuzka/\l&\U&/g' list.txt
+  821  sed 's/\<[m]ozno\>/ne\0/g' list.txt
+  822  sed 's/\<[Mm]ozno\>/ne\0/g' list.txt
+  823  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt
+  824  sed 's/\<\(M\|m\)ozno\>/nemozno/g' list.txt
+  825  sed 's/\<\(Mo\|mo\)zno\>/nemozno/g' list.txt
+  826  sed 's/Zuzka/\Ul&/' list.txt
+  827  sed 's/Zuzka/\u&/' list.txt
+  828  sed -n '7,16p' list.txt
+  829  sed -n 'n;7,16p' list.txt
+  830  sed -n '7,16p;n' list.txt
+  831  sed -n '7,16p' list.txt
+  832  sed -n '7,16p' list.txt | sed -n '1~2p'
+  833  sed -i 's/Zuzka/Lucka/g' list.txt
+  834  sed '' list.txt
+  835  sed -i 's/Lucka/Zuzka/g' list.txt
+  836  sed '' list.txt
+  837  sed '7,16=;7,16,p' Iist.txt
+  838  sed '7,16=;7,16p' Iist.txt
+  839  sed '7,16=;7,16p' list.txt
+  840  sed -n '7,16=;7,16p' list.txt
+  841  sed -n '7,16{=;p}' list.txt
+  842  sed -n '7,16{=;p}' list.txt | sed 'N;s/\n/ /'
+  843  history
+  844  history | tail 100
+  845  history | tail -n 100
+  846  history | tail -n 80
+  847  history | tail -n 75
+  848  history | tail -n 75 >> vojtko03112022.history 

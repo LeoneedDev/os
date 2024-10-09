@@ -1,0 +1,100 @@
+ 4427  man bash
+ 4428  cd /public/priklady/
+ 4429  ll
+ 4430  bash -xv 9-2.sh
+ 4431  bash -xv ./9-2.sh
+ 4432  cd 
+ 4433  cd priklady/
+ 4434  bash -xv ./9-2.sh
+ 4435  env
+ 4436  ll
+ 4437  ./9-2.sh 
+ 4438  env
+ 4439  less 9-2.sh 
+ 4440  echo $?
+ 4441  asoifjsaj
+ 4442  echo $?
+ 4443  less 9-2.sh 
+ 4444  ./9-2.sh 
+ 4445  echo $?
+ 4446  less 9-2.sh 
+ 4447  cd ..
+ 4448  cd sieste/
+ 4449  ll
+ 4450  find /public -name awk.txt
+ 4451* 
+ 4452  find /public -name zamestnanci.txt
+ 4453  awk '{print}' /public/samples/zamestnanci.txt
+ 4454  awk '{print NR,$0}' zamestnanci.txt
+ 4455  awk '{print NR$0}' zamestnanci.txt
+ 4456  awk '{print NR" "$0}' zamestnanci.txt
+ 4457  awk '{print NR,$0}' zamestnanci.txt
+ 4458  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 4459  awk 'BEGIN { print "zoznam zamestnancov:"} { print } END { print koniec }' zamestnanci.txt
+ 4460  awk 'BEGIN { print "zoznam zamestnancov:"} { print } END { print "koniec" }' zamestnanci.txt
+ 4461  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 4462  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 4463  awk zamestnanci.txt
+ 4464  awk /^z/ zamestnanci.txt
+ 4465  awk //^z/z/ zamestnanci.txt
+ 4466  awk -v /^z/ zamestnanci.txt
+ 4467  awk /^[^z/ zamestnanci.txt
+ 4468  awk /^[^z]/ zamestnanci.txt
+ 4469  awk /^[!z]/ zamestnanci.txt
+ 4470  awk /^[^z]/ zamestnanci.txt
+ 4471  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 4472  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 4473  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 4474  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 4475  bc 5000+23000+4300
+ 4476  bc <<<"5000+23000+4300"
+ 4477  bc <<<"(5000+23000+4300)/3"
+ 4478  awk '/^z|^b/ {sum += $NF; count += 1} END {print "AVG =" sum/count}' /public/samples/zamestnanci.txt
+ 4479  awk '/^z|^b/ {sum += $NF; count++} END {print "AVG =" sum/count}' /public/samples/zamestnanci.txt
+ 4480  awk '/^z|^b/ {sum += $NF; ++count} END {print "AVG =" sum/count}' /public/samples/zamestnanci.txt
+ 4481  ll
+ 4482  ll /public/samples/
+ 4483  cat logformat.txt 
+ 4484  less /public/samples/access.log 
+ 4485  awk 'print "2620.01"' /public/samples/access.log 
+ 4486  awk '{print "2620.01"}' /public/samples/access.log 
+ 4487  awk 'END {print "2620.01"}' /public/samples/access.log 
+ 4488  awk 'END {print "2620.01MB"}' /public/samples/access.log 
+ 4489  awk '{sum+=$6} END {print "Velkost v MB: " sum}' /public/samples/access.log
+ 4490  awk '{SUM += $10} END {print SUM/(1024*1024)}' access.log
+ 4491  awk '{SUM += $10} END {print SUM/(1024*1024)}' /public/samples/access.log
+ 4492  awk '{SUM += $10} END {print SUM/(1024*1024),MB}' /public/samples/access.log
+ 4493  awk '{SUM += $10} END {print SUM/(1024*1024),"MB"}' /public/samples/access.log
+ 4494  less /public/samples/access.log 
+ 4495  cat logformat.txt 
+ 4496  less /public/samples/access.log 
+ 4497  awk '{SUM += $10} END {print SUM/2^20,"MB"}' /public/samples/access.log
+ 4498  vim tmp
+ 4499  cut -d " " -f1 /public/samples/access.log |  sort | head -10
+ 4500  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -r | head -10
+ 4501  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -r | head -10 | tr -s ' ' ' ' 
+ 4502  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -r | head -10 | tr -s ' ' ' ' | cut -d " " -f2
+ 4503  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -r | head -10 | tr -s ' ' ' ' | cut -d " " -f3
+ 4504  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | tr -s ' ' ' ' | cut -d " " -f3
+ 4505  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | tr -s ' ' ' ' 
+ 4506  cut -d " " -f1 /public/samples/access.log | uniq -c | sort -nr | head -10 | tr -s ' ' ' ' 
+ 4507  awk '{dataspolu+=$10}/android|iPhone/ {mobil+=1; data+=$10 } END{print  mobil/NR*100, "%", "z podielu dat: " data/dataspolu*100"%"}' /public/samples/access.log
+ 4508  awk '$9 > 400 {print $7}' access.log | ort | uniq -c | sort | tail -n 1
+ 4509  awk '$9 > 400 {print $7}' /public/samples/access.log | ort | uniq -c | sort | tail -n 1
+ 4510  awk '$9 > 400 {print $7}' /public/samples/access.log | sort | uniq -c | sort | tail -n 1
+ 4511  awk '$9 > 400 {print $7}' /public/samples/access.log | sort | uniq -c | sort -n | tail -n 1
+ 4512  awk '$9 > 400 {print $7}' /public/samples/access.log | sort | uniq -c | sort -nr | head -n 10
+ 4513  awk '$9 >= 400 {print $7}' /public/samples/access.log | sort | uniq -c | sort -nr | head -n 10
+ 4514  less Bonus: vypiste domenove mena najdenych IP adries
+ 4515  less /public/samples/access.log
+ 4516  host 83.149.9.216
+ 4517  ll
+ 4518  cat bonus.txt
+ 4519  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}' 
+ 4520  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}' 
+ 4521  ls
+ 4522  cd .
+ 4523  cd /public/zadania/
+ 4524  ls
+ 4525  less z6.sh 
+ 4527  cd 

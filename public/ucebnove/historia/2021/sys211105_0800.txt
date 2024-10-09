@@ -1,0 +1,159 @@
+ 1981  ZACIATOK CVIKA
+ 1982  find /public -name sed.txt
+ 1983  cat $(find /public -name sed.txt)
+ 1984  sed '' /public/samples/sedinput.txt 
+ 1985  man sed
+ 1986  sed '' /public/samples/sedinput.txt 
+ 1987  sed 's/hello/Ahoj/' /public/samples/sedinput.txt 
+ 1988  sed 's/hello/Ahoj/g' /public/samples/sedinput.txt 
+ 1989  sed 's/hello/Ahoj/c' /public/samples/sedinput.txt 
+ 1990  sed 's/HELLO/Ahoj/i' /public/samples/sedinput.txt 
+ 1991  sed 's/hello/Ahoj/g' /public/samples/sedinput.txt 
+ 1992  sed 's/hello/Ahoj/g;s%world%svet!%' /public/samples/sedinput.txt 
+ 1993  sed 's/hello/Ahoj/g;s%world%svet!%g' /public/samples/sedinput.txt 
+ 1994  sed 's/hello/Ahoj/g;s%world.*%svet!%g' /public/samples/sedinput.txt 
+ 1995  sed 's/hello/Ahoj/g;s%world.*%svet!%' /public/samples/sedinput.txt 
+ 1996  sed -E 's/(hell.)/\1/g' /public/samples/sedinput.txt 
+ 1997  sed -E 's/(hell.)/>\1/<g' /public/samples/sedinput.txt 
+ 1998  sed -E 's/(hell.)/>\1</g' /public/samples/sedinput.txt 
+ 1999  sed -E 's/(hell.)/>&</g' /public/samples/sedinput.txt 
+ 2000  sed -E 's/(hell)./>&</g' /public/samples/sedinput.txt 
+ 2001  sed -E 's/(hell)./>\1</g' /public/samples/sedinput.txt 
+ 2002  sed -E 's/(hell).*/>&</g' /public/samples/sedinput.txt 
+ 2003  sed -E 's/(hell).*/>\U&</g' /public/samples/sedinput.txt 
+ 2004  sed -E 's/(hell).*/>\U&aaaaaa</g' /public/samples/sedinput.txt 
+ 2005  sed -E 's/(hell).*/>\U&\Eaaaaaa</g' /public/samples/sedinput.txt 
+ 2006  sed -E 's/(hell).*/>\u&aaaaaa</g' /public/samples/sedinput.txt 
+ 2007  sed -E 's/hello/>\u</g' /public/samples/sedinput.txt 
+ 2008  sed -E 's/hello/\u&/g' /public/samples/sedinput.txt 
+ 2009  sed -E 's/.ell/\u&/g' /public/samples/sedinput.txt 
+ 2010  sed -E 's/hell/\lAAAA&/g' /public/samples/sedinput.txt 
+ 2011  sed -E 's/hell/\LAAAA&/g' /public/samples/sedinput.txt 
+ 2012  sed -E '3s/hello/\u&/' /public/samples/sedinput.txt 
+ 2013  sed -E '/world/s/hello/\u&/g' /public/samples/sedinput.txt 
+ 2014  cat $(find /public -name sed.txt)
+ 2015  sed -E '$s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2016  sed -E '4,6s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2017  sed -E '1~2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2018  sed -E '2~2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2019  sed -E '~2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2020  sed -E '2~2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2021  sed -E '2,~2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2022  sed -E '2,~4s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2023  sed -E '2,~3s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2024  cat $(find /public -name sed.txt)
+ 2025  man sed
+ 2026  sed -E '/^2/,2/[0-9]*//g' /public/samples/sedinput.txt 
+ 2027  sed -E '1,2/[0-9]*//g' /public/samples/sedinput.txt 
+ 2028  sed -E '/^2/,2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2029  sed -E '/^2/,4s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2030  sed -E '/^2/,+2s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2031  sed -E '/^2/,/^5/s/[0-9]*//g' /public/samples/sedinput.txt 
+ 2032  sed -E '3cAhoj svet!' /public/samples/sedinput.txt 
+ 2033  sed -E -e '3cAhoj svet!' /public/samples/sedinput.txt 
+ 2034  sed -E -e '3cAhoj svet!' -e '5cNazdar' /public/samples/sedinput.txt 
+ 2035  sed -E -e '3iAhoj svet!' /public/samples/sedinput.txt 
+ 2036  sed -E -e '3aAhoj svet!' /public/samples/sedinput.txt 
+ 2037  cat $(find /public -name sed.txt)
+ 2038  sed -E -e '3d' /public/samples/sedinput.txt 
+ 2039  sed -E '/hello hello/,/hello world/d' /public/samples/sedinput.txt 
+ 2040  sed -E -n  /public/samples/sedinput.txt 
+ 2041  sed -E -n '' /public/samples/sedinput.txt 
+ 2042  sed -E -n 'p' /public/samples/sedinput.txt 
+ 2043  sed -E -n 'pp' /public/samples/sedinput.txt 
+ 2044  sed -E -n 'p;p' /public/samples/sedinput.txt 
+ 2045  sed -E -n '=;p;p' /public/samples/sedinput.txt 
+ 2046  sed -E -n '=;p' /etc/passwd
+ 2047  sed -E -n 'n;p' /public/samples/sedinput.txt 
+ 2048  sed -E -n 'N;p' /public/samples/sedinput.txt 
+ 2049  sed -E -n '=;n;N;p' /public/samples/sedinput.txt 
+ 2050  sed -E -n '=;n;N;p' /etc/passwd
+ 2051  man sed
+ 2052  sed -E -n '3{=;p}' /public/samples/sedinput.txt 
+ 2053  sed -E -n '3=;p' /public/samples/sedinput.txt 
+ 2054  man sed
+ 2055  seq 1000
+ 2056  seq 1000|sed 's%\n% %'
+ 2057  seq 1000|sed 's%\r% %'
+ 2058  seq 1000|sed 's%\n% %'
+ 2059  seq 1000|sed "s%\n% %"
+ 2060  seq 1000|sed "s%\n% %g"
+ 2061  seq 1000|sed 's%\n% %g'
+ 2062  seq 1000|sed -n 's%\n% %g'
+ 2063  seq 1000|sed -n 's%\n% %g;p'
+ 2064  seq 1000|sed 's%\n% %g'
+ 2065  seq 1000|sed -E 's%\n% %g'
+ 2066  cat $(find /public -name sed.txt)
+ 2067  cat $(find /public -name sed.txt)|sed 'l'
+ 2068  cat $(find /public -name sed.txt)|sed 'L10'
+ 2069  man sed
+ 2070  cat $(find /public -name sed.txt)|sed 'L30'
+ 2071  cat $(find /public -name sed.txt)|sed 'l30'
+ 2072  cat $(find /public -name sed.txt)|sed 'L10'
+ 2073  cat $(find /public -name sed.txt)|sed 'l10'
+ 2074  cat $(find /public -name sed.txt)|sed -n 'l10'
+ 2075  sed 1000|sed -n 's%\n% %
+ 2076  sed 1000|sed -n 's%\n% %'
+ 2077  sed 1000|sed -n 's/\n/ /'
+ 2078  sed 1000|sed -n 's/\\n/ /'
+ 2079  seq 1000|sed -n 's/\n/ /'
+ 2080  seq 1000|sed -n 's/\n/ /;p'
+ 2081  cat ps_priklady_no_res 
+ 2082  less ps_priklady_no_res 
+ 2083  cat $(find /public -name sed.txt)|sed -n 'l10'
+ 2084  cat $(find /public -name sed.txt)
+ 2085  cp /public/samples/sedinput.txt .
+ 2086  cat sedinput.txt 
+ 2087  sed -i 's%hello%Ahoj%g;s%world%svet!%g' sedinput.txt 
+ 2088  cat sedinput.txt
+ 2089  cat $(find /public -name sed.txt)
+ 2090  cat /public/samples/list.txt 
+ 2091  sed '7d;10d' /public/samples/list.txt 
+ 2092  cat -n /public/samples/list.txt|sed '7d;10d' 
+ 2093  cat -n /public/samples/list.txt|sed '7,10d' 
+ 2094  cat -n /public/samples/list.txt|sed '(ja ta milujem)s/Zuzka/Lucka/g' 
+ 2095  cat -n /public/samples/list.txt|sed -E '/(ja ta milujem)/s/Zuzka/Lucka/g' 
+ 2096  cat -n /public/samples/list.txt|sed -E '/(ja Ta milujem)/s/Zuzka/Lucka/g' 
+ 2097  cat -n /public/samples/list.txt|sed -E '/ja Ta milujem/s/Zuzka/Lucka/g' 
+ 2098  cat $(find /public -name sed.txt)
+ 2099  cat -n /public/samples/list.txt|sed -E '3d' 
+ 2100  cat -n /public/samples/list.txt|sed -E '(ja ta milujem)'
+ 2101  man sed
+ 2102  cat $(find /public -name sed.txt)
+ 2103  cat -n /public/samples/list.txt|sed -E 'n;d'
+ 2104  cat -n /public/samples/list.txt|sed -E '1d;n;d'
+ 2105  cat -n /public/samples/list.txt|sed -En 'n;p'
+ 2106  cat $(find /public -name sed.txt)
+ 2107  sed -E '=' /public/samples/list.txt
+ 2108  sed -E '=' /public/samples/list.txt |sed 'N;s%\n% %'
+ 2109  sed -En '=';p /public/samples/list.txt |sed 'N;s%\n% %'
+ 2110  sed -En '=;p' /public/samples/list.txt |sed 'N;s%\n% %'
+ 2111  sed -En '=;p;s%\n% %' /public/samples/list.txt
+ 2112  sed -En '=;p;s%\n% %;p' /public/samples/list.txt
+ 2113  bc
+ 2114  echo $((1+7*2^5))
+ 2115  sed ''
+ 2116  cat ps_priklady_no_res 
+ 2117  m Roman OsadskÃ½ to FIIT STU (privately)09:31
+ 2118  echo "1122" | sed -e 's/\(.\)/\1\+0/g'
+ 2119  man sed
+ 2120  echo "1122" | sed -Ee 's/(.)/\1\+0/g'
+ 2121  echo "1122" | sed -Ee 's/(.)/\1\+0/g'|bc
+ 2122  echo "1122" | sed -Ee 's/(.)/\1/g'|sed 's%[+]$%%'
+ 2123  echo "1122" | sed -Ee 's/(.)/\1+/g'|sed 's%[+]$%%'
+ 2124  echo "1122" | sed -Ee 's/(.)/\1+/g'|sed 's%[+]$%%'|bc
+ 2125  awk 'NR%1 {print}' sedinput.txt
+ 2126  awk 'NF%1 {print}' sedinput.txt
+ 2127  awk 'NF%1 {print}' /public/samples/sedinput.txt 
+ 2128  awk '(NF%1) {print}' /public/samples/sedinput.txt 
+ 2129  awk '(NF%2) {print}' /public/samples/sedinput.txt 
+ 2130  awk '(NR%2) {print}' /public/samples/sedinput.txt 
+ 2131  awk '!(NR%2) {print}' /public/samples/sedinput.txt 
+ 2132  cat /public/samples/access.log 
+ 2133  cat /public/samples/access.log |awk '{print $1}'
+ 2134  cat /public/samples/access.log |awk '{print $1}'|sort|uniq -c
+ 2135  cat /public/samples/access.log |awk '{print $1}'|sort|uniq -c|sort -n
+ 2136  cat /public/samples/access.log |awk '{print $1}'|sort|uniq -c|sort -n|head -n 10
+ 2137  cat /public/samples/access.log |awk '{print $1}'|sort|uniq -c|sort -nr|head -n 10
+ 2138  cat /public/samples/access.log |awk '{print $1}'|sort|uniq -c|sort -n|tail -n10
+ 2139  cat ps_priklady_no_res 

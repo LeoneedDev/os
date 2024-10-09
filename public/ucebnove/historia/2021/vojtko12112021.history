@@ -1,0 +1,101 @@
+    1  reset
+    2  cd sieste/
+    3  awk '{print $1}' access.log | tr '0123456789' '9876543210' | awk '{getline line < "access.log";print $0, line}' | awk '{$2="";print $0}' | sed 's/^0*//' > anon.log
+    4  awk '{print $1}' anon.log | sort | uniq -c | sort -nr | head
+    5  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+    6  awk '{print $1}' access.log | tr '0123456789' '9876543210' | awk '{getline line < "access.log";print $0, line}' | awk '{$2="";print $0}' | sed 's/^0*//' > anon.log
+    7  awk '{print $0}' anon.log
+    8  awk '{print $1}' anon.log | sort | uniq -c | sort -nr | head
+    9  grep "sed" /public/ucebnove/historia/vojtko11112021.history 
+   10  sed 's/\b\(1\?[0-9][0-9]\?\|2[0-4][0-9]\|25[0-5]\)\.\(1\?[0-9][0-9]\?\|2[0-4][0-9]\|25[0-5]\)\.\(1\?[0-9][0-9]\?\|2[0-4][0-9]\|25[0-5]\)\.\(1\?[0-9][0-9]\?\|2[0-4][0-9]\|25[0-5]\)\b/\1 \2 \3 \4/g' access.log | awk '{ printf "%d.%d.%d.%d", $1*13%255+1, $2*13%255+1, $3*13%255+1, $4*13%255+1, $1=""; $2=""; $3=""; $4=""; print $0 }' > anon.log
+   11  awk '{print $1}' anon.log | sort | uniq -c | sort -nr | head
+   12  back
+   13  cd ..
+   14  cd signal/
+   15  help trap
+   16  trap -l
+   17  man 7 signal
+   18  help wait
+   19  ps -aux --forest
+   20  ps -eLf
+   21  man ps
+   22  cat nekoncim.sh 
+   23  ./nekoncim.sh 
+   24  jobs
+   25  bg
+   26  kill -s INT 46763
+   27  kill -s TERM 46763
+   28  cat losovac.sh 
+   29  ./losovac.sh 
+   30  ps -aux
+   31  ps -eLf
+   32  kill -s KILL 46821
+   33  ./losovac.sh &
+   34  kill -s USR1 46825
+   35  kill -s KILL 46825
+   36  ps -eLf
+   37  killall sleep
+   38  ps -eLf
+   39  cat enh_losovac.sh 
+   40  ./enh_losovac.sh 
+   41  cat vyberac.sh 
+   42  trap -l
+   43  cat vyberac.sh 
+   44  ./vyberac.sh 
+   45  cd examples/
+   46  l s-la
+   47  ls -la
+   48  make
+   49  cat 1.c
+   50  cd ../../procesy/
+   51  ls -la
+   52  make clean
+   53  ls -la
+   54  rm core
+   55  ls -la
+   56  rm touch
+   57  ls -la
+   58  vim Makefile 
+   59  make
+   60  ls -la
+   61  vim 1.c
+   62  ./1.exe
+   63  vim 1.c
+   64  make
+   65  ./1.exe
+   66  ./1.exe 1
+   67  vim 1.c
+   68  vim 2.c
+   69  ./2.exe
+   70  ./2.exe 1
+   71  vim 2.c
+   72  make
+   73  ./2.exe 1
+   74  vim 2.c
+   75  make
+   76  ./2.exe
+   77  vim 2.c
+   78  make
+   79  ./2.exe
+   80  vim 2.c
+   81  make
+   82  ./2.exe
+   83  vim 2.c
+   84  make
+   85  ./2.exe
+   86  vim 2.c
+   87  ./2.exe
+   88  vim 2.c
+   89  vim 3.c
+   90  ./3.exe
+   91  ls -la
+   92  cat core
+   93  ls -la
+   94  man gdb
+   95  history
+   96  man history
+   97  help history
+   98  history
+   99  history -d 93
+  100  history
+  101  history > /public/ucebnove/historia/vojtko12112021.history

@@ -1,0 +1,119 @@
+  213  ls
+  214  ls /public/
+  215  ls /public/ucebnove/
+  216  ls /public/ucebnove/historia/
+  217  *
+  218  ls *
+  219  ls
+  220  mkdir adresar
+  221  cp subor.txt adresar/
+  222  ls *
+  223  clear
+  224  ls *.txt
+  225  ls *.history
+  226  ls
+  227  ls .
+  228  ls lastinec-st-??.history
+  229  mkdir history
+  230  mv lastinec-st-1* history
+  231  cp history/lastinec-st-1* /public/ucebnove/historia/
+  232  cat /public/ucebnove/kw2.txt 
+  233  vim subor.txt
+  234  cat subor.
+  235  cat subor.txt 
+  236  which apropos
+  237  apropos link
+  238  man ln
+  239  ln subor.txt hlink_subor.txt
+  240  ls
+  241  cat hlink_subor.txt 
+  242  ls -l
+  243  ln --symbolic subor.txt hlink_subor.txt
+  244  ln --symbolic subor.txt slink_subor.txt
+  245  ll
+  246  vim .bashrc
+  247  ls -l
+  248  ls -li
+  249  clear
+  250  ls -li *subor.txt
+  251  cat slink_subor.txt 
+  252  rm subor.txt
+  253  ls -li *subor.txt
+  254  cat slink_subor.txt 
+  255  cat hlink_subor.txt 
+  256  ln adresar odkaz_na_adresar
+  257  ln -s adresar odkaz_na_adresar
+  258  cd odkaz_na_adresar
+  259  ls
+  260  cd ..
+  261  xxd slink_subor.txt 
+  262  ls /dev/tty*
+  263  ls -l /dev/tty*
+  264  cowsay "Hello OS"
+  265  cowsay "Hello OS" -f tux
+  266  cowsay -f tux "Hello OS"
+  267* fortune | 
+  268  fortune | cowsay -f tux "Hello OS"
+  269  fortune | cowsay -f tux
+  270  vim tux.txt
+  271  fortune | cowsay -f tux > tux2.txt
+  272  ls
+  273  cat tux2.txt 
+  274  cowsay -f tux < hlink_subor.txt 
+  275  history 
+  276  wc -l subor.jpg 
+  277  ls | wc -l
+  278  wc -l subor.txt
+  279  wc -l subor.txt > pocet_riadkov
+  280  cat pocet_riadkov 
+  281  ls | wc -l | cowsay
+  282  wc -l subor.txt 2> pocet_riadkov
+  283  cat pocet_riadkov 
+  284  wc -l subor.txt hlink_subor.txt 2>&1 > pocet_riadkov
+  285  cat pocet_riadkov 
+  286  wc -l subor.txt hlink_subor.txt 2>&1
+  287  wc -l subor.txt hlink_subor.txt 2>&1 1> pocet_riadkov 
+  288  wc -l subor.txt hlink_subor.txt > pocet_riadkov 2>&1
+  289  cat pocet_riadkov 
+  290  wc -l subor.jpg >> pocet_riadkov 
+  291  cat pocet_riadkov 
+  292  ps
+  293  ps -u
+  294  ps -ua
+  295  ps -uax
+  296  ps uax
+  297  man ps
+  298  vim subor.jpg &
+  299  ps
+  300  ps aux
+  301  fg
+  302  ps aux
+  303  bg
+  304  while 1; do echo "hello OS"; done
+  305  while (1); do echo "hello OS"; done
+  306  while ] 1 ]; do echo "hello OS"; done
+  307  while [ 1 ]; do echo "hello OS"; done
+  308  while [ 1 ]; do echo "hello OS"; sleep 1; done
+  309  bg
+  310  jobs
+  311  while [ 1 ]; do echo "hello OS"; sleep 1; done &
+  312  kill 1005
+  313  vim hello.sh
+  314  chmod +x hello.sh 
+  315  ./hello.sh
+  316  jobs
+  317  fg 2
+  318  bg
+  319  kill 2
+  320  kill %2
+  321  jobs
+  322  ps aux | grep vim
+  323  kill 993
+  324  ps aux | grep vim
+  325  fg
+  326  ls
+  327  more pocet_riadkov 
+  328  less pocet_riadkov 
+  329  more /public/zaciatocnik.txt 
+  330  history | grep history
+  331  history > history/lastinec-st-14-2.history

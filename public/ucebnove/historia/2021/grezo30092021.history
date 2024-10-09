@@ -1,0 +1,166 @@
+   74  set
+   75  man find
+   76  find /public/ -type f -name *.history -mtime 14
+   77  find /public/ -type f -name *.history -mtime -14
+   78  find /public/ -type f -name *.history -mtime 7
+   79  find /public/ -type f -name *.history -mtime 6
+   80  find /public/ -type f -name *.history -mtime 6 
+   81  find /public/ -type f -name *.history -mtime 6 | wc
+   82  find /public/ -type f -name *.history -mtime 6 | wc -l
+   83  find /public/ -type f -name *.history -mtime 6 | wc -c
+   84  find /public/ -type f -name *.history -mtime 6 | wc -w
+   85  find /public/ -type f -name *.history -mtime -14
+   86  find /public/ -type f -name *.history -mtime -14 | cat 
+   87  find /public/ -type f -name *.history -mtime -14 | tail
+   88  find /public/ -type f -name *.history -mtime -14 -exec tail
+   89  tail /public/ucebnove/historia/grezo23092021-2.history
+   90  tail -n 5 /public/ucebnove/historia/grezo23092021-2.history
+   91  find /public/ -type f -name *.history -mtime -14 -exec tail -n 5 {}
+   92  find /public/ -type f -name *.history -mtime -14 -exec tail -n 5 {} ;
+   93  find /public/ -type f -name *.history -mtime -14 -exec tail -n 5 {} \;
+   94  tail -n 5 /public/ucebnove/historia/grezo23092021.history
+   95  find /public/ -type f -name *.history -mtime -14 -exec grep "man" {} \;
+   96  find /public/ -type f -name *.history -mtime -14
+   97  find /public/ -type f -name *.history -mtime -14 -exec wc {} \;
+   98  find /public/ -type f -name *.history -mtime -14 -exec wc -l {} \;
+   99  find /public/ -type f -name *.history -mtime -14 -exec tail {} \;
+  100  find /public/ -type f -name *.history -mtime -14 -exec tail -n 3 {} \;
+  101  tail -n 3 /public/ucebnove/historia/grezo23092021-2.history /public/ucebnove/historia/grezo23092021.history
+  102  find /public/ -type f -name *.history -mtime -14 
+  103  find /public/ -type f -name *.history -mtime -14 | tail -n 3
+  104  tail -n 3 `find /public/ -type f -name *.history -mtime -14`
+  105  tail -n 3 $(find /public/ -type f -name *.history -mtime -14)
+  106  bash
+  107  tail -n 3 $(find /public/ -type f -name *.history -mtime -14)
+  108  find /public/ -type f -name *.history -mtime -14 -exec tail -n 3 {} \;
+  109  tail -n 3 `find /public/ -type f -name *.history -mtime -14`
+  110  vim .profile 
+  111  vim /etc/profile
+  112  clear
+  113  cat /etc/passwd
+  114  passwd 
+  115  man passwd
+  116  passwd ostest
+  117  sudo passwd ostest
+  118  man usermod
+  119  usermod -aG sudo ostest
+  120  sudo usermod -aG sudo ostest
+  121  su
+  122  su ostest
+  123  man sudo
+  124  man su
+  125  man sudo 
+  126  sudo -u ostest ls -la
+  127  who
+  128  w
+  129  finger
+  130  last
+  131  clear
+  132  ps -xl
+  133  date
+  134  bc
+  135  ls -la .
+  136  less .bashrc
+  137  echo $PATH
+  138  ls 
+  139  ls /usr/bin
+  140  which ls
+  141  echo $PATH
+  142  less .profile 
+  143  less /ets/profile
+  144  less /etc/profile
+  145  echo $PS1
+  146  less .profile 
+  147  less .bashrc
+  148  env
+  149  set
+  150  ls -la
+  151  ls -sla
+  152  man ls 
+  153  ls -as1
+  154  ls -la
+  155  man du
+  156  du -h priklady
+  157  man du
+  158  du -ch priklady
+  159  man du
+  160  du -ch priklady
+  161  du -sch priklady
+  162  find
+  163  find . * -print
+  164  echo *
+  165  find . priklady -print
+  166  man bash
+  167  find /public -true -print
+  168  find /public -type f -print
+  169  find /public -type f -name "kw*" -print
+  170  find /public -type f -name "kw?.txt" -print
+  171  find . * -print
+  172  echo *
+  173  echo "*"
+  174  find /public -type f -name "kw*.txt" -print
+  175  find /public -type f -name kw*.txt -print
+  176  find /public -type f -name kw\*.txt -print
+  177  ls -la /public/ucebnove/
+  178  find /public -type f -name kw* -size >150c -print
+  179  find /public -type f -name kw* -size +150c -print
+  180  find /public -type f -name kw* -size 150c -print
+  181  find /public -type f -name kw* -size 160c -print
+  182  find /public -type f -name kw* -or -size +150c -print
+  183  find /public -type f ( -name kw* -or -size +150c ) -print
+  184  find /public -type f \( -name kw* -or -size +150c \) -print
+  185  find /public -type f -name *.history
+  186  find /public -type f -name *.history -date 
+  187  find /public -type f -name *.history -mtime 14
+  188  find /public -type f -name *.history -mtime -14
+  189  tail /public/ucebnove/historia/grezo23092021-2.history
+  190* tail -n 3 /public/ucebnove/historia/grezo23092021-2.history 
+  191  find /public -type f -name *.history -mtime -14 | wc 
+  192  wc
+  193  wc /public/ucebnove/historia/grezo23092021-2.history
+  194  wc -l /public/ucebnove/historia/grezo23092021-2.history
+  195  wc -w /public/ucebnove/historia/grezo23092021-2.history
+  196  wc -c /public/ucebnove/historia/grezo23092021-2.history
+  197  find /public -type f -name *.history -mtime -14 | wc 
+  198  find /public -type f -name *.history -mtime -14
+  199  find /public -type f -name *.history -mtime -14 -print
+  200  find /public -type f -name *.history -mtime -14 -exec wc
+  201  man find 
+  202  find /public -type f -name *.history -mtime -14 -exec wc ;
+  203  echo "ahoj"
+  204  echo "ahoj" ;
+  205  history
+  206  find /public -type f -name *.history -mtime -14 -exec wc ;
+  207  man find 
+  208  find /public -type f -name *.history -mtime -14 -exec wc \;
+  209  man find 
+  210  wc /public/ucebnove/historia/grezo23092021-2.history
+  211  find /public -type f -name *.history -mtime -14
+  212  find /public -type f -name *.history -mtime -14 -exec wc {} \;
+  213  find /public -type f -name *.history -mtime -14 -exec wc \;
+  214  wc
+  215  find /public -type f -name *.history -mtime -14 -exec wc {} \;
+  216  find /public -type f -name *.history -mtime -14 -exec tail -n 3 {} \;
+  217  tail -n 3 /public/ucebnove/historia/grezo23092021-2.history /public/ucebnove/historia/grezo23092021.history
+  218  find /public -type f -name *.history -mtime -14 
+  219  find /public -type f -name *.history -mtime -14 | tail -n 3
+  220  find /public -type f -name *.history -mtime -14 | tail -n 1
+  221  find /public -type f -name *.history -mtime -14 | tail -n 0
+  222  find /public -type f -name *.history -mtime -14 | tail -n 1
+  223  find /public -type f -name *.history -mtime -14 | tail -n 2
+  224  find /public -type f -name *.history -mtime -14 | tail -n 3
+  225  tail -n 3 $(find /public -type f -name *.history -mtime -14)
+  226  bash
+  227  ps -xl
+  228  find /public -type f -name *.history -mtime -14
+  229  tail -n 3 $(find /public -type f -name *.history -mtime -14)
+  230  tail -n 3 /public/ucebnove/historia/grezo23092021-2.history /public/ucebnove/historia/grezo23092021.history
+  231  man find 
+  232  find /public -type f -name *.history -mtime -14 -exec tail -n 3 {} + \;
+  233  find /public -type f -name *.history -mtime -14 -exec tail -n 3 {} +
+  234  find /public -type f -name *.history -mtime -14 -exec tail -n 3 {} \;
+  235  man find 
+  236  tail -n 3 $(find /public -type f -name *.history -mtime -14)
+  237  find /public -type f -name *.history -mtime -14 -exec tail -n 3 {} \;
+  238  tail -n 3 /public/ucebnove/historia/grezo23092021-2.history /public/ucebnove/historia/grezo23092021.history
+  239  find /public -type f -name *.history -mtime -14 -exec tail -n 3 {} +

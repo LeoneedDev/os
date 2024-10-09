@@ -1,0 +1,309 @@
+History from root:
+------------------
+  173  man adduser
+  174  history
+  175  adduser testuser
+  176  ssh testuser@localhost
+  177  exit
+  178  ls
+  179  history
+  180  userdel testuser
+  181  cat passwd
+  182  cat /etc/passwd
+  183  exit
+  184  history
+  185  userdel testuser1
+  186  exit
+  187  vim /etc/ssh/sshd_config
+  188  systemctl restart ssh.service
+  189  systemctl restart sshd.service
+  190  exit
+  191  adduser testuser1
+  192  exit
+  193  vim /etc/ssh/sshd_config
+  194  exit
+  195  ls -la /public/
+  196  man ls
+  197  ls -lai /public/
+  199  echo
+  201  wc
+  202  exit
+  203  echo $PATH
+  204  less .bashrc 
+  205  man alias
+  206  help alias
+  207  alias -p
+  208  alias cls='clear'
+  209  cls
+  210  alias -p
+  211  exit
+  212  cls
+  213  alias
+  214  exit
+  215  man finger
+  216  finger
+  217  help finger
+  218  finger adamsevcik
+  219  who adamsevcik
+  220  who
+  221  man who
+  222  man who -a
+  223  who -a
+  224  last
+  225  w
+  226  w -a
+  227  who
+  228  man who
+  229  who -a
+  230  last
+  231  who
+  232  who -u
+  233  last
+  234  who
+  235  who -l
+  236  du
+  237  man du
+  238  man df
+  239  date
+  240  bc
+  241  exit
+  242  man cd
+  243  cd
+  244  help cd
+  245  help exit
+  246  ls
+  247  ls /public/
+  248  ls /public/ucebnove/
+  249  ls /public/ucebnove/historia/
+  250  mv test
+  251  mv test test
+  252  touch totojetest
+  253  ls
+  254  mv totojetest totojetestdva
+  255  ls
+  256  man touch
+  257  vim totojevimtest
+  258  ls
+  259  ls -la
+  260  vim
+  261  vim 
+  262  vim testik
+  263  history
+  264  man adduser
+  265  man useradd
+  266  adduser testprvy
+  267  ls /etc/passwd
+  268  vim /etc/passwd
+  269  man more
+  270  man less
+  271  less /etc/passwd
+  272  exit
+  273  groups
+  274  man addgroup
+  275  addgroup sudo testprvy
+  276  man addgroup
+  277  man usermod
+  278  man addgroup
+  279  man usermod
+  280  usermod -aG sudo testprvy
+  281  groups -a
+  282  groups
+  283  man groups
+  284  groups testprvy
+  285  exit
+  286  man dc
+  287  man cd
+  288  help cd
+  289  man exit
+  290  help exit
+  291  ls
+  292  mkdir druheCviko
+  293  cd druheCviko/
+  294  ls
+  295  man touch
+  296  touch testik
+  297  ls
+  298  ls -la
+  299  vim testik2
+  300  man adduser
+  301  man useradd
+  302  man adduser
+  303  adduser test123
+  304  \
+  305  exit
+  306  man more
+  307  man less
+  308  less /etc/passwd
+  309  man groups
+  310  groups
+  311  groups test123
+  312  man usermod
+  313  usermod -aG sudo test123
+  314  groups test123
+  315  exit
+
+17:00 - 19:00
+-------------
+    1  cat /dev/urandom 
+    2  ssh adamsevcik@localhost
+    3  ls /root/
+    4  man sudo
+    5  sudo ls /root/
+    6  exit
+    7  sudo ls /root/
+    8  less /etc/passwd
+    9  man bash
+   10  man ls
+   11  ls
+   12  touch SKOPIRUJMA
+   13  man cp
+   14  vim SKOPIRUJMA 
+   15  cp SKOPIRUJMA .
+   16  cp SKOPIRUJMA SKOPIRUJMA2
+   17  ls
+   18  cat SKOPIRUJMA SKOPIRUJMA2 
+   19  pwd
+   20  mkdir dalsiAdresar
+   21  ls
+   22  ls -la
+   23  cd /public/
+   24  pwd
+   25  cd /public/ucebnove/
+   26  pwe
+   27  cd /public/ucebnove/
+   28  pwd
+   29  cp SKOPRIJMA SKOPIRUJMA2
+   30  cp /home/testprvy/SKOPIRUJMA /home/testprvy/dalsiAdresar/SKOPIRUJMA3
+   31  ls /home/testprvy/dalsiAdresar/
+   32  ls ./
+   33  ls .
+   34  ls ../
+   35  ls ../../
+   36  ls ../../home/testprvy/
+   37  ls ~/
+   38  cp ~/SKOPIRUJMA ~/dalsiAdresar/SKOPIRUJMA4
+   39  ls ~/dalsiAdresar/
+   40  man cp
+   41  cd ~
+   42  ls
+   43  cd -
+   44  cd
+   45  ls
+   46  ls dalsiAdresar/
+   47  cp dalsiAdresar/ dalsiAdresar2/
+   48  cp -r dalsiAdresar/ dalsiAdresar2/
+   49  ls 
+   50  ls dalsiAdresar2/
+   51  man cp
+   52  man chmod
+   53  ls -la
+   54  man chmod
+   55  chmod go-r dalsiAdresar
+   56  ls -la
+   57  chmod go+r dalsiAdresar
+   58  ls -la
+   59  chmod go-rwx dalsiAdresar
+   60  ls -la
+   61  exit
+
+19:00 - 21:00
+-------------
+    1  ls /root
+    2  man sudo
+    3  sudo ls /root
+    4  exit
+    5  ls /root
+    6  sudo ls /root
+    7  history
+    8  ls /public/ucebnove/historia/
+    9  ls
+   10  ls -la
+   11  vim .bash_
+   12  vim .bash_history 
+   13  vim .profile 
+   14  vim .bashrc 
+   15  man bash
+   16  ls
+   17  vim test
+   18  cat test 
+   19  man cat
+   20  cp test test2
+   21  ls
+   22  cat test test2
+   23  cat test
+   24  less /public/zaciatocnik.txt 
+   25  cat /public/zaciatocnik.txt 
+   26  ls /
+   27  ls /dev/
+   28  cat /dev/random
+   29  man man
+   30  vim
+   31  less /public/zaciatocnik.txt 
+   32  man cp
+   33  ls
+   34  cp test test3
+   35  ls
+   36  cat test
+   37  cat test3
+   38  pwd
+   39  cd /
+   40  cp test test3
+   41  cp /home/test /home/test4
+   42  cp /home/test123/test /home/test123/test4
+   43  ls /home/test123
+   44  cd /public/
+   45  ls -la
+   46  pwd
+   47  cd ucebnove/
+   48  pwd
+   49  cp ../../home/test123/test ../../home/test123/test55
+   50  ls ~/
+   51  cp ~/test ~/test56
+   52  cd ~
+   53  cd -
+   54  ls
+   55  mkdir
+   56  mkdir tesik
+   57  cp test tesik/
+   58  cp test2 tesik/
+   59  cp test4 tesik/
+   60  ls
+   61  ls tesik/
+   62  cp tesik/ testik/
+   63  man cp
+   64  cp -r tesik/ testik/
+   65  ls
+   66  man chmod
+   67  ls -la
+   68  ls -la /dev/
+   69  ls -ols
+   70  ls -la
+   71  ls
+   72  ls -la
+   73  man chmod
+   74  chmod 777 test
+   75  ls
+   76  ls -la
+   77  chmod a=r
+   78  chmod a=r test
+   79  ls -la
+   80  chmod ug+w test
+   81  ls -la
+   82  chmod ug+x test
+   83  ls -la
+   84  chmod g-x test
+   85  ls -la
+   86  ls /public/
+   87  ls
+   88  ls /public/
+   89  ls /public/ucebnove/
+   90  ls /public/ucebnove/historia/
+   91  less /public/ucebnove/historia/grezo27092023.history 
+   92  less /public/ucebnove
+   93  ls /public/ucebnove/
+   94  cd ~
+   95  alias
+   96  echo $path
+   97  cat /dev/random 
+  100  exit
+

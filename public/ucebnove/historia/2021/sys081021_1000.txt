@@ -1,0 +1,109 @@
+  591  history  > ../aaaa.txt
+  592  man grep
+  593  grep PATTERNS
+  594  unalias grep
+  595  grep PATTERNS
+  596  grep sim /etc/passwd
+  597  grep root /etc/passwd
+  598  grep root /etc/passwd /etc/passwd
+  599  man grep
+  600  grep '.*'
+  601  grep 'a+'
+  602  grep -W 'a+'
+  603  grep -E 'a+'
+  604  grep --color -E 'a+'
+  605  help alias
+  606  alias grep="grep --color"
+  607  cd
+  608  ZACIATOK DRUHEHO CVIKA
+  609  ll
+  610  la
+  611  vim .bashrc 
+  612  man grep
+  613  sudo apt install wordlist
+  614  sudo apt install wamerican-huge
+  615  dpkg -L wamerican-huge
+  616  vim /usr/share/dict/american-english-huge
+  617  grep '\<a' /usr/share/dict/american-english-huge
+  618  grep -E '\<a' /usr/share/dict/american-english-huge
+  619  unalias grep
+  620  grep --color -E '\<a' /usr/share/dict/american-english-huge
+  621  grep --color -E '\<a.*e\>' ? /usr/share/dict/american-english-huge
+  622  grep --color -E '\<a.*e\>' /usr/share/dict/american-english-huge
+  623  grep --color -E '\<a.*e\>'
+  624  grep --color -E '\<a\w*e\>'
+  625  grep --color -Ew '\<a.*e\>'
+  626  grep --color -wE '\<a.*e\>'
+  627  grep --color -E 'a.a' /usr/share/dict/american-english-huge
+  628  grep --color -E 'a....a' /usr/share/dict/american-english-huge
+  629  grep --color -E 'a.{4}a' /usr/share/dict/american-english-huge
+  630  grep --color -E 'a.{2,4}a' /usr/share/dict/american-english-huge
+  631  grep --color -E '^a.*$' /usr/share/dict/american-english-huge
+  632  grep --color -E '^a.*r$' /usr/share/dict/american-english-huge
+  633  grep --color -E '(a.*){3}' /usr/share/dict/american-english-huge
+  634  grep --color -E '\<(.).*\1\>' /usr/share/dict/american-english-huge
+  635  grep --color -E '.{3}'  /usr/share/dict/american-english-huge
+  636  grep --color -E '(.)\1{2}'  /usr/share/dict/american-english-huge
+  637  grep --color -E '[abc]{3}'  /usr/share/dict/american-english-huge
+  638  grep --color -E '[^a-zA-Z0-9]{3}'  /usr/share/dict/american-english-huge
+  639  grep --color -E 'ab|bc'  /usr/share/dict/american-english-huge
+  640  cd ps_cat/
+  641  ll
+  642  cp ps_cat_teplate.c ps_cat_druhe.c
+  643  vim ps_cat_druhe.c
+  644  cat ps_cat_druhe.c /etc/passwd
+  645  fg
+  646  man 2 open
+  647  man 2 read
+  648  man 2 write
+  649  fg
+  650  ps
+  651  ls /proc/$PID/
+  652  ls /proc/self
+  653  ll /proc/self/fd
+  654  fg
+  655  ll /proc/self/fd
+  656  fg
+  657  sudo apt install gcc
+  658  gcc -Wall ps_cat_druhe.c -o ps_cat
+  659  ./ps_cat /etc/passwd ps_cat_druhe.c 
+  660  fg
+  661  man 2 open
+  662  fg
+  663  man 2 read
+  664  fg
+  665  gcc -Wall ps_cat_druhe.c -o ps_cat
+  666  ./ps_cat ps_cat_druhe.c /etc/passwd
+  667  fg
+  668  ./ps_cat ps_cat_druhe.c /etc/passwd
+  669  fg
+  670  ./ps_cat ps_cat_druhe.c /etc/passwd
+  671  gcc -Wall ps_cat_druhe.c -o ps_cat
+  672  ./ps_cat ps_cat_druhe.c /etc/passwd
+  673  fg
+  674  ./ps_cat ps_cat_druhe.c /etc/passwd
+  675  fg
+  676  ./ps_cat ps_cat_druhe.c /etc/passwd
+  677  fg
+  678  man read
+  679  fg
+  680  gcc -Wall ps_cat_druhe.c -o ps_cat
+  681  ./ps_cat ps_cat_druhe.c /etc/passwd
+  682  fg
+  683  cat
+  684  fg
+  685  gcc -Wall ps_cat_druhe.c -o ps_cat
+  686  ./ps_cat ps_cat_druhe.c /etc/passwd
+  687  ./ps_cat
+  688  fg
+  689  man cat
+  690  fg
+  691  gcc -Wall ps_cat_druhe.c -o ps_cat
+  692  ./ps_cat
+  693  ./ps_cat -
+  694  ./ps_cat - -
+  695  cat - -
+  696  strace ./ps_cat - -
+  697  fg
+  698  cat ps_cat_druhe.c 
+  699  history | tee sys081021_0800.txt sys081021_1000.txt

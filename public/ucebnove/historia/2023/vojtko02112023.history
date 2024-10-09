@@ -1,0 +1,172 @@
+ 1052  mkdir sed
+ 1053  cd sed
+ 1054  cp /public/priklady/sed.txt .
+ 1055  cp /public/samples/list* .
+ 1056  man sed
+ 1057  info sed
+ 1058  cp /public/samples/sedinput.txt 
+ 1059  cp /public/samples/sedinput.txt .
+ 1060  sed sedinput.txt
+ 1061  sed '' sedinput.txt
+ 1062  sed 'p' sedinput.txt
+ 1063  sed -n 'p' sedinput.txt
+ 1064  sed -n '1 p' sedinput.txt
+ 1065  sed '1 p' sedinput.txt
+ 1066  sed '=' sedinput.txt
+ 1067  sed -n '=' sedinput.txt
+ 1068  sed -n '=;p' sedinput.txt
+ 1069  sed 'i vkladam pred riadok' sedinput.txt
+ 1070  sed '5 i vkladam pred riadok' sedinput.txt
+ 1071  cat sedinput.txt 
+ 1072  sed '5 a vkladam za riadok' sedinput.txt
+ 1073  sed '5 c vkladam za riadok' sedinput.txt
+ 1074  sed '5 c vkladam namiesto riadok' sedinput.txt
+ 1075  sed '5 s/^$/vkladam namiesto riadok \0' sedinput.txt
+ 1076  sed '5 s/.*/vkladam namiesto riadok \0' sedinput.txt
+ 1077  sed '5 s/.*/vkladam namiesto riadok \0/' sedinput.txt
+ 1078  sed 'd' sedinput.txt
+ 1079  sed '3d' sedinput.txt
+ 1080  sed 's/hello/world/' sedinput.txt
+ 1081  sed 's/hello/world/g' sedinput.txt
+ 1082  less /public/samples/mojscript.sed 
+ 1083  less list.txt 
+ 1084  sed '7,10d' list.txt 
+ 1085  sed '3s/Zuzka/Lucka/' list.txt
+ 1086  sed '3s/Zuzka/Lucka/g' list.txt
+ 1087  sed '3s/Zuzka/Lucka/2' list.txt
+ 1088  sed '3s/Zuzka\(, ja Ta milujem\)/Lucka\1/' list.txt
+ 1089  sed '3s/Zuzka/\U/' list.txt
+ 1090  sed '3s/Zuzka/\U\0/' list.txt
+ 1091  sed '3s/Zuzka/\U\0/g' list.txt
+ 1092  sed 's/Zuzka/\U\0/g' list.txt
+ 1093  sed 's/Zuzka/\U5/g' list.txt
+ 1094  sed 's/Zuzka/\Ulenka/g' list.txt
+ 1095  sed 's/Zuzka/\U\0/g' list.txt
+ 1096  sed 's/Zuzka/\~\0/g' list.txt
+ 1097  sed 's/Zuzka/\i\0/g' list.txt
+ 1098  sed 's/Zuzka/\I\0/g' list.txt
+ 1099  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+ 1100  sed 's/\(Zuzka/z'U'zka/g' list.txt
+ 1101  sed 's/Zuzka/z'U'zka/g' list.txt
+ 1102  sed 's/Zuzka/z'U'ZKA/g' list.txt
+ 1103  sed 's/Zuzka/z' U'ZKA/g' list.txt
+ 1104  man sed
+ 1105  sed -E 's/(Z)(uzka)/\L\1\U\2/g' list.txt
+ 1106  sed -E 's/ZUzka/\L\1\U\2/g' list.txt
+ 1107  sed -E 's/(ZU)(zka)/\L\1\U\2/g' list.txt
+ 1108  sed 's/^[mM]ozno\>/ne\L\0/' list.txt 
+ 1109  sed 's/^[mM]ozno\>/ne\0/' list.txt 
+ 1110  sed 's/\<[mM]ozno\>/ne\0/g' list.txt 
+ 1111  sed -n 'p;n' list.txt 
+ 1112  sed '3~2d' list.txt 
+ 1113  sed '7~2d' list.txt 
+ 1114  sed -n '7,16p' list.txt | sed -n '1~2p'
+ 1115  sed -n '7,16p' list.txt | sed -n '2~2p'
+ 1116  sed -n 'n;7,16p' list.txt
+ 1117  sed -n '7,16p;n' list.txt
+ 1118  sed -n '=;7,16p' list.txt
+ 1119  sed -n '7,16p' list.txt
+ 1120  sed -n '7,16p' list.txt | sed '=;p'
+ 1121  sed -n '7,16p' list.txt | sed -n '=;p'
+ 1122  sed -n '7,16p' list.txt | sed -n '=;p' | sed 'N;s/\n/ /'
+ 1123  sed -n '7,16p' list.txt | awk '{print NR,$0}'
+ 1124  ls -la ../awk/
+ 1125  ls -la
+ 1126  sed sedinput.txt
+ 1127  sed '' sedinput.txt
+ 1128  sed -n '' sedinput.txt
+ 1129  sed -n 'p' sedinput.txt
+ 1130  sed 'p' sedinput.txt
+ 1131  sed '=' sedinput.txt
+ 1132  sed '=;p' sedinput.txt
+ 1133  sed -n '=;p' sedinput.txt
+ 1134  sed 'i vkladam pred riadok' sedinput.txt
+ 1135  sed '3i vkladam pred riadok' sedinput.txt
+ 1136  sed '3a vkladam za riadok' sedinput.txt
+ 1137  sed '3c nahradzam za riadok' sedinput.txt
+ 1138  sed '3s/.*/nahradzam za riadok \0' sedinput.txt
+ 1139  sed '3s/.*/nahradzam za riadok \0/' sedinput.txt
+ 1140  sed '3d' sedinput.txt 
+ 1141  sed 'd' sedinput.txt 
+ 1142  sed 's/hello/world/' sedinput.txt
+ 1143  sed 's/hello/world/g' sedinput.txt
+ 1144  sed 's/hello/world/2' sedinput.txt
+ 1145  sed 's/hello/world/2,3' sedinput.txt
+ 1146  sed 's/hello/world/23' sedinput.txt
+ 1147  sed 's/hello/world/2 3' sedinput.txt
+ 1148  sed 's/hello/world/2' sedinput.txt
+ 1149  less list.txt 
+ 1150  sed '7,10d' list.txt 
+ 1151  sed '' list.txt 
+ 1152  sed '7,10d' list.txt 
+ 1153  sed -n '1,6p;,11,$p' list.txt 
+ 1154  sed -n '1,6p;11,$p' list.txt 
+ 1155  sed 's/Zuzka/Lucka/g' sedinput.txt 
+ 1156  sed 's/Zuzka/Lucka/g' list.txt 
+ 1157  sed '3s/Zuzka/Lucka/g' list.txt 
+ 1158  sed 's/Zuzka/Lucka/2' list.txt 
+ 1159  sed 's/Zuzka, ja Ta milujem./Lucka, ja Ta milujem./2' list.txt 
+ 1160  sed 's/Zuzka, ja Ta milujem./Lucka, ja Ta milujem./' list.txt 
+ 1161  sed 's/Zuzka\(, ja Ta milujem.\)/Lucka\1/' list.txt
+ 1162  sed -E 's/Zuzka(, ja Ta milujem.)/Lucka\1/' list.txt
+ 1163  sed -E 's/Zuzka/\U\0/' list.txt
+ 1164  sed -E 's/Zuzka/\U\0/g' list.txt
+ 1165  sed -E 's/Zuzka/\U&/g' list.txt
+ 1166  sed -E 's/\(Zuzka\)/\U\1/g' list.txt
+ 1167  sed 's/\(Zuzka\)/\U\1/g' list.txt
+ 1168  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+ 1169  sed 's/\(Z\)\(uzka\)/\l\1\U\2/g' list.txt
+ 1170  sed 's/\(Z\)\(uzka\)/\l\U\2/g' list.txt
+ 1171  sed 's/\(Zuzka\)/\l\U\0/g' list.txt
+ 1172  sed 's/\(Zuzka\)/\U\1\0/g' list.txt
+ 1173  sed 's/\(Zuzka\)/\U\l\0/g' list.txt
+ 1174  sed 's/\(ZUzka\)/\U\l\0/g' list.txt
+ 1175  vim list.txt 
+ 1176  sed 's/\(ZUzka\)/\U\l\0/g' list.txt
+ 1177  sed 's/\(ZUzka\)/\U\l\l\0/g' list.txt
+ 1178  sed 's/\<[Mm]ozno\>/ne\0/g' list.txt
+ 1179  sed 's/\<mozno\>/ne\0/gI' list.txt
+ 1180  sed -n 'n;7,16p' list.txt
+ 1181  sed -n '7,16p;n' list.txt
+ 1182  sed -n '1,6d;p;17,$d' list.txt
+ 1183  sed -n '1,6d;7,16p;17,$d' list.txt
+ 1184  sed -n '1,6d;17,$d' list.txt
+ 1185  sed -n '1,6d;p;17,$d' list.txt | sed -n '2~2p'
+ 1186  sed -n '7,16p' list.txt | sed -n '2~2p'
+ 1187  sed -n '7,16p' list.txt | sed -n '1~2p'
+ 1188  sed -n '7,$p' list.txt | sed -n '1~2p'
+ 1189  sed -n '$-7,$p' list.txt | sed -n '1~2p'
+ 1190  sed -n '7,$p' list.txt
+ 1191  sed -n 'n;7,$p' list.txt
+ 1192  sed -n '$-7,$p' list.txt | sed -n '0~2p'
+ 1193  sed -n '7,$p' list.txt | sed -n '0~2p'
+ 1194  sed -n '7,$p' list.txt | sed -n '2~2p'
+ 1195  sed -n '=' list.txt
+ 1196  sed '=' list.txt
+ 1197  grep mozno list.txt | awk '{print NR,$0}'
+ 1198  grep mozno list.txt | sed '=;p'
+ 1199  grep mozno list.txt | sed -n '=;p'
+ 1200  grep mozno list.txt | sed -n -e '=;p' -e 'N;s/\n/ /'
+ 1201  grep mozno list.txt | sed -n -e '=;p' | sed -e 'N;s/\n/ /'
+ 1202  grep mozno list.txt | sed -n '=;p' | sed 'N;s/\n/ /'
+ 1203  sed -n 'n;7,16=;p' | sed 'N;s/\n/ /'
+ 1204  sed -n '7,16=;p' | sed 'N;s/\n/ /'
+ 1205  sed -n '7,16=;p' list.txt | sed 'N;s/\n/ /'
+ 1206  sed -n '7,16;=;p' list.txt | sed 'N;s/\n/ /'
+ 1207  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /'
+ 1208  sed -n '7,16p' list.txt | sed 'N;s/\n/ /'
+ 1209  sed -n '7,16p' list.txt | sed '=' | sed 'N;s/\n/ /'
+ 1210  sed -n '7,16p' list.txt | sed '=' | sed 'N;N;s/\n/ /'
+ 1211  sed -n '7,16p' list.txt | sed '=' | sed 'N;N;s/\n/ /g'
+ 1212  sed -n '7,16p' list.txt | sed '=' | sed 'N;N;N;s/\n/ /g'
+ 1213  cd ..
+ 1214  cd awk/
+ 1215  ls -la
+ 1216  $(ls)
+ 1217  cd sed/
+ 1218  less sed.txt 
+ 1219  man sed\
+ 1220  man sed
+ 1221  less sed.txt 
+ 1222  man sed
+ 1223  less sed.txt 
