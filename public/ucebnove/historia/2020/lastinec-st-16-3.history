@@ -1,0 +1,113 @@
+  434  tail /public/ucebnove/historia/lastinec-st-16-2.history 
+  435  cd /public/
+  436  ls
+  437  cd samples/
+  438  ls
+  439  ls -l subor100k 
+  440  head  subor100k 
+  441  head access.log 
+  442  less access.log 
+  443  less -S access.log 
+  444  man grep
+  445  grep safari access.log 
+  446  alias "grep=grep --color"
+  447  grep safari access.log \
+  448  grep safari access.log
+  449  grep -i safari access.log
+  450  grep safari access.log
+  451  grep -w safari access.log
+  452  grep -w google access.log
+  453  grep google access.log
+  454  grep g..gle access.log
+  455  grep [123] access.log
+  456  grep [0-9a-z] access.log
+  457  ls
+  458  grep HT*P access.log
+  459  grep 20+ access.log
+  460  grep 20\+ access.log
+  461  grep '20\+' access.log
+  462  grep -E '20+' access.log
+  463  grep -E '0{2}' access.log
+  464  grep -E '0{3,4}' access.log
+  465  grep -E '([^0]*0){3}' access.log
+  466  grep -E '^38' access.log
+  467  grep -E '38$' access.log
+  468  date
+  469  watch date
+  470  grep -E "(200)" access.log 
+  471  grep -E "GET.*HTTP/.* 200" access.log 
+  472  grep -E "GET[a-z]*HTTP/.* 200" access.log 
+  473  grep -E "GET [a-z]*HTTP/.* 200" access.log 
+  474  grep -E "GET [a-z]* HTTP/.* 200" access.log 
+  475  grep -E "GET [a-z/]* HTTP/.* 200" access.log 
+  476  grep -E "(200)" access.log | wc -l
+  477  head access.log 
+  478  tail access.log 
+  479  grep -E ".*19/May.*GET.*HTTP/.* 200" access.log 
+  480  grep -E "[19/May.*GET.*HTTP/.* 200" access.log 
+  481  grep -E "\[19/May.*GET.*HTTP/.* 200" access.log 
+  482  ls
+  483  zgrep auth.log.2.gz 
+  484  zgrep "." auth.log.2.gz 
+  485  zgrep "." auth.log.2.gz | head
+  486  zgrep -o 'Sep 22.*Failed password' file | wc -l
+  487  zgrep -o 'Sep 22.*Failed password' auth.log.2.gz | wc -l
+  488  zgrep -o 'Sep 22.*Failed password' auth.log.2.gz | less
+  489  man grep
+  490  zgrep “Sep 22 .* Failed Password” auth.log.2.gz | wc-l
+  491  zgrep "Sep 22 .* Failed Password" auth.log.2.gz | wc-l
+  492  zgrep "Sep 22 .* Failed Password" auth.log.2.gz | wc -l
+  493  zgrep "Sep 22 .* Failed Password" auth.log.2.gz | less
+  494  zgrep "Sep 22 .* Failed Password" auth.log.2.gz
+  495  zgrep "Sep 22 .* Failed password" auth.log.2.gz
+  496  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz
+  497  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | wc -l
+  498  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11
+  499  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq
+  500  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c
+  501  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c | sort -rn | head -1
+  502  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c | sort -rn | head -1 | cut -d" " -f2
+  503  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c | sort -rn | head -1 | tr -s ' ' | cut -d" " -f2
+  504  zgrep "Sep 22 .* Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c | sort -rn | head -1 | tr -s ' ' | cut -d" " -f3
+  505  zgrep "Invalid user" auth.log.2.gz 
+  506  date
+  507  watch date
+  508  zgrep "Invalid user" auth.log.2.gz | cut -d " " -f8 |  sort | uniq
+  509  cd
+  510  find /public/ type -d
+  511  find /public/ -type -d
+  512  find /public/ -type d
+  513  find /public/ -type f
+  514  find /public/ -type f -size +10k
+  515  find /public/ -type f -size +10k -name *.txt
+  516  find /public/ -type f -size +10k -name "*.txt"
+  517  find /public/ -type f -size +10k -name "*.txt" -exec grep -w a {} \;
+  518  man find
+  519  find /public/ -type f -mtime -1
+  520  cd adresar/
+  521  ls
+  522  rm *.sh
+  523  rm x.bc
+  524  cp /public/priklady/[1-4].sh
+  525  cp /public/priklady/[1-4].sh .
+  526  ls
+  527  cat 1.sh 
+  528  bash 1.sh 
+  529  chmod +x 1.sh 
+  530  1.sh
+  531  echo $PATH
+  532  ./1.sh 
+  533  less /public/priklady/x.bc 
+  534  echo "1+1" | bc
+  535  less /public/priklady/x.bc 
+  536  /public/priklady/x.bc 
+  537  bc /public/priklady/x.bc 
+  538  man bc
+  539  sudo apt-get install bc
+  540  su root
+  541  sudo su root
+  542  find "*.pdf"
+  543  find /public "*.pdf"
+  544  find /public -name "*.pdf"
+  545  cd
+  546  history > history/lastinec-st-16-3.history

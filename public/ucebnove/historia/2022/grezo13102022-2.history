@@ -1,0 +1,151 @@
+  888  clear
+  889  ls | grep pos
+  890  cd cvicenie4/
+  891  ls | grep pos
+  892  echo ahoj
+  893  ls | grep pos
+  894  echo ahoj
+  895  history
+  896  ll
+  897  ls
+  898  echo $PATH
+  899  which ls
+  900  whereis ls
+  901  ls
+  902  help while
+  903  while [ 1 ]; do echo zijem; sleep 10; done
+  904  jos
+  905  jobs
+  906  bg
+  907  jobs
+  908  cat spamer.sh 
+  909  wall hello
+  910  jibs
+  911  jobs
+  912  while [ 1 ]; do fortune | cowsay; sleep 10; done
+  913  help for
+  914  ls -l s
+  915  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  916  help for
+  917  help
+  918  while [ 1 ]; do fortune | cowsay; sleep 10; done
+  919  help for 
+  920  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+  921  veta="ahoj svet"
+  922  pocet=3
+  923  echo $pocet $veta
+  924  echo $pocet     $veta
+  925  echo "$pocet    $veta"
+  926  echo '$pocet    $veta'
+  927  echo \$pocet    \$veta
+  928  echo ""
+  929  echo -n ""
+  930  while [ $pocet -gt 0 ]; do         echo $pocet $veta;         echo $pocet     $veta;         echo "$pocet    $veta";         echo '$pocet    $veta';         echo \$pocet    \$veta;         echo "";         ((pocet--)); done
+  931  f="SUBOR AHOJ"
+  932  echo "$f" | tr 'A-Z' 'a-z'
+  933  echo $f
+  934  mv s S
+  935  ll
+  936  ls
+  937  mv S s
+  938  ls
+  939  echo $f
+  940  echo $(echo "$f" | tr A-Z a-z)
+  941  echo "$f" | tr 'A-Z' 'a-z'
+  942  f="SUBOR          AHOJ"
+  943  echo "$f" | tr 'A-Z' 'a-z'
+  944  echo $f | tr 'A-Z' 'a-z'
+  945  echo $(echo "$f" | tr A-Z a-z)
+  946  echo "$f" | tr 'A-Z' 'a-z'
+  947  echo "$(echo "$f" | tr A-Z a-z)"
+  948  echo $(echo "$f" | tr A-Z a-z)
+  949  echo "$(echo "$f" | tr A-Z a-z)"
+  950  clear
+  951  ls | grep pos
+  952  echo ahoj
+  953  echo $path
+  954  echo $PATH
+  955  man while
+  956  help while
+  957  while [ 1 ]; do echo zijem; sleep 10; done
+  958  jobs
+  959  bg
+  960  jobs
+  961  ./y.sh 
+  962  fg
+  963  bg
+  964  jobs
+  965  kill %1
+  966  ./y.sh &
+  967  jobs
+  968  kill %1
+  969  \\
+  970  jobs
+  971  ps
+  972  kill %2
+  973  jobs
+  974  cat spamer.sh 
+  975  wall "Ja len spamujem"
+  976  hexdump -c /dev/urandom 
+  977  wall "Ja len spamujem"
+  978  ls
+  979  cat process.sh 
+  980  chmod +x process.sh 
+  981  ./process.sh &
+  982  ./s &
+  983  jobs
+  984  \\
+  985  ./s &
+  986  cat s
+  987  ll
+  988  ./y.sh 
+  989  ./y.sh &
+  990  jobs
+  991  kill %1
+  992  kill %2
+  993  bash cow.sh 
+  994  help
+  995  d="/public/prednasky"
+  996  echo -n $d
+  997  ls $d | wc -l
+  998  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  999  #podobne ako v C
+ 1000  #     init  podm  vyraz
+ 1001  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+ 1002  veta="ahoj svet"
+ 1003  pocet=3
+ 1004  ((pocet--))
+ 1005  echo $pocet
+ 1006  echo $pocet $veta
+ 1007  echo $pocet     $veta
+ 1008  echo "$pocet    $veta"
+ 1009  echo '$pocet    $veta'
+ 1010  echo \$pocet    \$veta
+ 1011  echo \$pocet\ \ \ \ \$veta
+ 1012  #veta=ahoj svet
+ 1013  veta="ahoj svet"
+ 1014  pocet=3
+ 1015  while [ $pocet -gt 0 ]; do         echo $pocet $veta;         echo $pocet     $veta;         echo "$pocet    $veta";         echo '$pocet    $veta';         echo \$pocet    \$veta;         echo "";         ((pocet--)); done
+ 1016* 
+ 1017  echo *
+ 1018  echo [A-Z]*
+ 1019  man tr
+ 1020  echo $f
+ 1021  echo "$f"
+ 1022  echo "$f" | tr 'A-Z' 'a-z'
+ 1023  echo $f | tr 'A-Z' 'a-z'
+ 1024  ls
+ 1025  mv s S
+ 1026  ls
+ 1027  mv S s
+ 1028  ls
+ 1029  f="VELKY SUBOR"
+ 1030  echo "$f" "$(echo "$f" | tr A-Z a-z)"
+ 1031  echo $f | tr 'A-Z' 'a-z'
+ 1032  echo "$f" $(echo "$f" | tr A-Z a-z)
+ 1033  f="VELKY     SUBOR"
+ 1034  echo "$f" $(echo "$f" | tr A-Z a-z)
+ 1035  echo "$f" "$(echo "$f" | tr A-Z a-z)"
+ 1036  echo "$f" "`echo "$f" | tr A-Z a-z`"
+ 1037  history 
+ 1038  history | tail -300 > grezo13102022-2.history

@@ -1,0 +1,6 @@
+#podobne ako v C
+#     init  podm  vyraz
+for (( i=0 ; i<5 ; i++ ))
+do
+    echo "opakovanie $i"
+done

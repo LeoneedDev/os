@@ -1,0 +1,100 @@
+    1  ls /public/
+    2  ls /public/prednasky/
+    3  ls /public/ucebnove/historia/
+    4  history
+    5  help history
+    6  help history | less
+    7  man history
+    8  help history
+    9  vim ~/.bash_history 
+   10  logout
+   11  cut --help | less
+   12  man 5 passwd
+   13  cut -d : -f1
+   14  cut -d : -f1 /etc/passwd
+   15  cut -d : -f1,7 /etc/passwd
+   16  ls
+   17  cat ahoj.txt 
+   18  tr "j" "y" ahoj.txt 
+   19  cat ahoj.txt | tr "j" "y"
+   20  echo "^------ TOTO NIE JE SPRAVNE, NEZNEUZIVAME MACKY!"
+   21  tr "j" "y" < ahoj.txt 
+   22* 
+   23  tr "j" "y" < ahoj.txt > ahoy.txt
+   24  ls
+   25  cat ahoy.txt 
+   26  tr "j" "y" < ahoj.txt >> ahoy.txt
+   27  wc -l ahoy.txt 
+   28  who
+   29  last
+   30  w
+   31  last | cut -d" " -f1 
+   32  last | cut -d" " -f1 | sort
+   33  last | cut -d" " -f1 | sort | uniq
+   34  last | cut -d" " -f1 | head
+   35  last | cut -d" " -f1 | tail
+   36  man tail
+   37  last | cut -d" " -f1 | tail -n +1
+   38  last | cut -d" " -f1 | head -n +1
+   39  man head
+   40  last | cut -d" " -f1 | head -n -1
+   41  last | cut -d" " -f1 | head -n -2
+   42  last | cut -d" " -f1 | head -n -2 | sort | uniq
+   43  last | cut -d" " -f1 | head -n -2 | sort | uniq -c
+   44  locate last
+   45  which last
+   46  find / -name wc*
+   47  find / -name kw*
+   48  find / -name kw* | grep -v find:
+   49  find / -name "kw*" | grep -v find:
+   50  find / -name "kw*" > found.txt
+   51  cat found.txt 
+   52  find / -name "kw*" &| grep -v find:
+   53* find / -name "kw*" 
+   54  find / -name "kw*" 2> error.txt
+   55  cat error.txt 
+   56  find / -name "kw*" 1> found.txt 2> error.txt
+   57  find / -name "kw*" 1> found.txt 2>> error.log
+   58  cat error.log
+   59* ca
+   60  cat found.txt 
+   61  find / -name "kw*" 2>&1 found.txt
+   62  find / -name "kw*" 2>&1 >found.txt
+   63  find / -name "kw*" >found.txt 2>&1 
+   64  cat found.txt 
+   65  find / -name "kw*" &| grep -v find:
+   66  find / -name "kw*" |& grep -v find:
+   67  cd /public/ucebnove/kw2.txt 
+   68  cd /public/ucebnove/
+   69  cat kw2.txt 
+   70  ps
+   71  ls
+   72  cd
+   73  date
+   74  man find
+   75  find /public -name "kw*"
+   76  find /public -name "kw*" -type f
+   77  find /public -name "[A-Z]*" -type f
+   78  man find
+   79  cd /public/ucebnove/
+   80  ls kw[0-9].txt
+   81  ls kw*.txt
+   82  ls kw?.txt
+   83  ls *
+   84  ls
+   85  find /public/ -name "[A-Z]*"
+   86  find /public/ -name "[A-Z]*" -size +200
+   87  find /public/ -name "[A-Z]*" -size +200c
+   88  find /public/ -type d
+   89  ls
+   90  stat kw2.txt 
+   91  find /public/ -type d -mtime 7
+   92  man find
+   93  find /public/ -type d -mtime +7
+   94  find /public/ -type d -mtime -7
+   95  man find
+   96* 
+   97  find /public/ -type d -mtime -7 -printf "%p %t\n"
+   98  find /public/ -type d -mtime +7 -printf "%p %t\n"
+   99  history | sudo tee > /public/ucebnove/historia/lastinec$(date +%m%d%Y).history 
+  100  history | sudo tee > /tmp/lastinec$(date +%m%d%Y).history 

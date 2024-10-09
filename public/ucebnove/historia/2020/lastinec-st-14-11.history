@@ -1,0 +1,70 @@
+----- screen 1 ----- 
+1482  socat UNIX-LISTEN:/tmp/chat.sock -
+ 1483  less sockety.txt 
+ 1484  man 2 socket
+ 1485  man 7 unix
+ 1486  less sockety.txt 
+ 1487  sudo socat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+ 1488  sucat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+ 1489  socat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+ 1490  less sockety.txt 
+ 1491  echo "GET /" | socat OPENSSL:www.dennikn.sk:443 -
+ 1492  echo "GET /" | socat OPENSSL:www.fiit.stuba.sk:443 -
+ 1493  echo "GET /" | socat -d -d OPENSSL:www.fiit.stuba.sk:443 -
+ 1494  socat -d -d OPENSSL:www.fiit.stuba.sk:443 -
+ 1495  socat www.fiit.stuba.sk:80 -
+ 1496  socat TCP-4:www.fiit.stuba.sk:80 -
+ 1497  socat TCP4:www.fiit.stuba.sk:80 -
+ 1498  less sockety.txt 
+ 1499  ip addr show
+ 1500  less sockety.txt 
+ 1501  socat TCP4-LISTEN:1234 -
+ 1502  vyborne :)
+ 1503  less sockety.txt 
+ 1504  vim web.sh 
+ 1505  socat -d -d TCP-listen:8080,reuseaddr SYSTEM:./web.sh
+ 1506  ls
+ 1507  less web.log 
+ 1508  socat -d -d TCP-listen:8080,reuseaddr SYSTEM:./web.sh
+ 1509  socat -d -d TCP-listen:8080,reuseaddr,fork SYSTEM:./web.sh
+ 1510  socat -d -d TCP-listen:8080,reuseaddr SYSTEM:./webserver.sh &
+ 1511  cd
+ 1512  cd priklady/sockety/
+ 1513  socat -d -d TCP-listen:8080,reuseaddr,fork SYSTEM:./web.sh
+ 1514  history > 14.1.history
+----- screen 2 ----- 
+1482  man socat
+ 1483  ls /tmp/chat.sock 
+ 1484  ls -l /tmp/chat.sock 
+ 1485  file /tmp/chat.sock
+ 1486  socat UNIX:/tmp/chat.sock -
+ 1487  ll /tmp
+ 1488  ll /tmp/back.sock 
+ 1489  socat UNIX:/tmp/back.sock -
+ 1490  less /etc/services 
+ 1491  apropos service
+ 1492  apropos service | less
+ 1493  man services
+ 1494  services
+ 1495  man socat
+ 1496  netstat -tnl
+ 1497  socat TCP4:localhost:1234
+ 1498  socat TCP4:localhost:1234 -
+ 1499  ip a | grep inet
+ 1500  socat TCP4:172.17.0.220:1234 -
+ 1501  echo "GET /subor.txt HTTP/1.1" | socat TCP4:localhost:8080 -
+ 1502  echo "GET /inysubor.txt HTTP/1.1" | socat TCP4:localhost:8080 -
+ 1503  echo "GET /subor.txt HTTP/1.1" | socat TCP4:localhost:8080 -
+ 1504  ls
+ 1505  echo "GET /index.html HTTP/1.1" | socat TCP4:localhost:8080 -
+ 1506  cat index.html 
+ 1507  cd 
+ 1508  cd priklady/
+ 1509  cp -r /public/priklady/sockety/ .
+ 1510  cd sockety/
+ 1511  ls
+ 1512  host
+ 1513  host www.fiit.stuba.sk
+ 1514  echo "GET /index.html HTTP/1.1" | socat TCP4:www.fiit.stuba.sk:80 -
+ 1515  echo -en "GET /index.html HTTP/1.1\r\r" | socat TCP4:www.fiit.stuba.sk:80 -
+ 1516  history > 14.2.history

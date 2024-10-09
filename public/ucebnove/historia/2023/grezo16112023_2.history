@@ -1,0 +1,50 @@
+ 1997  ps aux --forest
+ 1998  ps -eLf
+ 1999  ps aux --forest
+ 2000  ps -eLf
+ 2001  cd priklady/procesy/
+ 2002  vim 3.c 
+ 2003  ps aux --forest
+ 2004  ps -eLf
+ 2005  vim 4.c 
+ 2006  cat 4.c
+ 2007  cat 5.c 
+ 2008  cat 6.c 
+ 2009  ll
+ 2010  cat os_base.c
+ 2012  cat os_base.h
+ 2013  cat os_base.c
+ 2014  vim 7.c 
+ 2015  cat 6.c 
+ 2016  cat 8.c
+ 2017  clear
+ 2018  man syscall
+ 2019  man fork
+ 2020  cat 1.c 
+ 2021  ps 
+ 2022  ps aux --forest
+ 2023  ps -eLf
+ 2024  kill -9 63572
+ 2025  ps -eLf
+ 2026  kill -9 63573
+ 2027  cat 1.c 
+ 2028  man pthread_create
+ 2029  ps -eLf
+ 2030  ps aux --forest
+ 2031  ps -eLf
+ 2032  kill -9 63603
+ 2033  ps -eLf
+ 2034  cat 3.c 
+ 2035  vim 3.c 
+ 2036  kill -9 6391{4..6}
+ 2037  vim 3.c 
+ 2038  kill -9 639{28..32}
+ 2039  vim 3.c 
+ 2040  cat 4.c 
+ 2041  cat 5.c 
+ 2043  cat 6.c 
+ 2045  ./6.exe 
+ 2046  ll
+ 2047  vim os_base.c
+ 2048  vim os_base.h
+ 2049  vim os_base.c

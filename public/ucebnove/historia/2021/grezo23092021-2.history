@@ -1,0 +1,62 @@
+   40  help
+   41  man man
+   42  man man
+   43  pwd
+   44  man pwd
+   45  ls
+   46  man ls
+   47  ls -a
+   48  man ls
+   49  ls -la
+   50  ls . -la
+   51  ls .. -la
+   52  man cd 
+   53  cd --help
+   54  pwd
+   55  ls -la .
+   56  ls -la ..
+   57  pwd
+   58  ls -la /
+   59  pwd
+   60  cd ..
+   61  pwd
+   62  cd ~
+   63  pwd
+   64  cd ..
+   65  pwd
+   66  cd 
+   67  cd ..
+   68  cd /root
+   69  cd ..
+   70  pwd
+   71  cd root
+   72  pwd
+   73  cd root
+   74  ls -la /
+   75  ls -la /dev
+   76  man cat
+   77  cat zero
+   78  cat /dev/zero
+   79  less /dev/zero
+   80  man less
+   81  less -f /dev/zero
+   82  ls -la /dev
+   83  hexdump -C /dev/zero
+   84  hexdump -C /dev/
+   85  cat /dev/urandom 
+   87  hexdump -C /dev/urandom 
+   88  ls -la /dev
+   89  ls -la /
+   90  cat /public/zaciatocnik.txt 
+   91  less /public/zaciatocnik.txt 
+   92  adduser ostest1
+   93  man usermod
+   94  usermod -aG sudo ostest1
+   95  groups ostest1
+   96  ls /root
+   97  ls -la /root
+   98  touch .hushlogin
+   99  ls -la /root
+  100  echo "hello world"
+  101  history
+  102  history | tail -n 65 > grezo230920201-2.history

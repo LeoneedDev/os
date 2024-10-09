@@ -1,0 +1,1000 @@
+ 1014  ./3.exe 
+ 1015  ./3.exe 10
+ 1016  killall 3.exe
+ 1017  make clean
+ 1018  make
+ 1019  ./3.exe 
+ 1020  ./3.exe 10
+ 1021  make clean && make
+ 1022  ./3.exe 10
+ 1023  ./3.exe 10 1
+ 1024  ./3.exe 10
+ 1025  ./3.exe 10 10
+ 1026  ./3.exe 10 
+ 1027  ./1.exe 
+ 1028  ./4.exe 10
+ 1029  make clean
+ 1030  make
+ 1031  make clean
+ 1032  make
+ 1033  make clean
+ 1034  make
+ 1035  gcc 4.c
+ 1036  clear
+ 1037  gcc 4.c
+ 1038  make
+ 1039  make clean
+ 1040  make
+ 1041  mount
+ 1042  man moint
+ 1043  man mount
+ 1044  mount -o remount,rw /
+ 1045  ./4.exe 
+ 1046  ./4.exe 1
+ 1047  ls
+ 1048  joe 4.c
+ 1049  make
+ 1050  joe 4.c
+ 1051  make
+ 1052  joe 4.c
+ 1053  make
+ 1054  ls
+ 1055  joe 4.c
+ 1056  ls
+ 1057  make
+ 1058  ./4.exe
+ 1059  ./4.exe 10
+ 1060  ./4.exe 100
+ 1061  ./4.exe 1000
+ 1062  ./4.exe 8000
+ 1063  joe 4.c
+ 1064  joe 5.csh
+ 1065  joe 5.c
+ 1066  ./5.exe 5000
+ 1067  joe 5.c
+ 1068  make clean
+ 1069  make
+ 1070  ./5.exe 5000
+ 1071  ls
+ 1072  less 6.exe 
+ 1073  less 6.c
+ 1074  clear
+ 1075  ls
+ 1076  cd /public/priklady/
+ 1077  ls
+ 1078  less 5.sh 
+ 1079  pwd
+ 1080  ls
+ 1081  cd threads/
+ 1082  ls
+ 1083  joe 1.c
+ 1084  make clean && make
+ 1085  joe 1.c
+ 1086  make clean && make
+ 1087  joe 1.c
+ 1088  make clean && make
+ 1089  ./1.c
+ 1090  ./1.exe 
+ 1091  time ./1.exe 
+ 1092  joe 1.c
+ 1093  make clean && make
+ 1094  time ./1.exe 
+ 1095  make
+ 1096  ./2_bench.exe 
+ 1097  time ./2_bench.exe 
+ 1098  time ./1.exe 
+ 1099  time ./2_bench.exe 
+ 1100  vim 3.sh
+ 1101  vim 3.c
+ 1102  cp -r /public/priklady/threads/ ~/threads
+ 1103  ls
+ 1104  vim 3.c
+ 1105  ls
+ 1106  cd ..
+ 1107  ls
+ 1108  cd threads/
+ 1109  ls
+ 1110  ls -la
+ 1111  less 3.c
+ 1112  cd ..
+ 1113  cp -r /public/priklady/threads .
+ 1114  ls
+ 1115  cd threads/
+ 1116  ls
+ 1117  ls -la
+ 1118  less 3.c
+ 1119  vim 3.c
+ 1120  ps aux
+ 1121  kill 16316
+ 1122  ps aux
+ 1123  kioll 16325
+ 1124  kill 16325
+ 1125  ps aux
+ 1126  killall 3.exe
+ 1127  ps ux
+ 1128  ps -aux --forest
+ 1129  killall 3.exe
+ 1130  ps -aux --forest
+ 1131  ls
+ 1132  joe 3.c
+ 1133  ls
+ 1134  joe 4.c
+ 1135  ls
+ 1136  history | less 
+ 1137  cd /public/
+ 1138  ls
+ 1139  cd priklady/
+ 1140  ls
+ 1141  less 8.sh 
+ 1142  ls
+ 1143  less 8.sh 
+ 1144  ls -la
+ 1145  ls
+ 1146  cd
+ 1147  ls
+ 1148  lesse example.awk
+ 1149  less example.awk
+ 1150  histoty | less
+ 1151  history | less
+ 1152  awk '$NR' subor.txt
+ 1153  ls
+ 1154  less subo
+ 1155  less subor.txt
+ 1156  awk '$NR' priklad_awk.txt 
+ 1157  awk '$1' priklad_awk.txt 
+ 1158  awk 'print $1' priklad_awk.txt 
+ 1159  awk '{print $1}' priklad_awk.txt 
+ 1160  awk '{print $0}' priklad_awk.txt 
+ 1161  awk '{print $NF}' priklad_awk.txt 
+ 1162  awk '{print $NR}' priklad_awk.txt 
+ 1163  awk '{print $1}' priklad_awk.txt 
+ 1164  awk priklad_awk.txt 
+ 1165  history | less
+ 1166  history | grep sed =
+ 1167  history | grep 'sed' | grep =
+ 1168  sed -n '=;p' list.txt
+ 1169  sed -n 'n;p' list.txt
+ 1170  sed -n =''n;p' list.txt
+ 1171  sed -n '=;n;p' list.txt
+ 1172  sed -n 'n;p' list.txt
+ 1173  less list.txt
+ 1174  ls
+ 1175  vim priklad_awk.txt 
+ 1176  find /public ( -type d -name "*dir" -or -type f -name "dir*" ) -print
+ 1177  find /public \( -type d -name "*dir" -or -type f -name "dir*" \) -print
+ 1178  ls
+ 1179  touch dir
+ 1180  find /public \( -type d -name "*dir" -or -type f -name "dir*" \) -print
+ 1181  find /public -type d -name "*dir" -or -type f -name "dir*" 
+ 1182  ls
+ 1183  lks -la
+ 1184  ls -la
+ 1185  touch dir_
+ 1186  find /public \( -type d -name "*dir" -or -type f -name "dir*" \) -print
+ 1187  find \( -type d -name "*dir" -or -type f -name "dir*" \) -print
+ 1188  find /public -type d -name "*dir" -or -type f -name "dir*" -print
+ 1189  find /public -type d -name "*dir" -or -type f -name "dir*"
+ 1190  find -type d -name "*dir" -or -type f -name "dir*"
+ 1191  find -type d -name "*dir" -or -type f -name "dir*" -print
+ 1192  trap -l
+ 1193  cd signaly/
+ 1194  ls
+ 1195  less losovac.sh 
+ 1196  kill -10 
+ 1197  ps ux
+ 1198  kill -10 29546
+ 1199  kill -USR1 29546
+ 1200  ps ux
+ 1201  kill 29578
+ 1202  ls
+ 1203  cd threads/
+ 1204  ls
+ 1205  less 6.c
+ 1206  chmod rwxrwxrw- core 
+ 1207  chmod +rwxrwxrw- core 
+ 1208  zoznam=(jeden dva tri styri pat "sest cele sedem"); zoznam2=(${zoznam[@]} osem); 
+ 1209  echo ${#zoznam2[@]}"
+ 1210  echo ${#zoznam2[@]}
+ 1211  echo $@[1]
+ 1212  echo "Ahoj zuzka" | sed 's/Zuzka/Lucka/I'
+ 1213  mand sed
+ 1214  man sed
+ 1215  set +x
+ 1216  set -x
+ 1217  s
+ 1218  set +x
+ 1219  s
+ 1220  cd signaly/
+ 1221  ls
+ 1222  bash megavyberac.sh 
+ 1223  s
+ 1224  ;s
+ 1225  ls
+ 1226  ps ux
+ 1227  kill 29789
+ 1228  kill -9 29789
+ 1229  ps ux
+ 1230  kill 29783
+ 1231  fg
+ 1232  kill 29819
+ 1233  kill -9 29819
+ 1234  ps ux
+ 1235  kill -USR1 29847
+ 1236  kill 29847
+ 1237  ls
+ 1238  cd threads/
+ 1239  ls
+ 1240  less 5.c
+ 1241  ls
+ 1242  less 6.c 
+ 1243  less 7.c
+ 1244  less core 
+ 1245  ls
+ 1246  cd threads/
+ 1247  ls
+ 1248  cd ..
+ 1249  ls
+ 1250  less 6.c
+ 1251  ls
+ 1252  cp /public/priklady/procesy/8.c .
+ 1253  ls
+ 1254  less 8.c 
+ 1255  ls
+ 1256  joe 8.c 
+ 1257  ls
+ 1258  joe 7.c
+ 1259  ls
+ 1260  less 6.c
+ 1261  ./6.exe 
+ 1262  ls
+ 1263  less 6.
+ 1264  less 6.c
+ 1265  cd ..
+ 1266  cp -r /public/priklady/signaly .
+ 1267  ls
+ 1268  cd signaly/
+ 1269  ls
+ 1270  less losovac.sh 
+ 1271  cd /public/
+ 1272  ls
+ 1273  cd priklady/
+ 1274  ls
+ 1275  cd signaly/
+ 1276  ls
+ 1277  less s.c 
+ 1278  ls
+ 1279  cd /public/
+ 1280  ls
+ 1281  cd priklady/
+ 1282  ls
+ 1283  cd
+ 1284  ls
+ 1285  cd signaly/
+ 1286  ls
+ 1287  less signaly.txt 
+ 1288  ls
+ 1289  less signaly.txt 
+ 1290  ls
+ 1291  less signaly.txt 
+ 1292  $!
+ 1293  echo $!
+ 1294  less signaly.txt 
+ 1295  man 7 signal
+ 1296  ls
+ 1297  joe megalosovac.sh
+ 1298  joe megavyberac.sh
+ 1299  bash megalosovac.sh 
+ 1300  ps ux
+ 1301  kill 28658
+ 1302  clear
+ 1303  \
+ 1304  cd /public/priklady/proces
+ 1305  cd /public/priklady/procesy
+ 1306  ls
+ 1307  cd ~
+ 1308  ls
+ 1309  cd threads/
+ 1310  ls
+ 1311  less 6.
+ 1312  less 6.c
+ 1313  less 5.
+ 1314  less 5.c
+ 1315  less 6.c
+ 1316  cp 6.c 6_new.c
+ 1317  vim 6_new.c 
+ 1318  make
+ 1319  make clean
+ 1320  make
+ 1321  ./6_.exe 
+ 1322  ls
+ 1323  joe Makefile
+ 1324  make
+ 1325  ls
+ 1326  joe 6_new.c 
+ 1327  make
+ 1328  joe 6_new.c 
+ 1329  make
+ 1330  ls
+ 1331  less 6.c
+ 1332  joe 6_new.c 
+ 1333  make
+ 1334  ./6_new.exe 
+ 1335  joe 6_new.c
+ 1336  make clean
+ 1337  make
+ 1338  joe 6_new.c
+ 1339  make clean
+ 1340  make
+ 1341  joe 6_new.c
+ 1342  make
+ 1343  ./6_new.exe 
+ 1344  joe 6_new.c
+ 1345  make clean
+ 1346  make
+ 1347  ./6_new.exe 
+ 1348  joe 6_new.c
+ 1349  ./6_new.exe 
+ 1350  joe 6_new.c
+ 1351  ls
+ 1352  joe os_base.c
+ 1353  joe 6_new.c
+ 1354  make clean
+ 1355  make 
+ 1356  ./6_new.exe 
+ 1357  joe 6_new.c
+ 1358  make clean
+ 1359  make 
+ 1360  ./6_new.exe 
+ 1361  joe 6_new.c
+ 1362  ls
+ 1363  less 7.c
+ 1364  ./7.exe 
+ 1365  less 7.c
+ 1366  ./7.exe 
+ 1367  joe 7.c 
+ 1368  cd ..
+ 1369  ls
+ 1370  cd signaly/
+ 1371  ls
+ 1372  less signaly.txt 
+ 1373  less nekoncim.sh 
+ 1374  bash nekoncim.sh 
+ 1375  fg
+ 1376  ps ux
+ 1377  kill -9 29488
+ 1378  fg
+ 1379  ls
+ 1380  less signaly.txt 
+ 1381  less losovac.sh 
+ 1382  bash losovac.sh 
+ 1383  joe losovac.sh 
+ 1384  bash losovac.sh 
+ 1385  cd ..
+ 1386  ls
+ 1387  cd threads/
+ 1388  ls
+ 1389  less 5.
+ 1390  less 5.c
+ 1391  less 6.c
+ 1392  ls
+ 1393  joe 6_new.
+ 1394  joe 6_new.c#
+ 1395  joe 6_new.c
+ 1396  make clean
+ 1397  make
+ 1398  ./6_new.exe 
+ 1399  make
+ 1400  joe 6_new.c
+ 1401  cat 6_new.
+ 1402  cat 6_new.c
+ 1403  ls
+ 1404  less 7.
+ 1405  less 7.c
+ 1406  ./7.exe 
+ 1407  cd ..
+ 1408  cd signaly/
+ 1409  ls
+ 1410  less signaly.txt 
+ 1411  trap -l
+ 1412  less signaly.txt 
+ 1413  less nekoncim.sh 
+ 1414  bash nekoncim.sh 
+ 1415  ps ux
+ 1416  kill 29748
+ 1417  g
+ 1418  fg
+ 1419  bash nekoncim.sh 
+ 1420  killall nekoncim.sh
+ 1421  killall bash nekoncim.sh
+ 1422  killall 'bash nekoncim.sh'
+ 1423  joe nekoncim.sh 
+ 1424  bash nekoncim.sh 
+ 1425  joe nekoncim.sh 
+ 1426  bash nekoncim.sh 
+ 1427  ls
+ 1428  less signaly.txt 
+ 1429  less losovac.sh
+ 1430  bash losovac.sh
+ 1431  ls
+ 1432  cd 
+ 1433  ls
+ 1434  cd /public/priklady/
+ 1435  ls
+ 1436  less 6.
+ 1437  less 6.sh 
+ 1438  less 7.sh 
+ 1439  less 8.sh 
+ 1440  less 5.sh 
+ 1441  ls
+ 1442  echo "aaa" 1>&2
+ 1443  echo "aaa" 1>&2 2>stderr.txt
+ 1444  less stderr.txt 
+ 1445  echo "aaa" 1>&2 >stderr.txt
+ 1446  echo "aaa" 1>&2
+ 1447  >&2 echo "aaa"
+ 1448  >&2 echo "aaa" 2> stderr
+ 1449  less stderr
+ 1450  man tee
+ 1451  clear
+ 1452  la
+ 1453  cd ..
+ 1454  ls
+ 1455  cd zadania/
+ 1456  ls
+ 1457  less readme.txt 
+ 1458  less z1.sh 
+ 1459  less z3.sh 
+ 1460  PREMENNA=$(echo ahoj)
+ 1461  echo $PREMENNA
+ 1462  echo $@
+ 1463  echo ${@}
+ 1464  echo ${[@]}
+ 1465  clear
+ 1466  sed 'n;d' subor.txt
+ 1467  ls
+ 1468  cd
+ 1469  sed 'n;d' subor.txt
+ 1470  ls
+ 1471  less subor.txt
+ 1472  joe subor.txt
+ 1473  sed 'n;d' subor.txt
+ 1474  sed 'n;p' subor.txt
+ 1475  PREMENNA=$(echo ahoj)
+ 1476  echo $PREMENNA
+ 1477  echo $@
+ 1478  echo $0
+ 1479  joe args.sh
+ 1480  bash args.sh 
+ 1481  bash args.sh  a
+ 1482  bash args.sh  a b c d
+ 1483  joe args.sh 
+ 1484  bash args.sh  a b c d
+ 1485  cat -n subor.txt
+ 1486  head -1 subor.txt | tail -1 subor.txt
+ 1487  zoznam=(jeden dva tri styri pat "sest cele sedem"); 
+ 1488  echo ${#zoznam[@]}
+ 1489  ls -la | grep ahoj
+ 1490  ls
+ 1491  ls -la
+ 1492  joe cisla.txt
+ 1493  sort < cisla.txt | uniq -c | sort -n | tail
+ 1494  joe cisla.txt
+ 1495  sort < cisla.txt | uniq -c | sort -n | tail
+ 1496  cat cisla.txt
+ 1497  ls
+ 1498  cd /public/
+ 1499  ls
+ 1500  cd priklady/
+ 1501  ls
+ 1502  cd signaly/
+ 1503  ls
+ 1504  less signaly.txt 
+ 1505  ls
+ 1506  cd ..
+ 1507  ls
+ 1508  cd sockety/
+ 1509  ls
+ 1510  less sockety.txt 
+ 1511  ls
+ 1512  less sockety.txt 
+ 1513  lz
+ 1514  ls
+ 1515  less web.sh 
+ 1516  less webserver.sh 
+ 1517  read request
+ 1518  man read
+ 1519  less webserver.sh 
+ 1520  ./webserver.sh 
+ 1521  ls
+ 1522  less webserver.sh 
+ 1523  ls
+ 1524  less subor.txt 
+ 1525  ls
+ 1526  less sockety.txt 
+ 1527  echo "GET /" | socat OPENSSL:www.dennikn.sk:443 -
+ 1528  sudo apt-get install socat
+ 1529  echo "GET /" | socat OPENSSL:www.dennikn.sk:443 -
+ 1530  less sockety.txt 
+ 1531  less webserver.sh 
+ 1532  ls
+ 1533  less webserver.sh 
+ 1534  man read
+ 1535  man 3 read
+ 1536  man 4 read
+ 1537  man 5 read
+ 1538  man 6 read
+ 1539  read
+ 1540  read --help
+ 1541  less webserver.sh 
+ 1542  ls
+ 1543  man echo
+ 1544  less web.sh 
+ 1545  ls
+ 1546  ls -la
+ 1547  ./webserver.sh 
+ 1548  less webserver.sh 
+ 1549  cd ..
+ 1550  cp -r sockety /
+ 1551  cp -r sockety .
+ 1552  ls
+ 1553  cd
+ 1554  ls
+ 1555  cd source_script.sh 
+ 1556  cd /public/
+ 1557  ls
+ 1558  cd priklady/
+ 1559  ls
+ 1560  cp -r sockety ~
+ 1561  cd
+ 1562  ls
+ 1563  cd sockety/
+ 1564  ls
+ 1565  joe webserver.sh 
+ 1566  ./webserver.sh
+ 1567  joe webserver.sh
+ 1568  ls
+ 1569  less sockety.txt 
+ 1570  socat -d -d TCP-listen:8080,reuseaddr SYSTEM:./web.sh
+ 1571  joe webserver.sh
+ 1572  ls
+ 1573  less sockety.txt 
+ 1574  socat UNIX:/tmp/chat.sock -
+ 1575  ls
+ 1576  ps ux
+ 1577  kill -9 30235
+ 1578  ps ux
+ 1579  ls
+ 1580  ps ux
+ 1581  kill 30333
+ 1582  ps ux
+ 1583  ls
+ 1584  cd signaly/
+ 1585  ls
+ 1586  echo "a" > testpipe 
+ 1587  ech "a
+ 1588  aaa"
+ 1589  echo "a
+ 1590  aaa" > testpipe 
+ 1591  ps ux
+ 1592  killall sleep
+ 1593  ps ux
+ 1594  kill 30249
+ 1595  ps ux
+ 1596  man xargs
+ 1597  find . -type f | xargs grep "*ahoj*"
+ 1598  ls
+ 1599  touch ahoj
+ 1600  find . -type f | xargs grep "*ahoj*"
+ 1601  echo ahoj > ahoj
+ 1602  find . -type f | xargs grep "*ahoj*"
+ 1603  find . -type f 
+ 1604  ls
+ 1605  cd
+ 1606  ls
+ 1607  joe subor.txt
+ 1608  awk 'NR % 2 != 0 {print $0}' subor.txt
+ 1609  cd /public/
+ 1610  ls
+ 1611  cd
+ 1612  ls
+ 1613  cd signaly/
+ 1614  ls
+ 1615  clear
+ 1616  clear
+ 1617  cd /public/priklady/signaly/
+ 1618  ls
+ 1619  less signaly.txt 
+ 1620  ls 0la
+ 1621  ls -la
+ 1622  mv ruralosovac.sh ~/signaly/
+ 1623  mv ruravyberac.sh ~/signaly/
+ 1624  ls
+ 1625  joe losovac_new.sh
+ 1626  joe vyberac_new.sh
+ 1627  ls
+ 1628  less vyberac
+ 1629  less vyberac.s
+ 1630  less vyberac.sh 
+ 1631  ls
+ 1632  less vyberac_new.sh 
+ 1633  joe vyberac_new.sh 
+ 1634  ls
+ 1635  less signaly.txt 
+ 1636  ls
+ 1637  less vyberac.sh 
+ 1638  less vyberac_new.sh
+ 1639  less losovac.sh 
+ 1640  less losovac_new.sh 
+ 1641  clear
+ 1642  echo $$
+ 1643  cd /tmp/
+ 1644  ls
+ 1645  ls -l
+ 1646  rm losovac.30
+ 1647  rm losovac.30236 
+ 1648  ls
+ 1649  ls -l
+ 1650  date
+ 1651  cat losovac.30466 
+ 1652  ls
+ 1653  rm losovac.30466 
+ 1654  ls
+ 1655  ps ux
+ 1656  kill -USR1 3652
+ 1657  kill -USR1 30496
+ 1658  less /tmp/losovac.30496
+ 1659  ls
+ 1660  ls /tmp/
+ 1661  find /tmp/ -name 'losovac./[0-9]+' 
+ 1662  find /tmp/ -regex 'losovac./[0-9]+' 
+ 1663  ls
+ 1664  find /tmp/ -regex 'losovac./[0-9]+' 
+ 1665  man find
+ 1666  find /tmp/ -name 'losovac./[0-9]+' 
+ 1667  find /tmp/ -regex 'losovac\.[0-9]+' 
+ 1668  find /tmp/ -name 'losovac\.[0-9]+' 
+ 1669  ls
+ 1670  ls -la
+ 1671  find /tmp/ -name losovac.[0-9] 
+ 1672  find /tmp/ -name losovac.* 
+ 1673  find /tmp/ -name losovac* 
+ 1674  find /tmp/ -name losovac.* 
+ 1675  touch losovac333
+ 1676  find /tmp/ -name losovac.* 
+ 1677  man find
+ 1678  find /tmp/ -regex losovac.* 
+ 1679  find /tmp/ -regex 'losovac.*'
+ 1680  mand find
+ 1681  man find
+ 1682  cd 
+ 1683  ls
+ 1684  cd signaly/
+ 1685  ls
+ 1686  bash losovac_2.0.sh
+ 1687  ls
+ 1688  ls /tmp
+ 1689  rm /tmp
+ 1690  rm /tmp/losovac333 
+ 1691  ls /tmp
+ 1692  find /tmp/ -name 'losovac.*'
+ 1693  find /tmp/ -name losovac.*
+ 1694  find /tmp/ -name "losovac.*"
+ 1695  bash losovac_2.0.sh
+ 1696  ls /tmp
+ 1697  bash losovac_2.0.sh
+ 1698  ls
+ 1699  ls -la
+ 1700  echo "Ahoj, pajpa!" > rura.pipe 
+ 1701  ld
+ 1702  ls
+ 1703  rm rura.pipe 
+ 1704  echo "quit" > rura.pipe 
+ 1705  echo "quit1" > rura.pipe 
+ 1706  echo "dsadsadas" > rura.pipe 
+ 1707  echo "quit" > rura.pipe 
+ 1708  sudo apt-get install socat
+ 1709  cd
+ 1710  socat UNIX:/tmp/chat.sock -
+ 1711  socat UNIX:/tmp/back.sock -
+ 1712  socat TCP:8080 -
+ 1713  socat TCP:127.0.0.1:8080 -
+ 1714  ipaddr
+ 1715  ip addr show
+ 1716  echo "Juraj Petrik" > /dev/tcp/127.0.0.1/8080
+ 1717  echo "Juraj Petrik" > /dev/tcp/172.17.0.75/8080
+ 1718  echo "Juraj Petrik" > /dev/tcp/172.17.0.10/6767
+ 1719  clear
+ 1720  man 7 signal
+ 1721  ls
+ 1722  cd signaly/
+ 1723  ls
+ 1724  less losovac.sh
+ 1725  cd /public/priklady/
+ 1726  ls
+ 1727  cd signaly/
+ 1728  ls
+ 1729  cd examples/
+ 1730  ls
+ 1731  cd ..
+ 1732  cd losovac.sh 
+ 1733  less losovac.sh 
+ 1734  cd /tmp
+ 1735  ls
+ 1736  less losovac.30885 
+ 1737  ls
+ 1738  rm losovac.30885 
+ 1739  ls
+ 1740  cd ..
+ 1741  cd
+ 1742  cd signaly/
+ 1743  ls
+ 1744  bash losovac_new.sh
+ 1745  clear
+ 1746  ls
+ 1747  mkinfo pipe
+ 1748  ls
+ 1749  mkfifo pipe
+ 1750  ls
+ 1751  ls -la
+ 1752  rm pipe
+ 1753  joe vstup.sh
+ 1754  bash vstup.sh
+ 1755  joe vstup.sh
+ 1756  bash vstup.sh
+ 1757  ls
+ 1758  echo "aaa" > example.pipe 
+ 1759  echo "bbbb" > example.pipe 
+ 1760  ls -la
+ 1761  echo "quit" > example.pipe 
+ 1762  echo "aaa" > example.pipe 
+ 1763  echo "quit" > example.pipe 
+ 1764  sudo apt-get install socat
+ 1765  man socat
+ 1766  /signaly$ echo "quit" > example.pipe
+ 1767  less sockety.txt
+ 1768  cd ..
+ 1769  cd sockety/
+ 1770  less sockety.txt
+ 1771  socat UNIX:/tmp/chat.sock -
+ 1772  socat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+ 1773  socat - TCP4:towel.blinkenlights.nl:23
+ 1774  socat -d -d TCP-listen:8080,reuseaddr,fork
+ 1775  socat -d -d TCP-listen:8080,reuseaddr,fork -
+ 1776  ip addr show
+ 1777  socat -d -d TCP-listen:8080,reuseaddr,fork -
+ 1778  socat -d -d UDP-listen:8080,reuseaddr,fork -
+ 1779  socat UNIX-LISTEN:/tmp/chat.sock -
+ 1780  socat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+ 1781  ho "GET /" | socat -d -d OPENSSL:www.fiit.stuba.sk:443 -
+ 1782  eho "GET /" | socat -d -d OPENSSL:www.fiit.stuba.sk:443 -
+ 1783  eho "GET /" | socat -d -d OPENSSL:fiit.stuba.sk:443 -
+ 1784  echo "GET /" | socat OPENSSL:www.dennikn.sk:443 -
+ 1785  socat - TCP4:towel.blinkenlights.nl:23
+ 1786  socat -d -d TCP-listen:8080,reuseaddr -
+ 1787  socat -d -d TCP-listen:8080,reuseaddr,fork -
+ 1788  ps ux
+ 1789  kill -USR1 30912
+ 1790  ls
+ 1791  cd /public/priklady/
+ 1792  ls
+ 1793  cd signaly/
+ 1794  ls
+ 1795  cd examples/
+ 1796  ls
+ 1797  less 1.c 
+ 1798  less 2.c 
+ 1799  less 3.c 
+ 1800  less 4.c 
+ 1801  less 5.c 
+ 1802  ls
+ 1803  less 6.c 
+ 1804  ls
+ 1805  cd ..
+ 1806  ls
+ 1807  less test.sh 
+ 1808  ls
+ 1809  less signaly.txt 
+ 1810  ls
+ 1811  joe ruralosovac.sh
+ 1812  ls
+ 1813  joe ruralosobac.sh
+ 1814  mv ruralosobac.sh ruralosovac.sh
+ 1815  joe ruravyberac.sk
+ 1816  joe ruravyberac.sh
+ 1817  ls
+ 1818  chmod +x rura*
+ 1819  ./ruravyberac.sh 
+ 1820  ls
+ 1821  less ruralosovac.sh 
+ 1822  ls
+ 1823  less ruravyberac.sh 
+ 1824  ls
+ 1825  joe ruratest.sh
+ 1826  ls
+ 1827  bash test.sh 
+ 1828  ls
+ 1829  less ruratest.sh 
+ 1830  ps ux
+ 1831  bash ruratest.sh 
+ 1832  ls
+ 1833  mv ruratest.sh ~/signaly/
+ 1834  ls
+ 1835  ls -la
+ 1836  cd ~/signaly/
+ 1837  ls
+ 1838  less ruratest.sh 
+ 1839  bash ruratest.sh 
+ 1840  ls
+ 1841  cd ..
+ 1842  ls
+ 1843  cd ..
+ 1844  cd
+ 1845  ls
+ 1846  cd so
+ 1847  cd sockety/
+ 1848  ls
+ 1849  less sockety.txt 
+ 1850  ipconfig
+ 1851  ip addr show
+ 1852  clear
+ 1853  cd ..
+ 1854  cd signaly/
+ 1855  ls
+ 1856  man trap
+ 1857  ls
+ 1858  less sio
+ 1859  less signaly.txt 
+ 1860  man 7 signal
+ 1861  man 5 passwd
+ 1862  less signaly.txt 
+ 1863  clear
+ 1864  ls
+ 1865  cp losovac.sh losovac_2.0.sh
+ 1866  joe losovac_2.0.sh 
+ 1867  bash losovac_2.0.sh
+ 1868  joe losovac_2.0.sh 
+ 1869  bash losovac_2.0.sh
+ 1870  joe losovac_2.0.sh 
+ 1871  bash losovac_2.0.sh
+ 1872  joe losovac_2.0.sh 
+ 1873  ls
+ 1874  cp vyberac.sh vyberac_2.0.sh
+ 1875  joe vyberac
+ 1876  joe vyberac.sh 
+ 1877  ls
+ 1878  bash losovac_2.0.sh
+ 1879  ls
+ 1880  joe vyberac
+ 1881  joe vyberac_2.0.sh
+ 1882  ls
+ 1883  joe vyberac
+ 1884  joe vyberac.sh
+ 1885  bash vyberac.sh
+ 1886  joe vyberac.sh
+ 1887  bash vyberac.sh
+ 1888  joe vyberac.sh
+ 1889  bash vyberac.sh
+ 1890  ls
+ 1891  joe vyberac.sh
+ 1892  bash vyberac.sh
+ 1893  joe vyberac.sh
+ 1894  less signaly.txt 
+ 1895  cp /public/priklady/signaly/signaly.txt .
+ 1896  ls
+ 1897  less signaly.txt 
+ 1898  joe ruratest.sh 
+ 1899  joe ruratest_new.sh 
+ 1900  bash ./rura_new.sh
+ 1901  bash ./ruratest_new.sh
+ 1902  joe ruratest_new.sh 
+ 1903  bash ./ruratest_new.sh
+ 1904  joe ruratest_new.sh 
+ 1905  bash ./ruratest_new.sh
+ 1906  joe ruratest_new.sh 
+ 1907  bash ./ruratest_new.sh
+ 1908  joe ruratest_new.sh 
+ 1909  ls
+ 1910  less signaly.txt 
+ 1911  man mkfifo
+ 1912  man mknod
+ 1913  less signaly.txt 
+ 1914  ls
+ 1915  mv ruratest_new.sh rura_simple_example.txt
+ 1916  cp rura_simple_example.txt /public/priklady/petrik/cvicenie_10/
+ 1917  mkdir /public/priklady/petrik/cvicenie_10/
+ 1918  cp rura_simple_example.txt /public/priklady/petrik/cvicenie_10/
+ 1919  ls
+ 1920  cd ..
+ 1921  ls
+ 1922  cd sockety/
+ 1923  ls
+ 1924  less sockety.txt 
+ 1925  clear
+ 1926  ls
+ 1927  cd ,,
+ 1928  cd ..
+ 1929  ls
+ 1930  cd signaly/
+ 1931  ls
+ 1932  less signaly.txt 
+ 1933  echo $$
+ 1934  ls
+ 1935  clear
+ 1936  ls
+ 1937  cp losovac.sh losovac_new.sh
+ 1938  joe losovac_new.sh 
+ 1939  bash losovac_new.sh
+ 1940  joe losovac_new.sh 
+ 1941  bash losovac_new.sh
+ 1942  joe losovac_new.sh 
+ 1943  ls
+ 1944  less vyberac_2.0.sh 
+ 1945  cp vyberac_2.0.sh  vyberac_new.sh
+ 1946  joe vyberac.sh
+ 1947  joe vyberac_new.sh
+ 1948  bash vyberac_new.sh
+ 1949  less bash vyberac_new.sh
+ 1950  less vyberac_new.sh
+ 1951  clear
+ 1952  ls\
+ 1953  ls
+ 1954  less rura_simple_example.txt 
+ 1955  clear
+ 1956  ps ux
+ 1957  killall sleep
+ 1958  ls
+ 1959  less rura_simple_example.txt 
+ 1960  ls
+ 1961  clear
+ 1962  joe rura_example.sh
+ 1963  bash rura_example.sh 
+ 1964  joe rura_example.sh
+ 1965  bash rura_example.sh 
+ 1966  joe rura_example.sh 
+ 1967  bash rura_example.sh 
+ 1968  ls
+ 1969  joe rura_example.sh
+ 1970  bash rura_example.sh
+ 1971  ls
+ 1972  cd .
+ 1973  ls
+ 1974  cd ..
+ 1975  ls
+ 1976  cd sockety/
+ 1977  ls
+ 1978  less sockety.txt 
+ 1979  socat UNIX-LISTEN:/tmp/chat.sock -
+ 1980  less sockety.txt 
+ 1981  socat UNIX:/tmp/back.sock -
+ 1982  less sockety.txt 
+ 1983  ip addr
+ 1984  echo "Stano" | socat TCP4:172.17.0.221:8080 -
+ 1985  echo "Stano" > /dev/tcp/172.17.0.221:8080/8080
+ 1986  echo "Stano" > /dev/tcp/172.17.0.221/8080
+ 1987  echo "Stano" > /dev/udp/172.17.0.221/8080
+ 1988  echo "Stano" | socat UDP:172.17.0.221:8080 -
+ 1989  ls
+ 1990  cd /public/
+ 1991  ls
+ 1992  cd za
+ 1993  cd zadania/
+ 1994  ls
+ 1995  less z2.sh 
+ 1996  less z3.sh 
+ 1997  less z1.sh 
+ 1998  ls
+ 1999  cd sockety/
+ 2000  ls
+ 2001  less sockety.txt 
+ 2002  ls
+ 2003  cd ..
+ 2004  ls
+ 2005  cd signaly/
+ 2006  ls
+ 2007  cd signaly.txt 
+ 2008  ls
+ 2009  less signaly.txt 
+ 2010  ls
+ 2011  less ruralosovac.sh 
+ 2012  history
+ 2013  history > /public/priklady/petrik/history_27112020.txt

@@ -1,0 +1,136 @@
+ 1996  cd
+ 1997  cd /public/
+ 1998  find -name *awk*
+ 1999  vim -R ./priklady/awk.txt
+ 2000  ls -l
+ 2001  cat /etc/passwd
+ 2002  fg
+ 2003  ls -l
+ 2004  ls -l|awk 'BEGIN {print "ZACIATOK";} END {print "KONIEC";} 1 {print;}'
+ 2005  ls -l|awk 'BEGIN {print "ZACIATOK";} END {print "KONIEC";} {print;}'
+ 2006  ls -l|awk 'BEGIN {print "ZACIATOK";} END {print "KONIEC";} {print $1, $5, $9;}'
+ 2007  ls -l|awk 'BEGIN {print "ZACIATOK";} END {print "KONIEC";} {print $0;}'
+ 2008  ls -l|awk 'BEGIN {print "ZACIATOK";} END {print "KONIEC";} {print $1, $5, $9;}'
+ 2009  ls -l|awk 'BEGIN {print "ZACIATOK";} END {print "KONIEC";} {print $1, $5, $(3*9);}'
+ 2010  ls -l|awk 'BEGIN {sum=0} END {print "Sucet velkosit vsetkych suborov je: " sum} {print $1, $5, $(3*9); sum+=$5;}'
+ 2011  ls -l|awk 'BEGIN {sum=0} END {print "Sucet velkosit vsetkych suborov je: " sum} {print $1, $5, $(3*3); sum+=$5;}'
+ 2012  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} {print $1, $5, $(3*3); sum+=$5;}'
+ 2013  ls -l|cat -n
+ 2014  ls -l|awk 'BEGIN {i=1} { print i, $0; }
+ 2015  ls -l|awk 'BEGIN {i=1} { print i, $0; i+=1; }
+ 2016  ls -l|awk 'BEGIN {i=1} { print i, $0; i+=1; }'
+ 2017  ls -l|awk 'BEGIN {i=1} { print i".", $0; i+=1; }'
+ 2018  ls -l|awk '{print ++i, $0}'
+ 2019  ls -l|awk '{print ++i".", $0}'
+ 2020  ls -l|awk '{print NR".", $0}'
+ 2021  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} {print $1, $5, $(3*3); sum+=$5;}'
+ 2022  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} $1~/^[-]/ {print $1, $5, $(3*3); sum+=$5;}'
+ 2023  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} $1~/^[-]/ {print ++i, $1, $5, $(3*3); sum+=$5;}'
+ 2024  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} $1~/^[-]/ {print ++i".", $1, $5, $(3*3); sum+=$5;}'
+ 2025  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} j++ {print ++i".", $1, $5, $(3*3); sum+=$5;}'
+ 2026  ls -l|awk 'END {print "Sucet velkosit vsetkych suborov je: " sum} !j++ {print ++i".", $1, $5, $(3*3); sum+=$5;}'
+ 2027  fg
+ 2028  ls -l|awk '{print;} {print;}'
+ 2029  fg
+ 2030  ls -l|awk '{print NR, NF;}'
+ 2031  ls -l|awk '{print NR".", $0}'
+ 2032  ls -l|awk '$1~/^[-]/ {print NR".", $0}'
+ 2033  ls -l|awk '$1~/^[-]/ {print ++i".", $0}'
+ 2034  ls -l|awk 'NR=5 {print ++i".", $0}'
+ 2035  ls -l|awk 'NR==5 {print ++i".", $0}'
+ 2036  ls -l|awk 'NR==5 || NR==3 {print ++i".", $0}'
+ 2037  ls -l
+ 2038  ls -l '{ $NR }'
+ 2039  ls -l '{ print $NR }'
+ 2040  ls -l|awk '{ print $NR }'
+ 2041  ls -l|awk '{ print $NF }'
+ 2042  ls -l|awk '{ print $(NF-1) }'
+ 2043  ls -l|awk '{ print $(NF-2) }'
+ 2044  fg
+ 2045  ls -l|awk ' NR==3, NR==5 { print; }'
+ 2046  ls -l|awk ' NR==3, NR==5 { print NR, $0; }'
+ 2047  ls -l
+ 2048  ls -l|awk '$6=="Oct" {print;}'
+ 2049  ls -l|awk '$6~/Oct/ {print;}'
+ 2050  ll
+ 2051  cd samples/
+ 2052  cat zamestnanci.txt 
+ 2053  cat zamestnanci.txt |awk '$2~/a.a/'
+ 2054  cat zamestnanci.txt |awk '$2==/a.a/'
+ 2055  cat zamestnanci.txt |awk '$2=="a.a"'
+ 2056  cat zamestnanci.txt |awk '$2=="programator"'
+ 2057  ll
+ 2058  cd 
+ 2059  ls -l
+ 2060  fg
+ 2061  cat /etc/passwd
+ 2062  cat /etc/passwd|awk '{pritn $1, $5;}'
+ 2063  cat /etc/passwd|awk '{pritn;}'
+ 2064  cat /etc/passwd|awk '{print $1, $5;}'
+ 2065  cat /etc/passwd|awk 'BEGIN {FS=":"} {print $1, $5;}'
+ 2066  fg
+ 2067  cat /etc/passwd|awk 'BEGIN {FS=":", } {print $1, $5;}'
+ 2068  cat /etc/passwd|awk 'BEGIN {FS=":"} {print $1, $5;}'
+ 2069  cat /etc/passwd|awk 'BEGIN {FS=":"; OFS=";"} {print $1, $5;}'
+ 2070  cat /etc/passwd|awk 'BEGIN {FS=":"; OFS=";;;"} {print $1, $5;}'
+ 2071  cat /etc/passwd|awk 'BEGIN {FS=":"; OFS=";;;"; ORS="~~~~~~"} {print $1, $5;}'
+ 2072  fg
+ 2073  cd /public/samples/
+ 2074  awk '{print}' zamestnanci.txt
+ 2075  fg
+ 2076  awk '{print NR,$0}' zamestnanci.txt
+ 2077  fg
+ 2078  awk /^z/ zamestnanci.txt
+ 2079  fg
+ 2080  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 2081  fg
+ 2082  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2083  fg
+ 2084  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 2085  fg
+ 2086  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 2087  fg
+ 2088  awk '/^z|^b/ {sum+=$NF; ++i;} END {print "Priemerny plat = " sum/i}' /public/samples/zamestnanci.txt
+ 2089  bc
+ 2090  vim access.log -R
+ 2091  fg
+ 2092  vim access.log -R
+ 2093  fg
+ 2094  awk 'BEGIN {sum=0} END {print sum/1024} {sum+=$10}' access.log | less
+ 2095  awk '{print $10;}'|less
+ 2096  awk '{print $10;}' access.log|less
+ 2097  awk '$10!="-" {print $10;}' access.log|less
+ 2098  awk '$10!="-" {print $10;} END {print sum/1024}' access.log|less
+ 2099  awk '$10!="-" {sum+=$10} END {print sum/1024}' access.log|less
+ 2100  awk '$10!="-" {sum+=$10} END {print sum/1024}' access.log
+ 2101  awk '$10!="-" {sum+=$10} END {print sum/2^20}' access.log
+ 2102  fg
+ 2103  awk 'BEGIN {sum=0} END {print sum/2^20} {sum+=$10}' access.log
+ 2104  fg
+ 2105  awk '{print $10;}' access.log|less
+ 2106  fg
+ 2107  uniq -c
+ 2108  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -rn | awk 'NR == 1, NR == 10 {print;}'
+ 2109  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -rn | awk 'NR == 1, NR == 10 {print $2;}'
+ 2110  awk '{print $1}' /public/samples/access.log
+ 2111  awk '{print $1}' /public/samples/access.log | sort | uniq -c
+ 2112  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -n
+ 2113  awk '{print $1}' /public/samples/access.log | sort | uniq -c | sort -rn | awk 'NR == 1, NR == 10 {print $2;}'
+ 2114  fg
+ 2115  vim -R access.log 
+ 2116  fgfg
+ 2117  gh
+ 2118  fg
+ 2119  awk '/iPhone|Android/ {mcnt++;} END {z mobilnych zariadeny islo: " mcnt/NR*100}
+ 2120  awk '/iPhone|Android/ {mcnt++;} END {z mobilnych zariadeny islo: " mcnt/NR*100}'
+ 2121  awk '/iPhone|Android/ {mcnt++;} END {print "z mobilnych zariadeny islo: " mcnt/NR*100}'
+ 2122  awk '/iPhone|Android/ {mcnt++;} END {print "z mobilnych zariadeny islo: " mcnt/NR*100}' access.log 
+ 2123  fg
+ 2124  awk '{print $9;}'
+ 2125  awk '{print $9;}' access.log 
+ 2126  awk '$9 != 200{print $9;}' access.log 
+ 2127  fg
+ 2128  vim access.log 
+ 2129  awk '$9 != 200{print $7;}' access.log 
+ 2130  awk '$9 != 200{print $7;}' access.log |sort|uniq -c
+ 2131  awk '$9 != 200{print $7;}' access.log |sort|uniq -c|sort -n

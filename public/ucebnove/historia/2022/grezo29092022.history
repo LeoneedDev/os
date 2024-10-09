@@ -1,0 +1,227 @@
+  103  ll
+  104  alias
+  105  vi
+  106  cd /public/
+  107  ll
+  108  pwd
+  109  man bash
+  110  cd
+  111  pwd
+  112  echo ~
+  113  echo ahoj
+  114  cd ~
+  115  ll
+  116  less .bashrc
+  117  man passwd
+  118  less /etc/passwd
+  119  man passwd
+  120  man 5 passwd
+  121  less /etc/passwd
+  122  ll
+  123  ls -la
+  124  man cat
+  125  cat .hushlogin 
+  126  cat .lesshst 
+  127  man touch
+  128  ll
+  129  touch .hushlogin 
+  130  ll
+  131  less /etc/passwd
+  132  cd /bin
+  133  ll
+  134  cd ..
+  135  ll
+  136  cd dev/
+  137  ll
+  138  cat zero
+  139  cat null
+  140  ll
+  141  cat urandom
+  142  ll
+  143  hexdump -C urandom
+  144  hexdump -c urandom
+  145  hexdump -C urandom
+  146  hexdump -C zero
+  147  ll
+  148  cd 
+  149  pwd
+  150  ll
+  151  cat .profile 
+  152  echo ~
+  153  echo *
+  154  echo \~
+  155  echo \~~~~~~~~~~~~
+  156  echo \~ ~~~~~~~~~~~
+  157  echo \~ ~
+  158  echo "~ ~"
+  159  echo $HOME
+  160  echo $PATH
+  161  ls
+  162  ls -la
+  163  fdgfdfd
+  164  cd /public
+  165  ll
+  166  ls
+  167  ./ls
+  168  echo $PATH
+  169  which ls
+  170  which cowsay
+  171  cowsay hello
+  172  sudo apt-get cowsay
+  173  sudo apt-get install cowsay
+  174  cowsay hello
+  175  fortune
+  176  sudo apt-get install fortune
+  177  sudo apt-get install fortune-o
+  178  sudo apt-get install fortunes-off
+  179  fortune
+  180  echo $PAGER
+  181  ps
+  182  man ps
+  183  ps
+  184  ls
+  185  cd 
+  186  ls
+  187  ls -la
+  188  ps 
+  189  ps -l
+  190  ps -la
+  191  ps -lx
+  192  ps aux
+  193  man ps
+  194  ps -xl
+  195  echo
+  196  echo ""
+  197  echo 
+  198  echo askdjasdj
+  199  echo -n
+  200  echo saoidj oiajdoi asodjadsojadsoioaskak
+  201  echo \
+  202  ls
+  203  ll
+  204  who
+  205  man who
+  206  last
+  207  clear
+  208  man last
+  209  echo $PATH
+  210  echo ~
+  211  !
+  212  ls
+  213  history
+  214  who
+  215  history
+  216  who
+  217  history
+  218  echo ~
+  219  history
+  220  mkdir cviko1
+  221  ls
+  222  cd cviko1/
+  223  mkdir zmazma
+  224  ll
+  225  rmdir zmazma/
+  226  touch cv
+  227  ll
+  228  rm cv
+  229  ls
+  230  ll
+  231  fortune 
+  232  fortune | cowsay
+  233  exit
+  234  clear
+  242  alias
+  243  cd /public
+  244  cd
+  245  echo ~
+  246  pwd
+  247  ls -la
+  248  cat .hushlogin 
+  249  cat .lesshst
+  250  touch .hushlogin
+  251  ll
+  252  man touch
+  253  cd cviko1/
+  254  ll
+  255  touch prt
+  256  touch prn
+  257  ll
+  258  ls -la /dev
+  259  cat zero
+  260  cd /dev
+  261  cat zero
+  262  cat urandom 
+  264  ll
+  265  hexdump -c urandom 
+  266  hexdump -C urandom 
+  267  hexdump -C zero
+  268  ll
+  269  cd
+  270  ll
+  271  cat .profile 
+  272  echo $HOME
+  273  echo ~
+  274  echo "~"
+  275  echo "$HOME"
+  276  echo \$HOME
+  277  echo \$$HOME
+  278  echo \$\$HOME
+  279  echo '$HOME'
+  280  echo '$$$$$HOME'
+  281  echo $PATH
+  282  echo ""
+  283  whereis echo
+  284  which echo
+  285  ls /bin
+  286  ll
+  287  echo $PATH
+  288  cd /public/
+  289  ll
+  290  ls
+  291  which ls
+  292  ./ls
+  293  man passwd
+  294  passwd
+  295  man passwd
+  296  less /etc/passwd
+  297  man passwd
+  298  man 5 passwd
+  299  less /etc/passwd
+  300  man bash
+  301  cd 
+  302  ll
+  303  vimtutor
+  304  man ps
+  305  ps
+  306  man ps
+  307  ps -e
+  308  ps -x
+  309  ps -ax
+  310  ps -lx
+  311  ps -alx
+  312  !
+  313  history 
+  314  ps -alx
+  315  history
+  316  ll
+  317  ps -lx
+  318  whoami
+  319  who
+  320  man who
+  321  who
+  322  last
+  323  clear
+  324  who
+  325  fortune
+  326  apt-get install fortune
+  327  sudo apt-get install fortune
+  328  sudo apt-get install fortunes-off
+  329  fortune -o
+  330  sudo apt-get install cowsay
+  331  cowsay HELLO!
+  332  fortune | cowsay
+  334  history
+  335  echo
+  336  echo -n
+  337  history
+  338  history > grezo29092022.history

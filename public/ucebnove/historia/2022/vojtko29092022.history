@@ -1,0 +1,195 @@
+    1  sudo 
+    2  ls -la
+    3  ls -la /
+    4  ls -la /public/
+    5  cd /public/prednasky/
+    6  ls -la
+    7  touch asdf
+    8  sudo touch asdf
+    9  ls -la
+   10  rm asdf
+   11  sudo rm asdf
+   12  ls -la
+   13  su -
+   14  exit
+   15  cd /public/prednasky/
+   16  touch asdf
+   17  sudo touch asdf
+   18  exit
+   19  su -
+   20  exit
+   21  l s-l
+   22  ls -la
+   23  ls -la /
+   24  ls -la
+   25  sudo mv 01.pdf /public/prednasky/01_uvod_predmet.pdf
+   26  ls -la /public/prednasky/
+   27  exit
+   28  ls -la
+   29  cp .bash_history .history1
+   30  cd /root
+   31  sudo cd /root
+   32  su -
+   33  ls -la
+   34  less .history1 
+   35  history
+   36  ls -la /public/ucebnove/historia/
+   37  ls -la /public/ucebnove/historia/2021
+   38  sudo cp .history1 /public/ucebnove/historia/vojtko22092022.history
+   39  sudo cat /root/.history1
+   40  sudo cat /root/.history1 .history1 > .history2
+   41  vim .history2
+   42  sudo cp .history2 /public/ucebnove/historia/vojtko22092022.history
+   43  rm .history*
+   44  sudo rm /root/.history
+   45  sudo rm /root/.history1
+   46  exit
+   47  ll
+   48  ls -la
+   49  exit
+   50  ls -la
+   51  sudo mv 02.pdf /public/prednasky/02_uvod_os.pdf
+   52  ls -la
+   53  ls -la /public/prednasky/
+   54  exit
+   55  ls -la /public/
+   56  ls -la /public/priklady/
+   57  ls -la /public/priklady/ | less
+   58  ls -la /public/priklady/1.sh
+   59  less /public/priklady/1.sh
+   60  exit
+   61  reset
+   62  ls -la
+   63  cat .vimrc
+   64  cat .viminfo 
+   65  ls -la
+   66  less .profile 
+   67  echo $BASH_VERSION
+   68  less .profile 
+   69  echo ~
+   70  echo $HOME
+   71  less .profile 
+   72  echo $PATH
+   73  ls -la /bin
+   74  touch asdf
+   75  ls -la
+   76  /bin/touch qwer
+   77  ls -la
+   78  echo $PATH
+   79  PATH=".:$PATH"
+   80  echo $PATH
+   81  cd /public
+   82  ls
+   83  ls -la
+   84  cd ..
+   85  ls -la public/
+   86  ls -la
+   87  echo $PATH
+   88  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+   89  echo $PATH
+   90  env
+   91  env | less
+   92  echo $_
+   93  pwd
+   94  echo $_
+   95  man echo
+   96  echo "$_"
+   97  man echo
+   98  echo "$_"
+   99  ls -la
+  100  cd
+  101  ls -la
+  102  less .bash_history 
+  103  history
+  104  man history
+  105  help history
+  106  help history | less
+  107  history
+  108  pwd
+  109  history
+  110  less .bash_history 
+  111  echo ~
+  112  echo "~"
+  113  echo "$PATH"
+  114  echo "reset"
+  115  echo "\$PATH"
+  116  echo \~
+  117  echo \!
+  118  echo \\
+  119  echo '$PATH'
+  120  echo '$PATH!'
+  121  echo '$PATH!~'
+  122  echo .
+  123  cd .
+  124  cd ..
+  125  cd
+  126  ls -la
+  127  less /bin/touch
+  128  ls -la /bin
+  129  ls -la /bin
+  130  ls -la /dev
+  131  cat /dev/random
+  133  hexdump -C /dev/random
+  134  ls -la /dev
+  135  ls -la /proc/selffd
+  136  ls -la /proc/self/fd
+  137  ls -la /dep/pts/0
+  138  ls -la /dev/pts
+  139  echo "asdf" | less
+  140  echo "asdf" | tr "a" "b"
+  141  man tr
+  142  tr "a" "b"
+  143  jobs
+  144  fg
+  145  man passwd
+  146  man man
+  147  man passwd
+  148  man 5 passwd
+  149  less /etc/passwd
+  150  less /etc/shadow
+  151  ls -la /etc/shadow
+  152  groups mvojtko
+  153  less /etc/groups
+  154  less /etc/group
+  155  man group
+  156  man groups
+  157  man 5 groups
+  158  man groups
+  159  man 5 group
+  160  less /etc/group
+  161  groups cviko1
+  162  less /etc/passwd
+  163  man which 
+  164  which ls
+  165  echo $PATH
+  166  who
+  167  last
+  168  reset
+  169  finger
+  170  top
+  171  htop
+  172  sudo apt-get install htop
+  173  htop
+  174  sudo apt-get install cowsay
+  175  sudo apt-get install fortune
+  176  fortune | cowsay
+  177  man cowsay
+  178  vim .profile 
+  179  ls -la
+  180  man wc 
+  181  wc .bashrc
+  182  man wc 
+  183  wc -l .bashrc
+  184  man grep
+  185  grep PATH .profile 
+  186  grep --color=always PATH .profile 
+  187  grep --color=always PATH .profile | wc
+  188  grep --color=always PATH .profile | wc -l
+  189  grep --color=always "$PATH" .profile | wc -l
+  190  grep --color=always "\$PATH" .profile | wc -l
+  191  grep --color=always "\$PATH" .profile
+  192  grep --color=always "\$PATH"
+  193  exit
+  194  history
+  195  history | grep -v PUTTY
+  197  ls -la /public/ucebnove/historia/

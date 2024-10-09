@@ -2,5 +2,5 @@
 rm -rf /home/leo/repo/public
 cp -R /public .
 git add .
-git commit -m 'autocommit $(date)'
+git commit -m "autocommit $(date)"
 git push origin main

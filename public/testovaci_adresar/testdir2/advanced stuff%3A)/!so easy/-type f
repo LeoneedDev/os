@@ -1,0 +1,85 @@
+      This manual page talks about `options' within the expression list.  These options control the behaviour of find but are specified immediately after the last path
+       name.  The five `real' options -H, -L, -P, -D and -O must appear before the first path name, if at all.  A double dash -- can also be used to signal that any re-
+       maining arguments are not options (though ensuring that all start points begin with either `./' or `/' is generally safer if you use wildcards  in  the  list  of
+       start points).
+
+       -P     Never follow symbolic links.  This is the default behaviour.  When find examines or prints information a file, and the file is a symbolic link, the infor-
+              mation used shall be taken from the properties of the symbolic link itself.
+
+       -L     Follow symbolic links.  When find examines or prints information about files, the information used shall be taken from the properties of the file to which
+              the  link  points,  not from the link itself (unless it is a broken symbolic link or find is unable to examine the file to which the link points).  Use of
+              this option implies -noleaf.  If you later use the -P option, -noleaf will still be in effect.  If -L is in effect and find discovers a symbolic link to a
+              subdirectory during its search, the subdirectory pointed to by the symbolic link will be searched.
+
+              When  the  -L  option is in effect, the -type predicate will always match against the type of the file that a symbolic link points to rather than the link
+              itself (unless the symbolic link is broken).  Actions that can cause symbolic links to become broken while find is executing  (for  example  -delete)  can
+              give rise to confusing behaviour.  Using -L causes the -lname and -ilname predicates always to return false.
+
+       -H     Do  not  follow symbolic links, except while processing the command line arguments.  When find examines or prints information about files, the information
+              used shall be taken from the properties of the symbolic link itself.  The only exception to this behaviour is when a file specified on the command line is
+              a  symbolic  link, and the link can be resolved.  For that situation, the information used is taken from whatever the link points to (that is, the link is
+              followed).  The information about the link itself is used as a fallback if the file pointed to by the symbolic link cannot be examined.  If -H is  in  ef-
+              fect  and  one  of  the  paths specified on the command line is a symbolic link to a directory, the contents of that directory will be examined (though of
+              course -maxdepth 0 would prevent this).
+
+       If more than one of -H, -L and -P is specified, each overrides the others; the last one appearing on the command line takes effect.  Since it is the default, the
+       -P option should be considered to be in effect unless either -H or -L is specified.
+
+       GNU  find frequently stats files during the processing of the command line itself, before any searching has begun.  These options also affect how those arguments
+       are processed.  Specifically, there are a number of tests that compare files listed on the command line against a file we are  currently  considering.   In  each
+       case,  the  file  specified on the command line will have been examined and some of its properties will have been saved.  If the named file is in fact a symbolic
+       link, and the -P option is in effect (or if neither -H nor -L were specified), the information used for the comparison will be taken from the properties  of  the
+       symbolic  link.   Otherwise, it will be taken from the properties of the file the link points to.  If find cannot follow the link (for example because it has in-
+       sufficient privileges or the link points to a nonexistent file) the properties of the link itself will be used.
+
+       When the -H or -L options are in effect, any symbolic links listed as the argument of -newer will be dereferenced, and the timestamp will be taken from the  file
+       to which the symbolic link points.  The same consideration applies to -newerXY, -anewer and -cnewer.
+
+       The  -follow  option  has  a  similar effect to -L, though it takes effect at the point where it appears (that is, if -L is not used but -follow is, any symbolic
+       links appearing after -follow on the command line will be dereferenced, and those before it will not). 
+
+		-D debugopts
+              Print diagnostic information; this can be helpful to diagnose problems with why find is not doing what you want.  The list  of  debug  options  should  be
+              comma separated.  Compatibility of the debug options is not guaranteed between releases of findutils.  For a complete list of valid debug options, see the
+              output of find -D help.  Valid debug options include
+
+              exec   Show diagnostic information relating to -exec, -execdir, -ok and -okdir
+
+              opt    Prints diagnostic information relating to the optimisation of the expression tree; see the -O option.
+
+              rates  Prints a summary indicating how often each predicate succeeded or failed.
+
+              search Navigate the directory tree verbosely.
+
+              stat   Print messages as files are examined with the stat and lstat system calls.  The find program tries to minimise such calls.
+
+              tree   Show the expression tree in its original and optimised form.
+
+              all    Enable all of the other debug options (but help).
+
+              help   Explain the debugging options.
+
+       -Olevel
+              Enables query optimisation.  The find program reorders tests to speed up execution while preserving the overall effect; that is, predicates with side  ef-
+              fects are not reordered relative to each other.  The optimisations performed at each optimisation level are as follows.
+
+              0      Equivalent to optimisation level 1.
+
+              1      This  is  the  default  optimisation level and corresponds to the traditional behaviour.  Expressions are reordered so that tests based only on the
+                     names of files (for example -name and -regex) are performed first.
+
+              2      Any -type or -xtype tests are performed after any tests based only on the names of files, but before any tests that require  information  from  the
+                     inode.   On many modern versions of Unix, file types are returned by readdir() and so these predicates are faster to evaluate than predicates which
+                     need to stat the file first.  If you use the -fstype FOO predicate and specify a filesystem type FOO which  is  not  known  (that  is,  present  in
+                     `/etc/mtab') at the time find starts, that predicate is equivalent to -false.
+
+              3      At  this  optimisation  level,  the full cost-based query optimiser is enabled.  The order of tests is modified so that cheap (i.e. fast) tests are
+                     performed first and more expensive ones are performed later, if necessary.  Within each cost band, predicates are evaluated earlier  or  later  ac-
+                     cording to whether they are likely to succeed or not.  For -o, predicates which are likely to succeed are evaluated earlier, and for -a, predicates
+                     which are likely to fail are evaluated earlier.
+
+              The cost-based optimiser has a fixed idea of how likely any given test is to succeed.  In some cases the probability takes account of the specific  nature
+              of  the  test  (for example, -type f is assumed to be more likely to succeed than -type c).  The cost-based optimiser is currently being evaluated.  If it
+              does not actually improve the performance of find, it will be removed again.  Conversely, optimisations that prove to be reliable,  robust  and  effective
+              may  be  enabled  at lower optimisation levels over time.  However, the default behaviour (i.e. optimisation level 1) will not be changed in the 4.3.x re-
+              lease series.  The findutils test suite runs all the tests on find at each optimisation level and ensures that the result is the same.
