@@ -1,0 +1,205 @@
+  138  man cd
+  139  help
+  140  help cd
+  141  help
+  142  echo ahoj | grep a
+  143  echo ahoj | grep --color a
+  144  echo ahoj |& grep --color a
+  145  asdfg | grep --color asd
+  146  asdfg |& grep --color asd
+  147  cd priklady/
+  148  ls -la
+  149  cat s
+  150  cd ..
+  151  rm -rf priklady/
+  152  cp -r /public/priklady/ .
+  153  cd priklady/
+  154  cat s
+  155  cat x.bc
+  156  ./x.bc
+  157  chmod +x x.bc
+  158  ./x.bc
+  159  cat 1.sh
+  160  bash 1.sh
+  161  cat 2.sh
+  162  help for
+  163  for d in /public/prednasky /public/ucebnove /public/priklady; do         ls $d | wc -l; done
+  164  ls /public/prednasky
+  165  man wc
+  166  ls /public/prednasky | wc -l
+  167  help
+  168  help for
+  169  help "for (("
+  170  cat 2.sh
+  171  d=/public/prednasky
+  172  echo $d
+  173  env
+  174  set
+  175  env
+  176  set
+  177  ahoj=cau echo $ahoj
+  178  ahoj="cau echo $ahoj"
+  179  echo $ahoj
+  180  set
+  181  ahoj="cau echo $ahoj"
+  182  echo $ahoj
+  183  set
+  184  cat 3.sh
+  185  veta=ahoj svet
+  186  help while
+  187  help test
+  188  help [
+  189  cat 3.sh
+  190  help test
+  191  cat 3.sh
+  192  echo $pocet $veta
+  193  veta="ahoj svet"
+  194  pocet=3
+  195  echo $pocet     $veta
+  196  echo "$pocet    $veta"
+  197  help "
+  198  echo '$pocet    $veta'
+  199  echo '$pocet  '  $veta'
+  200  asfdsfd dsfdsgf
+  201  '
+  202  set
+  203  vim 1.sh
+  204  bash 1.sh
+  205  cat 1.sh
+  206  echo 'ahoj
+  207  '
+  208  cat 3.sh
+  209  echo '$pocet    \$veta'
+  210  echo '$pocet    $veta'
+  211  echo \$pocet    \$veta
+  212  echo
+  213  echo ""
+  214  help "(("
+  215  echo $pocet
+  216  ((pocet--))
+  217  echo $pocet
+  218  (($pocet--))
+  219  cat 3.ah
+  220  cat 3.sh
+  221  bash 3.sh
+  222  ((2+2))
+  223  echo ((2+2))
+  224  echo "((2+2))"
+  225  cat 4.sh
+  226  cat 3.sh
+  227  bash 3.sh
+  228  chmod +x 3.sh
+  229  ./3.sh
+  230  vim 3.sh
+  231  ./3.sh
+  232  cat 4.sh
+  233  touch Aaa cAA BBB ccc
+  234  ls -la
+  235  cat 4.sh
+  236  echo [A-Z]*
+  237  echo *
+  238  f=AAA
+  239  man tr
+  240  echo "$f" | tr 'A-Z' 'a-z'
+  241  echo $f
+  242  f="AAA aa AA         afg"
+  243  echo $f
+  244  echo $f | tr 'A-Z' 'a-z'
+  245  echo "$f" | tr 'A-Z' 'a-z'
+  246  shellcheck
+  247  sudo apt-get install shellcheck
+  248  shellcheck 4.sh
+  249  cat 4.sh
+  250  man mv
+  251  touch "ahoj   subor"
+  252  ls -la
+  253  cat 4.sh
+  254  f="ahoj   subor"
+  255  mv $f
+  256  cat 4.sh
+  257  $(echo duti | tr u a | tr i e)
+  258  date
+  259  man date
+  260  $(find . -name 1.sh)
+  261  $(find . -name 3.sh)
+  262  cat 5.sh
+  263  echo $0
+  264  cat 5.sh
+  265  echo "Help: $0 arg1 arg2 arg3 ... argN"
+  266  cat 5.sh
+  267  help if
+  268  cat 5.sh
+  269  man unset
+  270  help unset
+  271  cat 5.sh
+  272  set
+  273  unset veta
+  274  set
+  275  cat 5.sh
+  276  echo $@
+  277  help shift
+  278  cat 5.sh
+  279  echo $#
+  280  cat 5.sh
+  281  bash 5.sh -d afdsafad afd d g sgfhg 
+  282  bash 5.sh
+  283  bash 5.sh -h
+  284  echo $?
+  285  bash 5.sh
+  286  echo $?
+  287  echo
+  288  bash 5.sh -c
+  289  bash 5.sh sssss
+  290  bash 5.sh abc -h
+  291  bash 5.sh abc cba -d abc
+  292  help [[
+  293  help test
+  294  cat 6.sh
+  295  echo $zoznam
+  296  zoznam=(jeden dva tri styri pat "sest cele sedem")
+  297  echo $zoznam
+  298  echo ${zoznam[2]}
+  299  echo ${zoznam[0]}
+  300  echo ${#zoznam[2]}
+  301  echo ${#zoznam[3]}
+  302  cat 6.sh
+  303  echo ${#zoznam[@]}
+  304  echo ${zoznam[@]}
+  305  echo ${zoznam[@]:2:4}
+  306  echo ${zoznam[@]:2:2}
+  307  zoznam2=(${zoznam[@]} osem)
+  308  echo ${zoznam[@]}
+  309  echo ${zoznam2[@]}
+  310  echo ${#zoznam2[@]}
+  311  zoznam2=("${zoznam[@]}" osem)
+  312  echo ${#zoznam2[@]}
+  313  cat 6.sh
+  314  for prvok in "${zoznam[@]}"; do         echo "$prvok"; done
+  315  for prvok in ${zoznam[@]}; do         echo "$prvok"; done
+  316  shellcheck 6.sh
+  317  echo *
+  318  echo "*"
+  319  bash a.* 1.sh
+  320  bash "a.*" 1.sh
+  321  grep a.* 1.sh
+  322  grep "a.*" 1.sh
+  323  grep "a*" 1.sh
+  324  grep a* 1.sh
+  325  cat 6.sh
+  326  shellcheck 6.sh
+  327  echo ${zoznam[$((7-${#zoznam[@]}))]}
+  328  echo $((7-${#zoznam[@]}))
+  329  echo ((7-6))
+  330  echo $((7-6))
+  331  echo ${zoznam[1]}
+  332  cat 6.sh
+  333  {[1],[a-c]}*
+  334  echo {[1],[a-c]}*
+  335  echo "{[1],[a-c]}*"
+  336  echo {[1],[a-c]}*
+  337  echo *.{sh,txt}
+  338  echo *.{{sh,txt},txt}
+  339  *.{sh,txt} *.txt
+  340  echo *.{sh,txt} *.txt
+  341  history
+  342  history > /public/ucebnove/historia/vojtko14102021.history

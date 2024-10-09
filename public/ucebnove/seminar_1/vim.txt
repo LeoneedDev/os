@@ -1,0 +1,99 @@
+#anglicka klavesnica
+#ucit sa tym ze skusam, nie memorovat
+#ako sa odtialto dostanem
+#iba <ESC> to nebude
+#neupravil som nic
+:q
+#upravil som ale zmeny nechcem ulozit
+:q!
+#chcem ulozit subor a zavriet vim
+:wq
+#a naozaj trvam na tom ze chcem ulozit subor a zavriet vim
+:wq!
+#chcem ulozit do ineho suboru
+:w subor
+
+:help
+:help context
+
+#pohyb v normalnom rezime
+hjkl
+webWB
+
+kde som ? ctrl-g, zaciatok suboru gg, koniec suboru G, 5G Vam kurzor umiestni na piaty riadok
+zaciatok a koniec riadka ^, 0 a $
+        tu je koniec riadka?                   
+
+:norm[al]
+
+zatvorky %
+(                           ) 
+[                           ]
+{                           }
+
+# OPERATORY
+# x alebo X vymaze znak pod kurzorom, moho
+# r opravi typo :), teda nahradim jeden znak
+# d, y - v kombinacii s inymi prikazmi a rezimom
+# dw, d$, d^, d (delete), y (yank, copy), dd, yy, d3w, 2dd, 5yy, p (put), P
+# undo u, redo ctrl-r, zopakuj prikaz .
+# c (change, zmen), oprav toto slovo. pouzi "ce"
+
+tu su styri slova alebo je ich viac ?
+nejake slovo
+
+#posunieme text >>, <<
+text
+#konfiguracny subor
+
+#VISUAL rezim
+v - oznacim si text pod kurzorom
+V - oznacim si riadok
+ctrl-v - oznacim si blok (ctrl+v)
+:w
+:r
+:!ls
+:r !ls
+
+tato cast suboru
+napr aj tato
+
+#INSERT alebo ONSERT alebo ANSERT? i, I, o, O, a, A
+Vlozme oddelovac x krat
+-----------------------------
+
+5i<text>Esc
+zaujimave zaujimave zaujimave zaujimave zaujimave 
+
+hladaj na riadku znak
+2fa
+2Fa
+
+Praca je zabava ale dlsie vety su lepsim prikladom.
+Praca moze byt zabava
+Praca obcas byva zabava
+
+# REPLACE mode R
+
+* # - Hladame dalsi a predchadzajuci vyskyt slova, na ktorom mame kurzor
+
+Hladanie ako v PAGER / ?, 
+
+almost last words
+
+#%s
+#substitute
+:%s/regexp/nahrada/gc - 
+% cely dokument, 
+g vsetky vyskyty v riadku
+c vy mozete vyberat co nahradit. 
+:%s/text/iny text/gc
+Viac na :help substitute
+
+#otvorenie viacerych suborov v jednom editore
+:split - :help split
+ctrl-ww
+:vsplit - :help vsplit
+:tabedit - :help tabedit
+
+vimtutor

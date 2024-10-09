@@ -1,0 +1,34 @@
+Fragment programu:
+for(i=0, n=1000; i<n; i++) C[i] = A[i] + B[i]
+
+Majme vypoctovy system s velkostou stranky 1024 slov. 
+Majme program, ktory ma pridelene 4 strankove ramy. 
+Uvazujme, ze program prave zacal vykonavat uvedeny
+fragment programu a nema nacitanu ani jednu stranku
+potrebnu na jeho vykonanie. 
+
+Po kompilacii moze adresny priestor fragmentu vyzerat priblizne takto:
+	  addr   data
+	  0x0040 mov R1, [ZERO]
+	  0x0041 mov R2, [n]
+LOOP:     0x0042 cmp R1, R2
+	  0x0043 jeq END
+	  0x0044 mov R3, [A + R1]
+	  0x0045 add R3, [B + R1]
+	  0x0046 mov [C + R1], R3
+	  0x0047 add R1, [ONE]
+	  0x0048 jmp LOOP
+END:      0x0049 
+            ...
+A:        0x1800      #- 0x1BFF storage A
+B:        0x1C00      #- 0x1FFF storage B
+C:        0x2000      #- 0x23FF storage C
+ONE:      0x2400 1
+ZERO:     0x2401 0
+n:        0x2402 1000
+
+Kolko page faults nastane pocas vykonavania tohto fragmentu
+s pouzitim algoritmu vyberu obete:
+a) FIFO - first in first out
+b) optimalneho algoritmu
+c) LRU - least recently used

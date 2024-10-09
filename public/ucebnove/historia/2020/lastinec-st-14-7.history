@@ -1,0 +1,95 @@
+    1  ls
+    2  cd /public/
+    3  ls
+    4  cd priklady/
+    5  ls
+    6  history
+    7  clear
+    8  echo "" > ~/.bash_history 
+    9  logout
+   10  history
+   11  less /public/priklady/awk.txt 
+   12  less -S /public/samples/access.log 
+   13  awk '{print $NF}' /public/samples/access.log | sort | uniq | less
+   14  head /public/samples/access.log
+   15  awk '{print $-1}' /public/samples/access.log | sort | uniq | less
+   16  man rev
+   17  head /public/samples/access.log | rev
+   18  rev /public/samples/access.log | cut -d' ' -f-6 | rev
+   19  rev /public/samples/access.log | cut -d' ' -f-7 | rev
+   20  rev /public/samples/access.log | cut -d' ' -f-9 | rev | less
+   21  rev /public/samples/access.log | cut -d' ' -f-7 | rev | less
+   22  rev /public/samples/access.log | cut -d' ' -f-9 | rev | less
+   23  rev /public/samples/access.log | cut -d' ' -f-9 | rev | sort | uniq | less
+   24  rev /public/samples/access.log | cut -d'"' -f2 | rev | sort | uniq | less
+   25  rev /public/samples/access.log | cut -d'"' -f2 | rev | sort | uniq | grep -i iphone
+   26  less /public/priklady/awk.txt 
+   27  awk /iPhone|Android/ /public/samples/access.log 
+   28  awk '/iPhone|Android/' /public/samples/access.log 
+   29  awk '/Android|iPhone/ {sum+=1} END {print sum/NR*100 "%"}' /public/samples/access.log
+   30  awk '/iPhone|Android/{sum+=1} {sumAll+=1} END {print sum/sumAll*100"%"}' access.log
+   31  awk '/iPhone|Android/{sum+=1} {sumAll+=1} END {print sum/sumAll*100"%"}' /public/samples/access.log
+   32  awk '/iPhone|Android/ {sum+=1} END {print sum/NR*100 "%"}' /public/samples/access.log
+   33  awk '/Android|iPhone/ {sum+=1} END {print sum/NR*100 "%"}' /public/samples/access.log
+   34  less /public/priklady/awk.txt 
+   35  awk '{print $8}' /public/samples/access.log | sort | uniq
+   36  awk '{print $9}' /public/samples/access.log | sort | uniq
+   37  less /public/priklady/sed.txt 
+   38  cd /public/priklady/
+   39  ls
+   40  ls ../samples/
+   41  cd ../samples/
+   42  sed sedinput.txt 
+   43  sed '' sedinput.txt 
+   44  cat sedinput.txt 
+   45  sed -n '' sedinput.txt 
+   46  sed -n 'p' sedinput.txt 
+   47  sed -n '=' sedinput.txt 
+   48  sed -n '=p' sedinput.txt 
+   49  sed -n '= p' sedinput.txt 
+   50  sed -n '=;p' sedinput.txt 
+   51  sed -n '3p' sedinput.txt 
+   52  sed -n '3 p' sedinput.txt 
+   53  sed 'i pred riadok' sedinput.txt 
+   54  sed 'a za riadok' sedinput.txt 
+   55  sed '3a za riadok' sedinput.txt 
+   56  
+   57  sed '3c menim treti riadok' sedinput.txt 
+   58  sed '3d' sedinput.txt 
+   59  cat sedinput.txt 
+   60  cp sedinput.txt /tmp/
+   61  sed '3d' /tmp/sedinput.txt 
+   62  sed -i '3d' /tmp/sedinput.txt 
+   63  cat /tmp/sedinput.txt
+   64  less /etc/ssh/sshd_config 
+   65  sed 's/PermitRootLogin no/PermintRootLogin yes/' /etc/ssh/sshd_config 
+   66  sed 's/PermitRootLogin no/PermintRootLogin yes/' /etc/ssh/sshd_config  | less
+   67  echo 's/hello/world/' > ~/mojscript.sed
+   68  sed -f ~/mojscript.sed sedinput.txt 
+   69  sed 's/hello/world/g' sedinput.txt 
+   70  less ../priklady/sed.txt 
+   71  less list.txt 
+   72  sed '7~10d' list.txt 
+   73  cat list.txt 
+   74  sed -n '7d;3d; p' list.txt
+   75  sed -n '7,10d; p' list.txt
+   76  less ../priklady/sed.txt 
+   77  sed '3s/Zuzka/Lucka/g' list.txt
+   78  sed '3s/Zuzka/Lucka/2' list.txt
+   79  sed 's/Zuzka/\L&/g' list.txt
+   80  sed 's/Zuzka/\U&/g' list.txt
+   81  sed 's/Zuzka/\U/g' list.txt
+   82  sed 's/\(Zuzka\)/\1aa/g' list.txt
+   83  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt 
+   84  sed 's/\<mozno\>/nemozno/g' list.txt
+   85  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt
+   86  sed 's/\<mozno\>/nemozno/gI' list.txt
+   87  cat list.txt 
+   88  sed 's/\<mozno\>/nemozno/gi' list.txt
+   89  sed '/[Mm]ozno|nemozno' list.txt
+   90  sed '/[Mm]ozno|nemozno/' list.txt
+   91  sed '/[Mm]ozno|nemozno/ p' list.txt
+   92  sed '/[Mm]ozno\|nemozno/ p' list.txt
+   93  sed -n '/[Mm]ozno\|nemozno/ p' list.txt
+   94  cd
+   95  history > history/lastinec-st-14-7.history

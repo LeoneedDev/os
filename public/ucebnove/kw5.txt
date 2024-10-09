@@ -1,0 +1,14 @@
+procesor
+instrukcia
+atomickost instrukcie
+prerusenie
+program
+proces
+pamat
+spolocna pamat
+synchronizacia
+prostriedok
+vzajomne vylucovanie
+kriticka oblast
+poziadavky na riesenie vzajomneho vylucovania
+vstupny a vystupny protokol

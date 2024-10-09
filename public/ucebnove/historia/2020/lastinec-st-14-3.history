@@ -1,0 +1,122 @@
+  312  tail /public/ucebnove/historia/lastinec-st-14-2.history
+  313  tail -20 /public/ucebnove/historia/lastinec-st-14-2.history
+  314  cd /public/
+  315  ls
+  316  cat ucebnove/kw3.txt 
+  317  ls /dev
+  318  cat .
+  319  vim prednasky/
+  320  cd
+  321  ls
+  322  cd adresar/
+  323  ls
+  324  cd
+  325  pwd
+  326  ln -s /public/ucebnove/ ucebnove
+  327  ll
+  328  grep echo /public/ucebnove/historia/lastinec-st-14*
+  329  echo "hello"
+  330  echo "/public/ucebnove/" | wc -c
+  331  printf "/public/ucebnove/" | wc -c
+  332  printf "/public/ucebnove/"
+  333  man find
+  334  find . -type d
+  335  find . -type f
+  336  find . -type f -size +1K
+  337  find . -type f -size +1k
+  338* 
+  339  find . -type f -size +1K -exec print
+  340  find . -type f -size +1k -exec print
+  341  find . -type f -size +1k -print
+  342  find . -type f -size +1k -exec wc -l {} \;
+  343  find . -type f -size +1k -exec grep wc {} \;
+  344  grep wc ucebnove/historia/lastinec-st-14-2.history 
+  345  cd adresar/
+  346  echo "wca a tak dalej" > subor
+  347  grep wc subor 
+  348  echo "wc samostatne slovo" >> subor
+  349  grep wc subor 
+  350  grep -w wc subor 
+  351  cd /public/
+  352  ls
+  353  cd samples/
+  354  ls
+  355  less access.log 
+  356  grep "May/18" access.log 
+  357  head access.log 
+  358  grep "18/May" access.log 
+  359  grep "18/May" access.log | wc -l
+  360  grep "18/M.y" access.log | wc -l
+  361  grep "..\." access.log
+  362  grep "Safari.*" access.log
+  363  grep --color "Safari.*" access.log
+  364  grep --color "0*" access.log
+  365  grep --color "[12]" access.log
+  366  grep --color "[0-9]+" access.log
+  367  grep --color "[0-9]\+" access.log
+  368  grep --color "[0-9]\+" access.log | head
+  369  grep --color -E "[0-9]+" access.log | head
+  370  grep --color -E "[0-9]+" access.log
+  371  grep --color -E "[0-9]{3}" access.log
+  372  grep --color -E "[0-9]{3,4}" access.log
+  373  grep --color -E "GET.*200" access.log
+  374  grep --color -E "GET .* HTTP/1.1" 200" access.log
+  375  alias 'grep=grep --color'
+  376  grep GET /robots.txt access.log 
+  377  grep GET /robots.txt access.log | head
+  378  grep "GET /robots.txt" access.log | head
+  379  grep 'GET /robots.txt' access.log | head
+  380  grep --color -E 'GET .* HTTP/1.1" 200' access.log
+  381  ls
+  382  zless auth.log.2.gz 
+  383  ls -l
+  384  sudo chown lastinec:lastinec auth.log.2.gz 
+  385  ls -l
+  386  zless auth.log.2.gz 
+  387  zgrep "Failed password" | wc -l
+  388  zgrep "Failed password" auth.log.2.gz | wc -l
+  389  zgrep "Failed password" auth.log.2.gz | head
+  390  zgrep -c "Failed password" auth.log.2.gz
+  391  zgrep -E "Sep 21.*Failed password" auth.log.2.gz
+  392  zgrep -E "^Sep 21" auth.log.2.gz
+  393  zgrep -E "ssh2$" auth.log.2.gz
+  394  zgrep -Ev "ssh2$" auth.log.2.gz
+  395  zgrep -E "^Sep 21.*Failed password" auth.log.2.gz
+  396  zgrep -E "^Sep 21.*Failed password" auth.log.2.gz | cut -d" " -f11
+  397  zgrep -A 3 admin
+  398  zgrep -A 3 admin auth.log.2.gz 
+  399  zgrep -E "^Sep 21.*Failed password" auth.log.2.gz | cut -d" " -f11
+  400  zgrep -E "^Sep 21.*Failed password" auth.log.2.gz | grep -C1 admin 
+  401  zgrep -E "^Sep 21.*Failed password for root" auth.log.2.gz | cut -d " " -f11
+  402  zgrep -E "^Sep 21.*Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq
+  403  zgrep -E "^Sep 21.*Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq | wc -l
+  404  zgrep -E "^Sep 21.*Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c
+  405  zgrep -E "^Sep 21.*Failed password for root" auth.log.2.gz | cut -d " " -f11 | sort | uniq -c | sort -rn | head
+  406  zgrep "Invalid user" auth.log.2.gz
+  407  date
+  408  ls
+  409  watch date
+  410  zgrep "Invalid user" auth.log.2.gz | cut -d" " -f8 | sort | uniq -c | sort -rn | head
+  411  cd ..
+  412  cd priklady/
+  413  ls
+  414  ls *.sh
+  415  cat 1.sh
+  416  cd 
+  417  cd adresar/
+  418  cp /public/priklady/[1-4].sh .
+  419  ls
+  420  bash 1.sh 
+  421  chmod +x 1.sh 
+  422  ls
+  423  1.sh
+  424  echo $PATH
+  425  ./1.sh 
+  426  cat /public/priklady/x.bc 
+  427  cp /public/priklady/x.bc
+  428  cp /public/priklady/x.bc .
+  429  bc x.bc 
+  430  sudo apt install bc
+  431  bc x.bc 
+  432  cd
+  433  history > history/lastinec-st-14-3.history

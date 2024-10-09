@@ -1,0 +1,1 @@
+grep -Eo "^\<[[:alpha:]]{21,}\>" /public/zaciatocnik.txt

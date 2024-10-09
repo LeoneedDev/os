@@ -1,0 +1,142 @@
+ 1227  w
+ 1228  write psys
+ 1229  write psys sdfsdf
+ 1230  write psys <<< "ahoj svet!"
+ 1231  wall ascadfs
+ 1232  vim a
+ 1233  chmod -x a
+ 1234  ./a
+ 1235  chmod +x a
+ 1236  ./a
+ 1237  rm a
+ 1238  cd /public/samples/
+ 1239  ll
+ 1240  cd ../priklady/
+ 1241  ll
+ 1242  cd
+ 1243  cp /public/priklady/
+ 1244  cp /public/priklady/ .
+ 1245  cp /public/priklady/ . -r
+ 1246  cd priklady/
+ 1247  ll
+ 1248  vim -p *.sh
+ 1249  echo $IFS|hexdump 
+ 1250  echo $IFS|xxd
+ 1251  echo ${allThreads[@]}
+ 1252  echo ${allThreads}
+ 1253  fg
+ 1254  wall aaaa
+ 1255  vim 
+ 1256  jobs
+ 1257  fg
+ 1258  vim
+ 1259  less /etc/passwd
+ 1260  jobs 
+ 1261  fg 1
+ 1262  kill %2
+ 1263  jobs
+ 1264  fg
+ 1265  help kill
+ 1266  help cd
+ 1267  help fg
+ 1268  who
+ 1269  w
+ 1270  wall ahoj svet!
+ 1271  write psys pts/1
+ 1272  write psys pts/1 <<<"Vitaj"
+ 1273  vim spamer.sh
+ 1274  chmod +x spamer.sh 
+ 1275  ./spamer.sh 
+ 1276  bg 1
+ 1277  ls
+ 1278  jobs
+ 1279  kill %1
+ 1280  jobs
+ 1281  ./spamer.sh &
+ 1282  jobs
+ 1283  kill 8418
+ 1284  vim spamer.sh 
+ 1285  ./spamer.sh &
+ 1286  ll
+ 1287  ls
+ 1288  cd ..
+ 1289  ls
+ 1290  spamer.h
+ 1291  kill 8455
+ 1292  ll
+ 1293  rm -r priklady/
+ 1294  ll
+ 1295  cd /public/priklady/ -r .
+ 1296  cp /public/priklady/ -r .
+ 1297  cd priklady/
+ 1298  ll
+ 1299  fg
+ 1300  a=a ls
+ 1301  a=a echo $a
+ 1302  a=aaa echo $a
+ 1303  env|grep LS_
+ 1304  LS_COLORS=dfvsdb ls
+ 1305  PATH=.:$PATH bash
+ 1306  LS_COLORS=dfvsdb ls
+ 1307  cd; ls
+ 1308  echo $(cd /public; ls)
+ 1309  cd priklady/
+ 1310  ls
+ 1311  vim -o *.sh
+ 1312  vim -p *.sh
+ 1313  ./1.sh
+ 1314  bash <1.sh
+ 1315  bash 1.sh
+ 1316  vim 1.sh
+ 1317  fg
+ 1318  bash 1.sh
+ 1319  fg
+ 1320  for d in /public/prednasky /public/ucebnove /public/priklady; do         ls $d | wc -l; done
+ 1321  for d in /public/prednasky /public/ucebnove /public/priklady; do         ls $d | wc -l; done
+ 1322  cd
+ 1323  cd /
+ 1324  ls home/psys/priklady/
+ 1325  ls home/psys/priklady
+ 1326  for i in home/psys/priklady; do echo $i; done
+ 1327  echo $IFS
+ 1328  echo $IFS|hexdump 
+ 1329  man ascii
+ 1330  IFS=/
+ 1331  for i in home/psys/priklady; do echo $i; done
+ 1332  for i in home/psys/priklady; do echo $i; echo; done
+ 1333  echo $IFS
+ 1334  IFS="/"
+ 1335  echo $IFS
+ 1336  IFS=/ for i in home/psys/priklady; do echo $i; done
+ 1337  IFS="/"; for i in home/psys/priklady; do echo $i; done
+ 1338  cd priklady/
+ 1339  vim -p *.sh
+ 1340  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+ 1341  for i in $(ls); do echo mv $i $.txt; done
+ 1342  for i in $(ls); do echo mv $i ${i}.txt; done
+ 1343  for i in $(ls|grep csh$); do echo mv $i ${i}.txt; done
+ 1344  for i in $(ls|grep csh$); do echo mv $i ${i/.csh}.txt; done
+ 1345  ls
+ 1346  for i in {1..1024}; do echo $i ; done
+ 1347  for i in {1..1024}.txt; do echo $i ; done
+ 1348  seq
+ 1349  seq 10
+ 1350  seq 1 10
+ 1351  seq -5 10
+ 1352  seq -5 10 3
+ 1353  seq 1 10 3
+ 1354  seq 1 3 10
+ 1355  fg
+ 1356  veta=ahoj svet
+ 1357  veta=ahoj ls
+ 1358  $veta
+ 1359  echo $veta
+ 1360  veta=ahojaaaaaaa
+ 1361  veta=ahoj ls
+ 1362  echo $veta
+ 1363  fg
+ 1364  jobs
+ 1365  pocet=3
+ 1366  while [ $pocet -gt 0 ]; do         echo $pocet $veta;         echo $pocet     $veta;         echo "$pocet    $veta";         echo '$pocet    $veta';         echo \$pocet    \$veta;         echo "";         ((pocet--)); done
+ 1367  history
+ 1368  history|vim -

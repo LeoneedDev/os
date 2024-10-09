@@ -1,0 +1,149 @@
+  244  ZACIATOK DRUHEHO CVIKA
+  245  pwd
+  246  cd /public/
+  247  ls
+  248  ls -la
+  249  less zaciatocnik.txt 
+  250  cat zaciatocnik.txt 
+  251  hexdump -C /dev/zero 
+  252  cd
+  253  cd /public/
+  254  ls
+  255  ls -la
+  256  cat zaciatocnik.txt 
+  257  less zaciatocnik.txt 
+  258  hexdump -C /dev/zero 
+  259  ps
+  260  man ps
+  261  ps -ef
+  262  ps
+  263  ps aux
+  264  ps auxf
+  265  sudo ps auxf
+  266  man 
+  267  man sudo
+  268  gs
+  269  cat /etc/sudoers
+  270  sudo cat /etc/sudoers
+  271  sudo su test
+  272  w
+  273  who
+  274  finger
+  275  write ps       pts/3
+  276  wall aaaa
+  277  last
+  278  ps aux
+  279  ps auxf
+  280  kill 6982
+  281  ps auxf
+  282  pgrep hex
+  283  pkill hexx
+  284  pkill hex
+  285  ls /proc/
+  286  cat /proc/cpuinfo 
+  287  cat /proc/meminfo 
+  288  ll /proc/
+  289  ls /proc/
+  290  ls -l |grep self
+  291  ls -l /proc/ |grep self
+  292  cat /proc/self/comm 
+  293  cat /proc/self/cmdline 
+  294  ls /proc/self/fd
+  295  cat /proc/self/maps 
+  296  date
+  297  bc
+  298  du
+  299  du -s
+  300  du -s ucebnove/
+  301  du -h
+  302  du -hs
+  303  du -h
+  304  wc zaciatocnik.txt 
+  305  wc zaciatocnik.txt -l
+  306  wc zaciatocnik.txt /etc/passwd
+  307  ll seminare/
+  308  vim ~/subor.txt
+  309  cat ~/subor.txt 
+  310  vimtutor 
+  311  vimt
+  312  vimtutor 
+  313  ll
+  314  find
+  315  find . -true -print
+  316  cd 
+  317  find . -true -print
+  318  cd /public/
+  319  find . -name '*.txt' -print
+  320  find . -name \*.txt -print
+  321  find . -name '*.txt' -print
+  322  find . -name 'kw*' -print
+  323  man 7 glob
+  324  sudo api instal manpanges  panpages-dev
+  325  sudo apt instal manpanges  panpages-dev
+  326  sudo apt install manpanges  panpages-dev
+  327  sudo apt install manpages manpages-dev
+  328  man 2 printf
+  329* man 3 printfq
+  330  find . -name 'kw*' -print
+  331  man find
+  332  find . -name '*u*' -print
+  333  find . -type f -print
+  334  find . -type d -print
+  335  ls -la ucebnove/
+  336  find . -size 160 -print
+  337  sudo find . -size 160 -print
+  338  man find
+  339  sudo find . -size 160c -print
+  340  sudo find . -size 1k -print
+  341  sudo find . -size +2k -print
+  342  sudo find . -size +10k -print
+  343  sudo find . -size +20k -print
+  344  sudo find . -size -10k -print
+  345  sudo find . -size -1k -print
+  346  sudo find . -mtime 1 -print
+  347  sudo find . -mtime 0 -print
+  348  sudo find . -mtime +100 -print
+  349  sudo find . -mtime -100 -print
+  350  sudo find . -type f -and '(' -size +20k -or name 'kw*' ')' -print
+  351  sudo find . -type f -and '(' -size +20k -or -name 'kw*' ')' -print
+  352  man find
+  353  find -name 'kw*' -exec wc
+  354  man find
+  355  ls; ls
+  356  find -name 'kw*' -exec wc ';'
+  357  man find
+  358  wc
+  359  find -name 'kw*' -exec wc '{}' ';'
+  360  find -name 'kw*' -exec echo wc ';'
+  361  find -name 'kw*' -exec echo wc '{}' ';'
+  362  find -name 'kw*' -exec wc '{}' ';'
+  363  wc ./ucebnove/kw9.txt
+  364  wc ./ucebnove/kw7.txt
+  365  wc ./ucebnove/kw6.txt
+  366  wc ./ucebnove/kw8.txt
+  367  wc ./ucebnove/kw5.txt
+  368  wc ./ucebnove/kw
+  369  wc ./ucebnove/kw2.txt
+  370  wc ./ucebnove/kw10.txt
+  371  wc ./ucebnove/kw3.txt
+  372  find -name 'kw*' -exec echo '{}' ';'
+  373  find -name 'kw*' -exec ls -la '{}' ';'
+  374  find -name 'kw*' -exec ls -l '{}' ';'
+  375  find -name 'kw*' ls
+  376  find -name 'kw*' -ls
+  377  man find
+  378  find -name 'kw*' -exec nahodny_command '{}' ';'
+  379  find -name 'kw*' -exec nahodny_command '{}' '+'
+  380  find -name 'kw*' -exec wc '{}' ';'
+  381  find -name 'kw*' -exec echo wc '{}' ';'
+  382  find -name 'kw*' -exec echo wc '{}' '+'
+  383  find -name 'kw*' -exec wc '{}' '+'
+  384  find -name 'kw*' -exec wc '{}' ';'
+  385  find -name 'kw*' -exec wc '{}' '+'
+  386  find -name 'kw*' -exec ls -l '{}' '+'
+  387  find -name 'kw*' -exec ls -l '{}' ';'
+  388  cd /
+  389  find |wc -l
+  390  history |sudo tee ucebnove/historia/sys011021_1000.txt
+  391  sudo vim ucebnove/historia/sys011021_1000.txt
+  392  history |sudo tee /public/ucebnove/historia/sys011021_1000.txt

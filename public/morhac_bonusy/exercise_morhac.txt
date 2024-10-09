@@ -1,0 +1,36 @@
+ ________________________________________
+< Howdy studenti, podme vas kus potrapit >
+ ----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+Dame si maly exercise ktory bude pozostavat z 10 uloh
+
+Prerequizity:
+Stiahnite si nasledovne subory do vaseho domovskeho priecinku:
+`sample.txt` - https://github.com/user-attachments/files/17243600/sample.txt
+`sample_two.txt` - https://github.com/user-attachments/files/17243599/sample_two.txt
+
+1. Vypis vsetky riadky ktore obsahuju "he" bez ohladu na velkost pismena (HE,he,He,hE), a obsahuju bud slovo "World" alebo "Hi" [sample.txt]
+
+2. Vypis prve dva riadky ktore obsahuju "t" [sample.txt]
+
+3. Vypis riadky ktore obsahuju "do" aj spolu s riadkom na ktorom boli najdene (napr- 3: dokelu) [sample.txt]
+
+4. Spocitaj pocet prazdnych riadkov [sample.txt]
+
+5. Vypis riadok ktory obsahuje slovko "amigo" aj s prefixom ktory obsahuje nazov suboru a riadok na ktorom sa amigo nasiel (napr- subor.txt:9:cau amigo)  [sample.txt]
+
+6. Vypis vsetky riadky ktore zacinaju s "den" alebo koncia s "ly" [sample_two.txt]
+
+7. Extrahuj vsetky cele slova ktore obsahuju "42" a su ohranicene niecim z oboch stran (napr - a42b) [sample_two.txt]
+
+8. Najdi vsetky riadky ktore zacinaju na s a obsahuju bud e alebo t v akomkolvek poradi [sample_two.txt]
+
+9. Vypis vsetky cele riadky ktore maju rovnake zaciatocne pismenko a koncove pismenko vety [sample_two.txt]
+
+10. Vypis vsetky riadky ktore zacinaju s "hand" a ihned koncia znakmi "s" alebo "y" alebo "le" alebo "" a nic po nich nenasleduje [sample-two.txt]

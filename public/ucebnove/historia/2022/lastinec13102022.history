@@ -1,0 +1,170 @@
+    1  history
+    2  echo "" > ~/.bash_history 
+    3  logout
+    4  ls
+    5  cd /tmp/
+    6  ls
+    7  rm lastinec06102022.history 
+    8  vim testfile
+    9  cat testfile 
+   10  grep -E '^[A-Z]{2} [0-9]{3}[A-Z]{2}' testfile 
+   11  grep -E '[A-Z]{2} [0-9]{3}[A-Z]{2}' testfile 
+   12  grep --color -E '^([0-9]{1,3}.){3}[0-9]{1,3}$' testfile 
+   13  echo 192a168a1a2 >> testfile 
+   14  grep --color -E '^([0-9]{1,3}.){3}[0-9]{1,3}$' testfile 
+   15  grep --color -E '^([0-9]{1,3}\.){3}[0-9]{1,3}$' testfile 
+   16  grep --color -E '^([0-9]{1,3}[.]){3}[0-9]{1,3}$' testfile 
+   17  find /public/ -type f -name *.sh
+   18  find /public/ -type f -name *.sh 2> /dev/null
+   19  find /public/ -type f -name *.sh 2> /dev/null | less
+   20  cd /public/priklady/
+   21  ls
+   22  ls [0-9].sh
+   23  ls ?.sh
+   24  cat -n 1.sh
+   25  mkdir /tmp/skripty
+   26  cp [0-9].sh /tmp/skripty
+   27  ls -l 1.
+   28  ls -l 1.sh
+   29  bash 1.sh
+   30  cd /tmp/skripty/
+   31  ls
+   32  cd -
+   33  cat 1.csh
+   34  cd -
+   35  file 1.sh 
+   36  vim test
+   37  bash test
+   38  which xxd
+   39  xxd 1.sh 
+   40  1.sh
+   41  ls
+   42  set
+   43  set | grep PATH
+   44  echo $PATH
+   45  pwd
+   46  set PATH=$PATH:/tmp/skripty
+   47  echo $PATH
+   48  export PATH=$PATH:/tmp/skripty
+   49  echo $PATH
+   50  1.sh
+   51  ll
+   52  ll 1.sh
+   53  chmod -h
+   54  chmod --help
+   55  chmod 744 1.sh 
+   56  ll 1.sh
+   57  chmod g+x 1.sh
+   58  ll 1.sh
+   59  chmod g-x 1.sh
+   60  1.sh
+   61  echo $PATH
+   62  export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+   63  1.sh
+   64  ./1.sh
+   65  cd
+   66  /tmp/skripty/1.sh 
+   67  ls | wc -l
+   68  cd -
+   69  ls | wc -l
+   70  ls
+   71  cat -n 2.sh 
+   72  for d in /public/prednasky /public/ucebnove /public/priklady; do echo $d; done
+   73  chmod +x 2.sh 
+   74  ./2.sh 
+   75  cat -n 2.sh 
+   76  text="ahoj"
+   77  echo $txt
+   78  echo $twxt
+   79  echo $text
+   80  GREP="grep --color"
+   81  $GREP
+   82  $GREP bash 2.sh 
+   83  echo $text
+   84  echo $textte
+   85  echo $text te
+   86  echo ${text}te
+   87  for d in /public/prednasky /public/ucebnove /public/priklady; do echo $d; done
+   88  ls
+   89  cat -n 3.sh
+   90  veta=ahoj svet
+   91  echo $veta
+   92  veta="ahoj svet"
+   93  echo $veta
+   94  druhaveta=$veta
+   95  echo $druhaveta
+   96  cd ..
+   97  echo "ahoj svet" > "ahoj svet"
+   98  ls
+   99  echo $veta
+  100* 
+  101  cat -n 3.sh
+  102  cd skripty/
+  103  cat -n 3.sh
+  104  man [
+  105  [ $pocet -gt 0 ]
+  106  pocet=3
+  107  [ $pocet -gt 0 ]
+  108  echo $status
+  109  echo $?
+  110  [ $pocet -gt 0 ]
+  111  echo $?
+  112  [ $pocet -lt 0 ]
+  113  echo $?
+  114  [ $pocet -gt 0 ] &&  echo "pocet je vacsi, ako 0"
+  115  [ $pocet -lt 0 ] &&  echo "pocet je vacsi, ako 0"
+  116  [ $pocet -lt 0 ] ||  echo "pocet nie je vacsi, ako 0"
+  117  cat -n 3.sh 
+  118  echo $pocet
+  119  $pocet--
+  120  ((pocet--))
+  121  echo $pocet
+  122  echo $veta
+  123  cat -n 3.sh 
+  124  echo $pocet $veta
+  125  echo $pocet     $veta
+  126  man echo
+  127  echo "$pocet     $veta"
+  128  history | tail
+  129  echo "$pocet     $veta"
+  130  echo echo "$pocet     $veta"
+  131  echo "echo "$pocet     $veta""
+  132  cat -n 3.sh 
+  133  echo '$pocet    $veta'
+  134  echo '!127'
+  135  echo \$pocet    \$veta
+  136  echo \!
+  137  bash 3.sh 
+  138  echo *\\?
+  139  echo *\\\?
+  140  echo *\\\\?
+  141  echo \*\\\\?
+  142  echo *\\\\?
+  143  touch *\\\\?
+  144  ls
+  145  touch a*\\\\?
+  146  ls *\\\\?
+  147  ls \*\\\\?
+  148  touch *\\\\!
+  149  ls \*\\\\?
+  150  ls \*\\\\\?
+  151  ls '*\\?'
+  152  chmod +x 3.sh 
+  153  ls
+  154  date
+  155  cat -n 4.sh 
+  156  man mv
+  157  echo $veta
+  158  ls $veta
+  159  cd ..
+  160  ls
+  161  touch Testfile
+  162  ls [A-Z]*
+  163  $(ls)
+  164  $(echo ahoj)
+  165  chmod +x skripty/4.sh 
+  166  ls
+  167  skripty/4.sh 
+  168  ls
+  169  history > /public/ucebnove/historia/lastinec13102022.history
+  170  history > /tmp/lastinec13102022.history

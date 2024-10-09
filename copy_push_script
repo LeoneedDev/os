@@ -1,4 +1,5 @@
 #! /bin/bash
+cd /home/leo/repo
 rm -rf /home/leo/repo/public
 cp -R /public /home/leo/repo/public
 git add .

@@ -1,0 +1,646 @@
+    1  sudo
+    2  su
+    3  exit
+    4  sudo -u ls
+    5  sudo ls
+    6  su
+    7  su jpetrik
+    8  su jur1cek
+    9  id
+   10  ls
+   11  l
+   12  ll
+   13  ls
+   14  cd ~/.ssh
+   15  ls
+   16  joe
+   17  joe ~/.ssh/authorized_keys
+   18  mkdir .ssh
+   19  joe ~/.ssh/authorized_keys
+   20  ls
+   21  exit
+   22  ls
+   23  cd /dev/
+   24  ls -la
+   25  man ls
+   26  info '(coreutils) ls invocation'
+   27  coreutils ls
+   28  man ls
+   29  vimtutor
+   30  last
+   31  last
+   32  last
+   33  date
+   34  man date
+   35  fgt
+   36  fg
+   37  TZ='Europe/Bratislava' date
+   38  TZ='America/Los_angeles' date
+   39  man date
+   40  TZ='America/Los_Angeles' date
+   41  date
+   42  cd ~
+   43  cd
+   44  ls -la
+   45  man date
+   46  tzselect
+   47  last
+   48  man last
+   49  last -w
+   50  man last
+   51  last -d
+   52  man 
+   53  man last
+   54  man -F
+   55  last -F
+   56  apropos
+   57  apropos user
+   58  man last
+   59  man 5 wtmp
+   60  man wtmp
+   61  man last
+   62  less /var/log/wtmp
+   63  man last
+   64  last
+   65  man apropos
+   66  users
+   67  fortune
+   68  sudo apt install fortune
+   69  fortune
+   70  man fortune
+   71  fortune -o
+   72  man fortune
+   73  apt-cache search fortune
+   74  apt install fortunes-off
+   75  sudo apt install fortunes-off
+   76  fortune -o
+   77  sudo apt install python3
+   78  python3
+   79  historyu
+   80  history
+   81  man users
+   82  apropos users
+   83  who
+   84  ls -la
+   85  man ls
+   86  --format=verbose
+   87  ls -a --format=verbose
+   88  ls /dev
+   89  ls -l /dev
+   90  ls -la
+   91  mkdir folder
+   92  mkdir folder2
+   93  mkdir -p folder/folder/folder/folder_end
+   94  ls folder
+   95  ls -r folder
+   96  ls -R folder
+   97  touch folder/folder/folder/folder_end/subor
+   98  ls -R folder
+   99  man ln
+  100  ls
+  101  ln -s folder/folder/folder/folder_end/subor linka
+  102  ls
+  103  ls -l
+  104  cat linka 
+  105  echo "nieco" > linka
+  106  cat linka 
+  107  cat folder/folder/folder/folder_end/subor
+  108  mv folder/folder/folder/folder_end/subor folder/folder/folder/folder_end/subor_2
+  109  ls folder/folder/folder/folder_end/
+  110  ls -l
+  111  cat linka
+  112  echo "text" > folder/folder/folder/folder_end/subor
+  113  cat linka
+  114  ls -l
+  115  ls -l folder/folder/folder/folder_end/subor
+  116  ln folder/folder/folder/folder_end/subor hard_linka 
+  117  ls -l
+  118  less hard_linka 
+  119  cat hard_linka 
+  120  ln folder/folder/folder/folder_end/subor
+  121  ls
+  122  ls -l folder/folder/folder/folder_end/subor
+  123  rm folder/folder/folder/folder_end/subor
+  124  ln -s /home/jur1cek/linka  folder/folder/folder/folder_end/subor
+  125  ls -la
+  126  cat folder/folder/folder/folder_end/subor
+  127  ls -i
+  128  ls -li
+  129  du folder/folder/folder/folder_end/subor
+  130  cat folder/folder/folder/folder_end/subor
+  131  echo "a" > folder/folder/folder/folder_end/subor
+  132  rm folder/folder/folder/folder_end/subor
+  133  echo "a" > folder/folder/folder/folder_end/subor
+  134  ls -l
+  135  du folder/folder/folder/folder_end/subor
+  136  echo "aa" > folder/folder/folder/folder_end/subor
+  137  du folder/folder/folder/folder_end/subor
+  138  du -h folder/folder/folder/folder_end/subor
+  139  man du
+  140  du -b folder/folder/folder/folder_end/subor
+  141  du -b linka
+  142  ls -la
+  143  ln -s folder/folder/folder/folder_end linka_folder
+  144  cd linka_folder
+  145  pwd
+  146  cd ..
+  147  ls
+  148  pwd
+  149  ls linka_folder
+  150  ls -l linka_folder
+  151  cd  folder/folder/folder/folder_end
+  152  ls
+  153  cd ..
+  154  ls
+  155  cd
+  156  ls
+  157  cd linka_folder+
+  158  cd linka_folder
+  159  ls]
+  160  ls
+  161  pwd
+  162  ls -l
+  163  ls -la
+  164  cd
+  165  ls -la
+  166  man echo
+  167  echo "aaaa"
+  168  echo "ahoj svet"
+  169  echo <
+  170  apt install htop
+  171  sudo apt install htop
+  172  ]
+  173  echo "ahoj svet"
+  174  echo "ahoj svet" > subor.txt
+  175  cat subor
+  176  cat subor.txt 
+  177  echo "ahoj krasny svet" > subor.txt
+  178  cat subor.txt 
+  179  echo "ahoj dalsi svet" >> subor.txt
+  180  cat subor.txt 
+  181  echo "ahoj dalsi svet" >> subor.txt1
+  182  cat subor.txt 1
+  183  cat subor.txt1
+  184  man chmod
+  185  ls -la
+  186  chmod 100 subor.txt
+  187  ls -l
+  188  man chmod 
+  189  chmod a+x subor.txt
+  190  ls -l
+  191  chmod 000 subor.txt
+  192  ls -l
+  193  chmod o+x subor.txt
+  194  ls -l
+  195  chmod u+w subor.txt
+  196  ls -l
+  197  chmod g+r subor.txt
+  198  ls -l
+  199  chmod g-r subor.txt
+  200  ls -l
+  201  last
+  202  last 
+  203  man grep
+  204  last | grep juraj
+  205  last | grep "^juraj "
+  206  last | grep -w "juraj"
+  207  last | grep "^juraj\>"
+  208  last | grep "^juraj>"
+  209  last | grep "^juraj\>"
+  210  last | grep "^juraj\>" | wc -l
+  211  man wc
+  212  last | grep "^juraj\>"
+  213  last | grep "^juraj\>" | cut -f3
+  214  man cut
+  215  last | grep "^juraj\>" | cut -f=3
+  216  last | grep "^juraj\>" | cut -f3
+  217  last | grep "^juraj\>" | cut -d " " -f=3
+  218  last | grep "^juraj\>" | cut -d " " -f3
+  219  last | grep "^juraj\>" | cut -d "\t" -f3
+  220  man cut\
+  221  man cut
+  222  last | grep "^juraj\>" | cut -f3
+  223  last | grep "^juraj\>" | cut -f2
+  224  man cut
+  225  last | grep "^juraj\>" | cut -c22-
+  226  last | grep "^juraj\>" | cut -c23-
+  227  last | grep "^juraj\>" | cut -c23-37
+  228  cat /etc/passwd
+  229  cut -d: -f7 /etc/passwd
+  230  cut -d: -f5 /etc/passwd
+  231  cut -d: -f5,7 /etc/passwd
+  232  cut -d: -f7 /etc/passwd
+  233  man uniq
+  234  cut -d: -f7 /etc/passwd | uniq
+  235  cut -d: -f7 /etc/passwd | sort
+  236  cut -d: -f7 /etc/passwd | sort | uniq
+  237  cut -d: -f7 /etc/passwd | sort | uniq | wc -l
+  238  cut -d: -f7 /etc/passwd | sort | uniq -c
+  239  man uniq
+  240  cut -d: -f7 /etc/passwd | sort | uniq -c
+  241  cut -d: -f7 /etc/passwd | sort | uniq | wc -l
+  242  man cut
+  243  last
+  244  last | cut -d '\t' -f3
+  245  last | cut -d $'\t' -f3
+  246  apropos white
+  247  last | tr -s" "
+  248  last | tr -s " " ""
+  249  man tr
+  250  last
+  251  last | tr o g
+  252  last | tr -s " "
+  253  last | tr -s " " | cut -d " " -f3
+  254  date
+  255  last | tr -d o
+  256  man tr
+  257  last | tr -cd o
+  258  man tr
+  259  last | tr -cd o,p
+  260  vimtutor
+  261  history > cviko_2_1
+  262  who
+  263  exit
+  264  users
+  265  sudo apt install lynx
+  266  ls
+  267  mkdir cvicenie_3
+  268  cd cvi
+  269  cd cvicenie_3/
+  270  ls
+  271  vim 1.sh
+  272  chmod +x 1.sh 
+  273  ./1.sh 
+  274  joe 2.sh
+  275  bash 2.sh 
+  276  joe 2.sh
+  277  bash 2.sh 
+  278  joe 2.sh
+  279  bash 2.sh 
+  280  joe 2.sh
+  281  bash 2.sh 
+  282  joe 2.sh
+  283  bash 2.sh 
+  284  joe 2.sh
+  285  bash 2.sh 
+  286  joe 2.sh
+  287  bash 2.sh 
+  288  joe 2.sh
+  289  bash 2.sh 
+  290  joe 2.sh
+  291  joe 2_special.sh
+  292  bash 2_special.sh 
+  293  joe 2_special.sh
+  294  joe 3.sh
+  295  bash 3.sh 
+  296  joe 3.sh
+  297  bash 3.sh 
+  298  joe 3.sh
+  299  echo $? 
+  300  man bash
+  301  joe 3.sh
+  302  bash 3.sh 
+  303  joe 3.sh
+  304  ls -la
+  305  ln -s linkaaa 1.sh 
+  306  ln -s 1.sh linkaaa
+  307  joe 3.sh
+  308  bash 3.sh 
+  309  joe 3.sh
+  310  bash 3.sh 
+  311  joe 3.sh
+  312  bash 3.sh 
+  313  joe 3.sh
+  314  bash 3.sh 
+  315  joe 3.sh
+  316  bash 3.sh 
+  317  joe 3.sh
+  318  bash 3.sh 
+  319  joe 3.sh
+  320  bash 3.sh 
+  321  joe 3.sh
+  322  bash 3.sh 
+  323  joe 3.sh
+  324  bash 3.sh 
+  325  joe 3.sh
+  326  bash 3.sh 
+  327  joe 3.sh
+  328  bash 3.sh 
+  329  joe 3.sh
+  330  bash 3.sh 
+  331  joe 3.sh
+  332  bash 3.sh 
+  333  joe 3.sh
+  334  bash 3.sh 
+  335  joe 3.sh
+  336  clear
+  337  cd ..
+  338  ls
+  339  history
+  340  who
+  341  users
+  342  man bash
+  343  ls
+  344  last | tr -cd o,p
+  345  ls
+  346  bash=$(ls)
+  347  aaa=$(ls)
+  348  echo ${aaa}
+  349  aaa=$(echo ${aaa})
+  350  aaa=$(who)
+  351  echo $aaa
+  352  clear
+  353  ps
+  354  man ps
+  355  ps
+  356  ps | wc-l
+  357  ps | wc -l
+  358  ps | tea| wc -l
+  359  ps | tee | wc -l
+  360  man tee
+  361  ps | tee ps.txt | wc -l
+  362  less ps.txt 
+  363  man ps
+  364  ps a
+  365  man ps
+  366  ps aux
+  367  man ps
+  368  fg
+  369  man fg
+  370  man bash
+  371  man fg
+  372  mna ls
+  373  man ls
+  374  ps
+  375  jobs
+  376  kill 4036
+  377  jobs
+  378  fg
+  379  dffds
+  380  find *
+  381  find /
+  382  asd
+  383  find /
+  384  man grep
+  385  ls
+  386  less ps.txt 
+  387  cat ps.txt 
+  388  ps
+  389  cut -f1 ps.txt
+  390  grep -E "2+" ps.txt
+  391  cut -f1 ps.txt | grep -E "2+"
+  392  cut -f1 ps.txt
+  393  grep 2[0-9]* ps.txt
+  394  grep 2 ps.txt
+  395  man grep
+  396  grep --color 2 ps.txt
+  397  cat ps.txt
+  398  grep --color " *[0-9]*2[0-9]* " ps.txt 
+  399  joe ps.txt 
+  400  grep --color " *[0-9]*2[0-9]* " ps.txt 
+  401  grep --color "^ *[0-9]*2[0-9]* " ps.txt 
+  402  grep --color "^ *[0-9]*2[0-9]* "
+  403  grep --color "^ *[0-9]*2[0-9]* " ps.txt 
+  404  joe ps.txt
+  405  grep --color "^ *[0-9]*2[0-9]* " ps.txt 
+  406  grep --color "^ *[[:digit:]]*2[0-9]* " ps.txt 
+  407  grep --color "^ *[[:digit:]]*2[[:digit:]]* " ps.txt 
+  408  grep --color "^ *[[:digit:]]*2[[:digit:]]*2[[:digit:]]* " ps.txt 
+  409  grep --color "^ *[[:digit:]]*2[[:digit:]]+2[[:digit:]]* " ps.txt 
+  410  grep --color "^ *[[:digit:]]*2[[:digit:]]*2[[:digit:]]* " ps.txt 
+  411  grep --color "^ *[[:digit:]]*22[[:digit:]]* " ps.txt
+  412  grep --color "[^2]" 
+  413  ls
+  414  grep 
+  415  grep *
+  416  grep .*
+  417  grep ".*:
+  418  grep ".*"
+  419  clear
+  420  ls /publi
+  421  ls /public
+  422  ls -la /public
+  423  less /public/zaciatocnik.txt 
+  424  cd /public/
+  425  ls
+  426  cd samples/
+  427  ls
+  428  cd ..
+  429  cd prednasky/
+  430  cd ..
+  431  cd priklady/
+  432  ls
+  433  less 1.
+  434  less 1.csh 
+  435  less 2.csh 
+  436  less cow.sh 
+  437  man cowsay
+  438  cowsay
+  439  less process.sh 
+  440  clear
+  441  cd
+  442  grep "^...$"
+  443  grep --color "^...$"
+  444  grep --color "^[[:alpha:]]{3}$"
+  445  grep -E --color "^[[:alpha:]]{3}$"
+  446  grep -E --color "^[^[:alpha:]]{3}$"
+  447  grep --color "^.\{3\}$"
+  448  grep -E --color "^.{3}$"
+  449  grep -E --color "^[[:alpha:]]{3,5}$"
+  450  grep --color "\<.{3}\>"
+  451  grep -E --color "\<.{3}\>"
+  452  grep "\<[^[:space:]]\{3\}\>"
+  453  grep --color "\<[^[:space:]]\{3\}\>"
+  454  man grep
+  455  grep -c --color "^ *[[:digit:]]*2[[:digit:]]*2[[:digit:]]* " ps.txt 
+  456  man grep
+  457  grep --color "\<[^[:space:]]\{3\}\>.*\<[^[:space:]]\{3\}\>"
+  458  grep -E --color "\(\<[^[:space:]]\{3\}\>.*\){2}"
+  459  grep -E --color "\(\<[^[:space:]]\{3\}\>.*\)\{2\}"
+  460  grep -E --color "\(\<[^[:space:]]\{3\}\>.*\){2}"
+  461  grep -E --color "(\<[^[:space:]]\{3\}\>.*){2}"
+  462  grep -E --color "\(\<[^[:space:]]\{3\}\>.*\)\{2\}"
+  463  find
+  464  find -name a.txt
+  465  find -name *.txt
+  466  find -name "*.txt"
+  467  find -name "*.txt" -not -name "ps.txt"
+  468  find -name "*.txt" -or -name "*.txt1"
+  469  find -name "*.txt" -name "*.txt1"
+  470  man find
+  471  find -type f
+  472  find -name 
+  473  man fi
+  474  find -type f -size +10k
+  475  find -type f -size +1k
+  476  man find
+  477  find -type f -size +1k -maxdepth 1
+  478  find -maxdepth 0 -type f -size +1k
+  479  find -maxdepth 1 -type f -size +1k
+  480  find -type f -size +1k
+  481  find -type f
+  482  find -maxdepth 0 -type f
+  483  find -maxdepth 1 -type f
+  484  find -maxdepth 2 -type f
+  485  fg
+  486  find -maxdepth 2 -type f -printf "%M"
+  487  find -maxdepth 2 -type f -printf "%M\n"
+  488  fg
+  489  man find
+  490  find -maxdepth 2 -type f -printf "%p %M\n"
+  491  find -maxdepth 2 -type f -printf "%P %M\n"
+  492  man find
+  493  find -maxdepth 2 -type f -exec wc {} \;
+  494  find -maxdepth 2 -type f -exec wc -l {} \;
+  495  ls subor.txt
+  496  ls -la
+  497  cd cvicenie_3/
+  498  ls
+  499  cat 1.sh 
+  500  vim subor.txt
+  501  vim 1.sh 
+  502  ./1.sh 
+  503  ls -l
+  504  bash ./1.sh 
+  505  /bin/bash < 1.sh 
+  506  cat 2.sh
+  507  vim 2.sh
+  508  cd ..
+  509  mkdir /public/priklady/petrik
+  510  cp -r cvicenie_3 /public/priklady/petrik/
+  511  ls
+  512  cd cvicenie_3/
+  513  ls
+  514  ./2.sh
+  515  chmod +x 2.sh
+  516  ./2.sh 
+  517  less 2.sh
+  518  less 2_special.sh 
+  519  bash 2_special.sh 
+  520  ls
+  521  less 3.sh
+  522  history | less
+  523  clear
+  524  history
+  525  find -maxdepth 2 -type f -exec wc -l {} \;
+  526  less 3.sh
+  527  ls
+  528  less 3.sh
+  529  ps
+  530  man ps 
+  531  ps ax
+  532  ps aux
+  533  ps aux | wc -l
+  534  top
+  535  htop
+  536  ps aux | wc -l
+  537  jobs
+  538  man find
+  539  man man
+  540  fg
+  541  ps
+  542  ps u
+  543  man kill
+  544  kill -9 -1
+  545  man kill
+  546  htop
+  547  processses
+  548  apropos processe
+  549  man man
+  550  man less
+  551  jobs
+  552  fg
+  553  man less
+  554  man man
+  555  jobs
+  556  killall man
+  557  jobs
+  558  fg
+  559  jobs
+  560  man man
+  561  man less
+  562  ps 
+  563  killall man
+  564  ps aux
+  565  scren -r
+  566  fg
+  567  ps aux
+  568  find /
+  569  ps
+  570  ps aux
+  571  ps aux > ps.txt
+  572  cat ps.txt
+  573  man grep
+  574  grep --color 1 ps.txt
+  575  man tr
+  576  tr-s " " < ps.txt | grep -w "1"
+  577  tr -s " " < ps.txt | grep -w "1"
+  578  grep --color 1 ps.txt
+  579  grep --color "^[[:alnum:]]+"  ps.txt
+  580  grep --color -E "^[[:alnum:]]+"  ps.txt
+  581  grep --color -E "^[[:alnum:]]*"  ps.txt
+  582  grep --color -E "^[[:alnum:]]*"
+  583  grep --color -E "^[[:alnum:]]+"
+  584  grep --color -E  "^[[:alnum:]]*"  ps.txt
+  585  grep --color -E "^[[:alnum:]]+"  ps.txt
+  586  grep --color -E "^[[:alnum:]]+ +"  ps.txt
+  587  grep --color -E "^[[:alnum:]]+ +[[:digit:]]+"  ps.txt
+  588  grep --color -E "^[[:alnum:]]+ +[[:digit:]]*2[[:digit:]]*"  ps.txt
+  589  grep --color -E "^[[:alnum:]]+ +[[:digit:]]*1[[:digit:]]*"  ps.txt
+  590  vim ps.txt
+  591  joe ps.txt
+  592  grep --color -E "^[[:alnum:]]+ +[[:digit:]]*1[[:digit:]]*"  ps.txt
+  593  grep --color -E "^[[:alnum:]]+ +[[:digit:]]*11[[:digit:]]*"  ps.txt
+  594  grep --color
+  595  grep --color ".*"
+  596  grep --color '\<...\>'
+  597  grep --color -E "^[a-zA-Z0-9]+{3,}" 
+  598  grep --color -E "^[a-zA-Z0-9]{3,}" 
+  599  grep --color -E "\w{3}" <subor>
+  600  grep --color -E "\w{3}" <subor
+  601  grep --color -E "\w{3}"
+  602  grep -E "^.{3}"
+  603  grep -E "^.{3}$"
+  604  grep -E "^...$"
+  605  grep --color '^...$'
+  606  grep --color -E "^\w{3}$" <subor>
+  607  grep --color -E "^\w{3}$" 
+  608  grep --color -E "^[a-zA-Z]{3,5}$"
+  609  grep --color -E "\<\.{4}\>"
+  610  grep --color -E "\<.{4}\>"
+  611  grep --color -E "\s....\s"
+  612  grep --color -E "\b....\b"
+  613  grep --color -E "\s....\s"
+  614  grep --color -E "\b....\b"
+  615  man find
+  616  find . -name juraj
+  617  find . -name "*juraj*"
+  618  find . -name "*.txt"
+  619  find . -name "*.txt" -printf "%M"
+  620  find . -name "*.txt" -printf "%M\n"
+  621  man find
+  622  find . -name "*.txt" -printf "%p %M\n"
+  623  find . -name "*.txt" -printf "%p %f %M\n"
+  624  find . -name "*.txt" -printf "%p %h %M\n"
+  625  find . -name "*.txt" -printf "%p %s %M\n"
+  626  find . -name "*.txt" -printf "%p %s %M\t"
+  627  find . -name "*.txt" -printf "%p %s %M\n"
+  628  find . -name "*.txt" -and -size +10k
+  629  find . -name "*.txt" -and -size +1k
+  630  find . -name "*.txt" -and -size +1b
+  631  find . -name "*.txt" -and -size -1b
+  632  find . -name "*.txt" -and -size -10b
+  633  find . -name "*.txt" -and -size 10b
+  634  find . -name "*.txt" -or -name "*.*"
+  635  find . -name "*.txt" -or -name "*.*" -and -not -name "*3*"
+  636  man find
+  637  find / -name "*.txt" -or -name "*.*" -and -not -name "*3*"
+  638  find /public -name "*.txt" -or -name "*.*" -and -not -name "*3*"
+  639  man find
+  640  find /public -name "*.txt" -or -name "*.*" -and -not -name "*3*" -exec wc -l {} \;
+  641  ls /public/priklady/petrik/cvicenie_3/
+  642  rm /public/priklady/petrik/cvicenie_3/*~
+  643  ls /public/priklady/petrik/cvicenie_3/
+  644  ls
+  645  history
+  646  history > cvicenia.txt

@@ -1,0 +1,106 @@
+    1  echo "" > ~/.bash_history 
+    2  logout
+    3  cd /public
+    4  ls
+    5  cd priklady/
+    6  cat -n 9.sh 
+    7  cd /tmp
+    8  ls
+    9  ./9.sh 
+   10  cat -n 9.sh 
+   11  help exec
+   12  cat 9-2.sh 
+   13  cat -n 9-2.sh 
+   14  man bash
+   15  bash -v 9.sh 
+   16  bash -vx 9.sh 
+   17  which shellcheck
+   18  ls
+   19  shellcheck /public/priklady/3.sh
+   20  screen
+   21  screen -ls
+   22  screen -r
+   23  logout
+   24  cd /public/samples/
+   25  cat zamestnanci.txt 
+   26  awk '{print}' zamestnanci.txt
+   27  awk '{print NR,$0}' zamestnanci.txt
+   28  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+   29  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+   30  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec:",$1 }' zamestnanci.txt
+   31  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec:",$1 } END {print "koniec"} ' zamestnanci.txt
+   32  awk '/^z/' zamestnanci.txt
+   33  awk '!/^z/' zamestnanci.txt
+   34  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+   35  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+   36  cat zamestnanci.txt | awk '$NF > 1000 {print NR,$0}'
+   38  echo '^----- DO NOT DO THIS !!!'
+   39  history
+   40  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+   41  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+   42  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+   43  grep '^z\|^b' zamestnanci.txt 
+   44  awk '/^z|^b/ {sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+   45  awk '/^z|^b/ {sum+=$NF;count+=1} END { print "Priemerny plat = " sum/count}' zamestnanci.txt
+   46  logout
+   47  cd /public/priklady/
+   48  cat awk.txt 
+   49  less awk.txt 
+   50  ping www.fiit.stuba.sk
+   51  which curl
+   52  curl www.fiit.stuba.sk | less
+   53  less awk.txt 
+   54  history
+   55  logout
+   56  exit
+   57  cd /public/priklady/
+   58  ls
+   59  less awk.txt 
+   60  cd ../samples/
+   61  ls
+   62  head access.log 
+   63  head -1 access.log 
+   64  wc -l access.log 
+   65  awk '{sum+=$10} END { print sum/2^20 }' access.log 
+   66  head -1 access.log && tail -1 access.log 
+   67  cat zamestnanci.txt 
+   68  cp zamestnanci.txt /tmp/
+   69  cd /tmp/
+   70  vim zamestnanci.txt 
+   71  man uniq
+   72  awk '{print $1}' | uniq
+   73  awk '{print $1}' zamestnanci.txt | uniq
+   74  awk '{print $1}' zamestnanci.txt | uniq -c
+   75  vim zamestnanci.txt 
+   76  awk '{print $1}' zamestnanci.txt | uniq -c
+   77  awk '{print $1}' zamestnanci.txt | sort | uniq -c
+   78  awk '{print $1}' zamestnanci.txt | sort | uniq -c | sort
+   79  awk '{print $1}' zamestnanci.txt | sort | uniq -c | sort -rn
+   80  awk '{print $1}' zamestnanci.txt | sort | uniq -c | sort -rn | head -3
+   81  cd -
+   82  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10
+   83  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | awk '{print $2}'
+   84  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | cut -d' ' -f2
+   85  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | cut -d' ' -f3
+   86  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | cut -d' ' -f0
+   87  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | cut -d' ' -f1
+   88  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | cut -d' ' -f10
+   89  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10
+   90  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | cut -d' ' -f5
+   91  man tr
+   92  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | tr -s' ' | cut -d' ' -f2
+   93  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | tr -s ' ' | cut -d' ' -f2
+   94  awk '{print $1}' access.log | sort -n | uniq -c | sort -rn | head -10 | tr -s ' ' | cut -d' ' -f3
+   95  head -1 access.log 
+   96  less access.log 
+   97  history
+   98  logout
+   99  exit
+  100  screen -ls
+  101  screen -r
+  102  cd /public/priklady/awk.txt 
+  103  cd /public/priklady/
+  104  screen -r
+  105  logout
+  106  cd /tmp/
+  107  history > lastinec27102022.history 

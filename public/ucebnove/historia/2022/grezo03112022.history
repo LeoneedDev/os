@@ -1,0 +1,215 @@
+ 1782  clear
+ 1783  cd cv6-7/
+ 1784  ll
+ 1785  cp /public/samples/sedinput.txt 
+ 1786  cp /public/samples/sedinput.txt .
+ 1787  ll
+ 1788  vim sedinput.txt 
+ 1789  clear
+ 1790  ll
+ 1791  vim sed.txt 
+ 1792  cat sedinput.txt 
+ 1793  fg
+ 1794  sed sedinput.txt 
+ 1795  fg
+ 1796  vim sed.txt 
+ 1797  sed '' sedinput.txt
+ 1798  fg
+ 1799  sed -n '' sedinput.txt
+ 1800  fg
+ 1801  sed -n 'p' sedinput.txt
+ 1802  bg
+ 1803  fg
+ 1804  sed -n '=' sedinput.txt
+ 1805  sed '=' sedinput.txt
+ 1806  fg
+ 1807  sed -n '=;p' sedinput.txt
+ 1808  fg
+ 1809  sed 'i vkladam pred riadok' sedinput.txt
+ 1810  fg
+ 1811  sed '3a vkladam za treti riadok' sedinput.txt
+ 1812  fg
+ 1813  sed '3d' sedinput.txt
+ 1814  sed '3d' sedinput.txt | rev
+ 1815  fg
+ 1816  cat sedinput.txt 
+ 1817  sed 's/hello/world/' sedinput.txt
+ 1818  fg
+ 1819  sed 's/hello/world/g' sedinput.txt
+ 1820  fg
+ 1821  ll
+ 1822  echo 's/hello/world/g' > mojscript.sed
+ 1823  ll
+ 1824  cat mojscript.sed
+ 1825  fg
+ 1826  sed -f mojscript.sed sedinput.txt
+ 1827  fg
+ 1828  sed '3d&8d' list.txt 
+ 1829  sed '3d8d' list.txt 
+ 1830  sed '3d;8d' list.txt 
+ 1831  sed '=' list.txt 
+ 1832  fg
+ 1833  sed '=;7d;10d' list.txt 
+ 1834  sed '=;7-10d' list.txt 
+ 1835  sed '=;7,10d' list.txt 
+ 1836  sed '7,10d' list.txt 
+ 1837  fg
+ 1838  sed '' list.txt 
+ 1839  sed '3s/Zuzka/Lucka/' list.txt 
+ 1840  sed '3s/Zuzka/Lucka/g' list.txt 
+ 1841  fg
+ 1842  sed '' list.txt 
+ 1843  sed '3s/Zuzka/Lucka/' list.txt 
+ 1844  sed '3s/Zuzka/Lucka/2' list.txt 
+ 1845  fg
+ 1846  sed 's/[a-z]/'
+ 1847  sed 's/[a-z]/\U&/g' list.txt 
+ 1848  sed 's/Zuzka/\U&/g' list.txt 
+ 1849  fg
+ 1850  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+ 1851  fg
+ 1852  cat list.txt 
+ 1853  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt
+ 1854  fg
+ 1855  sed '=' list.txt 
+ 1856  sed '7,16p' list.txt 
+ 1857  sed '7,16p' list.txt /2
+ 1858  sed -n '7,16p' list.txt
+ 1859  vim sed.txt 
+ 1860  sed -n '7,16p=' list.txt
+ 1861  sed -n '7,16p;=n' list.txt
+ 1862  sed -n '7,16p;=' list.txt
+ 1863  fg
+ 1864  vim sed.txt 
+ 1865  sed -n '7,16p;' list.txt
+ 1866  sed -n '7,16p;n' list.txt
+ 1867  sed -n 'n;7,16p' list.txt
+ 1868  fg
+ 1869  ll
+ 1870  cp list.txt list.bkp
+ 1871  ll
+ 1872  sed 's/Zuzka/Lucka/g' list.txt 
+ 1873  sed 's/Zuzka/Lucka/g' list.bkp
+ 1874  cat list.bkp
+ 1875  sed 's/Zuzka/Lucka/g' list.bkp
+ 1876  cat list.bkp
+ 1877  sed 's/Zuzka/Lucka/g' list.bkp
+ 1878  cat list.bkp
+ 1879  sed -i 's/Zuzka/Lucka/g' list.bkp
+ 1880  cat list.bkp
+ 1881  fg
+ 1882  grep -n ozno list.
+ 1883  grep -n ozno list.txt 
+ 1884  gh
+ 1885  fg
+ 1886  cat sed.txt
+ 1887  grep -n ozno list.txt 
+ 1888  sed -n '=;7,16p' list.txt
+ 1889  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;" 
+ 1890  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;" | sed -n '4,12p'
+ 1891  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;" | sed -n '4,13p'
+ 1892  cat sed.txt 
+ 1893  clear
+ 1894  ls
+ 1895  clear
+ 1896  ls -la
+ 1897  vim sed.txt 
+ 1898  man sed
+ 1899  info sed
+ 1900  help sed
+ 1901  fg
+ 1902  sed sedinput.txt
+ 1903  sed '' sedinput.txt
+ 1904  cat sedinput.txt 
+ 1905  sed '' sedinput.txt
+ 1906  fg
+ 1907  sed -n '' sedinput.txt
+ 1908  fg
+ 1909  sed -n 'p' sedinput.txt
+ 1910  fg
+ 1911  sed -n '=' sedinput.txt
+ 1912  sed -n 'p;=' sedinput.txt
+ 1913  sed -n '=;p' sedinput.txt
+ 1914  sed '=' sedinput.txt
+ 1915  sed -n 'p;=' sedinput.txt
+ 1916  fg
+ 1917  sed 'i vkladam pred riadok' sedinput.txt
+ 1918  sed 'a vkladam pred riadok' sedinput.txt
+ 1919  sed 'c vkladam na miesto riadka' sedinput.txt
+ 1920  fg
+ 1921  sed '3a vkladam za treti riadok' sedinput.txt
+ 1922  fg
+ 1923  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 1924  fg
+ 1925  sed '3d' sedinput.txt ;# vymazem treti riadok
+ 1926  fg
+ 1927  sed '' sedinput.txt
+ 1928  sed 's/hello/world/' sedinput.txt
+ 1929  sed 's/hello/world/g' sedinput.txt
+ 1930  fg
+ 1931  echo 's/hello/world/g' > mojscript.sed
+ 1932  cat mojscript.sed 
+ 1933  sed -f mojscript.sed sedinput.txt 
+ 1934  fg
+ 1935  cat list.
+ 1936  cat list.txt 
+ 1937  sed '=' list.txt 
+ 1938  sed -n '7,10n;p' list.txt 
+ 1939  sed -n '7,10d;p' list.txt 
+ 1940  fg
+ 1941  sed 
+ 1942  cat list.txt 
+ 1943  sed '3s/Zuzka/Lucka' list.txt
+ 1944  sed '3s/Zuzka/Lucka/' list.txt
+ 1945  sed '3s/Zuzka/Lucka/g' list.txt
+ 1946  cat list.txt 
+ 1947  fg
+ 1948  cat list.txt 
+ 1949  sed '3s/Zuzka/Lucka/2' list.txt
+ 1950  sed '3s/Zuzka/Lucka/1' list.txt
+ 1951  sed '3s/Zuzka/Lucka/2' list.txt
+ 1952  sed '3s/Zuzka/Lucka/1' list.txt
+ 1953  sed '3s/Zuzka/Lucka/g' list.txt
+ 1954  fg
+ 1955  sed 's/Zuzka/\U&/g' list.txt 
+ 1956  fg
+ 1957  sed 's/Zuzka/\U1/g' list.txt 
+ 1958  sed 's/Zuzka/\L\1\E\2/g' list.txt 
+ 1959  sed 's/Zuzka/\L\1\E\2\U&/g' list.txt 
+ 1960  sed 's/Zuzka/\L\1\U\2/g' list.txt 
+ 1961  sed -e 's/Zuzka/\L\1\U\2/g' list.txt 
+ 1962  sed 's/Zuzka/\L\1\U\2/g' list.txt 
+ 1963  sed 's/Zuzka/\L\1&\U\2/&g' list.txt 
+ 1964  sed 's/(Z)(uzka)/\L\1\U\2/g' list.txt 
+ 1965  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt 
+ 1966  fg
+ 1967  cat list.txt 
+ 1968  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt 
+ 1969  fg
+ 1970  sed -n '7,16p' list.txt 
+ 1971  sed -n 'n;p' list.txt 
+ 1972  sed -n 'p;n' list.txt 
+ 1973  sed -n 'n;7,16p' list.txt 
+ 1974  sed -n '7,16p;n' list.txt 
+ 1975  fg
+ 1976  sed -i 's/Zuzka/Lucka/g' list.bkp
+ 1977  cp list.txt list.bkp 
+ 1978  cat list.bkp 
+ 1979  sed -i 's/Zuzka/Lucka/g' list.bkp
+ 1980  cat list.bkp 
+ 1981  fg
+ 1982  grep ozno list.txt 
+ 1983  grep -c ozno list.txt 
+ 1984  grep -l ozno list.txt 
+ 1985  grep -n ozno list.txt 
+ 1986  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;" | sed -n '4,13p'
+ 1987  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;"
+ 1988  sed -n '=;7,16p' list.txt
+ 1989  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;"
+ 1990  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g;" | sed -n '4,13p'
+ 1991  fg
+ 1992  LL
+ 1993  ll
+ 1994  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1995  fg
+ 1996  echo $RANDOM

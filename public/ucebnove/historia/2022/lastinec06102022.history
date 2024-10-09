@@ -1,0 +1,138 @@
+   15  echo $filename
+   16  exit
+   17  echo $FILENAME
+   18  ls moj\ subor
+   19  ls
+   20  cat a.txt 
+   21  grep aaa a.txt 
+   22  grep --color aaa a.txt 
+   23  vim a.txt 
+   24  grep '^aaa$' a.txt 
+   25  alias grep="grep --color"
+   26  grep '^aaa$' a.txt 
+   27  cat a.txt 
+   28  grep "[ab]" a.txt 
+   29  grep "a.*" a.txt 
+   30  grep "a.*a" a.txt 
+   31  ls
+   32  ls ?.txt
+   33  ls /var/log/
+   34  grep "^[^a]" a.txt 
+   35  grep "^[^a]*aaa[^a]$" a.txt 
+   36  grep "^[^a]*aaa[^a]*$" a.txt 
+   37  echo ababab >> a.txt
+   38  cat a.txt 
+   39  grep "^[^a]*aaa[^a]*$" a.txt 
+   40  grep "^[^a]*a[^a]*a[^a]*a[^a]*$" a.txt 
+   41  grep "^([^a]*a[^a]*){3}$" a.txt 
+   42  egrep "^([^a]*a[^a]*){3}$" a.txt 
+   43  grep "^([^a]*a[^a]*)\{3\}$" a.txt 
+   44  grep "^\([^a]*a[^a]*\){3}$" a.txt 
+   45  grep "^\([^a]*a[^a]*\)\{3\}$" a.txt 
+   46  date
+   47  grep "^\([^a]*a\)\{3\}$" a.txt 
+   48  grep "^\([^a]*a\)\{3\}[^a]$" a.txt 
+   49  grep "^\([^a]*a\)\{3\}[^a]*$" a.txt 
+   50  echo $status
+   51  ls
+   52  wc
+   53  wc *
+   54  wc -l a.txt 
+   55  who | wc -l
+   56  who
+   57  man cut
+   58  cd
+   59  man /etc/passwd
+   60  man 5 asswd
+   61  man 5 passwd
+   62  cat /etc/passwd
+   63  man 5 passwd
+   64  cut -d: -f1 /etc/passwd
+   65  cut -d: -f1,3,4 /etc/passwd
+   66  cut -d: -f1-4 /etc/passwd
+   67  cut -d: -f2- /etc/passwd
+   68  grep "/bin/bash" /etc/passwd
+   69  grep "/bin/bash$" /etc/passwd
+   70  grep ":/bin/bash$" /etc/passwd
+   71  grep ":/bin/bash$" /etc/passwd | cut -d: -f3
+   72  vim /tmp/znacky.txt
+   73  cd /public/
+   74  ls
+   75  man find
+   76  find /public -name lastinec29092022.history
+   77  find /public -name lastinec29092022.history -or grezo29092022.history
+   78  find /public -name lastinec29092022.history -or -name grezo29092022.history
+   79  find /public -name lastinec29092022.history -name grezo29092022.history
+   80  find /public -name lastinec29092022.history -name grezo29092022.history 2> /dev/null
+   81  find /public -name lastinec29092022.history -name grezo29092022.history |& grep -v "^find:"
+   82  find /public -name lastinec29092022.history |& grep -v "^find:"
+   83  find /public/ucebnove/ -name lastinec29092022.history
+   84  find /public/ucebnove/ -size 200c
+   85  find /public/ucebnove/ -size +200c
+   86  find /public/ucebnove/ -size +200c -name "[A-Z]*"
+   87  find /public/ucebnove/ -size +200c -name "l*"
+   88* find /public/ucebnove/ -size +200c -regex 
+   89  find /public/ucebnove/ -size +200c -name l\*
+   90  find /public/ucebnove/ -size +200c -regex "[A-Z]*"
+   91  find /public/ucebnove/ -size +200c -regex ".*[A-Z]*"
+   92  find /public/ucebnove/ -size +200c -regex ".*[A-Z]+"
+   93  find /public/testovaci_adresar/ -size +200c -regex ".*[A-Z]+"
+   94  find /public/testovaci_adresar/ -size +200c -regex ".*/[A-Z]+"
+   95  cp /public/testovaci_adresar/testdir2/ine/meroL /tmp
+   96  cd /tmp
+   97  mv meroL Merol
+   98  cd -
+   99  find /tmp/ -size +200c -regex ".*/[A-Z]+"
+  100  man find
+  101  find /tmp/ -size +200c -regex ".*\/[A-Z]+"
+  102  find /tmp/ -size +200c -regex ".*/\[A-Z\]+"
+  103  find /tmp/ -size +200c -regex
+  104  find /tmp/ -size +200c
+  105  find /tmp/ -size +200c | grep '.*[A-Z]+'
+  106  find /tmp/ -size +200c | egrep '.*[A-Z]+'
+  107  find /tmp/ -size +200c -regex ".*.csh"
+  108  find /tmp/ -size +200c -regex ".*\.csh"
+  109  find /public/ucebnove/ -size +200c -regex ".*.csh"
+  110  find /public/ucebnove/ -size +200c -regex ".*.sh"
+  111  find /public/ucebnove/ -size +200c -regex ".*\.sh"
+  112  find /public/ucebnove/ -regex ".*.csh"
+  113  ls -l /public/testovaci_adresar/testdir2/ine/meroL
+  114  ls -l /public/testovaci_adresar/testdir2/ine/meroL | head
+  115  find /public/ucebnove/ -size +200c -regex -regex '.*.csh'
+  116  find /public/ucebnove/ -size +200c -regex '.*.csh'
+  117  find /public/ucebnove/ -size -200c -regex '.*.csh'
+  118  find /public/ucebnove/ -size -200c -regex '.*.sh'
+  119  find /public/ucebnove/ -size -200c -regex '.*\.sh'
+  120  find /public/ucebnove/ -size -200c -regex '.*\.sh' -print
+  121  man find
+  122  find /public/ucebnove/ -size -200c -regex '.*\.sh' -printf "%p %s\n"
+  123  ls -l /public/ucebnove/seminar_1/p.sh
+  124  man find
+  125  find /tmp -type -user jlastinec
+  126  find /tmp -type f -user jlastinec
+  127  find /tmp -type f -user jlastinec -exec rm {} \;
+  128  ls /tmp/
+  129  man ps
+  130  ps
+  131  ps -au
+  132  man pas
+  133  man ps~~
+  134  man ps
+  135  ps aux
+  136  cd /tmp
+  137  vim subor.txt
+  138  ps aux
+  139  ps
+  140  jobs
+  141  fg
+  142  kill %1
+  143  ps
+  144  fg
+  145  vim test.txt &
+  146  ps | grep vim
+  147  kill 2562
+  148  fg
+  149  date
+  150  history > /public/ucebnove/historia/lastinec06102022.history 
+  151  sudo history > /public/ucebnove/historia/lastinec06102022.history 
+  152  history > lastinec06102022.history 
