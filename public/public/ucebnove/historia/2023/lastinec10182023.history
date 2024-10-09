@@ -1,0 +1,124 @@
+    1  history
+    2  echo "" > ~/.bash_history 
+    3  logout
+    4  ls /public
+    5  ls
+    6  cd /tmp/
+    7  cd script/
+    8  ls
+    9  cat 3.sh 
+   10  echo '!'
+   11  echo '!!'
+   12  prem="text"
+   13  echo $text
+   14  bash
+   15  export PREM="text"
+   16  echo $PREM
+   17  bash
+   18  cat -n 4.sh 
+   19  ls [A-Z]*
+   20  cd /public/priklady/
+   21  ls [A-Z]*
+   22  ls
+   23  cd -
+   24  touch Test
+   25  ls [A-Z]*
+   26  cat -n 4.sh 
+   27  echo $(echo "$PREM")
+   28  echo `echo "$PREM"`
+   29  echo "\$x"
+   30  echo $(echo "\$x")
+   31  echo `echo "\$x"`
+   32  man bash
+   33  ls
+   34  ls {1,2,3}.sh
+   35  echo ~
+   36  ~/.ssh/
+   37  ls ~/.ssh/
+   38  cat -n 4.sh 
+   39  cat -n 3.sh 
+   40  ls
+   41  cd ..
+   42  ls *
+   43  ls *\\?
+   44  ls '*\\?'
+   45  ls \*\\\\\?
+   46  veta='ahoj'
+   47  echo $
+   48  echo $veta
+   49  echo "\$veta=$(echo $veta)"
+   50  echo "$veta"
+   51  echo "\$veta=$veta"
+   52  echo "\$veta='$veta'"
+   53  echo "'\$veta'='$veta'"
+   54  mkdir "adresar s medzerou"
+   55  $d="adresar s medzerou"
+   56  d="adresar s medzerou"
+   57  touch "adresar s medzerou"/subor.txt"
+   58  touch "adresar s medzerou"/subor.txt
+   59  find $d -type f
+   60  find "$d" -type f
+   61  prem=premenna 1
+   62  prem=premenna ls
+   63  echo $prem
+   64  ls
+   65  ls script/
+   66  cp /public/priklady/[5-9].sh .
+   67  ls
+   68  cat -n 5.sh
+   69  echo $?
+   70  false
+   71  echo $?
+   72  chmod +x 5.sh
+   73  ./5.sh 
+   74  man [
+   75  ./5.sh arg1 arg2
+   76  ./5.sh arg1 arg2 -d arg3 arg4
+   77  ./5.sh -d arg3 arg4
+   78  man bash
+   79  bash -vx 5.sh 
+   80  bash -vx 5.sh arg1 arg2 -d arg3
+   81  set -x
+   82  ls
+   83  set +x
+   84  set -f
+   85  set +f
+   86  cat -n 6.sh 
+   87  zoznam=(jeden dva tri styri pat "sest cele sedem")
+   88  echo $zoznam
+   89  echo ${zoznam[2]}
+   90  echo ${zoznam[0]}
+   91  echo ${#zoznam[2]}
+   92  echo ${#zoznam[3]}
+   93  echo ${#zoznam[@]}
+   94  echo ${zoznam[@]:2:4}
+   95  vim 5.sh 
+   96  vim 6.sh 
+   97  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+   98  echo ${zoznam1[@]}
+   99  echo ${#zoznam1}
+  100  echo ${#zoznam1[@]}
+  101  chmod +x 6.sh sh
+  102  chmod +x 6.sh
+  103  ./6.sh 
+  104  zoznam2=("${zoznam[@]}" osem)
+  105  echo ${#zoznam2[@]}
+  106  cat -n 7.sh 
+  107  cesta=/public/ucebnove/seminar_1/vim.txt
+  108  bash 7.sh 
+  109  cat -n 8.sh 
+  110  ls
+  111  for f in $(ls -l | head -3); do echo $f; done
+  112  ls -l
+  113  echo $IFS
+  114  bash 8.sh 
+  115  vim 8.sh 
+  116  bash 8.sh 
+  117  ls
+  118  cat -n 9.sh 
+  119  chmod +x 9.sh 
+  120  ./9.sh 
+  121  cd /public/priklady/
+  122  ls
+  123  cat -n 9-2.sh 
+  124  history > /tmp/lastinec10182023.history

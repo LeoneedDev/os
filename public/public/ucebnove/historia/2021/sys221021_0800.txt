@@ -1,0 +1,234 @@
+ 1133  ls
+ 1134  ls 2>/dev/null 
+ 1135  ls &>/dev/null 
+ 1136  cat </etc/passwd
+ 1137  ls |& grep abc
+ 1138  $(ls|grep a)
+ 1139  echo $(ls|grep a)
+ 1140  ll
+ 1141  cp -r /public/ .
+ 1142  cd public/priklady/
+ 1143  ll
+ 1144  vim 3.sh 
+ 1145  help while
+ 1146  fg
+ 1147  which [
+ 1148  man test
+ 1149  ZACIATOKCVIKA
+ 1150  man test
+ 1151  help [[
+ 1152  fg
+ 1153  help ((
+ 1154  help '(('
+ 1155  fg
+ 1156  veta="ahoj svet"
+ 1157  pocet=3
+ 1158  echo $pocet $veta
+ 1159  chmod +x print_args.sh 
+ 1160  ./print_args.sh 
+ 1161  ./print_args.sh a b c
+ 1162  ./print_args.sh $pocet $veta
+ 1163  ./print_args.sh 3 ahoj svet
+ 1164  ./print_args.sh "$pocet $veta"
+ 1165  ./print_args.sh $pocet "$veta"
+ 1166  ./print_args.sh $pocet      "$veta"
+ 1167  ./print_args.sh $pocet \n     "$veta"
+ 1168  ./print_args.sh $pocet " " " "     "$veta"
+ 1169  ./print_args.sh $pocet "" ""     "$veta"
+ 1170  fg
+ 1171  ./print_args.sh "$pocet $veta"
+ 1172  ./print_args.sh '$pocet $veta'
+ 1173  ./print_args.sh "\$pocet \$veta"
+ 1174  ./print_args.sh $'$pocet \n\t $veta'
+ 1175  ./print_args.sh '$pocet \n\t $veta'
+ 1176  fg
+ 1177  bash 3.sh 
+ 1178  cat 3.sh 
+ 1179  fg
+ 1180  echo $0
+ 1181  fg
+ 1182  vim print_args.sh 
+ 1183  ./print_args.sh 
+ 1184  bash print_args.sh 
+ 1185  fg
+ 1186  ./print_args.sh a b c
+ 1187  fg
+ 1188  ./print_args.sh a b c
+ 1189  ./print_args.sh 
+ 1190  fg
+ 1191  set
+ 1192  fg
+ 1193  set a b c
+ 1194  echo $1
+ 1195  echo $2
+ 1196  echo $3
+ 1197  set x y z
+ 1198  echo $1
+ 1199  echo $2
+ 1200  echo $#
+ 1201  help shift
+ 1202  shift
+ 1203  echo $1
+ 1204  echo $2
+ 1205  echo $3
+ 1206  echo $#
+ 1207  fg
+ 1208  cat 5.sh
+ 1209  chmod +x 5.sh
+ 1210  ./5.sh 
+ 1211  fg
+ 1212  ./6.sh a b c
+ 1213  fg
+ 1214  ./5.sh a b c
+ 1215  fg
+ 1216  help case
+ 1217  ls; ls
+ 1218  fg
+ 1219  ./5.sh -d
+ 1220  ./5.sh -d a b c
+ 1221  fg
+ 1222  ./5.sh abc
+ 1223  ./5.sh -d abc
+ 1224  ./5.sh abc -d
+ 1225  fg
+ 1226  ./5.sh -h
+ 1227  fg
+ 1228  ./5.sh -c
+ 1229  fg
+ 1230  ./5.sh a -h
+ 1231  ls /etc/passwd -l
+ 1232  fg
+ 1233  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1234  echo $zoznam 
+ 1235  echo ${zoznam[@]}
+ 1236  echo ${zoznam[0]}
+ 1237  echo ${zoznam[@]}
+ 1238  echo ${zoznam[6]}
+ 1239  echo ${zoznam[5]}
+ 1240  echo ${#zoznam[@]}
+ 1241  echo ${#zoznam[2]}
+ 1242  echo ${#zoznam[5]}
+ 1243  echo ${#zoznam}
+ 1244  echo ${zoznam}
+ 1245  echo ${#zoznam}
+ 1246  echo ${#zoznam[0]}
+ 1247  fg
+ 1248  echo ${#zoznam[@]:2:2}
+ 1249  echo ${zoznam[@]:2:2}
+ 1250  echo ${zoznam[@]:2:3}
+ 1251  fg
+ 1252  help '$(('
+ 1253  a=5
+ 1254  ((a++); )
+ 1255  ((a++))
+ 1256  echo $a
+ 1257  echo ((a++))
+ 1258  echo $((a++))
+ 1259  fg
+ 1260  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1261  echo ${zoznam1[@]}
+ 1262  fg
+ 1263  zoznam2=(${zoznam[@]} sedem osem)
+ 1264  echo ${#zoznam[@]}
+ 1265  echo ${zoznam[@]}
+ 1266  zoznam2=(jeden dva tri styri pat sest cele sedem sedem osem)
+ 1267  zoznam2=(${zoznam[@]} sedem osem)
+ 1268  echo ${#zoznam[@]}
+ 1269  echo ${#zoznam2[@]}
+ 1270  zoznam2=("${zoznam[@]}" sedem osem)
+ 1271  echo ${#zoznam2[@]}
+ 1272  zoznam2=("${zoznam[*]}" sedem osem)
+ 1273  echo ${#zoznam2[@]}
+ 1274  fg
+ 1275  cat 5.sh 
+ 1276  cat 6.sh 
+ 1277  fg
+ 1278  vim 7.sh 
+ 1279  dirname /etc/passwd
+ 1280  dirname $(dirname /etc/passwd)
+ 1281  dirname $(dirname /etc/passwd)/
+ 1282  basename /etc/passwd
+ 1283  fg
+ 1284  basename /etc/passwd /etc/shadow
+ 1285  dirname /etc/passwd /etc/shadow
+ 1286  dirname /etc/passwd $HOME
+ 1287  fg
+ 1288  touch "A  b"
+ 1289  cesta="$PWD/A  b"
+ 1290  dirname $cesta
+ 1291  basename $cesta
+ 1292  echo  $cesta
+ 1293  basename "$cesta"
+ 1294  basename "$(echo $cesta)"
+ 1295  basename "$(echo "$cesta")"
+ 1296  basename "`echo "$cesta"`"
+ 1297  basename "$(echo "$cesta")"
+ 1298  fg
+ 1299  for f in $(ls -l | head -3); do         echo $f; done
+ 1300  ls -l | head -3
+ 1301  for f in $(ls -l | head -3); do         echo ===== $f; done
+ 1302  for f in $(ls); do         echo ===== $f; done
+ 1303  for f in $(ls|grep A); do         echo ===== $f; done
+ 1304  ll "A  b"
+ 1305  for f in" $(ls|grep A)"; do         echo ===== $f; done
+ 1306  for f in "$(ls|grep A)"; do         echo ===== $f; done
+ 1307  for f in $(ls|grep A); do         echo ===== $f; done
+ 1308  echo $IFS
+ 1309  fg
+ 1310  IFS=$'\n'
+ 1311  for f in $(ls|grep A); do         echo ===== $f; done
+ 1312  for f in $(ls); do         echo ===== $f; done
+ 1313  fg
+ 1314  bash 8.sh 
+ 1315  fg
+ 1316  IFS=$' \t\n'
+ 1317  fg
+ 1318  vim 9.sh 
+ 1319  bash 9.sh 
+ 1320  fg
+ 1321  bash 9.sh 
+ 1322  fg
+ 1323  help source
+ 1324  fg
+ 1325  bash 9.sh 
+ 1326  fg
+ 1327  bash 9.sh 
+ 1328  fg
+ 1329  9.sh
+ 1330  ./9.s
+ 1331  ./9.sh
+ 1332  fg
+ 1333  chmod +x 9.sh
+ 1334  ./9.sh 
+ 1335  fg
+ 1336  ./9.sh 
+ 1337  fg
+ 1338  ./9.sh 
+ 1339  fg
+ 1340  ./9.sh 
+ 1341  fg
+ 1342  ./9.sh 
+ 1343  fg
+ 1344  vim a.sh
+ 1345  extern a=5
+ 1346  bash a.sh 
+ 1347  fg
+ 1348  vim a.sh 
+ 1349  env
+ 1350  env|grep a
+ 1351  extern a=b
+ 1352  export a=b
+ 1353  env|grep a
+ 1354  bash a.sh 
+ 1355  fg
+ 1356  :qenv
+ 1357  a=42 bash a.sh
+ 1358  bash a.sh
+ 1359  env
+ 1360  echo $PATH
+ 1361  ls
+ 1362  which ls
+ 1363  where ls
+ 1364  PATH="$(pwd):/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+ 1365  9.sh 
+ 1366  which 9.sh

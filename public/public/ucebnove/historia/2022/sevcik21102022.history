@@ -1,0 +1,373 @@
+  917  ls
+  918  vim 14102022-Sevcik 
+  919  less 14102022-Sevcik 
+  920  vim 07102022-Sevcik 
+  921  less 07102022-Sevcik 
+  922  vim 07102022-Sevcik 
+  923  ls
+  924  mkdir tmp
+  925  cp tes* ./tmp/
+  926  ls
+  927  cd tmp/
+  928  ls
+  929  cd ..
+  930  rm -rf tmp/
+  931  ls
+  932  cp *Sevcik /public/ucebnove/historia/
+  933  sudo cp *Sevcik /public/ucebnove/historia/
+  934  cd /public/ucebnove/historia/
+  935  ls
+  936  mv 07102022-Sevcik sevcik07102022.history
+  937  sudo mv 07102022-Sevcik sevcik07102022.history
+  938  sudo mv 14102022-Sevcik sevcik14102022.history
+  939  ls
+  940  less sevcik07102022.history 
+  941  sudo less sevcik07102022.history 
+  942  sudo less sevcik14102022.history 
+  943  sudo less grezo13102022.history 
+  944  sudo less sevcik14102022
+  945  sudo less grezo13102022-2.history 
+  946  ls
+  947  ls /public/ucebnove/historia/sevcik*
+  948  less /public/ucebnove/historia/sevcik14102022.history 
+  949  exit
+  950  man ps
+  951  ps
+  952  ps -aux
+  953  man ps
+  954  ps aux
+  955  ps -au
+  956  man ps
+  957  ps x
+  958  ps aux
+  959  ps au
+  960  ps a
+  961  ps u
+  962  ps
+  963  man kill
+  964  exit
+  965  ls
+  966  ls -la
+  967  find .
+  968  man find
+  969  find . -type f
+  970  find . -type f -maxdepth 1
+  971  ls
+  972  cat file.tmp 
+  973  rm file.tmp 
+  974  ls
+  975  cat grep 
+  976  ls
+  977  rm grep 
+  978  ls
+  979  rm test*
+  980  ls
+  981  exit
+  982  cat /public/priklady/s
+  983  cat /public/priklady/z
+  984  cat /public/priklady/y.sh 
+  985  cat /public/priklady/x.bc 
+  986  cat /public/priklady/5.sh 
+  987  cat /public/priklady/6.sh 
+  988  cat /public/priklady/7.sh 
+  989  cat /public/priklady/8.sh 
+  990  cat /public/priklady/9.sh 
+  991  cat /public/priklady/9-2.sh 
+  992  exit
+  993  man diff
+  994  exit
+  995  help IFS
+  996  man -k IFS
+  997  man IFS
+  998  man bash
+  999  exit
+ 1000  man source
+ 1001  help source
+ 1002  help .
+ 1003  help bash
+ 1004  exit
+ 1005  ls
+ 1006  exit
+ 1007  ls
+ 1008  mkdir skripty
+ 1009  ls
+ 1010  find /public/priklady/ 
+ 1011  find /public/priklady/ -maxdepth 1
+ 1012  find /public/priklady/ -maxdepth 1 -type f
+ 1013  find /public/priklady/ -maxdepth 1 -type f -name "*.sh"
+ 1014  find /public/priklady/ -maxdepth 1 -type f -name "*.sh" -exec cp {} ~/skripty/ \;
+ 1015  ls
+ 1016  cd skripty/
+ 1017  lsa
+ 1018  ls
+ 1019  la
+ 1020  ./1.sh
+ 1021  cat 1.sh 
+ 1022  bash 1.sh 
+ 1023  la
+ 1024  chmod +x *.sh
+ 1025  la
+ 1026  cat 1.sh 
+ 1027  ls | wc
+ 1028  ls | wc | tr -d " "
+ 1029  ls
+ 1030  ls -l
+ 1031  cat 2.sh 
+ 1032  vim 2.sh 
+ 1033  bg
+ 1034  fg
+ 1035  ./2.sh 
+ 1036  veta="ahoj svet"pocet=3
+ 1037  pocet=3
+ 1038  echo $pocet $veta
+ 1039  echo $pocet	$veta
+ 1040  echo "$pocet	$veta"echo '$pocet	$veta'
+ 1041  echo '$pocet	$veta'
+ 1042  echo "'$pocet	$veta'"
+ 1043  echo '$pocet	$veta'
+ 1044  echo '$pocet       $veta'
+ 1045  echo \$pocet	\$veta
+ 1046  echo \$pocet \ \ \ \ \ \$veta
+ 1047  ./3.sh 
+ 1048  la
+ 1049  ./3.sh 
+ 1050  touch AHOJ JA SOM NoVY Subor
+ 1051  ls
+ 1052  man mv
+ 1053  ./4.sh 
+ 1054  ls
+ 1055  ./5.sh 
+ 1056  man unset
+ 1057  help unset
+ 1058  ./5.sh help while
+ 1059  help while
+ 1060  ./5.sh
+ 1061  ./5.sh abc abc abc cba
+ 1062  ./5.sh -h
+ 1063  echo $?
+ 1064  ./5.sh -hskalbnfdksa
+ 1065  echo $?
+ 1066  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1067  echo $zoznam
+ 1068  echo $zoznam[0]
+ 1069  echo ${zoznam[0]}
+ 1070  echo ${zoznam[#]}
+ 1071  echo ${zoznam[@]}
+ 1072  echo ${#zoznam[@]}
+ 1073  echo ${#zoznam[4]}
+ 1074  echo ${#zoznam[5]}
+ 1075  echo ${zoznam[@]:2:4}
+ 1076  echo ${zoznam[@]:2:25}
+ 1077  zoznam2=(${zoznam[@]} osem)
+ 1078  echo $zoznam2[@]
+ 1079  echo ${zoznam2[@]}
+ 1080  echo ${#zoznam2[@]}
+ 1081  zoznam2=("${zoznam[@]}" osem)
+ 1082  echo ${#zoznam2[@]}
+ 1083  echo ${zoznam2[@]}
+ 1084  ./7.sh 
+ 1085  ls
+ 1086  cd ..
+ 1087  ls
+ 1088  rm -rf skripty/
+ 1089  ls
+ 1090  ls /public/priklady/
+ 1091  mkdir skripty
+ 1092  find /public/priklady/ -name "*.sh"
+ 1093  find /public/priklady/ -name "*.sh" -type f -maxdepth 1
+ 1094  find /public/priklady/ -maxdepth 1 -name "*.sh" -type f
+ 1095  ls
+ 1096  find /public/priklady/ -maxdepth 1 -name "*.sh" -type f -exec cp {} ~/skripty/ \;
+ 1097  ls skripty/
+ 1098  find /public/priklady/ -maxdepth 1 -name "*.sh" -type f
+ 1099  find $(pwd) -maxdepth 1 -name "*.sh" -type f
+ 1100  cd skripty/
+ 1101  find $(pwd) -maxdepth 1 -name "*.sh" -type f
+ 1102  find . -maxdepth 1 -name "*.sh" -type f
+ 1103  find -maxdepth 1 -name "*.sh" -type f
+ 1104  la
+ 1105  chmod +x *.sh
+ 1106  la
+ 1107  ls | wc -l
+ 1108  ls
+ 1109  ls -l
+ 1110  ls -l | wc -l
+ 1111  la
+ 1112  la | wc -l
+ 1113  chmod -x 1.sh 
+ 1114  la
+ 1115  ./1.sh
+ 1116  bash 1.sh 
+ 1117  chmod +x 1.sh 
+ 1118  ./1.sh 
+ 1119  temp="Ahoj ja som temp"
+ 1120  echo "$temp"
+ 1121  echo "$temp123"
+ 1122  ./2.sh 
+ 1123  echo $temp       "ahok"
+ 1124  echo "$temp       ahok"
+ 1125  veta="ahoj svet"
+ 1126  pocet=3
+ 1127  echo $pocet $veta
+ 1128  echo $pocet	$veta
+ 1129  echo "$pocet	$veta"
+ 1130  echo '$pocet	$veta'
+ 1131  echo '$pocet      $veta'
+ 1132  echo \$pocet	\$veta
+ 1133  echo \$pocet \ \ \ \ \ \ \$veta
+ 1134  echo "$temp"
+ 1135  echo (($temp--))
+ 1136  ./3.sh 
+ 1137  exit
+ 1138  cd skripty/
+ 1139  cat 2.sh 
+ 1140  cat 3.sh 
+ 1141  man while
+ 1142  help while
+ 1143  vim 3.sh 
+ 1144  cat 4.sh 
+ 1145  cat 5.sh 
+ 1146  ;s
+ 1147  ls
+ 1148  cat 6.sh 
+ 1149  cat 7.sh 
+ 1150  cat 8.sh 
+ 1151  cat 9.sh 
+ 1152  cat 6.sh 
+ 1153  cat 7.sh 
+ 1154  cat 8.sh 
+ 1155  cat 9.sh 
+ 1156  cd ..
+ 1157  ls
+ 1158  cd skripty/
+ 1159  ls
+ 1160  cat 1.sh 
+ 1161  cat 2.sh 
+ 1162  vim 2.sh 
+ 1163  cat 3.sh 
+ 1164  vim 2.sh 
+ 1165  cat 2.sh 
+ 1166  cat 3.sh 
+ 1167  vim 3.sh 
+ 1168  cat 4.sh 
+ 1169  cat 5.sh 
+ 1170  cat 6.sh 
+ 1171  cat 7.sh 
+ 1172  man dirname
+ 1173  man basename
+ 1174  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1175  echo $(dirname $cesta)
+ 1176  echo $(basename $cesta)
+ 1177  echo $(dirname $(dirname $cesta))
+ 1178  echo $(basename $(dirname $cesta))
+ 1179  cat 7.sh 
+ 1180  cat 8.sh 
+ 1181  cat 9.sh 
+ 1182  cat 9-2.sh.sh 
+ 1183  cat 9-2.sh
+ 1184  exit
+ 1185  ./3.sh 
+ 1186  cd skripty/
+ 1187  ls
+ 1188  ./3.sh 
+ 1189  touch AHOJ Ja SOM NOvy
+ 1190  ls
+ 1191  touch test
+ 1192  ls
+ 1193  ./4.sh 
+ 1194  ls
+ 1195  ./5.sh 
+ 1196  ./5.sh a b c "G"
+ 1197  ./5.sh a b c "G      o"
+ 1198  ./5.sh -d
+ 1199  ./5.sh -d abc abc abc
+ 1200  ./5.sh abc abc abc
+ 1201  ./5.sh -h
+ 1202  echo "$?"
+ 1203  ./5.sh -xxx
+ 1204  echo "$?"
+ 1205  echo *
+ 1206  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1207  echo $zoznam
+ 1208  echo ${zoznam[0]}
+ 1209  echo ${#zoznam[2]}
+ 1210  echo ${#zoznam[5]}
+ 1211  echo ${#zoznam[@]}
+ 1212  echo ${zoznam[@]:2:4}
+ 1213  zoznam2=(${zoznam[@]} osem)
+ 1214  echo ${#zoznam2[@]}
+ 1215  echo ${zoznam2[@]}
+ 1216  zoznam2=("${zoznam[@]}" osem)
+ 1217  echo ${#zoznam2[@]}
+ 1218  echo ${zoznam2[@]}
+ 1219  exit
+ 1220  ls
+ 1221  vim test
+ 1222  bash test 
+ 1223  vim test
+ 1224  bash test 
+ 1225  vim test
+ 1226  bash test a c
+ 1227  bash test 5 6
+ 1228  bash test 5 5
+ 1229  bash test 5 4
+ 1230  vim test
+ 1231  bash test 5 4
+ 1232  vim test
+ 1233  bash test 5 4
+ 1234  bash test 5 5
+ 1235  bash test 5 a
+ 1236  bash test 5 "ahoj"
+ 1237  bash test "dovi" "ahoj"
+ 1238  bash test "dovid" "ahoj"
+ 1239  bash test "papa" "ahoj"
+ 1240  bash test "papapapapa" "ahoj"
+ 1241  mv test test.sh
+ 1242  chmod +x test.sh 
+ 1243  ./test.sh 123 ahoj
+ 1244  vim test.sh 
+ 1245  ./test.sh 123 ahoj
+ 1246  vim test.sh 
+ 1247  ./test.sh 123 ahoj
+ 1248  vim test.sh 
+ 1249  ./test.sh 123 ahoj
+ 1250  vim test.sh 
+ 1251  ./test.sh 1 3
+ 1252  ./test.sh 4 3
+ 1253  ./test.sh 4 4
+ 1254  echo a
+ 1255  echo $a
+ 1256  ./test.sh 
+ 1257  ./test.sh "as" "bd"
+ 1258  ./test.sh "as" "bdF"
+ 1259  ./test.sh "as" "bdFG"
+ 1260  ls
+ 1261  vim test.sh 
+ 1262  ./test.sh "as" "bdFG"
+ 1263  ./test.sh "as" "bG"
+ 1264  ./test.sh "as" "b"
+ 1265  ./test.sh "as" "f"
+ 1266  ./test.sh "a" "f"
+ 1267  ./test.sh "g" "a"
+ 1268  vim test.sh 
+ 1269  ./test.sh "g" "a"
+ 1270  ./test.sh "a" "a"
+ 1271  ./test.sh "x" "y"
+ 1272  ./test.sh "y" "x"
+ 1273  vim test.sh 
+ 1274  ./test.sh 8 10
+ 1275  ./test.sh 10 8
+ 1276  ./test.sh 10 10
+ 1277  ./test.sh 1 1
+ 1278  ./test.sh 1 2
+ 1279  ./test.sh 2 1
+ 1280  ./test.sh 2 2
+ 1281  ./test.sh m n
+ 1282  ./test.sh n mm
+ 1283  ./test.sh nn m
+ 1284  ./test.sh "nn" "m"
+ 1285  vim test.sh 
+ 1286  ls
+ 1287  exit
+ 1288  ls
+ 1289  exit

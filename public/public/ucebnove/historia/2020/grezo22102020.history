@@ -1,0 +1,392 @@
+ 2974  cat 4.sh
+ 2975  f="A     '     B"
+ 2976  echo "$f" "$(echo $f | tr A-Z a-z)"
+ 2977  setenv
+ 2978  env
+ 2979  set
+ 2980  clear
+ 2981  ll
+ 2982  cat 5.sh
+ 2983  bash 5.sh
+ 2984  echo $?
+ 2985  bash 5.sh arg1 arg2 atd
+ 2986  bash 5.sh argument1 arg2 atd
+ 2987  vim 5.sh
+ 2988  bash 5.sh argument1 arg2 atd
+ 2989  vim 5.sh
+ 2990  cat 5.sh
+ 2991  bash 5.sh -d
+ 2992  bash 5.sh abc cba
+ 2993  bash 5.sh -D abc cba
+ 2994  bash 5.sh -h
+ 2995  echo $?
+ 2996  bash 5.sh -o
+ 2997  echo $?
+ 2998  bash 5.sh asijfsaojf asf asf 
+ 2999  cat 5.sh 
+ 3000  vim 5.sh
+ 3001  bash 5.sh asijfsaojf asf asf 
+ 3002  help if
+ 3003  set
+ 3004  unset f
+ 3005  set
+ 3006  clear
+ 3007  env
+ 3008  clear
+ 3009  echo $_
+ 3010  cat 5.sh 
+ 3011  cat pos.sh 
+ 3012  uname -a
+ 3013  echo $-
+ 3014  bash pos.sh 
+ 3015  vim pos.sh 
+ 3016  bash pos.sh 
+ 3017  echo $-
+ 3018  vim ../.profile 
+ 3019  vim ../.bashrc 
+ 3020  echo \#\#\#
+ 3021  set
+ 3022  ls
+ 3023  set
+ 3024  echo \#\#\# este nieco
+ 3025  set
+ 3026  clear
+ 3027  set
+ 3028  clear
+ 3029  cat 5.sh 
+ 3030  vim 5.sh 
+ 3031  bash 5.sh -d
+ 3032  vim 5.sh 
+ 3033  cat pos.sh 
+ 3034  cat 6.sh
+ 3035  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 3036  echo $zoznam
+ 3037  echo ${zoznam[2]}
+ 3038  echo ${#zoznam[2]}
+ 3039  echo ${#zoznam[5]}
+ 3040  echo ${#zoznam[2]}
+ 3041  echo ${#zoznam[dva]}
+ 3042  echo ${zoznam[dva]}
+ 3043  echo $zoznam[dva]
+ 3044  echo ${#zoznam[dva]}
+ 3045  echo ${#zoznam[tri]}
+ 3046  echo ${#zoznam[stiri]}
+ 3047  echo ${#zoznam[pat]}
+ 3048  echo ${#zoznam[]}
+ 3049  echo ${#zoznam[s]}
+ 3050  cat 6.sh 
+ 3051  echo ${#zoznam[@]}
+ 3052  echo ${zoznam[@]}
+ 3053  vim 6.sh 
+ 3054  cat 6.sh 
+ 3055  echo ${zoznam[@]}
+ 3056  echo ${#zoznam[@]}
+ 3057  echo ${zoznam[@]:2:4}
+ 3058  echo ${zoznam[@]:2:-2}
+ 3059  echo ${zoznam[@]:2:2}
+ 3060  echo ${zoznam[@]:2:-1}
+ 3061  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 3062  ${zoznam[@]:0:6}
+ 3063  echo ${zoznam[@]:0:6}
+ 3064  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 3065  echo ${zoznam1[@]}
+ 3066  echo ${#zoznam[@]}
+ 3067  echo $((3\*3))
+ 3068  echo $((3*3))
+ 3069  cat 6.sh
+ 3070  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 3071  echo ${zoznam1[@]}
+ 3072  echo ${#zoznam1[@]}
+ 3073  echo ${zoznam[@]}
+ 3074  zoznam2=(${zoznam[@]} osem)
+ 3075  echo ${#zoznam[@]}
+ 3076  echo ${#zoznam2[@]}
+ 3077  echo ${zoznam2[@]}
+ 3078  zoznam2=("${zoznam[@]}" osem)
+ 3079  echo ${#zoznam2[@]}
+ 3080  echo ${zoznam2[@]}
+ 3081  zoznam2=(\"${zoznam[@]}\")
+ 3082  echo ${zoznam2[@]}
+ 3083  zoznam2=("""${zoznam[@]}""")
+ 3084  echo ${zoznam2[@]}
+ 3085  echo ${#zoznam2[@]}
+ 3086  zoznam2=(\"${zoznam[@]}\")
+ 3087  echo ${#zoznam2[@]}
+ 3088  echo ${zoznam2[@]}
+ 3089  zoznam2=("\"${zoznam[@]}\"")
+ 3090  echo ${zoznam2[@]}
+ 3091  echo ${#zoznam2[@]}
+ 3092  zoznam2=(\""${zoznam[@]}"\")
+ 3093  echo ${#zoznam2[@]}
+ 3094  echo ${zoznam2[@]}
+ 3095  cat 6.sh 
+ 3096  for prvok in "${zoznam[@]}"; do         echo "$prvok"; done
+ 3097  for prvok in "${zoznam[@]}"; do echo "$prvok"; done
+ 3098  for prvok in "${zoznam[@]}"; do echo $prvok; done
+ 3099  for prvok in ${zoznam[@]}; do echo "$prvok"; done
+ 3100  for prvok in "${zoznam[@]}"; do echo "$prvok"; done
+ 3101  cat 7.sh 
+ 3102  cesta=/public/ucebnove/seminar_1/vim.txt
+ 3103  dirname $cesta
+ 3104  echo $(dirname $cesta)
+ 3105  echo $(basename $cesta)
+ 3106  basename $cesta
+ 3107  echo $(dirname $(dirname $cesta))
+ 3108  echo $(basename$(dirname $(dirname $cesta)))
+ 3109  echo $(basename $(dirname $(dirname $cesta)))
+ 3110  echo $(basename $(dirname $cesta))
+ 3111  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 3112  dirname $cesta
+ 3113  dirname "$cesta"
+ 3114  ls /public/priklady/8.sh 
+ 3115  cp /public/priklady/8.sh .
+ 3116  cat 8.sh 
+ 3117  ls -l
+ 3118  cat 8.sh 
+ 3119  for f in $(ls -l | head -3); do         echo $f; done
+ 3120  for f in $(ls -l | head -3); do         echo $f; done
+ 3121  bash 8.sh 
+ 3122  cat 8.sh 
+ 3123  ls -l | head -3
+ 3124  man bash
+ 3125  cat 9.sh
+ 3126  ll
+ 3127  ./9.sh
+ 3128  cat 9.sh
+ 3129  vim 9.sh 
+ 3130  ./9.sh 
+ 3131  cat 9.sh 
+ 3132  bash ./9.sh
+ 3133  bash 9.sh
+ 3134  9.sh
+ 3135  ./9.sh
+ 3136  bash /public/priklady/9.sh 
+ 3137  pwd
+ 3138  bash /home/rgrezo/priklady/9.sh
+ 3139  cat 9-2.sh 
+ 3140  :q
+ 3141  echo $$
+ 3142  ps 
+ 3143  cat 9-2.sh 
+ 3144  env
+ 3145  export mojapremenna=nieco
+ 3146  env
+ 3147  cat 9-2.sh 
+ 3148  ./9-2.sh 
+ 3149  vim /public/priklady/9-2.sh 
+ 3150  ./9-2.sh 
+ 3151  bash /public/priklady/9-2.sh 
+ 3152  vim 9-2.sh
+ 3153  ./9-2.sh 
+ 3154  cat 9-2.sh 
+ 3155  echo $?
+ 3156  ./9-2.sh 
+ 3157  echo $?
+ 3158  bash 9.sh
+ 3159  ./9.sh
+ 3160  ll
+ 3161  ./9.sh 
+ 3162  export a="nieco s    medzerou"
+ 3163  a="nieco s    medzerou"
+ 3164  set
+ 3165  env
+ 3166  setenv a "nico ine"
+ 3167  echo $LANG
+ 3168  clear
+ 3169  cd 
+ 3170  cat .profile 
+ 3171  cat .bashrc 
+ 3172  su root
+ 3173  passwd root
+ 3174  sudo passwd root
+ 3175  su root
+ 3176  fortune -o | cowsay
+ 3177  ls /public/priklady/
+ 3178  cd priklady/
+ 3179  ll
+ 3180  cat 4.sh
+ 3181  f="A   '     B"
+ 3182  echo "$f" "$(echo $f | tr A-Z a-z)"
+ 3183  echo "$f" "$(echo "$f" | tr A-Z a-z)"
+ 3184  cat 5.sh 
+ 3185  echo $0
+ 3186  ps
+ 3187  cat 5.sh 
+ 3188  ps aux
+ 3189  cat 5.sh 
+ 3190  bash 5.sh
+ 3191  cat 5.sh 
+ 3192  bash 5.sh
+ 3193  echo $?
+ 3194  cat 5.sh 
+ 3195  cat 5.sh asojfaoij fasi jfaois f
+ 3196  bash 5.sh asojfaoij fasi jfaois f
+ 3197  vim 5.sh 
+ 3198  bash 5.sh asojfaoij fasi jfaois f
+ 3199  vim 5.sh 
+ 3200  bash 5.sh asojfaoij fasi jfaois f
+ 3201  bash 5.sh prvy druhy treti
+ 3202  vim 5.sh 
+ 3203  cat 5.sh 
+ 3204  bash 5.sh prvy druhy treti
+ 3205  cat 5.sh 
+ 3206  a=ahoj
+ 3207  set
+ 3208  unset a
+ 3209  set
+ 3210  cat 5.sh 
+ 3211  help if 
+ 3212  cat 5.sh 
+ 3213  help if 
+ 3214  help while
+ 3215  cat 5.sh 
+ 3216  bash 5.sh -d
+ 3217  cat 5.sh 
+ 3218  vim 5.sh 
+ 3219  bash 5.sh -d
+ 3220  bash 5.sh -d argum1 druhy
+ 3221  bash 5.sh -D argum1 druhy
+ 3222  bash 5.sh abc cba
+ 3223  cat 5.sh 
+ 3224  bash 5.sh abc cba ajofijsa asf oaj
+ 3225  bash 5.sh abc cba -h
+ 3226  bash 5.sh abc cba -d
+ 3227  bash 5.sh abc cba -d ag as g
+ 3228  cat 5.sh 
+ 3229  bash 5.sh abc cba -j asfd saf
+ 3230  echo $?
+ 3231  bash 5.sh abc cba -h
+ 3232  echo $?
+ 3233  cat 5.sh 
+ 3234  bash 5.sh -d
+ 3235  echo $
+ 3236  echo $?
+ 3237  bash 5.sh -d
+ 3238  echo $?
+ 3239  set
+ 3240  echo ahoj
+ 3241  set
+ 3242  echo $?
+ 3243  set
+ 3244  clear
+ 3245  set
+ 3246  clear
+ 3247  set
+ 3248  ps aux
+ 3249  echo $_
+ 3250  cat 5.sh 
+ 3251  cat pos.sh 
+ 3252  uname -a
+ 3253  echo $-
+ 3254  vim ~/.bashrc
+ 3255  ./pos.sh 
+ 3256  ./pos.sh jeden dva tri
+ 3257  uname -a
+ 3258  cat ./pos.sh 
+ 3259  uname -a
+ 3260  vim pos
+ 3261  vim pos.sh 
+ 3262  cat ./pos.sh 
+ 3263  echo raz dva tri styri
+ 3264  echo `echo raz dva tri styri`
+ 3265  echo 5.sh 
+ 3266  cat 5.sh 
+ 3267  cat 6.sh 
+ 3268  cat pos.sh 
+ 3269  echo $-
+ 3270  ./pos.sh 
+ 3271  ls /public/priklady/
+ 3272  cp pos.sh /public/priklady/
+ 3273  cat 5.sh 
+ 3274  cat 6.sh 
+ 3275  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 3276  echo $zoznam
+ 3277  echo ${zoznam[2]}
+ 3278  echo ${zoznam[dva]}
+ 3279  echo ${zoznam[ahoj]}
+ 3280  echo $zoznam
+ 3281  ahoj=2
+ 3282  echo ${zoznam[ahoj]}
+ 3283  echo ${zoznam[]}
+ 3284  set 
+ 3285  cat 6.sh 
+ 3286  echo ${zoznam[@]}
+ 3287  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 3288  echo ${#zoznam[2]}
+ 3289  echo ${#zoznam[5]}
+ 3290  echo ${#zoznam[@]}
+ 3291  echo ${zoznam[@]:2:4}
+ 3292  echo ${zoznam[@]:2:2}
+ 3293  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 3294  echo ${zoznam[1]}
+ 3295  echo $((3*3))
+ 3296  echo $((3*3+2))
+ 3297  echo $((7-6))
+ 3298  cat 6.sh 
+ 3299  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 3300  echo ${zoznam1[@]}
+ 3301  zoznam2=(${zoznam[@]} osem)
+ 3302  echo ${#zoznam2[@]}
+ 3303  echo ${zoznam2[@]}
+ 3304  zoznam2=("${zoznam[@]}" osem)
+ 3305  echo ${#zoznam2[@]}
+ 3306  zoznam2=("${zoznam[@]}")
+ 3307  echo ${#zoznam2[@]}
+ 3308  zoznam2=(\"${zoznam[@]}\")
+ 3309  echo ${#zoznam2[@]}
+ 3310  echo ${zoznam2[@]}
+ 3311  for prvok in "${zoznam[@]}"; do         echo "$prvok"; done
+ 3312  for prvok in ${zoznam[@]}; do echo "$prvok"; done
+ 3313  echo ${zoznam[@]}
+ 3314  echo "${zoznam[@]}"
+ 3315  cat 7.sh 
+ 3316  cesta=/public/ucebnove/seminar_1/vim.txt
+ 3317  dirname $cesta
+ 3318  basename $cesta
+ 3319  echo $(dirname $(dirname $cesta))
+ 3320  dirname $(dirname $cesta)
+ 3321  basename $(dirname $(dirname $cesta))
+ 3322  echo $cesta | cut -d "/" -f 2
+ 3323  echo $cesta | cut -d "/" -f 3
+ 3324  echo $cesta | cut -d "/" -f 2
+ 3325  echo $cesta | cut -d "/" -f 1
+ 3326  echo $cesta
+ 3327  echo $cesta | cut -d "/" -f 2
+ 3328  echo $cesta | cut -d "/" -f 3
+ 3329  echo $cesta | cut -d "/" -f 4
+ 3330  echo $cesta | cut -d "/" -f 5
+ 3331  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 3332  echo $cesta | cut -d "/" -f 3
+ 3333  echo $cesta | cut -d "/" -f 4
+ 3334  basename $(dirname $cesta)
+ 3335  dirname $cesta
+ 3336  echo $_
+ 3337  basename $(dirname "$cesta")
+ 3338  basename "$(dirname "$cesta")"
+ 3339  cat 8.sh 
+ 3340  ls -l
+ 3341  cat 8.sh 
+ 3342  echo $(ls -l | head -3)
+ 3343  echo "$(ls -l | head -3)"
+ 3344  cat 8.sh 
+ 3345  ls -l
+ 3346  $(ls -l | head -3)
+ 3347  echo $(ls -l | head -3)
+ 3348  vim 8.sh 
+ 3349  bash 8.sh 
+ 3350  cat 8.sh 
+ 3351  man bash
+ 3352  cat 9.sh 
+ 3353  echo $0
+ 3354  ./9.sh
+ 3355  cat 9-2.sh 
+ 3356  env
+ 3357  cat 9-2.sh 
+ 3358  ps
+ 3359  ./9-2.sh 
+ 3360  echo $$
+ 3361  cat 9-2.sh 
+ 3362  ./9-2.sh 
+ 3363  echo $?
+ 3364  fortune | cowsay
+ 3365  bash -xv 9.sh 

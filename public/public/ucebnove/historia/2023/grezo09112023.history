@@ -1,0 +1,189 @@
+ 1860  cd priklady/
+ 1861  ll
+ 1862  vim sed.txt 
+ 1863  cd signaly/
+ 1864  ll
+ 1865  cd ..
+ 1866  ll
+ 1867  cd sockety/
+ 1868  ll
+ 1869  less sockety.txt 
+ 1870  cd ..
+ 1871  cd signaly/
+ 1872  ll
+ 1873  help trap
+ 1874  trap -l
+ 1875  man kill
+ 1876  kill -l
+ 1877  man kill
+ 1878  man signal
+ 1879  man 7 signal
+ 1880  help wait
+ 1881  jops
+ 1882  jobs
+ 1883  ll
+ 1884  cat y.sh 
+ 1885  ll
+ 1886  chmod +x y.sh 
+ 1887  ./y.sh 
+ 1888  ./y.sh &
+ 1889  jobs
+ 1890  ps -eLf
+ 1891  cay
+ 1892  cat y.sh 
+ 1893  jobs 
+ 1894  kill %1
+ 1895  vim y.sh 
+ 1896  ./y.sh 
+ 1897  ./y.sh &
+ 1898  ll
+ 1899  kill -9 %1
+ 1900  ps -aux
+ 1901  man 7 signal
+ 1902  ./y.sh &
+ 1903  kill -9 $!
+ 1904  jobs
+ 1905  kill -9 $!
+ 1906  ps -aux --forest
+ 1907  cat y.sh 
+ 1908  ps -aux --forest
+ 1909  kill 51683
+ 1910  ps -aux --forest
+ 1911  kill 51593
+ 1912  ps -aux --forest
+ 1913  kill 51597
+ 1914  jobs
+ 1915  kill -9 788
+ 1916  ps -aux --forest
+ 1917  cat nekoncim.sh
+ 1918  bash nekoncim.sh 
+ 1919  trap -l
+ 1920  jobs
+ 1921  bg
+ 1922  kill %1
+ 1923  cat nekoncim.sh 
+ 1924  cat losovac.sh 
+ 1925  trap -l
+ 1926  cat losovac.sh 
+ 1927  bash losovac.sh 
+ 1928  cat losovac.sh 
+ 1929  bash losovac.sh &
+ 1930  ps -eLf --forest
+ 1931  ps -aux --forest
+ 1932  kill -10 51815
+ 1933  kill -9 51815
+ 1934  cat vyberac.sh 
+ 1935  bash vyberac.sh 
+ 1936  kill -9 %1
+ 1937  chmod +x losovac.sh 
+ 1938  chmod +x vyberac.sh 
+ 1939  ./vyberac.sh 
+ 1940  ps -aux --forest
+ 1941  ps -eLf
+ 1942  ./vyberac.sh 
+ 1943  kill %1
+ 1944  ./vyberac.sh &
+ 1945  ps -eLf
+ 1946  kill -2  51888
+ 1947  ps -eLf
+ 1948  kill -9 51888
+ 1949  ll
+ 1950  ps -eLf
+ 1951  killall sleep
+ 1952  sudo apt-get update
+ 1953  sudo apt-get install killall
+ 1954  kill -9 518{30..74}
+ 1955  ps -eLf
+ 1956  kill -9 51797
+ 1957  kill -9 51949
+ 1958  ps -eLf
+ 1959  kcd ..
+ 1960  cd ..
+ 1961  cd procesy/
+ 1962  ll
+ 1963  clear
+ 1964  cd ..
+ 1965  cd signaly
+ 1966  ll
+ 1967  cd ..
+ 1968  ll
+ 1969  cat sed.txt 
+ 1970  ll
+ 1971  cd sockety/
+ 1972  ll
+ 1973  cat sockety.txt 
+ 1974  cd ..
+ 1975  ll
+ 1976  cd signaly/
+ 1977  ll
+ 1978  help trap
+ 1979  trap -l
+ 1980  man signal
+ 1981  man 7 signal
+ 1982  ps
+ 1983  help wait
+ 1984  ll
+ 1985  cat y.sh 
+ 1986  ./y.sh 
+ 1987  ./y.sh &
+ 1988  jobs
+ 1989  ./y.sh &
+ 1990  jobs
+ 1991  kill 
+ 1992  jobs
+ 1993  kill %2
+ 1994  kill %1
+ 1995  ./y.sh &
+ 1996  ps -eLf
+ 1997  kill %1
+ 1998  ps -aux --forest
+ 1999  man kill
+ 2000  cat nekoncim.sh
+ 2001  ll
+ 2002  chmod +x nekoncim.sh 
+ 2003  help trap
+ 2004  ll
+ 2005  ./nekoncim.sh 
+ 2006  trap -l
+ 2007  fg
+ 2008  bg
+ 2009  ps
+ 2010  kill -2 62353
+ 2011  kill -3 62353
+ 2013  man kill
+ 2014  kill 93 62353
+ 2015  ps
+ 2016  ps -eLf
+ 2017  wall hello
+ 2018  ./nekoncim.sh &
+ 2019  kill -9 62490
+ 2020* 
+ 2021  man 7 signal\
+ 2022  man 7 signal
+ 2023  ps -eLf
+ 2024  ./losovac.sh 
+ 2025  ps -eLf
+ 2026  cat losovac.sh 
+ 2027  ps -eLf
+ 2028  cat losovac.sh 
+ 2029  vim losovac.sh 
+ 2030  ./losovac.sh 
+ 2031  ll
+ 2032  ./losovac.sh & 
+ 2033  ps
+ 2034  kill -USR1 62557
+ 2035  kill -9 %1
+ 2036  ll
+ 2037  ps
+ 2038  ps aux
+ 2039  cat vyberac.sh 
+ 2040  ./vyberac.sh 
+ 2041  kill %1
+ 2042  cat vyberac.sh 
+ 2043  ps aux
+ 2044  ./vyberac.sh &
+ 2045  kill -2 62605
+ 2046  kill 62606
+ 2047  kill 62605
+ 2048  cat vyberac.sh 
+ 2049  cat losovac.sh 

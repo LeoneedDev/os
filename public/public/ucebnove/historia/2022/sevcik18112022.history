@@ -1,0 +1,795 @@
+ 2836  ls
+ 2837  ls -la
+ 2838  cd old/
+ 2839  ls
+ 2840  cd ..
+ 2841  ls
+ 2842  mv sevcik11112022.history 
+ 2843  mv sevcik11102022.history sevcik11112022.history 
+ 2844  ls
+ 2845  less old/sevcik04112022.history 
+ 2846  vim sevcik11112022.history 
+ 2847  cp sevcik11112022.history /public/ucebnove/historia/
+ 2848  sudo cp sevcik11112022.history /public/ucebnove/historia/
+ 2849  la /public/ucebnove/historia/
+ 2850  exit
+ 2851  kill =l
+ 2852  kill -l
+ 2853  exit
+ 2854  ls
+ 2855  ls -l
+ 2856  chmod +x adamsevcik sevcik11112022.history 
+ 2857  ls -l
+ 2858  chmod -x sevcik11112022.history 
+ 2859  ls
+ 2860  la
+ 2861  chmod 654 sevcik11112022.history 
+ 2862  la
+ 2863  chmod -x sevcik11112022.history 
+ 2864  chmod 321 sevcik11112022.history 
+ 2865  la
+ 2866  chmod -x sevcik11112022.history 
+ 2867  ls
+ 2868  la
+ 2869  exit
+ 2870  ls
+ 2871  cd /public/
+ 2872  ls
+ 2873  cd priklady/
+ 2874  ls
+ 2875  cp ./1.sh ~/
+ 2876  cd 
+ 2877  ls
+ 2878  vim 1.sh 
+ 2879  /usr/bin/env bash /home/user/skript
+ 2880  /usr/bin/env bash /home/adamsevcik/1.sh 
+ 2881  ls  /usr/bin/env
+ 2882  find /public -type d -name "*dir" -or -type f -name "dir*"
+ 2883  find /public ( -type d -name "*dir" -or -type f -name "dir*" ) -print
+ 2884  mkdir stefan
+ 2885  cd stefan/
+ 2886  touch subor1
+ 2887  ls
+ 2888  ls subor2 >> vypis.txt
+ 2889  ls vypis.txt 
+ 2890  vim vypis.txt 
+ 2891  ls subor2 >> vypis.txt; ls >> vypis.txt
+ 2892  ls
+ 2893  vim vypis.txt 
+ 2894  grep '\<[a-Z]\{5,\}\>' /public/zaciatocnik.txt 
+ 2895  grep '\<[a-Z]{5,}\>' /public/zaciatocnik.txt 
+ 2896  grep -E '\<[a-Z]{5,}\>' /public/zaciatocnik.txt 
+ 2897  grep -E '\<[A-z]{5,}\>' /public/zaciatocnik.txt 
+ 2898  ls
+ 2899  exit
+ 2900  echo *
+ 2901  echo .*
+ 2902  exit
+ 2903  cd /home/
+ 2904  ls
+ 2905  cd /root/
+ 2906  ls
+ 2907  ls /
+ 2908  groups
+ 2909  id
+ 2910  cat /etc/group
+ 2911  cd 
+ 2912  ls
+ 2913  exec 1.sh 
+ 2914  source 1.sh 
+ 2915  grep "aaa"
+ 2916  grep "aaa" > grepTest
+ 2917  vim grepTest 
+ 2918  fg
+ 2919  vim grepTest 
+ 2920  man find
+ 2921  exit
+ 2922  find /public -type d -name "*dir" -or -type f -name "dir*"
+ 2923  find /public -type d -name "*dir" -or -type f -name "dir*" -print
+ 2924  man find
+ 2925  exit
+ 2926  ls
+ 2927  la
+ 2928  ./1.sh
+ 2929  bash 1.sh 
+ 2930  $(ls)
+ 2931  echo $(ls)
+ 2932  1.sh
+ 2933  ahoj ja "som skript"
+ 2934  echo ahoj ja som skript
+ 2935  exit
+ 2936  /ahkt/ahoj/test/skript.sh
+ 2937  find . -type f -name "*.sh" -exec tail -3 {} \;
+ 2938  find . -maxdepth 1 -type f -name "*.sh" -exec tail -3 {} \;
+ 2939  find . -maxdepth 1 -type f -name "*.sh" -print -exec tail -3 {} \;
+ 2940  find /public -type d -name "*dir" -or -type f -name "dir*"
+ 2941  find /public -type d -name "*dir" -or -type f -name "dir*" -print
+ 2942  exit
+ 2943  grep "A*" /public"
+ 2944  grep "A*" /public
+ 2945  *
+ 2946  $*
+ 2947  echo $*
+ 2948  echo *
+ 2949  ls
+ 2950  head -1 1.sh
+ 2951  head -1 1.sh | tail -1 1.sh 
+ 2952  cat 1.sh 
+ 2953  ahoj ja "som skript"
+ 2954  cd druheCviko/
+ 2955  cd /home
+ 2956  ls
+ 2957  cd ./adamsevcik/
+ 2958  pwd
+ 2959  cd home
+ 2960  cd /home
+ 2961  ls
+ 2962  cd ..
+ 2963  ls
+ 2964  cd
+ 2965  /etc/groups
+ 2966  less /etc/groups
+ 2967  less /etc/group
+ 2968  ls
+ 2969  ls 1.sh 
+ 2970  ls -l 1.sh 
+ 2971  ls -l 2.sh 
+ 2972  ahoj ja "som skript"
+ 2973  pwd
+ 2974  cd /public/ucebnove/
+ 2975  cd ~
+ 2976  pwd
+ 2977  ls
+ 2978  la 1.sh 
+ 2979  ./1.sh
+ 2980  bash 1.sh 
+ 2981  touch testSkript.sh
+ 2982  vim testSkript.sh 
+ 2983  chmod -x testSkript.sh 
+ 2984  la testSkript.sh 
+ 2985  chmod +x testSkript.sh 
+ 2986  la testSkript.sh 
+ 2987  ./testSkript.sh ahoj ja "som test"
+ 2988  vim testSkript.sh 
+ 2989  ./testSkript.sh ahoj ja "som test"
+ 2990  vim testSkript.sh 
+ 2991  ./testSkript.sh ahoj ja "som test"
+ 2992  vim testSkript.sh 
+ 2993  ./testSkript.sh ahoj ja "som test"
+ 2994  vim testSkript.sh 
+ 2995  ./testSkript.sh ahoj ja "som test"
+ 2996  vim testSkript.sh 
+ 2997  ./testSkript.sh ahoj ja "som test"
+ 2998  vim testSkript.sh 
+ 2999  ./testSkript.sh ahoj ja "som test"
+ 3000  ./testSkript.sh  ahoj  ja     "som test"
+ 3001  vim testSkript.sh 
+ 3002  ./testSkript.sh  ahoj  ja     "som test"
+ 3003  ./testSkript.sh  ahoj  ja     "som         test"
+ 3004  vim testSkript.sh 
+ 3005  ./testSkript.sh  ahoj  ja     "som         test"
+ 3006  vim testSkript.sh 
+ 3007  ./testSkript.sh " "
+ 3008  ./testSkript.sh ahoj " " "skript"
+ 3009  vim testSkript.sh 
+ 3010  ./testSkript.sh ahoj " " "skript"
+ 3011  exit
+ 3012  echo $PATH
+ 3013  /public/ahoj/test/skript.sh
+ 3014  ls
+ 3015  echo $PATH
+ 3016  ls
+ 3017  cd ~/; testSkript.sh
+ 3018  cd ~/; ./testSkript.sh
+ 3019  exit
+ 3020  kill -9 19163
+ 3021  ps
+ 3022  kill -9 18014
+ 3023  kill -9 18020
+ 3024  exit
+ 3025  ls
+ 3026  rm 1.sh grepTest testSkript.sh 
+ 3027  ls
+ 3028  cd stefan/
+ 3029  ls
+ 3030  cd ..
+ 3031  rm -rf stefan/
+ 3032  ls
+ 3033  cd old/
+ 3034  ls
+ 3035  cd ..
+ 3036  mv sevcik11112022.history old/
+ 3037  ls
+ 3038  cd prveCviko/
+ 3039  ls
+ 3040  cd signaly/
+ 3041  ls
+ 3042  vim signaly.txt 
+ 3043  ls
+ 3044  cd ..
+ 3045  ls
+ 3046  cd procesy/
+ 3047  ls
+ 3048  make
+ 3049  ls
+ 3050  vim 1.c 
+ 3051  ./1.exe 
+ 3052  ./2.exe 
+ 3053  vim 1.c 
+ 3054  vim 2.c 
+ 3055  make
+ 3056  ./2.exe 
+ 3057  ./1.exe 
+ 3058  vim 2.c 
+ 3059  make
+ 3060  ./1.exe 
+ 3061  ./2.exe 
+ 3062  man syscall
+ 3063  man fork
+ 3064  man pthread
+ 3065  man pthreat
+ 3066  man thread
+ 3067  man pthreads
+ 3068  man getpid
+ 3069  man getppid
+ 3070  cd ../signaly/
+ 3071  vim signaly.txt 
+ 3072  cd ../procesy/
+ 3073  vim 2.c 
+ 3074  ./1.exe arg
+ 3075  vim 1.c 
+ 3076  make
+ 3077  vim 1.c 
+ 3078  make
+ 3079  ./1.exe 
+ 3080  vim 1.c 
+ 3081  ./1.exe 
+ 3082  ./1.exe ahoj
+ 3083  ./1.exe ahoj ja som test
+ 3084  ps
+ 3085  fg
+ 3086  make
+ 3087  vim 1.c 
+ 3088  make
+ 3089  ./1.exe ahoj ja som test
+ 3090  vim 1.c 
+ 3091  make
+ 3092  vim 1.c 
+ 3093  make
+ 3094  ./1.exe ahoj ja som test
+ 3095  ./1.exe
+ 3096  vim 1.c 
+ 3097  make
+ 3098  ./1.exe
+ 3099  ./1.exe ahoj
+ 3100  vim 1.c 
+ 3101  make
+ 3102  ./1.exe ahoj
+ 3103  vim 1.c 
+ 3104  make
+ 3105  ./1.exe ahoj
+ 3106  vim 1.c 
+ 3107  make
+ 3108  ./1.exe ahoj
+ 3109  vim 1.c 
+ 3110  make
+ 3111  ./1.exe ahoj
+ 3112  vim 1.c 
+ 3113  make
+ 3114  ./1.exe ahoj
+ 3115  ./1.exe
+ 3116  vim 1.c 
+ 3117  make
+ 3118  ./1.exe 
+ 3119  vim 1.c 
+ 3120  make
+ 3121  ./1.exe 
+ 3122  ./1.exe ahoj ja som program
+ 3123  vim 1.c 
+ 3124  vim 2.c 
+ 3125  printf("This is problem no %d.", 1);
+ 3126  printf "This is problem no %d.", "1";
+ 3127  printf "This is problem no %d.", 1;
+ 3128  printf "This is problem no %d.\n", 1;
+ 3129  printf "This is problem no %d.\n" 1;
+ 3130  man printf
+ 3131  echo ahoj
+ 3132  printf "%s" ahoj
+ 3133  printf "%s\n" ahoj
+ 3134  printf "%.2f\n" 10.12356
+ 3135  ls
+ 3136  vim 3.c 
+ 3137  vim 2.c 
+ 3138  make
+ 3139  vim 1.c 
+ 3140  ./2.exe 
+ 3141  ./2.exe ahoj
+ 3142  vim 1.c 
+ 3143  vim 2.c 
+ 3144  make
+ 3145  ./2.exe 
+ 3146  ./2.exe ahoj
+ 3147  ps
+ 3148  ps aux
+ 3149  ps aux --forest
+ 3150  ./2.exe ahoj
+ 3151  ps aux --forest
+ 3152  vim 2.c 
+ 3153  ./2.exe
+ 3154  vim 2.c 
+ 3155  make
+ 3156  ./2.exe 
+ 3157  ps aux --forest
+ 3158  ./2.exe 
+ 3159  vim 2.c 
+ 3160  make
+ 3161  vim 2.c 
+ 3162  ./2.exe 
+ 3163  ./2.exe ahoj ako sa mas
+ 3164  vim 2.c 
+ 3165  ls
+ 3166  vim 3.c 
+ 3167  make
+ 3168  vim 2.c 
+ 3169  make
+ 3170  ./3.exe 
+ 3171  vim 3.exe 
+ 3172  vim 3.c 
+ 3173  vim 3.exe test
+ 3174  fg
+ 3175  ./3.exe test
+ 3176  make
+ 3177  ./3.exe test
+ 3178  vim 3.c 
+ 3179  ps
+ 3180  ps aux 
+ 3181  vim 3.c 
+ 3182  make
+ 3183  vim 3.c 
+ 3184  ./3.exe test
+ 3185  ps aux 
+ 3186  vim 3.c 
+ 3187  vim 3.c som test
+ 3188  jobs
+ 3189  ;s
+ 3190  ls
+ 3191  ./3.c som test
+ 3192  ./3.exe som test
+ 3193  man atoi\
+ 3194  man atoi
+ 3195  vim 3.c 
+ 3196  ./3.exe 3 test
+ 3197  ps
+ 3198  killall 3.exe
+ 3199  ps
+ 3200  vim 3.c 
+ 3201  vim 3.c 1
+ 3202  ./3.exe 1
+ 3203  vim 3.c
+ 3204  ./3.exe 2
+ 3205  vim 3.c
+ 3206  ./3.exe 2
+ 3207  vim 3.c
+ 3208  ./3.exe 5
+ 3209  ps
+ 3210  ./3.exe 2
+ 3211  vim 3.c
+ 3212  vim 3.c 1 1
+ 3213  ./3.exe 1 1
+ 3214  ./3.exe 1ps 1
+ 3215  ps
+ 3216  killall 3.exe
+ 3217  ps
+ 3218  ./3.exe 2 1
+ 3219  ps
+ 3220  killall 3.exe
+ 3221  ps
+ 3222  ./3.exe 1
+ 3223  vim 3.c 
+ 3224  make
+ 3225  ./3.exe 1
+ 3226  ps
+ 3227  ./3.exe 1 1
+ 3228  ps
+ 3229  kilall 3.exe 
+ 3230  killall 3.exe 
+ 3231  ps
+ 3232  ./3.exe 3
+ 3233  ps
+ 3234  ./3.exe 5
+ 3235  ps
+ 3236  vim 3.c 
+ 3237  make
+ 3238  \
+ 3239  make
+ 3240  ./3.exe 5
+ 3241  vim 3.c 
+ 3242  make
+ 3243  ./3.exe 1 1 
+ 3244  ps
+ 3245  killall 3.exe
+ 3246  ./3.exe 2 1 
+ 3247  ps
+ 3248  kilall 3.exe
+ 3249  killall 3.exe
+ 3250  ls
+ 3251  vim 4.c 
+ 3252  ./4.exe 1
+ 3253  vim 4.c 
+ 3254  ./4.exe 5
+ 3255  vim 4.c 
+ 3256  make
+ 3257  ./4.exe 5
+ 3258  vim 4.c 
+ 3259  make
+ 3260  vim 4.c 
+ 3261  make
+ 3262  ./4.exe 5
+ 3263  vim 4.c 
+ 3264  make
+ 3265  vim 4.c 
+ 3266  ./4.exe 5
+ 3267  vim 4.c 
+ 3268  make
+ 3269  vim 4.c 
+ 3270  make
+ 3271  ./4.exe 5
+ 3272  make
+ 3273  ./4.exe 5
+ 3274  vim 4.c 
+ 3275  ./4.exe 3
+ 3276  ./4.exe 2
+ 3277  ./4.exe 1
+ 3278  vim 4.c
+ 3279  make
+ 3280  ./4.exe 1
+ 3281  ./4.exe 5
+ 3282  vim 4.c
+ 3283  make
+ 3284  ./4.exe 5
+ 3285  vim 4.c
+ 3286  make
+ 3287  ./4.exe 5
+ 3288  vim 4.c
+ 3289  make
+ 3290  ps
+ 3291  vim 5.c 
+ 3292  fg
+ 3293  vim 5.c 
+ 3294  ls
+ 3295  cd 
+ 3296  ls
+ 3297  ls -la
+ 3298  vim .vim
+ 3299  cd .vim
+ 3300  ls
+ 3301  ls -la
+ 3302  cd ..
+ 3303  la
+ 3304  vim .vimrc
+ 3305  cd -
+ 3306  cd 
+ 3307  cd prveCviko/procesy/
+ 3308  ls
+ 3309  la
+ 3310  ls
+ 3311  vim 5.c 
+ 3312  less /etc/vim/vimrc 
+ 3313  vim ~/.vimrc 
+ 3314  ls
+ 3315  la
+ 3316  vim 5.c 
+ 3317  vim ~/.vimrc 
+ 3318  vim 5.c 
+ 3319  vim ~/.vimrc
+ 3320  vim 5.c 
+ 3321  vim ~/.vimrc
+ 3322  vim 5.c 
+ 3323  vim ~/.vimrc
+ 3324  vim 5.c 
+ 3325  vim ~/.vimrc
+ 3326  vim 5.c 
+ 3327  vim 4.c 
+ 3328  make
+ 3329  ./5.exe 
+ 3330  ./5.exe 1
+ 3331  ./5.exe 2
+ 3332  ./5.exe 5
+ 3333  vim 5.c 
+ 3334  vim ~/.vimrc
+ 3335  fg
+ 3336  vim 5.c 
+ 3337  vim ~/.vimrc
+ 3338  vim 5.c 
+ 3339  make
+ 3340  ./5.exe 1 1
+ 3341  ./5.exe 1 2
+ 3342  ./5.exe 10
+ 3343  vim 6.c 
+ 3344  head 6.c 
+ 3345  vim 7.c 
+ 3346  ./7.exe 
+ 3347  vim 7.c 
+ 3348  ls
+ 3349  rm *.exe
+ 3350  ls
+ 3351  cd ..
+ 3352  rm -rf ./druheCviko/procesy/
+ 3353  ls ./druheCviko/
+ 3354  cp ./prveCviko/procesy/ ./druheCviko/
+ 3355  cp -r ./prveCviko/procesy/ ./druheCviko/
+ 3356  ls
+ 3357  cd druheCviko/
+ 3358  ls
+ 3359  cd procesy/
+ 3360  ls
+ 3361  cd
+ 3362  na dnes konciiiiiiiim
+ 3363  exit
+ 3364  ls
+ 3365  prveeeeee
+ 3366  mkdir test
+ 3367  cd test/
+ 3368  ls /public/priklady/
+ 3369  ls /public/priklady/procesy/
+ 3370  cp /public/priklady/procesy/ ./
+ 3371  cp -r /public/priklady/procesy/ ./
+ 3372  ls
+ 3373  cd procesy/
+ 3374  ls
+ 3375  vim 1.c 
+ 3376  man syscall
+ 3377  man fork
+ 3378  man getpid
+ 3379  cd ..
+ 3380  ls
+ 3381  cd ..
+ 3382  ls
+ 3383  cd prveCviko/
+ 3384  ls
+ 3385  cd procesy/
+ 3386  ls
+ 3387  vim 1.c 
+ 3388  sudo apt-get update
+ 3389  sudo install build-esential
+ 3390  sudo apt install build-esential
+ 3391  sudo apt install build-essential
+ 3392  ls
+ 3393  vim Makefile 
+ 3394  man lpthreads
+ 3395  man lpthread
+ 3396  man make
+ 3397  make
+ 3398  ls
+ 3399  vim 1.exe 
+ 3400  vim ./1.c 
+ 3401  make
+ 3402  ./1.exe 
+ 3403  vim ./1.c 
+ 3404  man printf
+ 3405  vim ./1.c 
+ 3406  echo "Ahoj"
+ 3407  printf "%s\n" Ahoj
+ 3408  printf "%.3f\n" 123.456789
+ 3409  ./1.exe 
+ 3410  vim ./1.c 
+ 3411  vim ./1.c 1
+ 3412  ./1.exe 1
+ 3413  vim 2.c 
+ 3414  man pthread_create
+ 3415  vim 2.c 
+ 3416  ./2.exe
+ 3417  vim 1.c 
+ 3418  make
+ 3419  ./1.exe 
+ 3420  ./2.exe 
+ 3421  vim 2.c 
+ 3422  ./2.exe 1
+ 3423  ./1.exe 1 &
+ 3424  ps
+ 3425  ps aux --forest
+ 3426  fg
+ 3427  ps aux --forest
+ 3428  ./2.exe 1 &
+ 3429  ps aux --forest
+ 3430  fg
+ 3431  ls
+ 3432  vim 2.c 
+ 3433  vim 1.c 
+ 3434  ./1.exe 1
+ 3435  ./1.exe 1 &
+ 3436  kill -9 20367
+ 3437  kill -9 20366
+ 3438  ./1.exe 1 &
+ 3439  ps aux --forest
+ 3440  kill -9 20368
+ 3441  ps aux --forest
+ 3442  kill -9 20369
+ 3443  ps aux --forest
+ 3444  vim 2.c 
+ 3445  ./2.exe 
+ 3446  vim 2.c 
+ 3447  make
+ 3448  ./2.exe 
+ 3449  vim 2.c 
+ 3450  vim 3.c 
+ 3451  man atoi
+ 3452  vim 3.c 
+ 3453  ./3.exe 3
+ 3454  vim 3.c 
+ 3455  man fork
+ 3456  vim 3.c 
+ 3457  make
+ 3458  ./3.exe 3
+ 3459  vim 3.c 
+ 3460  man fflush
+ 3461  vim 3.c 
+ 3462  vim 4.c 
+ 3463  ./4.exe 
+ 3464  vim 4.c 
+ 3465  vim 4.c 1
+ 3466  ./4.exe 1
+ 3467  ./4.exe 2
+ 3468  ./4.exe 3
+ 3469  ./4.exe 5
+ 3470  vim 4.c
+ 3471  make
+ 3472  vim 4.c
+ 3473  make
+ 3474  ./4.exe 5
+ 3475  vim 4.c
+ 3476  make
+ 3477  ./4.exe 5
+ 3478  vim 4.c
+ 3479  ls
+ 3480  vim 5.c 
+ 3481  ./5.exe 1
+ 3482  vim 5.c 
+ 3483  ./5.exe 5
+ 3484  vim 5.c 
+ 3485  vim 6.c 
+ 3486  head 6.c 
+ 3487  vim 6.c 
+ 3488  ./6.exe 
+ 3489  vim 6.c 
+ 3490  /test/ahoj/som/skript.sh
+ 3491  find /public -type d -name "*dir" -or -type f -name "dir*"
+ 3492  find /public ( -type d -name "*dir" -or -type f -name "dir*" ) -print
+ 3493  find /public \( -type d -name "*dir" -or -type f -name "dir*" \) -print
+ 3494  cd ../..
+ 3495  ls
+ 3496  rm -rf test/
+ 3497  ls
+ 3498  mkdir test
+ 3499  cd test/
+ 3500  ls /public/samples/
+ 3501  ls /public/priklady/
+ 3502  cp /public/priklady/procesy/ ./
+ 3503  cp -r /public/priklady/procesy/ ./
+ 3504  ls
+ 3505  cd procesy/
+ 3506  ls
+ 3507  sudo apt-get update
+ 3508  sudo apt install build-essencial
+ 3509  sudo apt install build-essential
+ 3510  cd
+ 3511  ls
+ 3512  cd druheCviko/
+ 3513  ls
+ 3514  cd procesy/
+ 3515  ls
+ 3516  vim 1.c 
+ 3517  man sycall
+ 3518  man syscall
+ 3519  man fork
+ 3520  man getpid
+ 3521  man gettid
+ 3522  la
+ 3523  vim Makefile 
+ 3524  make 
+ 3525  la
+ 3526  vim 1.c 
+ 3527  vim 1.exe 
+ 3528  vim 1.c 
+ 3529  ./1.exe 
+ 3530  vim 1.c 
+ 3531  ./1.exe 
+ 3532  vim 1.c 
+ 3533  ./1.exe 
+ 3534  ls
+ 3535  make
+ 3536  ./1.exe 
+ 3537  vim 1.c 
+ 3538  ./1.exe 1
+ 3539  vim 1.c 
+ 3540  echo "Ahoj"
+ 3541  man printf
+ 3542  printf "Ahoj"
+ 3543  printf "Ahoj\n"
+ 3544  printf "%0.3f\n" 123.456789
+ 3545  vim 1.c 
+ 3546  ./1.exe 1
+ 3547  ./1.exe 1 &
+ 3548  ps aux --forest
+ 3549  kill -9 21063
+ 3550  ps aux --forest
+ 3551  kill -9 21063
+ 3552  ps aux --forest
+ 3553  kill -9 21062
+ 3554  ps aux --forest
+ 3555  ./1.exe 1 &
+ 3556  ps aux --forest
+ 3557  kill -9 21072
+ 3558  ps aux --forest
+ 3559  ps
+ 3560  killall 1.exe
+ 3561  ps
+ 3562  ./1.exe 1 &
+ 3563  kill -9 21078
+ 3564  ps aux --forest
+ 3565  kill -9 21079
+ 3566  ls
+ 3567  vim 1.c 
+ 3568  make
+ 3569  vim 2.c 
+ 3570  man pthread_create
+ 3571  vim 2.c 
+ 3572  ./2.exe 
+ 3573  ./1.exe 
+ 3574  vim 2.c 
+ 3575  ./1.exe 1
+ 3576  ./1.exe 1 &
+ 3577  ps aux --forest
+ 3578  killall 1.exe
+ 3579  ./2.exe 1 &
+ 3580  ps aux --forest
+ 3581  kill -9 21123
+ 3582  vim 2.c 
+ 3583  make
+ 3584  vim 2.c 
+ 3585  make
+ 3586  ./2.exe 
+ 3587  vim 2.c 
+ 3588  vim 3.c 
+ 3589  man atoi
+ 3590  vim 3.c 
+ 3591  ./3.exe 3
+ 3592  vim 3.c 
+ 3593  ./3.exe 7
+ 3594  vim 3.c 
+ 3595  man fflush
+ 3596  make
+ 3597  ./3.exe 4
+ 3598  ls
+ 3599  vim 4.c 
+ 3600  ./4.exe 
+ 3601  vim 4.c 
+ 3602  ./4.exe 1
+ 3603  ./4.exe 2
+ 3604  vim 4.c 
+ 3605  ./4.exe 5
+ 3606  vim 4.c 
+ 3607  make
+ 3608  vim 4.c 
+ 3609  make
+ 3610  ./4.exe 5
+ 3611  vim 4.c 
+ 3612  make
+ 3613  ./4.exe 5
+ 3614  vim 4.c 
+ 3615  vim 5.c 
+ 3616  ls
+ 3617  vim 5.c 
+ 3618  ./5.exe 5
+ 3619  vim 5.c 
+ 3620  head 6.c 
+ 3621  vim 5.c 
+ 3622  vim 6.c 
+ 3623  vim 5.c 
+ 3624  vim 6.c 
+ 3625  ./6.exe 
+ 3626  vim 6.c 
+ 3627  killall
+ 3628  cd 
+ 3629  ls
+ 3630  history > sevcik18112022.history

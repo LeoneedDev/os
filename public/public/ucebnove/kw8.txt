@@ -1,0 +1,7 @@
+multiprogramming (multiprogramovanie)
+multiprocessing
+multitasking
+multithreading
+swapovanie
+externa fragmentacia
+interna fragmentacia

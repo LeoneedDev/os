@@ -1,0 +1,102 @@
+    1  history
+    2  echo "" > .bash_history 
+    3  logout
+    4  history
+    5  cd /public/
+    6  cd samples/
+    7  ls
+    8  cat ../priklady/sed.txt 
+    9  clear
+   10  sed -n '7,16p' list.txt 
+   11  sed -n '7,16p;n' list.txt 
+   12* 
+   13  sed '1~2d' list.txt 
+   14  cp list.txt ~
+   15  sed -i 's/Zuzka/Lucka/g' ~/list.txt
+   16  cat ~/list.txt
+   17  cat ../priklady/sed.txt 
+   18  sed -n '7,16p' list.txt 
+   19  sed -n '=;7,16p' list.txt 
+   20  sed -n '=7,16;7,16p' list.txt 
+   21  sed -n '7,16=;7,16p' list.txt 
+   22  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /g'
+   23  sed -n '7,16=;7,16p' list.txt | sed 's/\n/ /g'
+   24  less ../priklady/sed.txt 
+   25* 
+   26  sed -n '7,16=;7,16p' list.txt | sed 's/\n/ /g'
+   27  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /g'
+   28  sed 'N;s/\n/ /g' list.txt 
+   29  sed 'N;s/\n/ /g' list.txt | cat -n
+   30  cat -n list.txt 
+   31  less ../priklady/sed.txt 
+   32  man sed
+   33  clear
+   34  cat /public/ucebnove/kw8.txt 
+   35  cd
+   36  apt search gcc
+   37  apt-cache search gcc
+   38  sudo apt install gcc make
+   39  ls
+   40  cd priklady/
+   41  ls
+   42  cp -R /public/priklady/threads/ .
+   43  ls threads/
+   44  cd threads/
+   45  vim Makefile 
+   46  make
+   47  ls
+   48  vim 1.c 
+   49  sudo apt update
+   50  vim 1.c 
+   51  man fork
+   52  vim 1.c 
+   53  ./1.exe 
+   54  ps aux | head
+   55  screen -ls
+   56  screen -r
+   57  screen
+   58  cd
+    1  history
+    2  echo "" > .bash_history 
+    3  logout
+    4  vim 1.c 
+    5  ps aux | grep 1.exe
+    6  ps aux --forest | grep 1.exe
+    7  ps aux --forest
+    8  vim 1.c
+    9  ps aux --forest
+   10  vim 2.c
+   11  ps aux --forest
+   12  man ps
+   13  ps -eLf
+   14  vim 2.c
+   15  clear
+   16  vim 3.c
+   17  ps aux --forest
+   18  ps -eLf
+   19  kill 85{2,3,4,5,6,7,8,9}
+   20  ps -eLf
+   21  killall 3.exe
+   22  vim 3.c
+   23  cd
+    1  history
+    2  echo "" > .bash_history 
+    3  logout
+    4  ls
+    5  ./1.exe go
+    6  ./2.exe 
+    7  ./2.exe aaa
+    8  vim 1.c 
+    9  clear
+   10  ./3.exe 
+   11  ls
+   12  file core 
+   13  gdb 3.exe core
+   14  gcc -g -o 3_test.exe 3.c
+   15  ls
+   16  gdb 3_test.exe 
+   17  ./3.exe 10
+   18  ./3.exe 10 goo
+   19  echo $RANDOM
+   20  history
+   21  cd

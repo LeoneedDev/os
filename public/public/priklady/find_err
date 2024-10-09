@@ -1,0 +1,39 @@
+find: '/etc/ssl/private': Permission denied
+find: '/run/sudo': Permission denied
+/public/ucebnove/historia/lastinec-st-14.history
+/public/ucebnove/historia/lastinec-st-14-2.history
+/public/ucebnove/historia/grezo08102020.history
+/public/ucebnove/historia/lastinec-st-16-2.history
+/public/ucebnove/historia/lastinec-st-14-3.history
+/public/ucebnove/historia/lastinec-st-16-3.history
+/public/ucebnove/historia/grezo01102020.history
+/public/ucebnove/historia/grezo08102020-2.history
+/public/ucebnove/historia/grezo24092020.history
+/public/ucebnove/historia/lastinec-st-16.history
+/usr/share/calendar/calendar.history
+find: '/root': Permission denied
+find: '/proc/tty/driver': Permission denied
+find: '/proc/1/task/1/fd': Permission denied
+find: '/proc/1/task/1/fdinfo': Permission denied
+find: '/proc/1/task/1/ns': Permission denied
+find: '/proc/1/fd': Permission denied
+find: '/proc/1/map_files': Permission denied
+find: '/proc/1/fdinfo': Permission denied
+find: '/proc/1/ns': Permission denied
+find: '/proc/2175/task/2175/fd': Permission denied
+find: '/proc/2175/task/2175/fdinfo': Permission denied
+find: '/proc/2175/task/2175/ns': Permission denied
+find: '/proc/2175/fd': Permission denied
+find: '/proc/2175/map_files': Permission denied
+find: '/proc/2175/fdinfo': Permission denied
+find: '/proc/2175/ns': Permission denied
+find: '/proc/2181/task/2181/fd': Permission denied
+find: '/proc/2181/task/2181/fdinfo': Permission denied
+find: '/proc/2181/task/2181/ns': Permission denied
+find: '/proc/2181/fd': Permission denied
+find: '/proc/2181/map_files': Permission denied
+find: '/proc/2181/fdinfo': Permission denied
+find: '/proc/2181/ns': Permission denied
+find: '/var/lib/apt/lists/partial': Permission denied
+find: '/var/cache/ldconfig': Permission denied
+find: '/var/cache/apt/archives/partial': Permission denied

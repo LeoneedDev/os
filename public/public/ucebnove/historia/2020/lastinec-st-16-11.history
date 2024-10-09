@@ -1,0 +1,47 @@
+----- screen 1 -----    
+    1  history
+    2  echo "" > .bash_history 
+    3  logout
+    4  cd priklady/sockety/
+    5  less sockety.txt 
+    6  man socat
+    7  socat UNIX-LISTEN:/tmp/chat.sock -
+    8  sudo socat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+    9  socat SYSTEM:bash UNIX-LISTEN:/tmp/back.sock
+   10  hostname -i
+   11  ip addr show
+   12  ifconfig
+   13  socat TCP4-LISTEN:1234 -
+   14  socat TCP4-LISTEN:1234
+   15  socat TCP4-LISTEN:1234 -
+   16  nslookup towel.blinkenlights.nl
+   17  less sockety.txt 
+   18  echo "GET /" | socat OPENSSL:www.dennikn.sk:443 -
+   19  echo "GET /" | socat OPENSSL:www.fiit.stuba.sk:443 -
+   20  echo "GET /" | socat -d -d OPENSSL:www.fiit.stuba.sk:443 -
+   21  view web.sh
+   22  socat -d -d TCP-listen:8080,reuseaddr SYSTEM:./web.sh
+   23  socat -d -d TCP-listen:8080,reuseaddr,fork SYSTEM:./web.sh
+   24  socat -d -d TCP-listen:8080,reuseaddr SYSTEM:./webserver.sh &
+   25  socat -d -d TCP-listen:8080,reuseaddr,fork SYSTEM:./webserver.sh &
+   26  vim webserver.sh 
+   27  ls
+   28  vim index.html
+   29  less sockety.txt 
+----- screen 2 -----
+    1  history
+    2  echo "" > .bash_history 
+    3  logout
+    4  man 2 socket
+    5  man 7 unix
+    6  ls -l /tmp/chat.sock 
+    7  socat UNIX:/tmp/chat.sock -
+    8  ll /tmp/back.sock 
+    9  socat UNIX:/tmp/cack.sock -
+   10  socat UNIX:/tmp/back.sock -
+   11  socat TCP4:localhost:1234
+   12  socat TCP4:localhost:1234 -
+   13  cd /tmp/
+   14  mkdir web
+   15  cd web/
+   16  echo "GET /subor.txt HTTP/1.1" | socat TCP4:localhost:8080 -

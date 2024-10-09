@@ -1,0 +1,205 @@
+  805  s
+  806  cat s
+  807  ./s
+  808  chmod +x s
+  809  ll
+  810  ./s
+  811  ca s
+  812  cat s
+  813  cat pos.sh 
+  814  less /public/ucebnove/historia/grezo29092022.history 
+  815  cat 2.sh 
+  816  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  817  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+  818  cat 1.sh 
+  819  cat 3.sh 
+  820  cat 4.sh 
+  821  cat 5.sh 
+  822  ll
+  823  chmod -x s
+  824  ll
+  825  cat x
+  826  cat x.bc 
+  827  ./x.bc
+  828  chmod +x x.bc 
+  829  ./x.bc
+  830  chmod -x x.bc 
+  831  ;;
+  832  ll
+  833  cat 4.sh 
+  834  cat 5.sh 
+  835  ll
+  836  cat 6.sh 
+  837  cat 7.sh 
+  838  cat 8.sh 
+  839  for f in $(ls -l | head -3); do         echo $f; done
+  840  echo $IFS
+  841  tmp=$IFS
+  842  echo $tmp
+  843  IFS='
+  844  '
+  845  for f in $(ls -l | head -3); do         echo $f; done
+  846  cat 8.sh 
+  847  IFS=$tmp
+  848  for f in $(ls -l | head -3); do         echo $f; done
+  849  IFS='
+  850  '
+  851  for f in $(ls -l | head -3); do         echo $f; done
+  852  IFS=$tmp
+  853  for f in $(ls -l | head -3); do         echo $f; done
+  854  cat 8.sh 
+  855  cat 9
+  856  cat 9.sh 
+  857  ll
+  858  ls -l
+  859  ls
+  860  cat print_args.sh 
+  861  ll
+  862  cd ..
+  863  ll
+  864  ls /public/ucebnove/historia/
+  865  ll
+  866  cd cvicenie 4
+  867  cd cvicenie4/
+  868  ll
+  869  cat process.sh 
+  870  ll
+  871  cat y.sh 
+  872  cat process.sh 
+  873  cat z 
+  874  cat 2.sh 
+  875  logout
+  876  ll
+  877  ll priklady/
+  878  cd priklady/
+  879  ll
+  880  vim awk.txt 
+  881  sudo cp awk.txt /public/priklady/
+  882  less /public/priklady/awk.txt 
+  883  ll
+  884  cd signaly/
+  885  ll
+  886  vim signaly.txt 
+  887  logout
+  888  clear
+  889  ls
+  890  ls /public/ucebnove/historia/
+  891  ll
+  892  ls
+  893  cd cvicenie4/
+  894  ls
+  895  cat s
+  896  ls -l s
+  897  man chmod
+  898  bash s
+  899  man bash
+  900  s
+  901  pwd
+  902  ls
+  903  ./s
+  904  ls -l s
+  905  chmod +x s
+  906  ls -l s
+  907  ./s
+  908  pwd
+  909  cat y.sh 
+  910  chmod +x y.sh 
+  911  ./y.sh 
+  912  bg
+  913  fg
+  914  ./y.sh 
+  915  bg
+  916  kill %1
+  917  ./y.sh 
+  918  bg
+  919  jobs
+  920  ps
+  921  cat y.sh 
+  922  ps
+  923  kill %1
+  924  ls
+  925  cat process.sh
+  926  bash process.sh 
+  927  cat x.bc
+  928  man bc
+  929  bc
+  930  ls
+  931  cat x.bc 
+  932  bc
+  933  bc -q
+  934  chmod +x x.bc 
+  935  ./x.bc 
+  936  cat x.bc 
+  937  ls
+  938  bc < x.bc 
+  939  bc x.bc
+  940  ./x.bc 
+  941  bc << EOF 2+2 EOF
+  942  bc << EOF
+  943  bc <<< "2+2"
+  944  ls
+  945  cat cow.sh 
+  946  ls
+  947  cat dvaplusdva 
+  948  cat 1.sh
+  949  ls | wc -l
+  950  cat 2.sh 
+  951  l
+  952  ls
+  953  cat 3.sh 
+  954  cat 4.sh
+  955  bash s 
+  956  man bash
+  957  man -x bash
+  958  bash -x s 
+  959  bash -xv s 
+  960  cat 3.sh 
+  961  bash -xv 3.sh 
+  962  ls
+  963  `echo duti | tr u a | tr i e`
+  964  :q
+  965  clear
+  966  ls
+  967  cat s
+  968  ./s
+  969  bash s
+  970  bash < s
+  971  man bash
+  972  bash -x s
+  973  bash -v s
+  974  bash -xv s
+  975  ./s
+  976  s
+  977  man chmod
+  978  ls -l s
+  979  chmod +x s
+  980  ls -l s
+  981  ./s
+  982  cat cow.sh 
+  983  cat y.sh 
+  984  chmod +x y.sh 
+  985  jobs
+  986  ps
+  987  ll
+  988  ls 
+  989  cat b
+  990  cat x.bc 
+  991  bc
+  992  sudo apt-get install bc 
+  993  cat x.bc 
+  994  bc -q
+  995  bc
+  996  cat dvaplusdva 
+  997  bc dvaplusdva 
+  998  bc -q dvaplusdva 
+  999  cat x.bc 
+ 1000  which bc
+ 1001  whereis bc
+ 1002  ls
+ 1003  cat 1.sh 
+ 1004  ls 
+ 1005  ls | wc -l
+ 1006  cat 2.sh 
+ 1007  cat 3.sh 
+ 1008  cat 4.sh 
+ 1009  `echo duti | tr u a | tr i e`

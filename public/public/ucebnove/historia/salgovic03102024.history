@@ -1,0 +1,556 @@
+    1  exit
+    2  ls
+    3  cd ../
+    4  ls
+    5  cd /
+    6  ls
+    7  cd ˜
+    8  nano
+    9  vim
+   10  ls
+   11  ls la
+   12  ls -la
+   13  men ls
+   14  cd ../
+   15  ls
+   16  cd bin
+   17  las
+   18  ls
+   19  echo $PATH
+   20  men
+   21  man ls
+   22  man man
+   23  cd 
+   24  ls
+   25  man adduser
+   26  man useradd
+   27  adduser uzivatel
+   28  logout
+   29  cd ../
+   30  ls
+   31  cd etc
+   32  ls
+   33  cat passwd
+   34  man passwd
+   35  help passwd
+   36  man passwd
+   37  man 5 passwd
+   38  cd ../
+   39  ls
+   40  cd dev/
+   41  ls
+   42  cat null
+   43  cat random
+   44  ls
+   45  cat zero
+   46  man hexdump
+   47  hexdump -C zero
+   48  hexdump -C random
+   49  ls
+   50  sdfsdfscd ../
+   51  cd ../
+   52  cd etc
+   53  ls
+   54  ls -la
+   55  cd ../
+   56  ls
+   57  cd root
+   58  ls
+   59  echo 'test1' > test1.txt
+   60  echo 'test2 test2!' > test2.txt
+   61  ls
+   62  ls -l
+   63  echo 'test3!' > test3.txt
+   64  ls -l
+   65  cd ../etc
+   66  ls -l
+   67  cd ../dev
+   68  ls -l
+   69  man usermod
+   70  usermod uzivatel -aG
+   71  cd ../
+   72  ls
+   73  logout
+   74  usermod uzivatel -aG sudo
+   75  logout
+   76  id
+   77  man id
+   78  logout
+   79  man deluser
+   80  deluser test sudo
+   81  deluser test2 sudo
+   82  deluser uzivatel sudo
+   83  logout
+   84  cd ../dev/
+   85  ls
+   86  pwd
+   87  man pwd
+   88  cd ../root/
+   89  mkdir test
+   90  ls
+   91  cd test
+   92  ls
+   93  ls -l
+   94  ls -la
+   95  cd ../
+   96  rmdir test
+   97  ls
+   98  ls -la
+   99  ll
+  100  help alias
+  101  alias
+  102  ls
+  103  cd ../
+  104  ls
+  105  ls --color=none
+  106  alias asdf='ls -a'
+  107  asdf
+  108  ll]
+  109  ll
+  110  ls -la
+  111  :|
+  112  ll | cat
+  113  echo 'ahoj!'
+  114  echo 'ahoj!' | cat
+  115  ls
+  116  cd root/
+  117  echo 'ahoj :)' > ahoj.txt
+  118  ls
+  119  cat ahoj.txt 
+  120  ahoj.txt | cat
+  121  ./ahoj.txt | cat
+  122  chmod +x ahoj.txt 
+  123  ./ahoj.txt | cat
+  124  clear
+  125  cd ../../
+  126  ls
+  127  cd public/
+  128  ls
+  129  cat zaciatocnik.txt 
+  130  ls
+  131  cd prednasky/
+  132  ls
+  133  pwd
+  134  cd ../
+  135  ls
+  136  cd zadania/
+  137  ls
+  138  cd ../
+  139  mn ls
+  140  fuck
+  141  logout
+  142  ls
+  143  logout
+  144  man
+  145  man man
+  146  man ls
+  147  asdfasdf
+  148  echo $PATH
+  149  cd ../bin/
+  150  ls
+  151  cd ../root
+  152  ls
+  153  cd
+  154  man cd
+  155  cd ?
+  156  cd -?
+  157  help cd
+  158  man ls
+  159  ls
+  160  ls -a
+  161  ls -l
+  162  ls -la
+  163  cd ../
+  164  ls
+  165  cd root
+  166  pwd
+  167  cd ../
+  168  pwd
+  169  cd dev
+  170  ls
+  171  cd pts
+  172  pwd
+  173  cd ../../
+  174  cd dev
+  175  cd pts
+  176  cd
+  177  pwd
+  178  cd dev
+  179  cd ../dev/
+  180  ls
+  181  cd ../root
+  182  ls
+  183  ls -la ahoj.txt 
+  184  man cat
+  185  cat ahoj.txt 
+  186  cat test1.txt 
+  187  cat test2.txt 
+  188  cat test3.txt 
+  189  cd ../dev/
+  190  ls
+  191  cat null
+  192  cat random
+  193  ls
+  194  cat zero
+  195  man hexdump
+  196  hexdump -C zero
+  197  hexdump -C random
+  198  ls
+  199  cd ../
+  200  man adduser
+  201  man useradd
+  202  adduser jozko
+  203  logout
+  204  id
+  205  logout
+  206  man sudo
+  207  man usermod
+  208  usermod jozko -aG sudo
+  209  logout
+  210  clear
+  211  ls
+  212  cd ../
+  213  ls
+  214  cd public
+  215  ls
+  216  clear
+  217  cd ucebnove/
+  218  ll
+  219  less kw3.txt 
+  220  ll
+  221  less kw3.txt 
+  222  ls
+  223  cd historia/
+  224  ls
+  225  less morhac26092024.history 
+  226  clear
+  227  ls
+  228  find -type f -name .history
+  229  find -type f -name *.history
+  230  find -type f -name \*.history
+  231  man find
+  232  find -type f -name \*.history -mtime 14
+  233  find -type f -name \*.history -mtime 15
+  234  find -type f -name \*.history -mtime +14
+  235  find -type f -name \*.history -mtime -14
+  236  cat ./grezo25092024.history
+  237  tail ./grezo25092024.history
+  238  tail ./grezo25092024.history -n 2
+  239  man tail
+  240  history
+  241  history | tail
+  242  history | sort
+  243  history | tail | sort
+  244  history | tail | sort -r
+  245  history | head | sort -r
+  246  ls
+  247  find -type f -name \*.history -mtime -14
+  248  find -type f -name \*.history -mtime -14 -exec tail
+  249  find -type f -name \*.history -mtime -14 -exec tail {}
+  250  find -type f -name \*.history -mtime -14 -exec tail {} \;
+  251  find -type f -name \*.history -mtime -14 -exec tail -2 {} \;
+  252  tail grezo02102024.history
+  253  tail grezo02102024.history vojtko18092024.history
+  254  tail -2 grezo02102024.history vojtko18092024.history
+  255  find -type f -name \*.history -mtime -14
+  256  tail `find -type f -name \*.history -mtime -14`
+  257  tail `find -type f -name \*.history -mtime -14` -n 2
+  258  tail $(find -type f -name \*.history -mtime -14) -n 2
+  259  find / -exec tail {} \;
+  260  tail `find /`
+  261  tail * -n 2
+  262  ls
+  263  ll
+  264  find vojtko18092024.history
+  265  cat vojtko18092024.history | find
+  266  ll
+  267  man grep
+  268  cat vojtko18092024.history
+  269  clear
+  270  cat vojtko18092024.history
+  271  grep sudo vojtko18092024.history
+  272  alias
+  273  grep sudo vojtko18092024.history
+  274  grep -i SUDO vojtko18092024.history
+  275  grep SUDO vojtko18092024.history
+  276  grep sudo vojtko18092024.history
+  277  grep -q sudo vojtko18092024.history
+  278  grep -b sudo vojtko18092024.history
+  279  grep -v sudo vojtko18092024.history
+  280  grep -b sudo vojtko18092024.history
+  281  grep -w sudo vojtko18092024.history
+  282  grep -w service vojtko18092024.history
+  283  grep */ vojtko18092024.history
+  284  grep \*/ vojtko18092024.history
+  285  grep "\*/" vojtko18092024.history
+  286  grep '\*/' vojtko18092024.history
+  287  grep -E '\*/' vojtko18092024.history
+  288  grep -E '*/' vojtko18092024.history
+  289  grep -E '*/$' vojtko18092024.history
+  290  grep -E '/$' vojtko18092024.history
+  291  ls
+  292  cd ../
+  293  ls
+  294  cd ../
+  295  ls
+  296  less zaciatocnik.txt 
+  297  grep -E 'ˆl' vojtko18092024.history
+  298  grep -E 'ˆl' zaciatocnik.txt 
+  299  less zaciatocnik.txt 
+  300  grep -E 'ˆe' zaciatocnik.txt 
+  301  grep ˆe zaciatocnik.txt 
+  302  grep "ˆe" zaciatocnik.txt 
+  303  grep "\ˆe" zaciatocnik.txt 
+  304  egrep "\ˆe" zaciatocnik.txt 
+  305  egrep "ˆe" zaciatocnik.txt 
+  306  egrep 'ˆe' zaciatocnik.txt 
+  307  egrep -E 'ˆe' zaciatocnik.txt 
+  308  grep 'ˆe' zaciatocnik.txt 
+  309  cd ucebnove/historia/
+  310  grep -E 'ˆl' vojtko18092024.history
+  311  less vojtko18092024.history 
+  312  cd ../
+  313  ls
+  314  grep 'e' zaciatocnik.txt 
+  315  grep 'ˆe' zaciatocnik.txt 
+  316  grep '^e' zaciatocnik.txt 
+  317  grep '^efektivn[ue]' zaciatocnik.txt 
+  318  grep '^efektivn[uey]' zaciatocnik.txt 
+  319  grep '^efektivn[a-z]' zaciatocnik.txt 
+  320  grep '^efektivn[\w]' zaciatocnik.txt 
+  321  grep '^efektivn[[:alpha:]]' zaciatocnik.txt 
+  322  grep '^efektivn.' zaciatocnik.txt 
+  323  grep '^efektivn[a-zA-Z]' zaciatocnik.txt 
+  324  grep '^e' zaciatocnik.txt 
+  325  grep '^ee' zaciatocnik.txt 
+  326  grep 'ee' zaciatocnik.txt 
+  327  grep 'e{2}' zaciatocnik.txt 
+  328  grep 'e{2,}' zaciatocnik.txt 
+  329  grep -E 'e{2,}' zaciatocnik.txt 
+  330  grep 'e\{2,\}' zaciatocnik.txt 
+  331  grep 'e\{2,\}' zaciatocnik.txt 
+  332  less zaciatocnik.txt 
+  333  grep -E 'I{2,}' zaciatocnik.txt 
+  334  grep -E 'I{,2}' zaciatocnik.txt 
+  335  grep -E 'I{0,2}' zaciatocnik.txt 
+  336  grep -E 'I{1,2}' zaciatocnik.txt 
+  337  grep -E 'I{1,2}\b' zaciatocnik.txt 
+  338  grep -E 'I{1,2}>' zaciatocnik.txt 
+  339  grep -E 'I{1,2}\>' zaciatocnik.txt 
+  340  grep -E '\<I{1,2}\>' zaciatocnik.txt 
+  341  grep -E 'I{1,2}' zaciatocnik.txt 
+  342  grep -E 'I{1,2}[-I]' zaciatocnik.txt 
+  343  grep -E 'I{1,2}[I]' zaciatocnik.txt 
+  344  grep -E 'I{1,}' zaciatocnik.txt 
+  345  grep -E 'I*' zaciatocnik.txt 
+  346  grep -E 'PI*' zaciatocnik.txt 
+  347  grep -E 'P[Ir]*' zaciatocnik.txt 
+  348  grep -E 'P[Ir]+' zaciatocnik.txt 
+  349  grep -E 'PI+' zaciatocnik.txt 
+  350  grep -E 'PI?' zaciatocnik.txt 
+  351  grep -E 'PI?r' zaciatocnik.txt 
+  352  man grep
+  353  grep -E '\<I{1,2}\>' zaciatocnik.txt 
+  354  cd 
+  355  man grep > manual.txt
+  356  cat manual.txt 
+  357  cat ahoj.txt 
+  358  "  :/" >> ahoj.txt 
+  359  echo "  :/" >> ahoj.txt 
+  360  cat ahoj.txt 
+  361  >>>
+  362  less < ahoj.txt 
+  363  last <<  
+  364  last <<  asdf
+  365  asdfsdfsdfsdsf
+  366  dfdfdf
+  367  dfdfe
+  368  sdfsdfsdfsdfsdf
+  369  asdf
+  370  head -n 2 << zaciatok
+  371  pisat nejaky subor
+  372  dalsi riadok
+  373  tento un nie
+  374  asdf
+  375  4r3
+  376  zaciatok
+  377  echo <<< "asdfs werwer z d s24r sef"
+  378  cat <<< "asdfs werwer z d s24r sef"
+  379  find /
+  380  find / | grep "Permission denied"
+  381  logout
+  382  clear
+  383  cd /public/
+  384  ls
+  385  cd ucebnove/
+  386  ls
+  387  less kw3.txt 
+  388  ll
+  389  find -type l
+  390  find / -type l
+  391  find / -type f
+  392  less kw3.txt 
+  393  cd ../prednasky/
+  394  ls
+  395  cat 03_proc.pdf 
+  396  logout
+  397  clear
+  398  find -type f -name .history
+  399  find -type f -name *.history
+  400  find -type f -name \*.history
+  401  cd /
+  402  find -type f -name *.history
+  403  find -type f -name \*.history
+  404  man find
+  405  find -type f -name \*.history -mtime 14
+  406  find -type f -name \*.history -mtime 15
+  407  find -type f -name \*.history -mtime +14
+  408  find -type f -name \*.history -mtime -14
+  409  history
+  410  history 10
+  411  cd /public/ucebnove/historia/
+  412  ls
+  413  cat grezo25092024.history
+  414  less grezo25092024.history
+  415  tail grezo25092024.history
+  416  man tail
+  417  tail grezo25092024.history -n 5
+  418  history | tail -n 5
+  419  history | head -n 5
+  420  history | tail -n 5 | sort
+  421  history | tail -n 5 | sort -r
+  422  history | head -n 5 | sort -r
+  423  find -type f -name \*.history -mtime -14
+  424  find -type f -name \*.history -mtime -14 | cat
+  425  find -type f -name \*.history -mtime -14 | tail -2
+  426  find -type f -name \*.history -mtime -14 -exec
+  427  find -type f -name \*.history -mtime -14 -exec tail -2
+  428  find -type f -name \*.history -mtime -14 -exec tail -2 {}
+  429  find -type f -name \*.history -mtime -14 -exec tail -2 {} \;
+  430  find -type f -name \*.history -mtime -14
+  431  find -type f -name \*.history -mtime -14 -exec tail -2 {} \; -print
+  432  tail -2 morhac19092024.history grezo25092024.history
+  433  tail morhac19092024.history grezo25092024.history -n 2
+  434  tail * -n 2
+  435  find -type f -name \*.history -mtime -14
+  436  tail | find -type f -name \*.history -mtime -14
+  437  tail
+  438  tail `find -type f -name \*.history -mtime -14` -n 2
+  439  tail $(find -type f -name \*.history -mtime -14) -n 2
+  440  find -type f -name \*.history -mtime -14 -exec tail -2 {} \; -print
+  441* tail $(find /) -n 2
+  442  find / -exec tail -2 {} \;
+  443  ls
+  444  cat vojtko18092024.history
+  445  ls
+  446  man grep
+  447  grep sudo vojtko18092024.history
+  448  ll
+  449  ls
+  450  alias
+  451  grep sudo vojtko18092024.history --color=none
+  452  grep sudo vojtko18092024.history
+  453  grep -i SUDO vojtko18092024.history
+  454  grep SUDO vojtko18092024.history
+  455  grep -v sudo vojtko18092024.history
+  456  grep -w sudo vojtko18092024.history
+  457  less vojtko18092024.history
+  458  grep -w service vojtko18092024.history
+  459  grep -w dev vojtko18092024.history
+  460  cd ../../
+  461  ls
+  462  less zaciatocnik.txt 
+  463  grep e zaciatocnik.txt 
+  464  grep ^e zaciatocnik.txt 
+  465  grep ^efektivn zaciatocnik.txt 
+  466  grep ^efektivn[ue] zaciatocnik.txt 
+  467  grep ^efektivn[uey] zaciatocnik.txt 
+  468  grep ^efektivn[a-z] zaciatocnik.txt 
+  469  grep ^efektivn[[:alpha:]] zaciatocnik.txt 
+  470  grep ^efektivn[:alpha:] zaciatocnik.txt 
+  471  grep ^efektivn. zaciatocnik.txt 
+  472  less zaciatocnik.txt 
+  473  grep ,$ zaciatocnik.txt 
+  474  grep ,\$ zaciatocnik.txt 
+  475  grep \,$ zaciatocnik.txt 
+  476  grep ",$" zaciatocnik.txt 
+  477  grep ',$' zaciatocnik.txt 
+  478  grep -E ',$' zaciatocnik.txt 
+  479  grep -E '\,$' zaciatocnik.txt 
+  480  grep -E ',\$' zaciatocnik.txt 
+  481  grep -E '.$' zaciatocnik.txt 
+  482  grep -E '\.$' zaciatocnik.txt 
+  483  grep -E ',$' zaciatocnik.txt 
+  484  less zaciatocnik.txt 
+  485  grep -E ',$' zaciatocnik.txt 
+  486  grep -E '*/$' /public/ucebnove/vojtko18092024.history
+  487* grep -E '*/$' /public/ucebnove/historia/vojtko18092024.history
+  488  less zaciatocnik.txt 
+  489  grep -E 'I' zaciatocnik.txt 
+  490  grep -E 'III' zaciatocnik.txt 
+  491  grep -E 'I{3}' zaciatocnik.txt 
+  492  grep -E 'I{2,3}' zaciatocnik.txt 
+  493  grep -E 'I{1,}' zaciatocnik.txt 
+  494  grep -E 'I{1,2}' zaciatocnik.txt 
+  495  grep -E 'I{1,2}\>' zaciatocnik.txt 
+  496  grep -E '/<I{1,2}' zaciatocnik.txt 
+  497  grep -E '\<I{1,2}' zaciatocnik.txt 
+  498  grep -E 'I{1,2}' zaciatocnik.txt 
+  499  man grep
+  500  grep -E 'I?' zaciatocnik.txt 
+  501  grep -E 'I*' zaciatocnik.txt 
+  502  grep -E 'proces' zaciatocnik.txt 
+  503  grep -E 'proces[su]' zaciatocnik.txt 
+  504  grep -E 'proces[su]?' zaciatocnik.txt 
+  505  grep -E 'proce[s]*' zaciatocnik.txt 
+  506  grep -E 'proces[s]+' zaciatocnik.txt 
+  507  grep '(' zaciatocnik.txt 
+  508  grep '{' zaciatocnik.txt 
+  509  grep '.' zaciatocnik.txt 
+  510  grep '\.' zaciatocnik.txt 
+  511  grep '\,' zaciatocnik.txt 
+  512  grep '\,$' zaciatocnik.txt 
+  513  grep '\,\$' zaciatocnik.txt 
+  514  grep '\,' zaciatocnik.txt 
+  515  grep '\,|\.' zaciatocnik.txt 
+  516  grep '[\,|\.]' zaciatocnik.txt 
+  517  grep '[\,$]' zaciatocnik.txt 
+  518  grep '\,' zaciatocnik.txt 
+  519  grep ',' zaciatocnik.txt 
+  520  grep () zaciatocnik.txt 
+  521  grep ( zaciatocnik.txt 
+  522  grep -E ( zaciatocnik.txt 
+  523  grep "(" zaciatocnik.txt 
+  524  grep '(' zaciatocnik.txt 
+  525  grep -E '(' zaciatocnik.txt 
+  526  grep -E '\(' zaciatocnik.txt 
+  527  grep -E '\<' zaciatocnik.txt 
+  528  grep -E '\<a>' zaciatocnik.txt 
+  529  grep -E '\<v\>' zaciatocnik.txt 
+  530  grep '\<v\>' zaciatocnik.txt 
+  531  grep '<v>' zaciatocnik.txt 
+  532  grep '\<v\>' zaciatocnik.txt 
+  533  cd 
+  534  ls
+  535  man grep > man.txt
+  536  less man.txt 
+  537  cat ahoj.txt 
+  538  echo "(:" >> ahoj.txt 
+  539  cat ahoj.txt 
+  540  echo < ahoj.txt
+  541  cat < ahoj.txt
+  542  cat < ll
+  543  head -2 << start
+ahoj
+toto je subor
+ktory
+je 
+dlhy
+a pisem ho
+len tak
+start
+
+  544  echo <<< "asdfsdf werids sjdfsjdsfj ewjsdfjds"
+  545  cat <<< "asdfsdf werids sjdfsjdsfj ewjsdfjds"
+  546  sudo history | sudo tee /public/ucebnove/historia/salgovic03102024.history
+  547  history | sudo tee /public/ucebnove/historia/salgovic03102024.history

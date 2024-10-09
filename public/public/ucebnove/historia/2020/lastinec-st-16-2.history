@@ -1,0 +1,119 @@
+   10  ls history/
+   11  ls /public/ucebnove/historia/
+   12  cd ..
+   13  cd lastinec/
+   14  ls .
+   15  ls *
+   16  ls
+   17  ls *.tx
+   18  ls *.txt
+   19  ls history/lastinec-st-??.history
+   20  rm /public/ucebnove/historia/lastinec-st-14*
+   21  ls /public/ucebnove/historia/
+   22  cp history/lastinec-st-14* /public/ucebnove/historia/
+   23  ls /public/ucebnove/historia/
+   24  clear
+   25  cat /public/ucebnove/kw2.txt 
+   26  ls
+   27  lss
+   28  cd /public/ucebnove/historia/
+   29  cat lastinec-st-16.history 
+   30  more lastinec-st-16.history 
+   31  less lastinec-st-16.history 
+   32  cd ..
+   33  cat kw2.txt 
+   34  cd
+   35  pwd
+   36  ls
+   37  rm *.txt
+   38  rm -r adresar/
+   39  rm odkaz_na_adresar 
+   40  ls
+   41  rm pocet_riadkov 
+   42  apropos link
+   43  man ln
+   44  vim subor.txt
+   45  cat subor.txt 
+   46  ln subor.txt hlink_subor.txt
+   47  ls
+   48* 
+   49  ln subor.txt *.txt
+   50  ls -l *.txt
+   51  ls -li *.txt
+   52  cat hlink_subor.txt 
+   53  ln --symbolic subor.txt slink_subor.txt
+   54  ls -li *.txt
+   55  cat slink_subor.txt 
+   56  rm subor.txt
+   57  ls -li *.txt
+   58  cat hlink_subor.txt 
+   59  cat slink_subor.txt 
+   60  rm slink_subor.txt 
+   61  ls
+   62  mkdir adresar
+   63  cp subor.jpg adresar/
+   64  ln adresar linka_na_adresar
+   65  ln -s adresar linka_na_adresar
+   66  cd linka_na_adresar
+   67  ls
+   68  cd ..
+   69  rm linka_na_adresar/subor.jpg 
+   70  rmdir linka_na_adresar
+   71  rm linka_na_adresar
+   72  ls
+   73  clear
+   74  cowsay "Hello OS"
+   75  cowsay -f tux "Hello OS"
+   76  fortune
+   77  fortune | cowsay -f tux "Hello OS"
+   78  fortune | cowsay -f tux
+   79  vim hlaska.txt
+   80  cat hlaska.txt 
+   81  fortune | cowsay -f tux > hlaska2.txt
+   82  cat hlaska2.txt 
+   83  ls
+   84  echo "Hello, I am Tux" > subor.txt
+   85  cowsay -f tux < subor.txt 
+   86  wc -l subor.
+   87  wc -l subor.txt
+   88  wc -l subor.txt > pocet_riadkov
+   89  wc -l subor.txt subor2.txt > pocet_riadkov
+   90  cat pocet_riadkov 
+   91* 
+   92  cat pocet_riadkov 
+   93  wc -l subor.txt subor2.txt > pocet_riadkov 2>&1 
+   94  cat pocet_riadkov 
+   95  wc -l subor.jpg >> pocet_riadkov 
+   96  cat pocet_riadkov 
+   97  man wc
+   98  ls | wc
+   99  ls | wc -l
+  100  clear
+  101  ps
+  102  ps -u
+  103  ps -u root
+  104  ps -ua
+  105  ps -uax
+  106  vim test.txt
+  107  ps
+  108  jobs
+  109  fg
+  110  ps aux
+  111  bg
+  112  jobs
+  113  find / -type f
+  114  bg
+  115  find / -type f > subory &
+  116  jobs
+  117  ls
+  118  ./hello.sh
+  119  ./hello.sh > hello
+  120  bg
+  121  jobs
+  122  fg 1
+  123  jobs
+  124  kill %2
+  125  jobs
+  126  fg
+  127  ps aux
+  128  history > history/lastinec-st-16-2.history 
