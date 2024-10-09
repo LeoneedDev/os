@@ -1,8 +1,0 @@
-semafor
-operacie nad semaforom
-semantika operacii nad semaforom
-invariant semaforu
-vseobecny semafor
-binarny semafor
-inicialna hodnota semaforu
-monitor
