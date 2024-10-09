@@ -1,5 +1,5 @@
 #! /bin/bash
-#rm -rf /home/leo/repo/public
+rm -rf /home/leo/repo/public
 cp -R /public /home/leo/repo/public
 git add .
 git commit -m "autocommit $(date)"

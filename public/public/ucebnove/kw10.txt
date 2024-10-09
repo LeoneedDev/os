@@ -1,7 +1,0 @@
-retazec odkazov na stranky (reference string)
-pracovna mnozina stranok
-algoritmus vyberu obete
-zasovnikovy algoritmus
-LRU algoritmus
-FIFO algoritmus
-Optimalny algoritmus
