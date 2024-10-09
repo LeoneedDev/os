@@ -1,0 +1,177 @@
+ 1990  ll /public/samples/
+ 1991  ll
+ 1992  awk '{print}' zamestnanci.txt
+ 1993  cat zamestnanci.txt 
+ 1994  awk '{print}' zamestnanci.txt
+ 1995  awk '{print NR,$0}' zamestnanci.txt
+ 1996  awk '{print NR,NR,$0}' zamestnanci.txt
+ 1997  awk '{print $0,NR,NR,$0}' zamestnanci.txt
+ 1998  awk '{print $0,NR,$0}' zamestnanci.txt
+ 1999  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 2000  awk 'BEGIN { print "zoznam zamestnancov:"} { print NR,$0 } ' zamestnanci.txt
+ 2001  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 2002  awk '{print}' zamestnanci.txt
+ 2003  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 2004  awk '/^z/' zamestnanci.txt
+ 2005  awk '!/^z/' zamestnanci.txt
+ 2006  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 2007  awk '{print}' zamestnanci.txt
+ 2008  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2009  awk '!($NF > 1000) {print NR,$0}' zamestnanci.txt
+ 2010  awk '!($NF > 1000) {print NR,$0} $NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2011  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 2012  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 2013  bc
+ 2014  awk '/^z|^b/ {sum+=$NF} END {print"Priemerny: " sum/NF}' /public/samples/zamestnanci.txt
+ 2015  awk '/^z/^b/ {sum+=$NF} END {print priemer: sum/NR}' zamestatnci.txt
+ 2016  awk '/^z/^b/ (sum+=$NF) (count+=1)  END (print "priemerny plat = sum/count) zamestnanci.txt
+ 2017  awk '/^z/^b/ {sum+=$NF} END {print priemer: sum/NR}' zamestnanci.txt
+ 2018  awk '/^z|^b/ {sum+=$NF} END {print "Priemerny plat zamezstancov=  " sum/NR}' zamestnanci.txt
+ 2019  awk '/^z|^b/ {sum+=$NF} END {print"Priemerny: " sum/NF}' /public/samples/zamestnanci.txt
+ 2020  awk '/^z|^b/ {sum+=$NF} END {print "Priemerny plat zamezstancov=  " sum/NF}' zamestnanci.txt
+ 2021  awk '/^z/^b/ (sum+=$NF) (count+=1)  END (print "priemerny plat = sum/count)' zamestnanci.txt
+ 2022  awk '/^z/^b/ (sum+=$NF) (count+=1)  END (print "priemerny plat = " sum/count)' zamestnanci.txt
+ 2023  awk '/^z/^b/ (sum+=$NF) (count+=1)  END {print "priemerny plat = " sum/count}' zamestnanci.txt
+ 2024  awk '/^z/^b/ {(sum+=$NF) (count+=1)}  END {print "priemerny plat = " sum/count}' zamestnanci.txt
+ 2025  awk '/^z/^b/ {(sum+=$NF) count+=1}  END {print "priemerny plat = " sum/count}' zamestnanci.txt
+ 2026  awk '/^z|^b/ {sum+=$NF} END {print "Priemerny plat zamezstancov=  " sum/NF}' zamestnanci.txt
+ 2027  awk '/^z|^b/ {sum+=$NF} {c+=1} END {print "Priemerny plat zamezstancov=  " sum/c}' zamestnanci.txt
+ 2028  less access.log 
+ 2029  less logformat.txt 
+ 2030  less access.log 
+ 2031  awk '{sum+=$10} END {print sum/1000000"MB"}' access.log
+ 2032  awk '{sum+=$10} END {print sum/2^20"MB"}' access.log
+ 2033  awk '{print $1}' access.log
+ 2034  awk '{print $1}' access.log | uniq -c
+ 2035  awk '{print $1}' access.log | sort 
+ 2036  awk '{print $1}' access.log | sort | uniq -c
+ 2037  awk '{print $1}' access.log | sort | uniq -c | sort 
+ 2038  awk '{print $1}' access.log | sort | uniq -c | sort -n
+ 2039  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 2040  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10
+ 2041  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head 
+ 2042  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{pring $2}'
+ 2043  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 2044  awk '{ print $1}' access.log | sort | uniq -c | sort -nr | head -n 10 | awk '{ print $2 }'
+ 2045  awk '{print $1}' access.log | sort |uniq -c | sort | tail -10 | awk '{print $2}'
+ 2046  awk '/iPhone|Android/{sum+=1} {sumAll+=1} END {print sum/sumAll*100"%"}' access.log
+ 2047  awk '/iPhone|android/ {sum+=1} END {print sum/NR*100}' access.log
+ 2048  awk '/iPhone|Android/ {sum+=1} END {print sum/NR*100}' access.log
+ 2049  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+ 2050  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr 
+ 2051* awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 
+ 2052  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+ 2053  grep -R "cut" /public/ucebnove/historia/
+ 2054  cut -d " " -f1 < access.log | sort -rn | uniq -c | sort -rn | head
+ 2055  cat access.log | cut -d " " -f1 | sort -rn | uniq -c | sort -rn | head
+ 2056  cut -d " " -f1 < access.log | sort -rn | uniq -c | sort -rn | head
+ 2057  awk '/iPhone|Android/ {sum+=1} END {print sum/NR*100}' access.log
+ 2058  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 
+ 2059  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | awk '{print $2}'
+ 2060  clear
+ 2061  find /public/ -name access.log
+ 2062  ll /public/samples/
+ 2063  find /public/ -name awk.txt
+ 2064  man awk
+ 2065  ll
+ 2066  cat zamestnanci.txt 
+ 2067  awk '{print}' zamestnanci.txt
+ 2068  awk '{print NR,$0}' zamestnanci.txt
+ 2069  awk '{print NR}' zamestnanci.txt
+ 2070  awk '{print NR,$0}' zamestnanci.txt
+ 2071  echo zoznam zamestnancov:; cat zamestnanci.txt 
+ 2072  awk '{print NR,$0}' zamestnanci.txt
+ 2073  echo zoznam zamestnancov:; cat zamestnanci.txt 
+ 2074  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 2075  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 2076  awk '{print NR $0}' zamestnanci.txt
+ 2077  awk '{print NR " " $0}' zamestnanci.txt
+ 2078  awk '{print NR,$0}' zamestnanci.txt
+ 2079  awk '{print NR,,$0}' zamestnanci.txt
+ 2080  awk '{print NR,$0}' zamestnanci.txt
+ 2081  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 2082  awk '/^z/' zamestnanci.txt
+ 2083  awk '!/^z/' zamestnanci.txt
+ 2084  grep "^z" zamestnanci.txt 
+ 2085  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 2086  cat zamestnanci.txt 
+ 2087  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2088  awk '!$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2089  awk '!($NF > 1000) {print NR,$0}' zamestnanci.txt
+ 2090  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 2091  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 2092  bc
+ 2093  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum/pocet;}' zamestnanci.txt
+ 2094  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum/NR;}' zamestnanci.txt
+ 2095  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum/pocet;}' zamestnanci.txt
+ 2096  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum/NF;}' zamestnanci.txt
+ 2097  cp zamestnanci.txt 4.txt 
+ 2098  vim 4.txt 
+ 2099  cat 4.txt 
+ 2100  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum/NF;}' zamestnanci.txt
+ 2101  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum/NF;}' 4.txt 
+ 2102  awk '/^z|^b/ {sum+=$NF; pocet+=1;} END {print sum;}' 4.txt 
+ 2103  cat 4.txt 
+ 2104  awk '/^1/ {sum+=$NF; pocet+=1;} END {print sum;}' 4.txt 
+ 2105  awk '/^1/ {sum+=$NF; pocet+=1;} END {print sum/NF;}' 4.txt 
+ 2106  awk '/^1/ {sum+=$NF; pocet+=1;} END {print sum/pocet;}' 4.txt 
+ 2107  awk '/^z|^b/ {sum+=$NF} {pocet+=1} END {print sum/pocet }' zamestnanci.txt
+ 2108* awk '/^z|^b/ {sum+=$NF; pocet+=1} !/^z|^b/  END {print sum/pocet }' zamestnanci.txt
+ 2109  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2110* awk '' zamestnanci.txt
+ 2111  less access.log 
+ 2112  ll
+ 2113  less logformat.txt
+ 2114  vim access.log 
+ 2115  awk '{sum+=$10;} END {print sum/2^20;}' access.log
+ 2116  awk '{sum+=$10;} END {print sum/2^20 "MB";}' access.log
+ 2117  cat logformat.txt
+ 2118  less access.log 
+ 2119  '
+66.249.73.135
+46.105.14.53
+130.237.218.86
+75.97.9.59
+50.16.19.13
+209.85.238.199
+68.180.224.225
+100.43.83.137
+208.115.111.72
+198.46.149.143
+'
+ 2120  less access.log 
+ 2121  awk '{print $1}' zamestnanci.txt
+ 2122  awk '{print $1}' access.log 
+ 2123* awk '{print $1}' access.log
+ 2124  awk '{print $1}' access.log 
+ 2125  awk '{print $1}' access.log | sort
+ 2126  awk '{print $1}' access.log | sort | uniq -c
+ 2127  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 2128  man sort
+ 2129  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 2130  awk '{print $1}' access.log | sort | uniq -c | sort -n
+ 2131  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 2132  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 2133  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -n 10
+ 2134  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10
+ 2135  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 2136  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 2137  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | cut -d " " -f 2
+ 2138  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr
+ 2139  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | 
+ 2140  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head
+ 2141  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | strip
+ 2142  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -d " "
+ 2143  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " "
+ 2144  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s ""
+ 2145  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " "
+ 2146  man tr
+ 2147  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3
+ 2148  awk '/iPhone|Android/ {pocet+=1;} END {print pocet/NR*100"%"}' access.log 
+ 2149  awk '/404/ {print $7}' access.log
+ 2150  awk '/404/ {print $7}' access.log | sort 
+ 2151  awk '/404/ {print $7}' access.log | sort | uniq -c 
+ 2152  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr
+ 2153  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1
+ 2154  awk '/404/ {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | tr -s " " | cut -d " " -f 3
+ 2155  awk '$9 > 299 {print $7}' access.log | sort | uniq -c | sort -nr | head -1 | tr -s " " | cut -d " " -f 3

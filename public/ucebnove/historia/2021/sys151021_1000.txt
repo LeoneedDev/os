@@ -1,0 +1,137 @@
+  906  ZACIATOK DRUHEHO CVIKA
+  907  cd
+  908  cat ps_cat/ps_cat_druhe.c 
+  909  ll /proc/self/fd/
+  910  ll /dev/pts/1
+  911  wall ahoj
+  912  ll /proc/self/fd/ 2>/dev/null 
+  913  ll /proc/self/fd/ 2</dev/null 
+  914  ll /proc/self/fd/ 2<>/dev/null 
+  915  ll /proc/self/fd/ 1<>/dev/null 
+  916  ll /proc/self/fd/ </dev/null 
+  917  ll /proc/self/fd/ >/dev/null 
+  918  ll /proc/self/fd/ 2>/dev/null  0</dev/null
+  919  ll /proc/self/fd/ 42</etc/passwd
+  920  ll /proc/self/fd/ &>/dev/stdout 
+  921  ll /proc/self/fd/ &>a.txt
+  922  cat a.txt 
+  923  cat </etc/passwd
+  924  cat
+  925  ls >a.txt
+  926  cat a.txt 
+  927  ls >>a.txt
+  928  cat a.txt 
+  929  sudo apt install cowsay
+  930  cowsay ahoj sver
+  931  cowsay ahoj svet
+  932  cowsay -f fox ahoj svet
+  933  cowsay -f fox
+  934  cowsay -f fox </etc/passwd
+  935  cowsay -f fox <<EOF
+  936  cowsay -f fox <<NEJAKY_TOKEN
+ahoj svet
+nazdar
+kopa textu
+dfskjlhndf
+NEJAKY_TOKEN
+
+  937  cowsay -f fox <<NEJAKY_TOKEN
+ahoj svet
+nazdar
+kopa textu
+dfskjlhndf
+NEJAKY_TOKEN
+
+  938  cowsay -f fox <<<"nazdar"
+  939  echo $(ls)
+  940  ll $(ls)
+  941  ls
+  942  echo ahoj svet
+  943  ahoj svet
+  944  $(echo ahoj svet)
+  945  $(echo ls)
+  946  $(echo -n l)$(echo -n s)
+  947  find /public/ -name 'kw*.txt'
+  948  vim -p $(find /public/ -name 'kw*.txt')
+  949  pgrep bash
+  950  hexdump -C
+  951  ls > ls_jedna 
+  952  ls > ls_dva 
+  953  diff ls_*
+  954  rm ls_*
+  955  ls > ls_jedna 
+  956  ls > ls_dva 
+  957  diff ls_*
+  958  rm ls_*
+  959  ll > ls_jedna 
+  960  ll > ls_dva 
+  961  diff ls_*
+  962  echo <(ls)
+  963  cat <(ls)
+  964  ll /proc/self/fd >/dev/null 2>&1 >/dev/pts/1
+  965  fortune 
+  966  sudo apt install fortune fortunes-off
+  967  fortune 
+  968  fortune -o
+  969  fortune -o > >(cowsay)
+  970  fortune -o > >(cowsay > >(tac))
+  971  ls | grep a
+  972  ls |& grep a
+  973  fortune -o | cowsay -f dragon | lolcat
+  974  vim .bashrc 
+  975  echo 'fortune -o | cowsay -f dragon | lolcat' >>.bashrc 
+  976  rm -r public/
+  977  cp -r /public/priklady/ .
+  978  cd priklady/
+  979  ll
+  980  vim 1.sh 
+  981  cat 1.sh 
+  982  bash 1.sh 
+  983  ./1.sh
+  984  sudo ./1.sh
+  985  sudo su
+  986  ll ./1.sh
+  987  chmod +x 1.sh 
+  988  ll ./1.sh
+  989  ./1.sh 
+  990  fg
+  991  vim 2.sh 
+  992  help for
+  993  fg
+  994  a="42"
+  995  echo $a
+  996  echo ${a}
+  997  echo prefix_$a_suffix
+  998  echo prefix_${a}_suffix
+  999  fg
+ 1000  echo $a
+ 1001  echo 42
+ 1002  fg
+ 1003  help 'for (('
+ 1004  fg
+ 1005  echo $a+1
+ 1006  b="$a++"
+ 1007  echo $b
+ 1008  fg
+ 1009  bash 2.sh 
+ 1010  fg
+ 1011  vim ps.sh
+ 1012  bash -x
+ 1013  bash -v
+ 1014  bash -vx
+ 1015  fg
+ 1016  vim 1.sh 
+ 1017  vim 2.sh 
+ 1018  set -x
+ 1019  set -v
+ 1020  echo $a
+ 1021  set +v
+ 1022  set +x
+ 1023  echo $a
+ 1024  vim 1.sh 
+ 1025  ./1.sh 
+ 1026  fg
+ 1027  ./1.sh 
+ 1028  ll /public/
+ 1029  cd
+ 1030  history | tee sys151021_0800.txt sys151021_1000.txt > /dev/null 

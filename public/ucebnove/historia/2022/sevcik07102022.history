@@ -1,0 +1,503 @@
+vim .bashrc 
+exit
+la
+touch .hushlogin
+exit
+ll
+ls
+ls -a
+ifconfig
+cowsay
+man man
+man ls
+man dir
+man ps
+man touch
+man vim
+history
+ls
+history
+!
+history
+ls
+la
+exit
+man cd
+help cd
+exit
+la
+exit
+man adduser
+man useradd
+exit
+help
+help help
+man
+man man
+exit
+man histsize
+exit
+ls
+echo ~
+pwd
+la
+vim .bash_history 
+vim .profile 
+vim .bashrc 
+exit
+vim .bashrc 
+man passwd
+passwd
+vim /etc/passwd
+man passwd5
+man passwd 5
+man 5 passwd
+man passwd 5
+man shadow
+vim /etc/shadow
+sudo vim /etc/shadow
+man kiss
+man finger
+finger
+la
+man touch
+man ls
+echo "test"
+echo "test" 2> /dev/null 
+echo "test" &2> /dev/null 
+echo "test" &fg2> /dev/null 
+fg
+bg
+ps
+jobs
+vim /dev/urandom 
+ls -la /dev/
+hexdump -C /dev/zero 
+hexdump -C /dev/null 
+exit
+echo $PATH
+exit
+echo $*
+echo ~
+echo "~"
+echo '~'
+echo $HOME
+cowsay
+sudo apt-get install cowsay
+cowsay
+cowsay "Ahoj"
+cowsay "Ahoj" > /dev/null
+fortune
+sudo apt-get install fortune
+fortune
+fortune -O
+fortune -o
+sudo apt-get install fortunes-off
+fortune -o
+fortune | cowsay
+fortune | cowsay | cowsay
+exit
+last
+exit
+ls
+la
+exit
+fortune
+cowsay
+cowsay dsadsa
+exit
+ls
+ls -la
+find /public -name csh
+sudo find /public -name csh
+cd /public/
+ls -la
+sudo find /public -name '*csh*'
+sudo find /public -name '*csh'
+cd
+exit
+man ls
+ls /public/
+man cp
+ls
+ls /public/
+cp /public/zaciatocnik.txt ~/
+ls
+cp /public/samples/ ~/
+cp -r /public/samples/ ~/
+ls
+ls -la
+ls -l
+mkdir rannecviko
+ls -l
+man mv
+mv zaciatocnik.txt pokrocili.txt
+ls -l
+ls -l /public/
+ls -l
+pwd
+mv /home/adamsevcik/pokrocili.txt ~/rannecviko/
+ls
+cv rannecviko/
+cd rannecviko/
+ls
+cd ../../..
+ls
+cd -
+ls
+cp pokrocili.txt ../pokrocili2.txt
+ls
+cd ..
+ls -l
+man chmod
+sudo mv pokrocili2.txt pokrocili2.txt 
+sudo mv pokrocili2.txt pokrocili3.txt 
+ls
+ls -l
+sudo cp pokrocili3.txt pokrocili2.txt 
+ls -l
+mv pokrocili3.txt rannecviko/
+mv pokrocili2.txt rannecviko/
+ls 
+cd rannecviko/
+ls
+vim pokrocili
+vim pokrocili3.txt 
+ls 
+ls -la
+vim pokrocili2.txt 
+chmod 646 pokrocili2.txt 
+sudo chmod 646 pokrocili2.txt 
+ls -l
+vim pokrocili2.txt 
+man chmod
+chmod g=rwx pokrocili3.txt 
+ls
+ls -la
+chmod g-w pokrocili3.txt 
+ls -la
+chmod o+x pokrocili3.txt 
+ls -la
+cd ..
+ls
+rm rannecviko/
+rm -r rannecviko/
+ls
+cp /public/zaciatocnik.txt ~/
+ls
+cat zaciatocnik.txt 
+man more
+man less
+less zaciatocnik.txt 
+q
+fortune | cowsay 
+ls
+echo "ja som pekny text" | wc
+man wc
+wc zaciatocnik.txt 
+cat zaciatocnik.txt | wc
+wc zaciatocnik.txt zaciatocnik.txt 
+man tr
+echo "Ahoj ako sa mas?" | tr "a" "XXX"
+echo "Ahoj ako sa mas?" | tr "a" "X"
+echo "Ahoj ako sa mas?" | tr "as" "XY"
+man tr
+echo "Ahoj ako sa maaaaaaaas?" | tr -s "a"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr -s "a"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr -d "a"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr -d "Aa"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr -d "h" | tr -d "m""
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr -d "h" | tr -d "m"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr -d "hm"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr "sm" "a" | tr -s "a"
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr "sm" "a" | tr -s "a" | tr -d " "
+echo "Ahoj aaaaaaako sa maaaaaaaas?" | tr "sm" "a" | tr -s "a" | tr -d "\n"
+man head
+man tail
+head zaciatocnik.txt 
+tail zaciatocnik.txt 
+head -n 3 zaciatocnik.txt 
+man head
+tail -n 3 zaciatocnik.txt 
+less zaciatocnik.txt 
+head -n 9 zaciatocnik.txt
+head -n 9 zaciatocnik.txt | tail -n 6
+head -n 9 zaciatocnik.txt | tail -n -1
+head -n 9 zaciatocnik.txt | tail -n -2
+man tail
+head -n 9 zaciatocnik.txt | tail -n +1
+head -n 9 zaciatocnik.txt | tail -n +2
+head -n 9 zaciatocnik.txt | tail -n +3
+head -n 9 zaciatocnik.txt | tail -n 43
+head -n 9 zaciatocnik.txt | tail -n 4
+head -n 9 zaciatocnik.txt | tail -n 3
+head -n 9 zaciatocnik.txt | tail -n +4
+head -n 9 zaciatocnik.txt | tail -n 6
+head -n 9 zaciatocnik.txt | tail -n +4
+man sort
+sort zaciatocnik.txt 
+head zaciatocnik.txt | sort
+head zaciatocnik.txt | tr " " "\n"
+head zaciatocnik.txt | tr " " "\n" | sort
+head zaciatocnik.txt | tr " " "\n"
+head zaciatocnik.txt | tr " " "\n" | sort
+less zaciatocnik.txt 
+head -n 20 zaciatocnik.txt 
+head -n 19 zaciatocnik.txt | tail -n +10
+head -n 19 zaciatocnik.txt | tail -n +11
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n"
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort
+man sort
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort -r
+man sort
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort -u
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort -u
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq
+man uniq
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | uniq -c
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort -r | uniq -c
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -n
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -nr
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -n
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -n | tail
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -n | tail -r
+man tail
+man head
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head
+man cut
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | cut -d " "
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " "
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2,4
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2-4
+man cut
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2
+man bc
+bc -help
+bc --help
+bc
+sudo apt-get install bc
+man bc
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+"
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | bc
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" 
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -1
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -10
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev | cut -c 2- | rev
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev 
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev | cut -d "+" -f 1-
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev | cut -d "+" -f 2-
+head -n 19 zaciatocnik.txt | tail -n +11 | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev | cut -d "+" -f 2- | bc
+ls 
+rm -r samples/ zaciatocnik.txt 
+clear
+ls
+man ls
+ls /public/
+man cp
+ls /public/
+pwd
+cp /public/zaciatocnik.txt ~/
+ls
+cp /public/samples/ /home/adamsevcik/
+cp -r /public/samples/ /home/adamsevcik/
+ls
+ls -l
+ls -l /public/
+ls
+mv zaciatocnik.txt pokrocili.txt
+ls -l
+mkdir test
+ls
+mv pokrocili.txt test/
+ls
+cd test/
+ls
+mv pokrocili.txt ../
+ls
+cd ..
+ls
+cd test/
+cd /public/
+ls
+cd testovaci_adresar/
+ls
+cd testdir
+ls
+cd dva/
+ls
+cd ../..
+cd -
+cd 
+ls
+ls -l
+sudo cp pokrocili.txt pokrocili2.txt 
+ls -l
+vim pokrocili.txt 
+ls -l
+vim pokrocili2.txt
+man chmod
+ls -la
+ls -l
+chmod 646 pokrocili2.txt 
+sudo chmod 646 pokrocili2.txt 
+ls -l
+vim pokrocili2.txt 
+sudo chmod o=x pokrocili2.txt 
+ls -la
+ls -l
+sudo chmod o=rx pokrocili2.txt 
+ls -l
+sudo chmod o+w pokrocili2.txt 
+ls -l
+sudo chmod o-x pokrocili2.txt 
+ls -l
+rm pokrocili.txt pokrocili2.txt 
+ls
+rm samples/ test/
+rmdir samples/
+rmdir -f samples/
+rmdir -rf samples/
+rm -rf samples/
+rm -rf test/
+ls
+cp /public/zaciatocnik.txt ~/
+ls
+cat zaciatocnik.txt 
+less zaciatocnik.txt 
+more zaciatocnik.txt 
+fortune
+fortune | cowsay 
+wc zaciatocnik.txt 
+wc zaciatocnik.txt zaciatocnik.txt zaciatocnik.txt 
+cat zaciatocnik.txt | wc
+cat zaciatocnik.txt zaciatocnik.txt | wc
+cat zaciatocnik.txt zaciatocnik.txt za | wc
+cat zaciatocnik.txt zaciatocnik.txt zaciatocnik.txt | wc
+wc -w zaciatocnik.txt zaciatocnik.txt zaciatocnik.txt 
+man tr
+echo "Ahoj ako sa mas a ako sa ti dari?" 
+echo "Ahoj ako sa mas a ako sa ti dari?" | wc
+echo "Ahoj ako sa mas a ako sa ti dari?" | tr "a" "X" 
+echo "Ahoj ako sa mas a ako sa ti dari?" | tr "Aa" "YX" 
+echo "Ahoj ako sa mas a ako sa ti dari?" | tr "Aao" "Y" 
+echo "Ahoj ako sa mas a ako sa ti dari?" | tr -d "Aa" 
+echo "Ahoj ako sa mas a ako sa ti dari?" | tr -d "a" 
+echo "Ahoj ako saaaaaaaaaa maaaaaaaaaaaas a ako sa ti dari?" | tr -s "a" 
+echo "Ahoj ako saaaaaaaaaa maaaaaaaaaaaas a ako sa ti dari?" | tr -d " "
+echo "Ahoj ako saaaaaaaaaa maaaaaaaaaaaas a ako sa ti dari?" | tr -d "\t"
+echo "Ahoj ako saaaaaaaaaa maaaaaaaaaaaas a ako sa ti dari?" | tr -d "\n"
+echo "Ahoj ako saaaaaaaaaa maaaaaaaaaaaas a ako sa ti dari?" | tr " " "a" | tr -s "a"
+man head
+man tail
+ls -l
+head zaciatocnik.txt 
+tail zaciatocnik.txt 
+man head
+man tail
+man -n 25 head
+head -n 25
+head -n 25 zaciatocnik.txt 
+tail -n 25 zaciatocnik.txt 
+less zaciatocnik.txt 
+head -n 19 zaciatocnik.txt 
+head -n 19 zaciatocnik.txt | tail -n 9
+man tail
+head -n 19 zaciatocnik.txt
+head -n 19 zaciatocnik.txt | tail -n +10
+head -n 19 zaciatocnik.txt | tail -n +11
+head -n 19 zaciatocnik.txt | tail -n 9
+man head
+man tail\
+man tail
+head -n 19 zaciatocnik.txt | tail -n 9
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" 
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n"
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" 
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n"
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" 
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n"
+man sort
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort
+man uniq
+man sort
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort -u
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c
+man uniq
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -d
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -cd
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -n
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -nr
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -nr |head
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -nr | head
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -n | rev | head
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head
+man cut
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " "
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 1
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 4
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 3
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " "
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 00
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 0
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 1
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 3
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " "
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 3
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 1
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2
+man cut
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2-4
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f -2
+man bc
+sudo apt-get install bc
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f -2
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 1-2
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2-3
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | bc
+echo "1+2+3+4" | bc
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+"
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | bc
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -18
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -19
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -9
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -10
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | cut -d "+" -f -10 | bc
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev 
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev | cut -c 2-
+head -n 19 zaciatocnik.txt | tail -n 9 | tr " " "\n" | tr -s "\n" | sort | uniq -c| sort -rn | head | tr -s " " | cut -d " " -f 2 | tr "\n" "+" | rev | cut -c 2- | bc
+wc zaciatocnik.txt 
+wc zaciatocnik.txt | tr -s " "
+wc zaciatocnik.txt | tr -s " " | tr " " "+" 
+wc zaciatocnik.txt | tr -s " " | tr " " "+" | cut -d "+" -f 2-4
+wc zaciatocnik.txt | tr -s " " | tr " " "+" | cut -d "+" -f 2-4 | bc
+wc zaciatocnik.txt zaciatocnik.txt 
+ls
+history
+exit
+ls /public/priklady/
+man bash
+ls -la
+vim .bash_history 
+exit
+vim .bash_history 
+exit
+man jobs
+jobs
+job
+help jobs
+man wall
+less /public/priklady/process.sh 
+exit

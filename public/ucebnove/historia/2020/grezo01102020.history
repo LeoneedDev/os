@@ -1,0 +1,233 @@
+724	 ls -la
+725	 less .profile 
+726	 vim .profile 
+727	 ll
+728	 ls -la
+729	 less .bashrc
+730	 vim .bashrc
+731	 cat .vimrc
+732	 vim sample.txt 
+733	 vim .vimrc 
+734	 vim sample.txt 
+735	 vim .vimrc 
+736	 vim sample.txt 
+737	 passwd
+738	 man passwd
+739	 cat /etc/passwd
+740	 man passwd
+741	 cat /etc/passwd
+742	 echo ~
+743	 cd ~
+744	 cd /tmp/
+745	 cd ~
+746	 cd /tmp
+747	 cd 
+748	 cd ~root
+749	 echo ~root
+750	 echo ~root 
+751	 cd ~root
+752	 echo ~root > r.txt
+753	 ls -l
+754	 cat r
+755	 cat r.txt 
+756	 cd ~root 
+757	 cd ~root > r2.txt
+758	 cat r2.txt 
+759	 cd ~root 2> r2.txt
+760	 cat r2.txt 
+761	 find
+762	 find . -true -print
+763	 find /public -type f -name 'kw'
+764	 find /public -type f -name 'kw*'
+765	 find /public -type f -and -name 'kw*'
+766	 find /public -type f -or -name 'kw*'
+767	 find /public -type f -or -name kw*
+768	 echo *
+769	 echo \*
+770	 echo "*"
+771	 echo *
+772	 cd /root
+773	 sudo cd /root
+774	 pwd
+775	 groups
+776	 sudo cd /root
+777	 exit
+778	 ll
+779	 chmod +x vim.txt 
+780	 ls -la /public/ucebnove/
+781	 ls -la /public/ucebnove/historia/
+782	 ls -la /public/ucebnove/seminar_1/
+783	 chmod +x hist23092020.txt
+784	 sudo chmod +x hist23092020.txt
+785	 sudo chmod +x /public/ucebnove/seminar_1/hist23092020.txt
+786	 chmod +x /public/ucebnove/seminar_1/hist23092020.txt
+787	 ls eration not permitted
+788	 ls -la /public/ucebnove/seminar_1/
+789	 sudo chmod +- /public/ucebnove/seminar_1/hist23092020.txt
+790	 sudo chmod -x /public/ucebnove/seminar_1/hist23092020.txt
+791	 ls -la /public/ucebnove/seminar_1/
+792	 logout
+793	 ls -la
+794	 logout
+795	 fortune
+796	 logout
+797	 vim .profile 
+798	 vim .bashrc
+799	 clear
+800	 finger
+801	 clear
+802	 echo "Ahoj svet"
+803	 echo $BASH_VERSION
+804	 man var
+805	 man env
+806	 man set
+807	 var
+808	 set
+809	 clear
+810	 echo $USER
+811	 echo "$USER"
+812	 echo \$USER
+813	 echo "\$USER"
+814	 echo "$USER"
+815	 echo '$USER'
+816	 echo '\$USER'
+817	 echo $PATH
+818	 man path
+819	 ls
+820	 which ls
+821	 whereis ls
+822	 echo $HOME
+823	 pwd
+824	 cd /tmp
+825	 ll
+826	 ls -la
+827	 ls -l
+828	 ll
+829	 pwd
+830	 ls -la 
+831	 man bash
+832	 cd 
+833	 cat .profile 
+834	 ls -la 
+835	 cat .vimrc_example 
+836	 man passwd(5)
+837	 man 5 passwd
+838	 less .bashrc
+839	 cat test2.txt 
+840	 su root
+841	 clear
+842	 man bash
+843	 echo "ahoj svet"
+844	 echo $BASH_VERSION
+845	 echo $HOME
+846	 echo nejakelomitko
+847	 echo "$HOME"
+848	 echo \$HOME
+849	 echo '$HOME'
+850	 echo "\$HOME"
+851	 echo $PATH
+852	 env
+853	 ls
+854	 whereis ls
+855	 which ls
+856	 ls -la
+857	 ls
+858	 cd /tmp
+859	 ls
+860	 touch ls
+861	 ls
+862	 env
+863	 set
+864	 cd
+865	 ls
+866	 echo *
+867	 echo "*"
+868	 echo ~
+869	 pwd
+870	 echo ~eoot
+871	 echo ~root
+872	 ls
+873	 ll
+874	 vim sample.txt 
+875	 vim .vimrc
+876	 vim sample.txt 
+877	 vim process.bash 
+878	 vim .vimrc
+879	 man 5 passwd
+880	 histor
+881	 history
+882	 find /public -type f -or -name 'kw*'
+883	 find /public -type f -or -name 'kw*' -print
+884	 find /public -type f -or -name 'kw*'
+885	 ls -l /public/ucebnove/kw2.txt
+886	 ls -l /public/ucebnove/
+887	 cat /public/ucebnove/kw7.txt
+888	 head -2 /public/ucebnove/kw9.txt
+889	 head -2 /public/ucebnove/kw10.txt
+890	 hear -2 /public/ucebnove/kw5.txt
+891	 head -2 /public/ucebnove/kw5.txt
+892	 man find 
+893	 cowsay "nieco"
+894	 ls -la
+895	 history
+896	 pwd
+897	 history
+898	 fortune
+899	 who
+900	 clear
+901	 man who
+902	 last 
+903	 clear
+904	 man last 
+905	 ls -la
+906	 last -f wtmp.an3
+907	 last -f wtmp.an3 | head -5
+908	 cat wtmp.an3 
+909	 PuTTYPuTTYPuTTYPuTTY
+910	 last -f wtmp.an3 | head -5
+911	 ls -la
+912	 vim .bashrc
+913	 pwd
+914	 find
+915	 find . -true -print
+916	 find /public -name kw
+917	 man find
+918	 find /public -name kw
+919	 find /public -name kw*
+920	 find /public -name kw?
+921	 find /public -name 'kw*'
+922	 find /public -name 'kw*' -print
+923	 ls -la 
+924	 find /public -type f -name 'kw*' -print
+925	 find /public -type f -and -name 'kw*' -print
+926	 find /public -type f -or -name 'kw*' -print
+927	 find /public (-type f -or -name 'kw*') -print
+928	 find /public -type f -name 'kw*'  -print
+929	 find /public \( -type f -or -name 'kw*' \) -print
+930	 find /public \( -type f -name 'kw*' -size 21c \) -print
+931	 find /public \( -type f -name 'kw*' -size 30c \) -print
+932	 find /public \( -type f -name 'kw*' -size <30c \) -print
+933	 find /public \( -type f -name 'kw*' -size -gt 30c \) -print
+934	 find /public \( -type f -name 'kw*' -size +30c \) -print
+935	 find /public \( -type f -name 'kw*' -size 21c \) -print
+936	 cat | find /public \( -type f -name 'kw*' -size 21c \) -print
+937	 cat | find /public \( -type f -name 'kw*' -size 21c \) | cat
+938	 find /public \( -type f -name 'kw*' -size 21c \) -print | cat
+939	 find /public \( -type f -name 'kw*' -size 160c \) -print | cat
+940	 find /public \( -type f -name 'kw*' -size 160c \) -print | head -3 
+941	 find /public \( -type f -name 'kw*' -size 160c \) -cat
+942	 man find
+943	 find /public \( -type f -name 'kw*' -size 160c \) -exec cat 
+944	 find /public \( -type f -name 'kw*' -size 160c \) -exec cat {} ;
+945	 find /public \( -type f -name 'kw*' -size 160c \) -exec cat {} \;
+946	 find /public \( -type f -name 'kw*' -size +160c \) -exec cat {} \;
+947	 find /public \( -type f -name 'kw*' -size +160c \) 
+948	 find /public \( -type f -name 'kw*' -size +160c \) -exec head -5 {} \;
+949	 find /public \( -type f -name 'kw*' -size +160c \) -exec head -2 {} \;
+950	 cat /etc/passwd
+951	 group
+952	 groups
+953	 ls /public
+954	 ls /public/ucebnove/
+955	 ls /public/ucebnove/historia/
+956	 ls -la /public/ucebnove/historia/

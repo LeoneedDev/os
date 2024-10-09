@@ -1,0 +1,144 @@
+   59  clear
+   60  pwd
+   61  man
+   62  man man
+   63  man pwd
+   64  ls
+   65  ls -a
+   66  man ls
+   67  man cd
+   68  help
+   69* 
+   70  man cd
+   71  man ls
+   72  ls -l
+   73  ls -la
+   74  man touch
+   75  touch nieco
+   76  ls -la
+   77  ls /bin
+   78  ls -la /bin
+   79  ls -la /usr/bin
+   80  ls -la /dev
+   81  ls -l /public
+   82  man less
+   83  less /public/zaciatocnik.txt 
+   84  cat /public/ls
+   85  man cat
+   86  cat /public/ls /public/ls 
+   87  ls -la /dev
+   88  man wc
+   89  wc /public/ls 
+   90  wc -l /public/ls 
+   91  cat zero 
+   92  cat /dev/zero 
+   93  hexdump -C /dev/zero
+   94  hexdump -C /dev/urandom 
+   95  ls -la
+   96  less .bash
+   97  less .bashrc
+   98  less .profile 
+   99  echo $HOME
+  100  cd /public/
+  101  echo ~
+  102  cd $HOME
+  103  pwd
+  104  cd /public/
+  105  cd ~
+  106  cd /public/
+  107  cd
+  108  man passwd
+  109  passwd
+  110  groups
+  111  man passwd
+  112  sudo passwd root
+  113  less /etc/passwd
+  114  man /etc/pwsswd
+  115  man /etc/passwd
+  116  man passwd
+  117  man 5 passwd
+  118  less /etc/passwd
+  119  man 5 shadow
+  120  man usermod
+  121  man passwd
+  122  man usermod
+  123  man 8 usermod
+  124  man usermod
+  125  fortune
+  126  clear
+  127  history > hist 
+   46  pwd
+   47  man
+   48  man man
+   49  man pwd
+   50  ls
+   51  man ls
+   52  ls -a
+   53  cd\
+   54  cd
+   55  man cd
+   56  cd help
+   57  help
+   58  help help
+   59  help cd
+   60  ls -l
+   61  ls -la
+   62  touch niecoine
+   63  ls -la
+   64  man touch
+   65  time
+   66  date
+   67  ls /bin
+   68  ls -la /bin
+   69  ls -la /usr/bin
+   70  ls -la /dev
+   71  ls -l /public/
+   72  man man
+   73  less /public/zaciatocnik.txt 
+   74  cat /public/ls
+   75  man less
+   76  man more
+   77  man cat
+   78  cat /public/ls /public/ls 
+   79  ls -la /dev
+   80  cat /dev/zero
+   81  cat /dev/urandom
+   82  ls -la /dev
+   83  hexdump -C /dev/zero
+   84  hexdump -C /dev/urandom 
+   85  ls -la /dev
+   86  pwd
+   87  ls -la
+   88  less -bashrc
+   89  less .bashrc
+   90  less .profile 
+   91  echo $HOME
+   92  echo ahoj
+   93  cd /public/
+   94  cd $HOME
+   95  pwd
+   96  cd /public/
+   97  pwd
+   98  cd ~
+   99  echo ~
+  100  cd /public/
+  101  cd
+  102  man passwd
+  103  passwd
+  104  cat /etc/passwd
+  105  man passwd
+  106  man 5 passwd
+  107  cat /etc/passwd
+  108  man 5 shadow
+  109  man shadow
+  110  man passwd
+  111  man usermod
+  112  groups
+  113  who
+  114  w
+  115  last
+  116  clear
+  117  ps
+  118  passwd root
+  119  sudo passwd root
+  120  history > hist2

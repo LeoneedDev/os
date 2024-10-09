@@ -1,0 +1,109 @@
+    1  reset
+    2  last | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+    3  who | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+    4  reset
+    5  echo {{1..3}}
+    6  echo {1..3}
+    7  cd priklady/
+    8  head -1 {1..3}.sh
+    9  head -1 {y,3,8}.sh
+   10  head -1 {{y,3},3,8}.sh
+   11  help {
+   12  { echo "asdf"; echo "ahoj"; }
+   13  [[ 1 -eq 0]] && { echo "asdf"; echo "ahoj"; }
+   14  9.sh && { echo "asdf"; echo "ahoj"; }
+   15  ./9.sh && { echo "asdf"; echo "ahoj"; }
+   16  [[ 1 -eq 0 ]] && { echo "asdf"; echo "ahoj"; }
+   17  [[ 1 -eq 1 ]] && { echo "asdf"; echo "ahoj"; }
+   18  help [[
+   19  [[ 1 -eq 1 ]] || { echo "asdf"; echo "ahoj"; }
+   20  [[ 0 -eq 1 ]] || { echo "asdf"; echo "ahoj"; }
+   21  if [ 0 -eq 1 ] then; || echo "asdf"; echo "ahoj"; fi
+   22  if [ 0 -eq 1 ] then; echo "asdf"; echo "ahoj"; fi
+   23  if [ 0 -eq 1 ]; then echo "asdf"; echo "ahoj"; fi
+   24  cat 7.sh
+   25  man dirname
+   26  man basename
+   27  cesta=/public/ucebnove/seminar_1/vim.txt
+   28  echo $(dirname $cesta)
+   29  cesta="/public/ucebnove/seminar _1/vim.txt"
+   30  echo $(dirname $cesta)
+   31  echo $(dirname "$cesta")
+   32  cesta="/public/ucebnove/sem\inar _1/vim.txt"
+   33  echo $(dirname "$cesta")
+   34  cesta="/public/ucebnove/seminar     _1/vim.txt"
+   35  echo $(dirname "$cesta")
+   36  echo "$(dirname "$cesta")"
+   37  echo "$(dirname $cesta)"
+   38  echo $(dirname $cesta)
+   39  echo "$(dirname $cesta)"
+   40  dirname $cesta
+   41  cat 7.sh
+   42  shellcheck 7.sh
+   43  cat 7.sh
+   44  cat 8.sh
+   45  ls -l | head -3
+   46  for f in $(ls -l | head -3); do         echo $f; done
+   47  env | grep IFS
+   48  set | grep IFS
+   49  IFS='
+'
+   50  for f in $(ls -l | head -3); do         echo $f; done
+   51  IFS='r'
+   52  for f in $(ls -l | head -3); do         echo $f; done
+   53  IFS=$' \t\n'
+   54  man bash
+   55  cat 8.sh
+   56  shellcheck 9.sh
+   57  help source
+   58  help exec
+   59  ls -al
+   60  chmod +x 9.sh
+   61  ./9.sh
+   62  man bash
+   63  bash -v 9.sh
+   64  help exec
+   65  help source
+   66  bash -v ./9.sh
+   67  bash -x ./9.sh
+   68  bash -xv ./9.sh
+   69  help test
+   70  a=4
+   71  echo [ -u a ]
+   72  [[ -u a ]] && echo $a
+   73  [[ -u a ]] || echo $a
+   74  help export
+   75  help set
+   76  chmod +x 9-2.sh
+   77  ./9-2.sh
+   78  echo $?
+   79  cat 9.sh
+   80  cat y.sh
+   81  chmod +x
+   82  chmod +x y.sh
+   83  ./y.sh
+   84  ps
+   85  jobs
+   86  top
+   87  jobs
+   88  fg
+   89  jobs
+   90  bg
+   91  jobs
+   92  fg
+   93  ./y.sh &
+   94  jobs
+   95  kill %1
+   96  jobs
+   97  kill %1
+   98  kill -9 %1
+   99  history | less
+  100  last | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+  101  who | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+  102  ls -la /public/priklady/
+  103  ls -la /public/ucebnove/
+  104  ls -la /public/ucebnove/historia/
+  105  ls -la /public/ucebnove/historia/2020/
+  106  ls -la /public/
+  107  cat 5.sh
+  108  history > /public/ucebnove/historia/vojtko21102021.history

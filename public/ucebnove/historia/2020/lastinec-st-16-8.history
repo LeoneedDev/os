@@ -1,0 +1,73 @@
+   59  cd /public/samples/
+   60  cat ../priklady/sed.txt 
+   61  vim list.txt
+   62  sed -n '7,16p' list.txt
+   63  sed -n 'n;p' list.txt
+   64  sed -n 'n;7,16p' list.txt
+   65  sed -n '7,16p' list.txt
+   66  sed -n '=;7,16p' list.txt
+   67  sed -n '7,16p;=' list.txt
+   68  sed -n '7,16=;7,16p' list.txt
+   69  7 777
+   70  cd /public/samples/
+   71  sed -n '7,16=;7,16p' list.txt
+   72  sed -n '7,16=;7,16p' list.txt | sed 's/\n/ /g'
+   73  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /g'
+   74  man sed
+   75  less ../priklady/sed.txt 
+   76  cat ../priklady/sed.txt 
+   77  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+   78  echo $RANDOM
+   79  cd ../ucebnove/
+   80  ls
+   81  cat kw8.txt 
+   82  cd ../priklady/
+   83  ls
+   84  cd threads/
+   85  ls
+   86  cd
+   87  ls
+   88  cd priklady/
+   89  ls
+   90  rm -r threads/
+   91  cp /public/priklady/threads .
+   92  cp -R /public/priklady/threads .
+   93  ls
+   94  cd threads/
+   95  ls
+   96  man apt
+   97  apt search gcc
+   98  sudo apt update
+   99  ls
+  100  vim Makefile 
+  101  make
+  102  ls
+  103  screen
+  104  cd
+  105  history > history/lastinec-st-16-8-1.history
+   71  ./1.exe 
+   72  ./1.exe go
+   73  ./2.exe 
+   74  ./2.exe qwr
+   75  ./3.exe 
+   76  ls
+   77  gdb 3.exe core
+   78  ls
+   79  gcc -g -o 3_test.exe 3.c
+   80  gdb 3.exe
+   81  gdb 3_test.exe
+   82  ./3.exe 10
+   83  ./3.exe 10 letsgo
+   84  ls
+   85  cp 3.c 3_test2.c
+   86  vim 3_test2.c 
+   87  make 3_test2.c
+   88  ls
+   89  gcc -g -o 3_test2.exe 3.c
+   90  ls
+   91  ./3.exe 2
+   92  ./3_test2.exe 2
+   93  gcc -g -o 3_test2.exe 3_test2.c
+   94  ./3.exe 2
+   95  ./3_test2.exe 2
+   96  cd

@@ -1,0 +1,300 @@
+  138  echo $PATH
+  139  man find
+  140  find /public -type f
+  141  man find
+  142  find /public
+  143  find /public -exec ls -la {} \;
+  144  find /public -mtime +30 -exec ls -la {} \;
+  145  find /public -mtime -30 -exec ls -la {} \;
+  146  find /public -type f \( -size +20c -and -size -50c \) -or -size +100c
+  147  find /public -type f \( -size +20c -and -size -50c \) -or -size +100c -exec -ls -la {} \;
+  148  find /public -type f \( -size +20c -and -size -50c \) -or -size +100c -exec ls -la {} \;
+  149  find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -exec ls -la {} \;
+  150  find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \)
+  151  find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -print
+  152  find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -exec ls -la {} \;
+  153  find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -print
+  154  echo "$(find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -print)"
+  155  man ls
+  156  ls "$(find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -print)"
+  157  ls $(find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -print)
+  158  ls -la $(find /public \( -type f \( -size +20c -and -size -50c \) -or -size +100c \) -print)
+  159  find /public -mtime +30 -exec ls -la {} \;
+  160  find /public -mtime -30 -exec ls -la {} \;
+  161  find /public -mtime -10 -exec ls -la {} \;
+  162  find /public -ctime -10 -exec ls -la {} \;
+  163  find /public -atime -10 -exec ls -la {} \;
+  164  find /public \( -type f -atime -10 \) -exec ls -la {} \;
+  165  find /
+  166  touch asdf
+  167  chmod 000 asdf
+  168  ls -la asdf
+  169  find .
+  170  mkdir abcd
+  171  chmod 000 abcd 
+  172  find .
+  173  find . > asdf
+  174  find . > qwert
+  175  less qwert 
+  176  find . > qwert
+  177  find /public/prednasky/ > qwert
+  178  less qwert 
+  179  find . > qwert
+  180  less qwert 
+  181  find . >> qwert
+  182  less qwert 
+  183  find . > qwert
+  184  find /public/prednasky/ >> qwert
+  185  less qwert 
+  186  find . 1> qwert
+  187  less qwert 
+  188  find . 2> qwert
+  189  less qwert 
+  190  find . >&2 2> qwert
+  191  find . 2> qwert >&2
+  192  find . 2> qwert 1>&2
+  193  less qwert 
+  194  find . | grep c
+  195  find . | grep c | sed 's/\.//g'
+  196  find . | grep c | sed 's/\.//g' | sort
+  197  find . | grep c | sed 's/\.//g' | sort | wc -l
+  198  find . |& grep c | sed 's/\.//g' | sort | wc -l
+  199  find . 2> asdf
+  200  find . 2> qwert
+  201  find . 2> /dev/null
+  202  less qwert 
+  203  less < qwert 
+  204  find . > qwert\
+  205  find . > qwert
+  206  grep c < qwert
+  207  grep c < qwert > foo
+  208  less foo
+  209  grep c << MY_TAG
+  210  my super text is c
+  211  but sometimes d
+  212  or c d
+  213  MY_TAG
+  214  grep << AHOJ
+  215  ssssdgccfr
+  216  c
+  217  dd
+  218  dd
+  219  c
+  220  AHOJ
+  221  grep c << AHOJ
+  222  ssssdgccfr
+  223  c
+  224  dd
+  225  dd
+  226  c
+  227  AHOJ
+  228  grep c << AHOJ > foo
+  229  my text
+  230  c
+  231  ccc
+  232  m
+  233  AHOJ
+  234  less ff
+  235  less foo
+  236  grep c <<< "$PATH"
+  237  echo "$PATH| grep c
+  238  echo "$PATH" | grep c
+  239  grep c < qwert
+  240  cat qwert | grep c
+  241  cat qwert | grep c | head
+  242  cat qwert | grep c | tail
+  243  cat qwert .bashrc | grep c | tail
+  244  cat qwert .bashrc | grep c | head
+  245  man head
+  246  man tail
+  247  ls -la /var/log/journal/
+  248  find /var/log -type f
+  249  less /var/log/apt/history.log 
+  250  tail -f /var/log/apt/history.log 
+  251  man xargs
+  252  man tee
+  253  grep c < qwert | tee foo
+  254  less foo
+  255  history > ~/asdf
+  256  history > ~/asdf/foo
+  257  ls -la
+  258  history > ~/abcd/foo
+  259  sudo history > ~/abcd/foo
+  260  history | sudo tee ~/abcd/foo
+  261  sudo less ~/abcd/foo
+  262  history | sudo tee ~/abcd/foo > > /dev/null
+  263  history | sudo tee ~/abcd/foo > /dev/null
+  264  echo *
+  265  echo .*
+  266  echo .b*
+  267  echo *
+  268  echo .*
+  269  echo .* | *
+  270  *
+  271  echo *
+  272  cd /public/
+  273  ls
+  274  ls -la
+  275  l*
+  276  echo l*
+  277  l* -la
+  278  which ls
+  279  cd /usr/bin/
+  280  echo l*
+  281  l*
+  282  man last
+  283  l* -i
+  284  cd
+  285  ls
+  286  ls -a
+  287  echo {*,.*}
+  288  echo {{q*,b*},.*}
+  289  echo {q*,b*,.*}
+  290  man grep
+  291  grep "c"
+  292  ls -la | grep "c"
+  293  grep "c"
+  294  less /public/seminare/regular-expressions.pdf 
+  295  less --file /public/seminare/regular-expressions.pdf 
+  296  exit
+  297  find /public -name *.pdf
+  298  less /public/ucebnove/os1-4.pdf
+  299  less /public/seminare/regular-expressions.pdf 
+  300  less /public/seminare/regular-expressions.pdf
+  301  less --file
+  302  less --file /public/seminare/regular-expressions.pdf
+  303  history
+  304  exit
+  305  find /public \( -type f \( \( -size +20c -and -size -50c \) -or -size +1000c \) \)
+  306  find /public -type f -and \( \( -size +20c -and -size -50c \) -or -size +1000c \)
+  307  find /public -type f -and \( \( -size +20c -and -size -50c \) -or -size +1000c \) -print
+  308  find /public -type f -or -type d -print
+  309  find /public/ucebnove/ -type f -or -type d -print
+  310  find /public/ucebnove/ \( -type f -or -type d \) -print
+  311  find /public/ucebnove/ -type f -or -type d
+  312  find /public/ucebnove/ -type f -or -type d -prit
+  313  find /public/ucebnove/ -type f -or -type d -print
+  314  find /public/ucebnove/ -type f -print -or -type d -print
+  315  find /public/ucebnove/ \( -type f -or -type d \) -print
+  316  find /public/ucebnove/ -type f -print
+  317  find /public/ucebnove/ -type f -print | ls -la
+  318  find /public/ucebnove/ -type f -exec ls -la {} \;
+  319  ls -la .; ls -la ..
+  320  find /public/ucebnove/ -type f -exec ls -la {} \;
+  321  ls -la $(find /public/ucebnove/ -type f)
+  322  find /public/ucebnove/ -type f -exec ls -la {} \;
+  323  man ls
+  324  find . > qwert
+  325  find .
+  326  less qwert
+  327  find /public > qwert
+  328  less qwert
+  329  find /public/prednasky/ > qwert
+  330  find . >> qwert
+  331  less qwert 
+  332  find . >>> qwert
+  333  find . 2> qwert
+  334  less qwert 
+  335  find . 0> qwert
+  336  less qwert 
+  337  grep c 0> qwert
+  338  find . > qwert 2> qwert
+  339  less qwert 
+  340  find . > qwert 2> qwert
+  341  less qwert 
+  342  find . 2> qwert > qwert
+  343  less qwert 
+  344  find . 2> qwert >&2
+  345  less qwert 
+  346  find . 1>&2 2> qwert
+  347  find . 2> qwert 1>&2
+  348  find . > qwert
+  349  find . > qwert 2>&1
+  350  less qwert 
+  351  echo ahoj > qwert
+  352  ls -la qwert
+  353  less qwert 
+  354  echo -n ahoj > qwert
+  355  less qwert 
+  356  ls -la qwert
+  357  echo -n ahoj
+  358  less qwert
+  359  less < qwert
+  360  less << AHOJ
+assdf
+qwert jango
+AHOJ
+
+  361  cat << MY_TAG > qwert
+assdf
+qwert jango
+MY_TAG
+
+  362  less qwert
+  363  echo <<< "$PATH"
+  364  grep c <<< "$PATH"
+  365  PATH=".:$PATH"
+  366  echo <<< "$PATH"
+  367  echo "$PATH"
+  368  cd /public/
+  369  ls
+  370  ./ls
+  371  /usr/bin/ls
+  372  ls
+  373  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+  374  echo $PATH
+  375  find .
+  376  cd
+  377  find .
+  378  find . | grep c
+  379  find . | grep c | sed 's/\.//g'
+  380  find . | grep c | sed 's/\.//g' | sort
+  381  find . | grep c | sed 's/\.//g' | sort | wc -l
+  382  find . |& grep c | sed 's/\.//g' | sort | wc -l
+  383  find /public |& grep c | sed 's/\.//g' | sort | head
+  384  man head
+  385  find /public |& grep c | sed 's/\.//g' | sort | tail
+  386  man tail
+  387  tail -f /var/log/apt/history.log 
+  388  man xargs
+  389  find . 
+  390  find . > /dev/null
+  391  ls -la /dev/null
+  392  cat /dev/null
+  393  man tee
+  394  ls -la
+  395  ls -la abcd
+  396  sudo ls -la abcd
+  397  sudo find . > abcd/bar
+  398  find . | sudo tee abcd/bar
+  399  less abcd/bar
+  400  sudo less abcd/bar
+  401  man glob
+  402  echo *
+  403  ls 
+  404  echo .*
+  405  echo .b*
+  406  *
+  407  cd /public/
+  408  l*
+  409  *
+  410  echo *
+  411  echo l*
+  412  l*
+  413  l* -la
+  414  echo *
+  415  cd
+  416  echo *
+  417  echo {*,.*}
+  418  echo {{*q,*a},.*}
+  419  echo {{q*,a*},.*}
+  420  echo {q*,a*,.*}
+  421  man grep
+  422  grep c
+  423  find . | grep c
+  424  find . | grep "(c|h|a)"
+  425  find . | grep -E "(c|h|a)"
+  426  find . | grep -E "[cha]"
+  427  find /public/ -name *.pdf
+  428  less /public/seminare/regular-expressions.pdf
+  429  history > h

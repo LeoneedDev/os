@@ -1,0 +1,288 @@
+ 1214  cd prvecviko/
+ 1215  ls
+ 1216  rm *
+ 1217  ls
+ 1218  cp /public/samples/access.log .
+ 1219  cp /public/samples/logformat.txt .
+ 1220  cp /public/samples/zamestnanci.txt .
+ 1221  cp /public/priklady/awk.txt .
+ 1222  ls
+ 1223  vim awk.txt 
+ 1224  man awk
+ 1225  vim awk.txt 
+ 1226  cd /public/samples/
+ 1227  ls
+ 1228  cd ../ucebnove/
+ 1229  ls
+ 1230  cd ..
+ 1231  ls
+ 1232  cd priklady/
+ 1233  ls
+ 1234  cd awk.txt 
+ 1235  less awk.txt 
+ 1236  man awk
+ 1237  awk '{print}' zamestnanci.txt
+ 1238  ls
+ 1239  cd prvecviko/
+ 1240  awk '{print}' zamestnanci.txt
+ 1241  awk '{print $0}' zamestnanci.txt
+ 1242  awk '{}' zamestnanci.txt
+ 1243  awk '' zamestnanci.txt
+ 1244  vim awk.txt 
+ 1245  awk '{print NR,$0}' zamestnanci.txt
+ 1246  awk '{print NR ": " $0}' zamestnanci.txt
+ 1247  vim awk.txt 
+ 1248  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1249  vim awk.txt 
+ 1250  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 1251  vim awk.txt 
+ 1252  awk '/^z/' zamestnanci.txt
+ 1253  awk '/^z/ {print $0} ' zamestnanci.txt
+ 1254  awk '/^f/ {print $0} /^z/ {print $0} ' zamestnanci.txt
+ 1255  awk '/^z/ {print $0} /^z/ {print $0} ' zamestnanci.txt
+ 1256  awk '/^z/ /^z/ ' zamestnanci.txt
+ 1257  awk '/^z/ {print $0,$0} ' zamestnanci.txt
+ 1258  awk '/^z/ {print $0 "\n" $0} ' zamestnanci.txt
+ 1259  vim awk.txt 
+ 1260  awk '!/^z/ {print $0} ' zamestnanci.txt
+ 1261  vim awk.txt 
+ 1262  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1263  vim awk.txt 
+ 1264  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1265  awk '$NF < 1000 {print NR,$0}' zamestnanci.txt
+ 1266  awk '$NF == 5000 {print NR,$0}' zamestnanci.txt
+ 1267  awk '$NF = 5000 {print NR,$0}' zamestnanci.txt
+ 1268  vim zamestnanci.txt 
+ 1269  vim awk.txt 
+ 1270  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1271  awk 'BEGIN {sum=0} {sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1272  vim awk.txt 
+ 1273  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1274  vim awk.txt 
+ 1275  vim access.log 
+ 1276  ls
+ 1277  vim logformat.txt 
+ 1278  vim access.log 
+ 1279  vim awk.txt 
+ 1280  vim access.log 
+ 1281  awk '{print $7}' access.log 
+ 1282  vim awk.txt 
+ 1283  awk 'BEGIN {FS='n'} {print $7}' access.log 
+ 1284  awk '{print $10}' access.log 
+ 1285  awk '/^[0-9]/ {print $10}' access.log 
+ 1286  awk '/^[0-9]/ {print $0}' access.log 
+ 1287  awk '{print $10}' access.log 
+ 1288  awk 'BEGIN {sum=0} {sum+=$10} END {"Prenesene KB: ",$sum}' access.log 
+ 1289  awk 'BEGIN {sum=0} {sum+=$10} END {"Prenesene KB: ",sum}' access.log 
+ 1290  awk 'BEGIN {sum=0} {sum+=$10} END {"Prenesene KB: "sum}' access.log 
+ 1291  awk 'BEGIN {sum=0} {sum+=$10} END {primt "Prenesene KB: "sum}' access.log 
+ 1292  awk 'BEGIN {sum=0} {sum+=$10} END {print "Prenesene KB: "sum}' access.log 
+ 1293  vim logformat.txt 
+ 1294  awk 'BEGIN {sum=0} {sum+=$10} END {print "Prenesene KB: "sum/1024}' access.log 
+ 1295  awk 'BEGIN {sum=0} {sum+=$10} END {print "Prenesene KB: "sum/1024/1024}' access.log 
+ 1296  vim awk.txt 
+ 1297  awk '{print $1}' access.log 
+ 1298  awk '{print $1}' access.log | sort
+ 1299  awk '{print $1}' access.log | sort | uniq
+ 1300  awk '{print $1}' access.log | sort | uniq -c
+ 1301  awk '{print $1}' access.log | sort | uniq -c | sort -n
+ 1302  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 1303  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head 
+ 1304  vim awk.txt 
+ 1305  man awk
+ 1306  vim awk.txt 
+ 1307  man sed
+ 1308  ls
+ 1309  cp /public/samples/sedinput.txt .
+ 1310  cat sedinput.txt 
+ 1311  cp /public/priklady/sed.txt 
+ 1312  cp /public/priklady/sed.txt .
+ 1313  ls
+ 1314  vim /public/priklady/sed.txt 
+ 1315  vim /public/samples/sedinput.txt 
+ 1316  ls
+ 1317  vim sed.txt 
+ 1318  man sed
+ 1319  info sed
+ 1320  man sed
+ 1321  vim sed.txt 
+ 1322  info sed
+ 1323  vim sed.txt
+ 1324  sed sedinput.txt
+ 1325  vim sed.txt
+ 1326  vim '' sed.txt
+ 1327  sed '' sed.txt
+ 1328  sed '' sedinput.txt
+ 1329  vim sed.txt
+ 1330  sed -n '' sedinput.txt
+ 1331  vim sed.txt
+ 1332  sed -n 'p' sedinput.txt
+ 1333  sed -n 'pn' sedinput.txt
+ 1334  sed -n 'p;n' sedinput.txt
+ 1335  sed -n 'n;p' sedinput.txt
+ 1336  sed -n 'n;p;p' sedinput.txt
+ 1337  vim sed.txt
+ 1338  sed -n '=' sedinput.txt
+ 1339  sed -n '=;p' sedinput.txt
+ 1340  vim sed.txt
+ 1341  sed 'i vkladam pred riadok' sedinput.txt
+ 1342  vim sed.txt
+ 1343  sed 'a vkladam za riadok' sedinput.txt
+ 1344  sed 'i vkladam pred riadok' 'a vkladam za riadok' sedinput.txt
+ 1345  sed -e 'i vkladam pred riadok' -e 'a vkladam za riadok' sedinput.txt
+ 1346  vim sed.txt
+ 1347  sed '3a vkladam za treti riadok' sedinput.txt
+ 1348  sed '3~1a vkladam za treti riadok' sedinput.txt
+ 1349  vim sed.txt
+ 1350  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 1351  vim sed.txt
+ 1352  sed '3d' sedinput.txt
+ 1353  vim sed.txt
+ 1354  sed 's/hello/world/' sedinput.txt
+ 1355  sed 's/hello/world/g' sedinput.txt
+ 1356  vim sed.txt
+ 1357  ls
+ 1358  cd druhecviko/
+ 1359  ls
+ 1360  rm *
+ 1361  ls
+ 1362  cp /public/samples/access.log .
+ 1363  cp /public/samples/logformat.txt .
+ 1364  cp /public/samples/zamestnanci.txt .
+ 1365  cp /public/priklady/awk.txt .
+ 1366  vim awk.txt 
+ 1367  awk '{print}' zamestnanci.txt
+ 1368  cat zamestnanci.txt 
+ 1369  awk '{print $0}' zamestnanci.txt
+ 1370  vim awk.txt 
+ 1371  awk '{print NR,$0}' zamestnanci.txt
+ 1372  awk '{print NR ": " $0}' zamestnanci.txt
+ 1373  awk '{print NR ": " $3,$2,$1}' zamestnanci.txt
+ 1374  vim awk.txt 
+ 1375  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1376  vim awk.txt 
+ 1377  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1378  vim awk.txt 
+ 1379  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1,$1 }' zamestnanci.txt
+ 1380  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1" "$1 }' zamestnanci.txt
+ 1381  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 "-----" $1 }' zamestnanci.txt
+ 1382  vim awk.txt 
+ 1383  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1,$1,$1,$1 }' zamestnanci.txt
+ 1384  vim awk.txt 
+ 1385  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 1386  vim awk.txt 
+ 1387  cat zamestnanci.txt 
+ 1388  awk '/^z/' zamestnanci.txt
+ 1389  awk '/^z/ {print $0}' zamestnanci.txt
+ 1390  cat zamestnanci.txt 
+ 1391  vim awk.txt 
+ 1392  awk '!/^z/ {print $0}' zamestnanci.txt
+ 1393  vim awk.txt 
+ 1394  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1395  vim awk.txt 
+ 1396  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1397  man awk
+ 1398  vim awk.txt 
+ 1399  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1400  awk 'BEGIN {sum=0} {sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1401  vim awk.txt 
+ 1402  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1403  awk '/^z/ { print $1 ":" $NF } /^b/ {print $1 ":" $NF}' zamestnanci.txt
+ 1404  vim awk.txt 
+ 1405  awk 'BEGIN {sum=0,count=0} /^z|^b/ {sum+=$NF} END {print "Priemerny plat: "}' zamestnanci.txt
+ 1406  awk 'BEGIN {sum=0;count=0} /^z|^b/ {sum+=$NF} END {print "Priemerny plat: "}' zamestnanci.txt
+ 1407  awk 'BEGIN {sum=0;count=0} /^z|^b/ {sum+=$NF;count+=1} END {print "Priemerny plat: "}' zamestnanci.txt
+ 1408  awk 'BEGIN {sum=0;count=0} /^z|^b/ {sum+=$NF;count+=1} END {print "Priemerny plat: " sum/count}' zamestnanci.txt
+ 1409  awk 'BEGIN {count=0} /^z|^b/ {sum+=$NF;count+=1} END {print "Priemerny plat: " sum/count}' zamestnanci.txt
+ 1410  awk 'BEGIN {count=0} /^z&$a/ {sum+=$NF;count+=1} END {print "Priemerny plat: " sum/count}' zamestnanci.txt
+ 1411  awk 'BEGIN {count=0} /^z&a$/ {sum+=$NF;count+=1} END {print "Priemerny plat: " sum/count}' zamestnanci.txt
+ 1412  cat zamestnanci.txt 
+ 1413  awk 'BEGIN {count=0} /^zuz./ {sum+=$NF;count+=1} END {print "Priemerny plat: " sum/count}' zamestnanci.txt
+ 1414  vim awk.txt 
+ 1415  awk 'BEGIN {FS='a'} {print}' zamestnanci.txt
+ 1416  awk 'BEGIN {FS='a'} {print $1}' zamestnanci.txt
+ 1417  awk 'BEGIN {FS='ab'} {print $1}' zamestnanci.txt
+ 1418  awk 'BEGIN {FS="a"} {print $1}' zamestnanci.txt
+ 1419  cat zamestnanci.txt 
+ 1420  awk -F 'a' '{print $1}' zamestnanci.txt
+ 1421  vim awk.txt 
+ 1422  vim access.log 
+ 1423  vim logformat.txt 
+ 1424  vim access.log 
+ 1425  vim awk.txt 
+ 1426  vim logformat.txt 
+ 1427  vim access.log 
+ 1428  awk '{print $1}' access.log 
+ 1429  awk '{print $2}' access.log 
+ 1430  awk '{print $4}' access.log 
+ 1431  awk '{print $7}' access.log 
+ 1432  awk '{print $10}' access.log 
+ 1433  awk 'BEGIN {sum=0} {sum+=$10} END {"Sum je: " sum}' access.log 
+ 1434  awk 'BEGIN {sum=0} {sum+=$10} END {print "Sum je: " sum}' access.log 
+ 1435  awk 'BEGIN {sum=0} {sum+=$10} END {print "Sum je: " sum/1024/1024}' access.log 
+ 1436  vim access.log 
+ 1437  vim awk.txt 
+ 1438  awk '{print $1}' access.log 
+ 1439  awk '{print $1}' access.log | sort
+ 1440  awk '{print $1}' access.log | sort | uniq 
+ 1441  awk '{print $1}' access.log | sort | uniq -c
+ 1442  awk '{print $1}' access.log | sort | uniq -c | sort -n
+ 1443  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 1444  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head 10
+ 1445  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -n 10
+ 1446  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1447  awk '{print $1}' access.log | uniq -c | sort -nr | head
+ 1448  awk '{print $1}' access.log | uniq -sc | sort -nr | head
+ 1449  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1450  man uniq
+ 1451  vim access.log 
+ 1452  vim awk.txt 
+ 1453  ls
+ 1454  cp /public/samples/sedinput.txt .
+ 1455  cp /public/priklady/sed.txt .
+ 1456  ls
+ 1457  vim sed.txt 
+ 1458  man sed
+ 1459  vim sed.txt 
+ 1460  sed sedinput.txt
+ 1461  sed '' sedinput.txt
+ 1462  vim sed.txt 
+ 1463  sed -n '' sedinput.txt
+ 1464  sed -n 'p' sedinput.txt
+ 1465  sed -n 'p2,4' sedinput.txt
+ 1466  sed -n 'p2' sedinput.txt
+ 1467  sed -n '2,4p' sedinput.txt
+ 1468  sed -n '3,$p' sedinput.txt
+ 1469  sed -n '3,*p' sedinput.txt
+ 1470  sed -n '3~1p' sedinput.txt
+ 1471  sed -n '3~2p' sedinput.txt
+ 1472  sed -n '1~2p;2~2p' sedinput.txt
+ 1473  sed -n '1~2p;2~3p' sedinput.txt
+ 1474  vim sed.txt 
+ 1475  sed -n '=' sedinput.txt
+ 1476  vim sed.txt 
+ 1477  sed -n '=;p' sedinput.txt
+ 1478  cat sedinput.txt 
+ 1479  vim sed.txt 
+ 1480  sed 'i vkladam pred riadok' sedinput.txt
+ 1481  vim sed.txt 
+ 1482  sed 'a vkladam za riadok' sedinput.txt
+ 1483  vim sed.txt 
+ 1484  sed '3a vkladam za treti riadok' sedinput.txt
+ 1485  sed '3i vkladam pred treti riadok' sedinput.txt
+ 1486  vim sed.txt 
+ 1487  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 1488  sed '3d' sedinput.txt
+ 1489  sed '3;$d' sedinput.txt
+ 1490  sed '3,$d' sedinput.txt
+ 1491  vim sed.txt 
+ 1492  sed '3a vkladam za treti riadok' sedinput.txt
+ 1493  sed '3i vkladam pred treti riadok' sedinput.txt
+ 1494  sed 'i vkladam pred' sedinput.txt
+ 1495  sed 'i vkladam pred' 'a za kazdy' sedinput.txt
+ 1496  vim sed.txt 
+ 1497  sed 'i vkladam pred' -e 'a za kazdy' sedinput.txt
+ 1498  sed -e 'i vkladam pred' -e 'a za kazdy' sedinput.txt
+ 1499  sed 's/hello/world/' sedinput.txt
+ 1500  cat sedinput.txt 
+ 1501  sed 's/hello/world/g' sedinput.txt

@@ -1,0 +1,154 @@
+1504	 clear
+1505	 fortune | cowsay
+1506	 man glob
+1507	 echo $USER
+1508	 cd /public/
+1509	 find
+1510	 find . -type f -print
+1511	 pwd
+1512	 find /public -type f -name history
+1513	 find /public -type f -name *.history
+1514	 find /public -type f -name '*.history'
+1515	 find / -type f -name '*.history'
+1516	 echo "Nieco povie krava" | cowsay
+1517	 find / -type f -name '*.history' -readable
+1518	 find / -type f -name '*.history' | grep -v "^find:"
+1519	 find / -type f -name '*.history' 2> /dev/null | grep -v "^find:"
+1520	 find / -type f -name '*.history' |& grep -v "^find:"
+1521	 find / -type f -name '*.history' |& grep "^find:"
+1522	 find / -type f -name '*.history' 2> /dev/null
+1523	 man find
+1524	 find / -type f -mtime 2
+1525	 find / -type f -mtime 2 2> /dev/null
+1526	 find / -type f -mtime -2 2> /dev/null
+1527	 find /public -type f -mtime -2 2> /dev/null
+1528	 find /public -type f -mtime +2 2> /dev/null
+1529	 find /public -type f -size +50c -size -1000c
+1530	 find /public -type f -size +50c -size -100c
+1531	 find /public -type f -size +50c -size -100c | wc -l
+1532	 find /public -type f -size +49c -size -101c | wc -l
+1533	 find /public -type f -size +49c -size -101c
+1534	 ls -l /public/ucebnove/kw3.txt
+1535	 ls -l /public/priklady/z
+1536	 find /public -type f -size +50c -and -size -100c
+1537	 find /public -type f -size +50c -and -size -100c -or 50c
+1538	 find /public -type f -size +50c -and -size -100c -or -size 50c
+1539	 find /public -type f -size ( +50c -and -size -100c ) -or -size 50c
+1540	 find /public -type f ( -size +50c -and -size -100c ) -or -size 50c
+1541	 find /public -type f \( -size +50c -and -size -100c \) -or -size 50c
+1542	 find /public -type f \( -size +50c -and -size -100c \) -or -size 50c -or -size 100
+1543	 find /public -type f \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c 
+1544	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \)
+1545	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) | wc -l
+1546	 wc -l /public/priklady/process.sh
+1547	 cat /public/priklady/process.sh
+1548	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -exec wc -l {} \; 
+1549	 find /public -name '[0-9]*'
+1550	 find /public -name '[0-9]*' | wc -l
+1551	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -exec tail -n 1 {} \; 
+1552	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -exec tail -n 1 {} \; -print
+1553	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -print -exec tail -n 1 {} \;
+1554	 echo `echo ahoj`
+1555	 echo $(echo ahoj)
+1556	 tail -n 1 "`find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \)`"
+1557	 tail -n 1 "`find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -print`"
+1558	 tail -n 1 `find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -print`
+1559	 find /public -type f \( \( -size +50c -and -size -100c \) -or -size 50c -or -size 100c \) -print -exec tail -n 1 {} \;
+1560	 ll
+1561	 grep -E '\>'
+1562	 grep -E '\>' zaciatocnik.txt 
+1563	 grep -E 'myslena' zaciatocnik.txt 
+1564	 alias grep="grep --color"
+1565	 grep -E 'myslena' zaciatocnik.txt 
+1566	 grep -E '\> *{.,!,?}' zaciatocnik.txt 
+1567	 grep -E "\> *[.\!?]" zaciatocnik.txt
+1568	 grep -E "\> *[.\!?]" zaciatocnik.txt | wc -l
+1569	 grep -E "\> *[.\!?] " zaciatocnik.txt | wc -l
+1570	 grep -E "\> *[.\!?][^.]" zaciatocnik.txt | wc -l
+1571	 grep -E "\> *[.\!?]([^.]|$)" zaciatocnik.txt | wc -l
+1572	 vim zaciatocnik.txt 
+1573	 grep -E "\> *[.\!?]([^.]|$)" zaciatocnik.txt | wc -l
+1574	 jobs
+1575	 fg 1
+1576	 grep -E "\> *[.\!?]([^.]|$)" zaciatocnik.txt
+1577	 grep -E '[A-Za-z]{16}'
+1578	 grep -E '[A-Za-z]{16}' zaciatocnik.txt 
+1579	 grep -E '[A-Za-z]{13}' zaciatocnik.txt 
+1580	 grep -E '[A-Za-z]{13}' zaciatocnik.txt | wc -l
+1581	 grep -E '[A-Za-z]{11}' zaciatocnik.txt | wc -l
+1582	 grep -E '\<[A-Za-z]{11,}\>' zaciatocnik.txt | wc -l
+1583	 grep -E '\<[A-Za-z]{16,}\>' zaciatocnik.txt
+1584	 grep -E '\<[A-Za-z]{16,}\>' zaciatocnik.txt | wc -l
+1585	 grep -E '\<[A-Za-z]{15,}\>' zaciatocnik.txt | wc -l
+1586	 grep -E '[A-Za-z]{15,}' zaciatocnik.txt | wc -l
+1587	 grep -E '\<[A-Za-z]{15,}\>' zaciatocnik.txt | wc -l
+1588	 cd priklady/
+1589	 ll
+1590	 ls -la
+1591	 cd 
+1592	 cat /public/ucebnove/kw3.txt 
+1593	 cat /public/ucebnove/kw2.txt 
+1594	 cat /public/ucebnove/kw4.txt 
+1595	 cd /public/priklady/
+1596	 ll
+1597	 cat s 
+1598	 ls | grep pos
+1599	 echo ahoj
+1600	 ls | grep pos
+1601	 echo ahoj
+1602	 ./s
+1603	 chmod +x s
+1604	 ll
+1605	 ./s
+1606	 s
+1607	 chmod -x s
+1608	 ./s
+1609	 ll
+1610	 bash s
+1611	 less /bin/cat 
+1612	 cat s
+1613	 bash s
+1614	 cat x.bc 
+1615	 /usr/bin/bc
+1616	 cat x.bc 
+1617	 /usr/bin/bc -q
+1618	 /usr/bin/bc
+1619	 cat x.bc 
+1620	 chmod +x x.bc 
+1621	 ./x.bc 
+1622	 ll
+1623	 cat dvaplusdva
+1624	 bc < dvaplusdva
+1625	 bc <<WTF
+2+3
+WTF
+
+1626	 bx <<<"2+1"
+1627	 bc <<<"2+1"
+1628	 cat process.sh 
+1629	 bash process.sh 
+1630	 jobs
+1631	 fg %1
+1632	*bg %1q
+1633	 kill %1
+1634	 bash process.sh 
+1635	 bg %1
+1636	 jobs
+1637	 kill 1
+1638	 kill %1
+1639	 bash process.sh &
+1640	 jobs
+1641	 kill %2
+1642	 cp process.sh cow.sh
+1643	 vim cow.sh 
+1644	 bash process.sh &
+1645	 jobs
+1646	 kill %1
+1647	 bash cow.sh &
+1648	 jobs
+1649	 kill %1
+1650	 ll
+1651	 chmod -x x.bc 
+1652	 jobs
+1653	 clear
+1654	 fortune | cowsay

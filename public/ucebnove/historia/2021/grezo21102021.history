@@ -1,0 +1,263 @@
+ 1541  fortune | cowsay
+ 1542  fortune | cowsay > fcow
+ 1543  ll
+ 1544  cat fcow
+ 1545  cd priklady/
+ 1546  cat 6.sh
+ 1547  cat 5.sh 
+ 1548  cat 6.sh 
+ 1549  grep -R "grep" /public/ucebnove/historia/
+ 1550  grep -R "find" /public/ucebnove/historia/
+ 1551  cat 6.sh 
+ 1552  cat 7.sh 
+ 1553  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1554  echo $(dirname $cesta)
+ 1555  man dirname
+ 1556  echo $(dirname $cesta)
+ 1557  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 1558  echo $cesta
+ 1559  cesta="/public/ucebnove/seminar   _1/vim.txt"
+ 1560  echo $cesta
+ 1561  echo "$cesta"
+ 1562  echo $(dirname $cesta)
+ 1563  cat 3.sh 
+ 1564  echo $(dirname "$cesta")
+ 1565  echo "$cesta"
+ 1566  dirname "$cesta"
+ 1567  echo $(dirname "$cesta")
+ 1568  echo "$(dirname "$cesta")"
+ 1569  echo "`dirname "$cesta"`"
+ 1570  echo \"$(dirname "$cesta")\"
+ 1571  cat 7.sh
+ 1572  cesta="/public/ucebnove/seminar   _1/vim.txt"
+ 1573  basename $cesta
+ 1574  basename "$cesta"
+ 1575  man basename
+ 1576  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1577  echo $(dirname $(dirname $cesta))
+ 1578  dirname $cesta
+ 1579  dirname /public/ucebnove/seminar_1
+ 1580  echo $(basename $(dirname $cesta))
+ 1581  cesta="/public/ucebnove/seminar   _1/vim.txt"
+ 1582  echo $(basename $(dirname $cesta))
+ 1583  cat 3.sh
+ 1584  echo '$(basename $(dirname $cesta))'
+ 1585  cat 7.sh
+ 1586  cat 8.sh
+ 1587  ls -l
+ 1588  cat 8.sh
+ 1589  ls -l | head -3
+ 1590  for f in $(ls -l | head -3); do         echo $f; done
+ 1591  cat 8.sh
+ 1592  help for
+ 1593  cat 8.sh
+ 1594  IFS='
+ 1595  '
+ 1596  for f in $(ls -l | head -3); do         echo $f; done
+ 1597  IFS=$' \t\n'
+ 1598  for f in $(ls -l | head -3); do         echo $f; done
+ 1599  cat 8.sh
+ 1600  cat 9.sh 
+ 1601  help if
+ 1602  help for
+ 1603  help case
+ 1604  help while
+ 1605  cat 9.sh 
+ 1606  man source
+ 1607  help source
+ 1608  cat 9.sh 
+ 1609  ./9.sh
+ 1610  help exec
+ 1611  ./9.sh
+ 1612  cat 9.sh 
+ 1613  ./9.sh
+ 1614  vim 9.sh 
+ 1615  ./9.sh
+ 1616  cat 9.sh 
+ 1617  vim 9.sh 
+ 1618  cat 9.sh 
+ 1619  echo *
+ 1620  cat 5.sh
+ 1621  echo *
+ 1622  cat 9.sh 
+ 1623  ./9.sh
+ 1624  bash 9.sh
+ 1625  man bash
+ 1626  bash -v 9.sh
+ 1627  bash -x 9.sh
+ 1628  exec 9.sh druhykrat
+ 1629  exec 9.sh druhykra
+ 1630  help source
+ 1631  help exec
+ 1632  exec ./9.sh druhykra
+ 1633  history | tail -n
+ 1634  history | tail -5
+ 1635  cd priklady/
+ 1636  exec 9.sh druhykrat
+ 1637  help exec
+ 1638  ps
+ 1639  ps aux
+ 1640  cat 9-2.sh 
+ 1641  help export
+ 1642  cat 9-2.sh 
+ 1643  chmod +x 9-2.sh 
+ 1644  ./9-2.sh 
+ 1645  echo $?
+ 1646  cat y.sh 
+ 1647  ./y.sh 
+ 1648  ./y.sh &
+ 1649  ps
+ 1650  jobs
+ 1651  ps
+ 1652  fg
+ 1653  jobs
+ 1654  kill %1
+ 1655  jobs
+ 1656  fg
+ 1657  kill -9 %1
+ 1658  ./y.sh &
+ 1659  fg
+ 1660  bg %1
+ 1661  fg
+ 1662  kill -9 %1
+ 1663  last | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+ 1664  who | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+ 1665  ls
+ 1666  Vypiste obsah aktualneho adresara:
+ 1667  ls
+ 1668  ps
+ 1669  pwd
+ 1670  jobs
+ 1671  ls
+ 1672  ls -la
+ 1673  grep -R "grep" /public/ucebnove/historia/
+ 1674  ls /public/ucebnove/
+ 1675  clear
+ 1676  fortune -o | cowsay
+ 1677  clear
+ 1678  ls
+ 1679  cat 3.sh 
+ 1680  cat 5.sh 
+ 1681  cat 6.sh 
+ 1682  cat 7.sh 
+ 1683  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1684  dirname 
+ 1685  man dirname
+ 1686  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1687  dirname $cesta
+ 1688  echo $(dirname $cesta)
+ 1689  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 1690  echo $(dirname $cesta)
+ 1691  echo $(dirname "$cesta")
+ 1692  cesta="/public/ucebnove/seminar _1/*vim.txt"
+ 1693  echo $(dirname "$cesta")
+ 1694  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 1695  echo $(dirname "$cesta")
+ 1696  cesta="/public/ucebnove/seminar    _1/vim.txt"
+ 1697  echo $(dirname "$cesta")
+ 1698  dirname "$cesta"
+ 1699  cat 3.sh
+ 1700  echo $pocet     $veta
+ 1701  veta="ahoj svet"
+ 1702  pocet=3
+ 1703  echo $pocet     $veta
+ 1704  cesta="/public/ucebnove/seminar    _1/vim.txt"
+ 1705  echo $(dirname "$cesta")
+ 1706  dirname "$cesta"
+ 1707  echo "$(dirname "$cesta")"
+ 1708  echo '$(dirname "$cesta")'
+ 1709  echo '`dirname "$cesta"`'
+ 1710  echo "`dirname "$cesta"`"
+ 1711  cat 7.sh
+ 1712  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1713  echo $(basename $cesta)
+ 1714  echo $(dirname $(dirname $cesta))
+ 1715  dirname $cesta
+ 1716  dirname /public/ucebnove/seminar_1
+ 1717  echo $(basename $(dirname $cesta))
+ 1718  dirname $cesta
+ 1719  basename /public/ucebnove/seminar_1
+ 1720  dirname $cesta | basename 
+ 1721  man basename
+ 1722  cat 7.sh 
+ 1723  cat 8.sh 
+ 1724  ls -l
+ 1725  cat 8.sh 
+ 1726  ls -l | head -3
+ 1727  for f in $(ls -l | head -3); do         echo $f; done
+ 1728  help for
+ 1729  cat 8.sh 
+ 1730  IFS='
+'
+ 1731  for f in $(ls -l | head -3); do         echo $f; done
+ 1732  IFS=$' \t\n'
+ 1733  IFS='rw'
+ 1734  for f in $(ls -l | head -3); do         echo $f; done
+ 1735  IFS=$' \t\n'
+ 1736  man bash
+ 1737  cat 9.sh 
+ 1738  help source
+ 1739  echo *
+ 1740  cat 5.sh 
+ 1741  cat 9.sh 
+ 1742  cat 8.sh
+ 1743  chmod +x 8.sh 
+ 1744  ./8.sh 
+ 1745  cat 8.sh
+ 1746  for f in $(ls -l | head -3); do         echo $f; done
+ 1747  cat 8.sh
+ 1748  ./8.sh 
+ 1749  cat 8.sh
+ 1750  for f in $(ls -l | head -3); do         echo $f; done
+ 1751  less ~/.bashrc
+ 1752  cat 9.sh
+ 1753  help source
+ 1754  help exec
+ 1755  ./9.sh
+ 1756  pwd
+ 1757  bash 9.sh
+ 1758  man bash
+ 1759  bash -v 9.sh
+ 1760  exec 9.sh druhykrat
+ 1761  help exec
+ 1762  help shell
+ 1763  help source
+ 1764  ./9.sh
+ 1765  bash 9.sh
+ 1766  9.sh
+ 1767* 
+ 1768  man bash
+ 1769  bash -x 9.sh
+ 1770  bash -vx 9.sh
+ 1771  echo 9-2.sh 
+ 1772  cat 9-2.sh 
+ 1773  ./9-2.sh
+ 1774  ps
+ 1775  ./9-2.sh
+ 1776  echo $?
+ 1777  help exec
+ 1778  ./9-2.sh "piaty raz"
+ 1779  cat ./9-2.sh 
+ 1780  ll
+ 1781  cat y.sh
+ 1782  ./y.sh 
+ 1783  vim y.sh 
+ 1784  ./y.sh 
+ 1785  jobs
+ 1786  bg
+ 1787  jobs
+ 1788  jf
+ 1789  fg
+ 1790  ./y.sh &
+ 1791  jobs
+ 1792  kill %1
+ 1793  kill -9 %1
+ 1794  ./y.sh
+ 1795  kill %1
+ 1796  kill -9 %1
+ 1797  last | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+ 1798  who | sed -r 's/([0-9]{1,3}\.){3}[0-9]{1,3}/1.1.1.1/g'
+ 1799  ll
+ 1800  < << <<< > |& ... 2>&1 ...
+ 1801  echo "< << <<< > |& ... 2>&1 ..."
+ 1802  grep -R "grep" /public/ucebnove/historia/

@@ -1,0 +1,121 @@
+   60  ls
+   61  which vim
+   62  which blbost
+   63  cd /tmp/
+   64  ls -al
+   65  ls -al ..
+   66  ls -ald .
+   67  vim a.txt
+   68  man vim
+   69  vim a.txt
+   70  cat a.txt 
+   71  ll
+   72  vim ~/.bashrc
+   73  source ~/.bashrc
+   74  ll
+   75  vim ~/.bashrc
+   76  ll -a
+   77  ls -lai
+   78  man ln
+   79  ln a.txt hard_a.txt
+   80  ls
+   81  ll
+   82  echo cau >> a.txt 
+   83  cat a.txt 
+   84  cat hard_a.txt 
+   85  ll -i
+   86  cd 
+   87  ln /tmp/a.txt hard2_a.txt
+   88  ln -s /tmp/a.txt hard2_a.txt
+   89  ll
+   90  mv hard2_a.txt soft_a.txt
+   91  ls
+   92  cat soft_a.txt 
+   93  ls -li
+   94  cd /tmp/
+   95  ll
+   96  rm a.txt 
+   97  ls
+   98  ls -li
+   99  cat hard_a.txt 
+  100  cd
+  101  cat soft_a.txt 
+  102  ls -l
+  103  rm soft_a.txt 
+  104  which cowsay
+  105  apt update
+  106  sudo apt update
+  107  sudo apt install cowsay
+  108  man cowsay
+  109  cowsay
+  110  cowsay "ahoj os"
+  111  cowsay "ahoj os" > cowsays-a.txt
+  112  apropos locale
+  113  man localectl
+  114  localectl list-locales
+  115  localectl set-locale en_US
+  116  cd /tmp
+  117  cat a.txt
+  118  ls
+  119  cat hard_a.txt 
+  120  cat hard_a.txt > cowsay 
+  121  cowsay < hard_a.txt 
+  122  cowsay < hard_a.txt 2> /tmp/error 
+  123  cat error 
+  124  cowsay < hard_a.txt 2> /dev/null
+  125  cowsay < hard_a.txt &> vystup-kravy.txt
+  126  cat vystup-kravy.txt 
+  127  cat hard_a.txt > a.txt
+  128  vim a.txt 
+  129  cd /public/
+  130  ls
+  131  vim zaciatocnik.txt 
+  132  cd -
+  133  who
+  134  ls /dev/pts/0 
+  135  ls -l /dev/pts/0 
+  136  cowsay "ahoj os" > /dev/pts/0
+  137  cowsay "ahoj os" > /dev/tcp/147.175.150.234/8888
+  138  ls
+  139  cat a.txt 
+  140  less /public/zaciatocnik.txt 
+  141  grep ahoj a.txt 
+  142  echo ahojte >> a.txt
+  143  grep ahoj a.txt 
+  144  man grep
+  145  grep -w ahoj a.txt 
+  146  echo aaahojte >> a.txt
+  147  grep ^a a.txt 
+  148  grep a* a.txt 
+  149  ls *
+  150  ls
+  151  ls a* 
+  152  grep j$ a.txt 
+  153  grep 'a{2,3}' a.txt 
+  154  grep 'a\{2,3\}' a.txt 
+  155  grep 'a\+' a.txt 
+  156  egrep 'a{2,3}' a.txt 
+  157  grep -e 'a{2,3}' a.txt 
+  158  man grep
+  159  grep -E 'a{2,3}' a.txt 
+  160  echo aaaaaaaa >> a.txt 
+  161  grep -E 'a{2,3}' a.txt 
+  162  echo bbb > a.txt 
+  163  egrep '[^a]' a.txt 
+  164  cat a.txt 
+  165  echo ahoj >> a.txt 
+  166  egrep '[^a]' a.txt 
+  167  egrep '[^a]+' a.txt 
+  168* 
+  169  egrep --color '[^a]' a.txt 
+  170  egrep --color -w '[^a]+' a.txt
+  171  echo >> aaaahojte a.txt 
+  172  cat a.txt 
+  173  echo aaaahojte >> a.txt 
+  174  cat a.txt 
+  175  grep -v a a.txt 
+  176  echo aaahojte >> a.txt 
+  177  date
+  178  cd
+  179  mkdir history
+  180  history > history/2.txt

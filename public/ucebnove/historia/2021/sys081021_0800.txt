@@ -1,0 +1,141 @@
+  451  ps
+  452  ps aux
+  453  ll /proc/
+  454  cat /proc/cpuinfo 
+  455  cat /proc/meminfo 
+  456  ll /proc/
+  457  ZACIATOK PRVEHO CVIKA
+  458* [5~ll /proc/self/
+  459  cat /proc/self/comm 
+  460  cat /proc/self/maps 
+  461  ll /proc/self/fd
+  462  sudo ls -la /proc/1/fd
+  463  cat /proc/self/cmdline 
+  464  cat /proc/stat 
+  465  man grepp
+  466  man grep
+  467  grep PATTERNS
+  468  man grep
+  469  grep --color aaa
+  470  vim .bashrc 
+  471  man grep
+  472  fg
+  473  grep --color=auto
+  474  grep a
+  475  man grep
+  476  sudo apt install wordlist
+  477  sudo apt install wamerican-huge
+  478  dpkg -L wamerican-huge
+  479  vim /usr/share/dict/american-english-huge
+  480  grep a /usr/share/dict/american-english-huge
+  481  grep 'a\w*r /usr/share/dict/american-english-huge
+  482  grep 'a\w*r' /usr/share/dict/american-english-huge
+  483  grep '\ba\w*r' /usr/share/dict/american-english-huge
+  484  grep '\ba\w*r\b' /usr/share/dict/american-english-huge
+  485  man grep
+  486  grep '\<a\w*r\>' /usr/share/dict/american-english-huge
+  487  grep -w 'a\w*r' /usr/share/dict/american-english-huge
+  488  man grep
+  489  grep -w 'a{3}' /usr/share/dict/american-english-huge
+  490  grep -w 'a{2}' /usr/share/dict/american-english-huge
+  491  grep 'a{2}' /usr/share/dict/american-english-huge
+  492  grep 'e{2}' /usr/share/dict/american-english-huge
+  493  grep -E 'e{2}' /usr/share/dict/american-english-huge
+  494  grep -E 'e{3}' /usr/share/dict/american-english-huge
+  495  grep -E 'e{2}' /usr/share/dict/american-english-huge
+  496  grep -E 'a{2}' /usr/share/dict/american-english-huge
+  497  grep -E 'a{3}' /usr/share/dict/american-english-huge
+  498  grep -E '([^a]*a){4}' /usr/share/dict/american-english-huge
+  499  grep -E '([^a]*a){3}' /usr/share/dict/american-english-huge
+  500  grep -Ew '([^a]*a){3}' /usr/share/dict/american-english-huge
+  501  grep -Ew '(.*a){3}' /usr/share/dict/american-english-huge
+  502  grep -E '^(.).*\1$' /usr/share/dict/american-english-huge
+  503  grep -E '\<(.).*\1\>' /usr/share/dict/american-english-huge
+  504  man grep
+  505  grep -E '\<(.).*\1\>' /usr/share/dict/american-english-huge
+  506  grep -E '\<(.).*\1\>' 
+  507  grep -E '\<(.)\w*\1\>' 
+  508  grep -Ew '\<(.).*\1\>' 
+  509  grep -wE '\<(.).*\1\>' 
+  510  grep -wE ',{3}' 
+  511  grep -wE '.{3}' 
+  512  grep -E '.{3}' /usr/share/dict/american-english-huge
+  513  grep -E '(.)\1{2}' /usr/share/dict/american-english-huge
+  514  man grep
+  515  grep -E '[abc]{3}' /usr/share/dict/american-english-huge
+  516  grep -E '[.]{3}' /usr/share/dict/american-english-huge
+  517  grep -E '[a-c]{3}' /usr/share/dict/american-english-huge
+  518  grep -E '[a-Z]{3}' /usr/share/dict/american-english-huge
+  519  grep -E '[Z-a]{3}' /usr/share/dict/american-english-huge
+  520  grep -E '[^a-z]' /usr/share/dict/american-english-huge
+  521  man grep
+  522  grep -E 'ab|bc' /usr/share/dict/american-english-huge
+  523  fg
+  524  man grep
+  525  cd ps_cat/
+  526  ll
+  527  cp ps_cat_teplate.c ps_cat_prve.c
+  528  vim ps_cat_prve.c 
+  529  cat /etc/passwd /etc/passwd
+  530  fg
+  531  echo a b c
+  532  fg
+  533  man open
+  534  man 2 read
+  535  man 2 write
+  536  man  3 dprintf
+  537  fg
+  538  man stdout
+  539  man fdprintf
+  540  man 3 printf
+  541  strace
+  542  sudo apt install strace
+  543  strace ls
+  544  strace cat /etc/passwd
+  545  ll /proc/self/fd
+  546  fg
+  547  sudo apt install gcc
+  548  man gcc
+  549  gcc -Wall ps_cat_prve.c -o ps_cat 
+  550  ./ps_cat 
+  551  ./ps_cat /etc/passwd
+  552  ./ps_cat /etc/passwd /etc/passwd
+  553  fg
+  554  vim ps_cat_prve.c 
+  555  strace cat /etc/passwd
+  556  fg
+  557  man open
+  558  fg
+  559  gcc -Wall ps_cat_prve.c -o ps_cat 
+  560  ./ps_cat /etc/passwd
+  561  fg
+  562  gcc -Wall ps_cat_prve.c -o ps_cat 
+  563  ./ps_cat /etc/passwd
+  564  fg
+  565  man 2 read
+  566  fg
+  567  gcc -Wall ps_cat_prve.c -o ps_cat 
+  568  ./ps_cat /etc/passwd
+  569  fg
+  570  gcc -Wall ps_cat_prve.c -o ps_cat 
+  571  ./ps_cat /etc/passwd
+  572  ./ps_cat /etc/passwd /etc/passwd
+  573  cat
+  574  ./ps_cat 
+  575  fg
+  576  gcc -Wall ps_cat_prve.c -o ps_cat 
+  577  ./ps_cat 
+  578  fg
+  579  man cat
+  580  fg
+  581  gcc -Wall ps_cat_prve.c -o ps_cat 
+  582  cat -
+  583  ./ps_cat 
+  584  ./ps_cat -
+  585  ./ps_cat - -
+  586  fg
+  587  ./ps_cat -
+  588  fg
+  589  strace ./ps_cat - -
+  590  fg
+  591  history  > ../aaaa.txt

@@ -1,0 +1,237 @@
+  229  history
+  230  ls -la
+  231  ls /public/
+  232  ls /public/ucebnove/
+  233  hexdump -C /dev/urandom 
+  234  ls /dev/null 
+  235  ls /dev/
+  236  ls -l /dev/
+  237  mhjtjyg
+  238  ls /bin
+  239  ls -l /bin/
+  240  echo ahoj
+  241  echo $HOME
+  242  echo $PATH
+  243  ls -la
+  244  less .profile
+  245  man passwd
+  246  man 5 passwd
+  247  less /etc/passwd
+  248  less .profile
+  249  echo $PATH
+  250  kasjfvasf
+  251  ls -l /tmp
+  252  ps
+  253  man ps
+  254  ps -xl
+  255  ll
+  256  mkdir druhecviko1
+  257  l
+  258  alias
+  259  less .bashrc
+  260  ll
+  261  history
+  262  ll
+  263  history
+  264  ls -l /tmp
+  265  history
+  266  man who
+  267  who
+  268  man who
+  269  who -a
+  270  who
+  271  sudo who -a
+  272  man who
+  273  whoami
+  274  sudo whoami
+  275  man su
+  276  su root
+  277  man last
+  278* 
+  279  man last
+  280  last -f wtmp.2020
+  281  last -f /public/samples/wtmp.2020
+  282  hexdump -C /dev/zero 
+  283  ps
+  284  jobs
+  285  fg
+  286  ll
+  287  vim nieco
+  288  vimtutor
+  289  w
+  290  man find
+  291  find
+  292  pwd
+  293  ls -l
+  294  ls -la
+  295  find
+  296  find . -true -print
+  297  find
+  298  find . -true -print
+  299  find /public -type f -name kw
+  300  find /public -type f -name *kw
+  301  find /public -type f -name '*kw'
+  302  find /public -type f -name '*kw*'
+  303  find /public -type f -name *kw*
+  304  less /public/ucebnove/kw2.txt
+  305  find /public -type f -and -name *kw* -print
+  306  ll
+  307  rmdir druhecviko1/
+  308  ll
+  309  fortune
+  310  sudo apt-get install fortune-off
+  311  sudo apt-get install fortunes-off
+  312  man fortune
+  313  fortune -o
+  314  sudo apt-get install cowsay
+  315  echo ahoj
+  316  cowsay ahoj
+  317  cowsay Ahoj!
+  318  whereis echo
+  319  whereis cowsay
+  320  which echo
+  321  which cowsay
+  322  touch prn
+  323  ll
+  324  find /public -type f -and -name *kw* -print
+  325  ll /public/ucebnove
+  326  find /public -type f -and -name *kw* -size 20 -print
+  327  find /public -type f -and -name *kw* -size 21 -print
+  328  find /public -type f -and -name *kw* -size 21c -print
+  329  find /public -type f -and -name *kw* -size <21c -print
+  330  find /public -type f -and -name *kw* -size -21c -print
+  331  find /public -type f -and -name *kw* -size -22c -print
+  332  find /public -type f -and -name *kw* -size -23c -print
+  333  find /public -type f -and -name *kw* -size +23c -print
+  334  find /public -type f -and -name *kw* -size +23c -and -size -100c -print
+  335  ll /public/ucebnove/
+  336  find /public -type f -and -name *kw* -size +50c -and -size -100c -or -size +25 -print
+  337  fortune | cowsay
+  338  clear
+  339  ls -la
+  340  history 
+  341  man passwd
+  342  man 5 passwd
+  343  less /etc/passwd
+  344  clear
+  345  ls
+  346  asdjgfha
+  347  path < binarku
+  348  echo ~
+  349  echo $HOME
+  350  echo ahoj
+  351  echo $PATH
+  352  ls -la /bin
+  353  ls -la /usr/bin
+  354  asdjgfha
+  355  echo $PATH
+  356  less .profile 
+  357  ls -la
+  358  history
+  359  ls -la
+  360  history
+  361  echo $PATH
+  362  ls -la 
+  363  less .profile 
+  364  less .bashrc 
+  365  l
+  366  history
+  367  man history
+  368  man alias
+  369  alias
+  370  man alias
+  371  help
+  372  help alias
+  373  alias
+  374  less .bashrc 
+  375  help if
+  376  ps
+  377  man ps
+  378  hexdump -C /dev/zero 
+  379  jobs
+  380  ps
+  381  fg
+  382  psd
+  383  ps
+  384  jobs
+  385  bg
+  386  man ps
+  387  ps -xl
+  388  ll
+  389  man mkdir
+  390  mkdir druhecviko1
+  391  ll
+  392  man rmdir
+  393  man rm
+  394  rmdir druhecviko1/
+  395  ll
+  396  who
+  397  man who
+  398  sudo who
+  399  whoami
+  400  whereis echo
+  401  whereis whereis
+  402  which echo
+  403  last 
+  404  clear
+  405  man last
+  406  less /var/log/wtmp
+  407  man last
+  408  last /public/samples/wtmp.2020 
+  409  ls /public/samples/
+  410  ls -la /public/samples/
+  411  last -f /public/samples/wtmp.2020 
+  412  file 
+  413  man file
+  414  file nieco
+  415  type 
+  416  type nieco
+  417  vim subornaeditaciuvovime
+  418  vimtutor
+  419  ps -alx
+  420  fortune
+  421  sudo apt-get install fortune
+  422  man fortune
+  423  sudo apt-get install fortunes-off
+  424  man fotune
+  425  man fortune
+  426  fortune -o
+  427  cowsay "Hi  COLLEGE GRADUATESfortune -o"
+  428  cowsay 'Hi  COLLEGE GRADUATES!!'
+  429  echo
+  430  echo -n
+  431  find 
+  432  man find
+  433  groups 
+  434  whoami
+  435  sudo groups
+  436  sudo whoami
+  437  pwd
+  438  find 
+  439  find . -true -print
+  440  find 
+  441  find . -true -print
+  442  man find
+  443  find /public/ -type f 
+  444  find /public/ -type f -name kw
+  445  find /public/ -type f -name *kw*
+  446  less /public/ucebnove/kw2.txt
+  447  find /public/ -type f -name *kw* 
+  448  find /public/ -type f -and -name *kw* 
+  449  find /public/ -type f -or -name *kw* 
+  450* find /public/ -type f -and -name *kw* -and -size >50 -and { -size <100 -or -size >25 }
+  451  find /public/ -type f -and -name *kw* -and -size 50
+  452  ls -la /public/ucebnove/
+  453  ls -la /public/ucebnove/kw
+  454  ls -la /public/ucebnove/
+  455  find /public/ -type f -and -name *kw* -and -size 50
+  456  find /public/ -type f -and -name *kw* -and -size +50
+  457  find /public/ -type f -and -name *kw* -and -size +50b
+  458  find /public/ -type f -and -name *kw* -and -size +50c
+  459  find /public/ -type f -and -name *kw* -and -size 50c
+  460  find /public/ -type f -and -name *kw* -and -size +50c
+  461  find /public/ -type f -and -name *kw* -and -size -50c
+  462  ls -la /dev
+  463  fortune | cowsay
+  464  fortune -o | cowsay
+  465  history > hist

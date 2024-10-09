@@ -1,0 +1,121 @@
+    1  logout
+    2  ls
+    3  man grep
+    4  cd /tmp/
+    5  touch subor
+    6  ls
+    7  vim subor 
+    8  cat subor 
+    9  grep obsah subor 
+   10  vim subor 
+   11  grep u* subor 
+   12  grep u+ subor 
+   13  grep 'u+' subor 
+   14  grep 'u\+' subor 
+   15  grep -E 'u+' subor 
+   16  grep -E 'u{1}' subor 
+   17  grep -E 'u{5}' subor 
+   18  grep 'u{5}' subor 
+   19  grep 'u{1,5}' subor 
+   20  grep 'u\{1,5\}' subor 
+   21  grep -E 'u{1,5}' subor 
+   22  grep -E '(su){1,5}' subor 
+   23  head /etc/passwd
+   24  grep /bin/bash /etc/passwd 
+   25  grep /bin/bash$ /etc/passwd 
+   26  grep '/bin/bash$' /etc/passwd 
+   27  grep 'root' /etc/passwd 
+   28  grep '^root' /etc/passwd 
+   29  ls
+   30  grep 'a+' /etc/passwd 
+   31  grep -E 'a+' subor 
+   32  grep -E 'a' subor 
+   33  grep -E 'aa' subor 
+   34  echo aa >> subor 
+   35  echo aaa >> subor 
+   36  grep -E 'aa' subor 
+   37  grep -E 'a{3}' subor 
+   38  grep -E 'a%a%a' subor 
+   39  grep -E 'a.a.a' subor 
+   40  echo ababa >> subor 
+   41  grep -E 'a.a.a' subor 
+   42  grep -E 'a.*a.*a' subor 
+   43  cat subor 
+   44  echo "riadok s troma 'a'" >> subor 
+   45  grep -E 'a.*a.*a' subor 
+   46* 
+   47  grep -E '[a-z]' subor 
+   48* grep -E '[0-9]' subor 
+   49  grep -E '^[a-z]$' subor 
+   50  grep -E '^[a-z]*$' subor 
+   51  grep -E '^[a-z]+$' subor 
+   52  touch subor2
+   53  ll subor2
+   54  touch ". "
+   55  ls
+   56  ls -la
+   57  rm '. '
+   58  grep -E '^[a-z ]*$' subor 
+   59  grep -E '^[^0-9]*$' subor 
+   60  man grep
+   61  grep -E '[[:alpha:]]*$' subor 
+   62  grep -E '[[:alpha:]]+$' subor 
+   63  grep -E '^[b-zB-Z]*a[b-zB-Z]*a[b-zB-Z]*a[b-zB-Z]*$' subor
+   64  grep -E '^[^a]*a[^a]*a[^a]*a[^a]*$' subor
+   65  grep -E 'obsah' subor | wc -l
+   66  cat subor
+   67  man grep
+   68  grep -Ec 'obsah' subor | wc -l
+   69  grep -Ec 'obsah' subor
+   70  echo "tento subor obsahuje text" >> subor
+   71  grep -Ec 'obsah' subor
+   72  cat subor
+   73  grep -Ec 'obsah' subor
+   74  grep -E 'obsah' subor
+   75  grep -E '<\obsah\>' subor
+   76  grep -E '\<obsah\>' subor
+   77  grep -E '\bobsah\b' subor
+   78  grep -Ew 'obsah' subor
+   79  grep -cw 'obsah' subor
+   80  man tr
+   81  tr '[a-z] [A-Z]' < subor
+   82  tr "[a-z]" "[A-Z]" < subor
+   83  tr "[a-z]" "[A-Z]" < subor > SUBOR
+   84  cat SUBOR
+   85  cat subor SUBOR > sUbOr
+   86  cat sUbOr 
+   87  grep -cw '(obsah)|(OBSAH)' subor
+   88  grep -w '(obsah)|(OBSAH)' subor
+   89  grep -Ew '(obsah)|(OBSAH)' subor
+   90  grep -Ew '(obsah)|(OBSAH)' sUbOr 
+   91  grep -Ew 'obsah|OBSAH' sUbOr 
+   92  grep -Ewi 'obsah|OBSAH' sUbOr 
+   93  grep -Ewi 'obsah' sUbOr 
+   94  grep -Ew '[oO][bB][sS][aA][hH]' sUbOr 
+   95  vim znacky.txt
+   96  grep '[A-Z]{2}[0-9]{3}[A-Z]{2}' znacky.txt 
+   97  grep -E '[A-Z]{2}[0-9]{3}[A-Z]{2}' znacky.txt 
+   98  who
+   99  who | grep -E '([0-9]{1,3}.){3}'
+  100  who | grep -E '([0-9]{1,3}.){3}[0-9]{1,3}'
+  101  who | grep -E '([0-9]{1,3}\.){3}[0-9]{1,3}'
+  102  man who
+  103  ls
+  104  cd
+  105  find /tmp -type f
+  106  find /tmp -type f 2>/dev/null
+  107  man find
+  108  find /tmp -type f -mmin -120 2>/dev/null
+  109  find /tmp -type f -mmin -10 2>/dev/null
+  110  find /tmp -type f -mmin -30 2>/dev/null
+  111  find /tmp -type f -mmin -120 2>/dev/null
+  112  man find
+  113  find /tmp -type f -mmin -120 -iregex subor 2>/dev/null
+  114  find /tmp -type f -mmin -120 -iregex '.*subor' 2>/dev/null
+  115  find /tmp -type f -mmin -120 -iregex '.*subor' -exec rm {} \; 2>/dev/null
+  116  ls
+  117  ls /tmp/
+  118  find /tmp -type f -mmin -120 -exec rm {} \; 2>/dev/null
+  119  ls /tmp
+  120  date
+  121  history > /tmp/lastinec10042023.history

@@ -1,0 +1,14 @@
+mkfifo rura.pipe
+
+trap 'rm -f rura.pipe' EXIT
+
+while true
+do
+	read line < rura.pipe
+	echo $line
+	if [[ $line == 'quit' ]]
+	then 
+		rm -f rura.pipe
+		exit 0
+	fi
+done
