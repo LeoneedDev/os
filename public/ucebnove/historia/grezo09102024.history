@@ -1,0 +1,357 @@
+  953  logout
+  954  clear
+  955  less /public/ucebnove/historia/grezo02102024.history 
+  956  man greap
+  957  man grep
+  958  less /public/ucebnove/historia/grezo02102024.history 
+  959  clear
+  960  fortune -o | cowsay
+  961  less /public/ucebnove/historia/2023/grezo04102023.history
+  962  less /public/ucebnove/historia/2023/grezo11102023.history
+  963  jobs
+  964  fg 
+  965  mkdir stvrte
+  966  ll
+  967  fg
+  968  cd stvrte/
+  969  cp -R /public/priklady/ .
+  970  ll
+  971  cd priklady/
+  972  ll
+  973  less /public/ucebnove/historia/2023/grezo04102023.history
+  974  less /public/ucebnove/historia/2023/grezo11102023.history
+  975  cat /public/ucebnove/kw3.txt 
+  976  cat /public/ucebnove/kw2.txt 
+  977  ll
+  978  cat /public/ucebnove/kw2.txt 
+  979  cat s
+  980  ls | grep pos
+  981  echo ahoj
+  982  man bash
+  983  bash s
+  984  s
+  985  less /public/ucebnove/historia/2023/grezo11102023.history
+  986  PATH=$PATH:~/stvrte/priklady
+  987  echo $PATH
+  988  s
+  989  ll
+  990  chmod +x s 
+  991  ll
+  992  s
+  993  chmod -x s 
+  994  s
+  995  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+  996  echo $PATH
+  997  s
+  998  ll
+  999  less /public/ucebnove/historia/2023/grezo11102023.history
+ 1000  ./s
+ 1001  s
+ 1002  ./s
+ 1003  chmod +x ./s 
+ 1004  ./s
+ 1005  less /public/ucebnove/historia/2023/grezo11102023.history
+ 1006  cat z
+ 1007  man for
+ 1008  help for
+ 1009  for a prve druhe tretie ; do echo $a ; done
+ 1010  for a in prve druhe tretie ; do echo $a ; done
+ 1011  for a in prve druhe tretie ; do echo -n $a ; done
+ 1012  for a in "prve druhe tretie" ; do echo $a ; done
+ 1013  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+ 1014  less /public/ucebnove/historia/2023/grezo11102023.history
+ 1015  man bc
+ 1016  less /public/ucebnove/historia/2023/grezo11102023.history
+ 1017  sudo apt-get install bc
+ 1018  man bc
+ 1019  l
+ 1020  cat x.bc 
+ 1021  bc 2+2
+ 1022  bc
+ 1023  bc x.bc
+ 1024  whereis bc
+ 1025  bc -q x.bc
+ 1026  ./x.bc
+ 1027  chmod +x x.bc 
+ 1028  ./x.bc
+ 1029  man bc
+ 1030  bc 9999^9
+ 1031  bc
+ 1032  chmod -x x.bc 
+ 1033  bcfg
+ 1034  fg
+ 1035  cat svet
+ 1036  fg
+ 1037  l
+ 1038  cat y.sh 
+ 1039  chmod -x s
+ 1040  ./y.sh
+ 1041  chmod +x y.sh 
+ 1042  ./y.sh 
+ 1043  jobs
+ 1044  less /public/ucebnove/historia/2023/grezo11102023.history
+ 1045  bg
+ 1046  jobs
+ 1047  kill @1
+ 1048  less /public/ucebnove/historia/2023/grezo11102023.history
+ 1049  kill $1
+ 1050  kill %1
+ 1051  ./y.sh &
+ 1052  ps
+ 1053  kill %1
+ 1054  echo $PATH
+ 1055  cat s
+ 1056  set
+ 1057  ll
+ 1058  cat svet
+ 1059  cat 1.sh 
+ 1060  whereis bash
+  954* clear 
+  955  /bin/bash s
+  956  which bash
+  957  ls | wc -l
+  958  bash 1.sh 
+  959  chmod -x y.sh 
+  960  cat 2.sh 
+  961  help fot
+  962  help for
+  963  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  964  cat 2.sh 
+  965  cat z.sh
+  966  cat z 
+  967  cat y.sh 
+  968  cat 2.sh 
+  969  help while
+  970  cat 3.sh 
+  971  chmod +x 3.sh 
+  972  ./3.sh 
+  973  bash ./3.
+  974  bash ./3.sh 
+  975  chmod -x 3.sh 
+  976  cat 3.sh 
+  977  veta="ahoj svet"
+  978  veta = "ahoj svet"
+  979  echo $veta
+  980  veta=ahoj svet
+  981  echo $veta
+  982  veta=ahoj; svet
+  983  echo $veta
+  984  veta="ahoj svet"
+  985  cat 3.sh
+  986  echo $pocet $veta
+  987  pocet=3
+  988  echo $pocet $veta
+  989  echo $pocet     $veta
+  990  echo "$pocet    $veta"
+  991  echo '$pocet    $veta'
+  992  echo "$pocet    \$veta"
+  993  echo "\$pocet    $veta"
+  994  echo \$pocet    \$veta
+  995  echo ""
+  996  echo -n ""
+  997  bash 3.sh
+  998  echo *
+  999  cat 4.sh
+ 1000  echo [A-Z]*
+ 1001  touch hEllo
+ 1002* touch HELLo~
+ 1003  touch HELlo
+ 1004  for f in [A-Z]*; do echo "$f"; done
+ 1005  for f in [A-Z]*; do         echo "$f" | tr 'A-Z' 'a-z'; done
+ 1006  man tr
+ 1007  man mv
+ 1008  for f in [A-Z]*; do         echo "$f"; echo "$(echo "$f" | tr A-Z a-z)"; DONE; done
+ 1009  cat 4.sh
+ 1010  f="HELLo"
+ 1011  echo "$f"
+ 1012  echo "$(echo "$f" | tr A-Z a-z)"
+ 1013  f="HE   LLo"
+ 1014  echo "$f"
+ 1015  echo "$(echo "$f" | tr A-Z a-z)"
+ 1016  f="HE  ' LLo"
+ 1017  echo "$f"
+ 1018  echo "$(echo "$f" | tr A-Z a-z)"
+ 1019  echo $f
+ 1020  echo "$(echo $f | tr A-Z a-z)"
+ 1021  echo "$f"
+ 1022  echo "$(echo $f | tr A-Z a-z)"
+ 1023  echo $(echo $f | tr A-Z a-z)
+ 1024  echo $(echo "$f" | tr A-Z a-z)
+ 1025  cat 4.sh
+ 1026  $(echo duti | tr u a | tr i e)
+ 1027  date
+ 1028  ll
+ 1029  clear
+ 1030  fortune -o | cowsay
+ 1031  cd
+ 1032  less /public/ucebnove/historia/grezo02102024.history
+ 1033  find /
+ 1034  find / | grep "Permission denied"
+ 1035  find / | grep tmp
+ 1036  find / | grep "Permission denied"
+ 1037  find / |& grep "Permission denied"
+ 1038  find / > grep "Permission denied"
+ 1039  find / 2> grep "Permission denied"
+ 1040  find / 12> grep "Permission denied"
+ 1041  find / &> grep "Permission denied"
+ 1042  find / &> /dev/null 
+ 1043  find / 1> /dev/null 
+ 1044  find / 2> /dev/null 
+ 1045  find / > /dev/null 2>&1
+ 1046  less /public/ucebnove/historia/grezo02102024.history
+ 1047  history | tail -200
+ 1048  ll
+ 1049  cd stvrte/
+ 1050  ll
+ 1051  cp -R /public/priklady/ .
+ 1052  ll
+ 1053  cd priklady/
+ 1054  l
+ 1055  cat s
+ 1056  cat /public/ucebnove/kw2.txt 
+ 1057  ls | grep pos
+ 1058  echo ahoj
+ 1059  man bash
+ 1060  bash "echo ahoj"
+ 1061  man bash
+ 1062  bash s
+ 1063  l
+ 1064  alias
+ 1065  ls
+ 1066  s
+ 1067  echo $PATH
+ 1068  PATH=$PATH:~/stvrte/priklady
+ 1069  echo $PATH
+ 1070  s
+ 1071  ll
+ 1072  chmod +x s
+ 1073  ll
+ 1074  s
+ 1075  echo $PATH
+ 1076  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+ 1077  echo $PATH
+ 1078  s
+ 1079  ll
+ 1080  s
+ 1081  ./s
+ 1082  cat s 
+ 1083  cat x.bc 
+ 1084  man bc
+ 1085  sudo apt-get install bc
+ 1086  man bc
+ 1087  which bc
+ 1088  whereis bc
+ 1089  man bc
+ 1090  bc
+ 1091  cat x.bc 
+ 1092  bc -q
+ 1093  man bc
+ 1094  bc x.bc
+ 1095  chmod +x x.bc
+ 1096  ll x.bc
+ 1097  ./x.bc 
+ 1098  less /public/ucebnove/historia/2023/grezo11102023.history 
+ 1099  l
+ 1100  cat y.sh 
+ 1101  man while 
+ 1102  help while
+ 1103  bash y.sh 
+ 1104  jobs
+ 1105  fg
+ 1106  bg
+ 1107  \
+ 1108  jobc
+ 1109  jobs
+ 1110  kill %1
+ 1111  bash y.sh &
+ 1112  jobs
+ 1113  ps
+ 1114  man ps
+ 1115  jobs
+ 1116  kill 212879
+ 1117  cat z 
+ 1118  man for
+ 1119  help for
+ 1120  for a in jeden dva tri; do echo $a; done
+ 1121  echo ahoj
+ 1122  man echo
+ 1123  echo -n ahoj
+ 1124  for a in jeden dva tri; do echo -n $a; done
+ 1125  for a in "jeden dva tri"; do echo -n $a; done
+ 1126  for a in "jeden dva tri"; do echo $a; done
+ 1127  cat z
+ 1128  less /public/ucebnove/historia/2023/grezo11102023.history 
+ 1129  cat cow.sh 
+ 1130  bash cow.sh &
+ 1131  for a in "jeden dva tri"; do echo -n $a; done
+ 1132  kill %1
+ 1133  ll
+ 1134  cat 1.sh 
+ 1135  /bin/bash 1.sh 
+ 1136  ls | wc -l
+ 1137  which bash
+ 1138  whereis bash
+ 1139  ./1.sh
+ 1140  cat 2.sh
+ 1141  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+ 1142  ls /public/prednasky | wc -l
+ 1143  man wc
+ 1144  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+ 1145  cat 3.
+ 1146  cat 3.sh 
+ 1147  veta="ahoj svet"\
+ 1148  veta="ahoj svet"
+ 1149  echo $veta
+ 1150  pocet=3
+ 1151  echo $pocet
+ 1152  echo $pocet $veta
+ 1153  echo $pocet     $veta
+ 1154  echo "$pocet    $veta"
+ 1155  echo '$pocet    $veta'
+ 1156  echo \$pocet    \$veta
+ 1157  echo "$pocet    \$veta"
+ 1158  echo "\$pocet    $veta"
+ 1159  echo '\$pocet    $veta'
+ 1160  echo ""
+ 1161  ((pocet--))
+ 1162  echo "$pocet    \$veta"
+ 1163  cat 3.sh
+ 1164  veta=ahoj svet
+ 1165  echo $veta
+ 1166  veta=ahoj; svet
+ 1167  echo $veta
+ 1168  bash 3.sh
+ 1169  cat 3.sh
+ 1170  chmod +x 3.sh
+ 1171  ll 3.sh
+ 1172  ll s
+ 1173  ./s
+ 1174  ./3.sh 
+ 1175  vim 3.sh 
+ 1176  ./3.sh 
+ 1177  cat 3.sh 
+ 1178  vim 3.sh 
+ 1179  cat 3.sh 
+ 1180  cat 4.sh
+ 1181  echo *
+ 1182  l
+ 1183  for f in [A-Z]*; do echo "$f" ; done
+ 1184  echo [A-Z]*
+ 1185  man tr
+ 1186  echo [A-Z]* | tr 'A-Z' 'a-z'
+ 1187  f=HELLo
+ 1188  echo "$f" | tr A-Z a-z
+ 1189  f="HE   LLo"
+ 1190  echo $f | tr A-Z a-z
+ 1191  cat 4.sh
+ 1192  echo $(echo "$f" | tr A-Z a-z)
+ 1193  echo "$(echo "$f" | tr A-Z a-z)"
+ 1194  echo "$(echo $f | tr A-Z a-z)"
+ 1195  echo "$(echo "$f" | tr A-Z a-z)"
+ 1196  echo he   llo
+ 1197  echo "he   llo"
+ 1198  l /public/priklady/
+ 1199  cd 
+ 1200  ll
+ 1201  cat /public/priklady/3.sh
+ 1202  cat /public/priklady/4.sh

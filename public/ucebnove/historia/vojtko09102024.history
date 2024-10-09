@@ -1,0 +1,291 @@
+  471  less /public/zaciatocnik.txt 
+  472  grep "system" /public/zaciatocnik.txt 
+  473  grep -w "system" /public/zaciatocnik.txt 
+  474  grep "\<system\>" /public/zaciatocnik.txt 
+  475  grep "\<system" /public/zaciatocnik.txt 
+  476  grep "\<s.*\>" /public/zaciatocnik.txt 
+  477  grep "\<s[^ ]*\>" /public/zaciatocnik.txt 
+  478  grep "\<s[A-Za-z]*\>" /public/zaciatocnik.txt 
+  479  grep "\<s[a-zA-Z]*\>" /public/zaciatocnik.txt 
+  480  grep "\<s[^a-zA-Z]*\>" /public/zaciatocnik.txt 
+  481  grep "\<s[a-Z]*\>" /public/zaciatocnik.txt 
+  482  grep "\<s[A-z]*\>" /public/zaciatocnik.txt 
+  483  grep "\<s[0-9a-zA-Z]*\>" /public/zaciatocnik.txt 
+  484  grep "\<s[[:alnum:]]*\>" /public/zaciatocnik.txt 
+  485  grep "\<s[^[:space:]]*\>" /public/zaciatocnik.txt 
+  486  grep "\<s[^[:space:]]{5}\>" /public/zaciatocnik.txt 
+  487  grep "\<s[^[:space:]]\{5\}\>" /public/zaciatocnik.txt 
+  488  grep -E "\<s[^[:space:]]{5}\>" /public/zaciatocnik.txt 
+  489  grep -E "\<s[^[:space:]]?\>" /public/zaciatocnik.txt 
+  490  grep -E "\<subor\>" /public/zaciatocnik.txt 
+  491  grep -E "\<(subor|system)\>" /public/zaciatocnik.txt 
+  492  grep -E -e "\<subor\> -e "\<system\>" /public/zaciatocnik.txt 
+  493  grep -E -e "\<subor\>" -e "\<system\>" /public/zaciatocnik.txt 
+  494  grep -r "grep" /public/ucebnove/historia/
+  495  grep -r "grep" /public/ucebnove/historia/ | wc -l
+  496  touch script
+  497  ./script
+  498  ls -la script 
+  499  bash script
+  500  vim script 
+  501  bash script
+  502  chmod +x script 
+  503  ./script
+  504  vim script 
+  505  which sh
+  506  ./script
+  507  vim script 
+  508  which python
+  509  vim script 
+  510  python -v
+  511  which python3
+  512  vim script 
+  513  ./script
+  514  vim script 
+  515  ./script
+  516  vim script 
+  517  mkdir bash
+  518  cd bash
+  519  cp /public/priklady/*.sh .
+  520  ls -la
+  521  cp /public/priklady/z .
+  522  cp /public/priklady/x.bc .
+  523  ls -la
+  524  less cow.sh 
+  525  ./cow.sh
+  526  bash cow.sh
+  527  ls -la
+  528  less z
+  529  less x.bc 
+  530  bash x.bc 
+  531  chmod +x x.bc 
+  532  ./x.bc 
+  533  less 1.sh
+  534  ls
+  535  ls | wc -l
+  536  man cron
+  537  less 2.sh
+  538  echo $ahoj
+  539  echo "$ahoj"
+  540  ahoj=asdf; echo $ahoj
+  541  ahoj=asdf echo $ahoj
+  542  echo $ahoj
+  543  env
+  544  set
+  545  ahoj=""
+  546  set
+  547  unset ahoj
+  548  set
+  549  ahoj=
+  550  less 2.sh
+  551  help for
+  552  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  553  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n "$d ";         ls $d | wc -l; done
+  554  help for
+  555  help for ((
+  556  help for((
+  557  help "for (("
+  558  help
+  559  help "for"
+  560  help "for (("
+  561  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+  562  for (( i="ahoj" ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+  563  for file in $(find . -name *.sh -type f); do echo "$file"; done
+  564  for file in $(find . -type f -name *.sh); do echo "$file"; done
+  565  for file in $(find . -type f -name "*.sh"); do echo "$file"; done
+  566  for file in $(find . -type f -name "*.sh"); do echo -n "$file "; wc -l $file;  done
+  567  for file in $(find . -type f -name "*.sh"); do echo -n "$file "; cat $file | wc -l;  done
+  568  for file in $(find . -type f -name "*.sh"); do echo -n "$file "; wc -l < $file;  done
+  569  for file in `find . -type f -name "*.sh"`; do echo -n "$file "; wc -l < $file;  done
+  570  less 3.sh
+  571  veta=ahoj svet
+  572  hel while
+  573  help while
+  574  help test
+  575  veta="ahoj svet"
+  576  pocet=3
+  577  set
+  578  echo $pocet $veta
+  579  veta="ahoj           svet"
+  580  echo $pocet $veta
+  581  echo 3 ahoj           svet
+  582  echo $pocet "$veta"
+  583  echo $pocet '$veta'
+  584  echo $pocet "'$veta'"
+  585  echo $pocet '"$veta"'
+  586  echo $pocet ''$veta''
+  587  echo $pocet ""$veta""
+  588  echo $pocet "'"$veta"'"
+  589  echo $pocet     $veta
+  590  echo $pocet"     "$veta
+  591  echo "$pocet     $veta"
+  592  echo '$pocet    $veta'
+  593  echo $(echo '$pocet    $veta')
+  594  echo "$(echo '$pocet    $veta')"
+  595  echo \$pocet    \$veta
+  596  bash 3.sh
+  597  less ~/.profile 
+  598  less ~/.bashrc
+  599  history 
+  600  exit
+  601  sudo apt install fortune
+  602  sudo apt install cowsay
+  603  sudo apt install bc
+  604  less bash/2.sh
+  605  less bash/3.sh
+  606  exit
+  607  grep "subor" /public/zaciatocnik.txt
+  608  grep -w "subor" /public/zaciatocnik.txt
+  609  grep -w "subor je" /public/zaciatocnik.txt
+  610  grep "\<subor je\>" /public/zaciatocnik.txt
+  611  grep "\<subor je" /public/zaciatocnik.txt
+  612  grep "\<subor " /public/zaciatocnik.txt
+  613  grep "\<subor" /public/zaciatocnik.txt
+  614  grep "\<s*" /public/zaciatocnik.txt
+  615  grep "\<s*\>" /public/zaciatocnik.txt
+  616  grep "\<s.*\>" /public/zaciatocnik.txt
+  617  grep "\<s[^ ]*\>" /public/zaciatocnik.txt
+  618  grep "\<s[a-zA-Z]*\>" /public/zaciatocnik.txt
+  619  grep "\<s[a-zA-Z0-9]*\>" /public/zaciatocnik.txt
+  620  grep "\<s[a-Z]*\>" /public/zaciatocnik.txt
+  621  grep "\<s[A-z]*\>" /public/zaciatocnik.txt
+  622  grep "\<s[^[:space:]]*\>" /public/zaciatocnik.txt
+  623  grep "\<s[^[:space:]]{5}\>" /public/zaciatocnik.txt
+  624  grep "\<s[^[:space:]]\{5\}\>" /public/zaciatocnik.txt
+  625  grep -E "\<s[^[:space:]]{5}\>" /public/zaciatocnik.txt
+  626  grep -E "\<s.*\>" /public/zaciatocnik.txt
+  627  grep -P "\<s.*?\>" /public/zaciatocnik.txt
+  628  grep -P "\<s.*\?\>" /public/zaciatocnik.txt
+  629  grep -P "<s.*\?>" /public/zaciatocnik.txt
+  630  grep -P "<s.*?>" /public/zaciatocnik.txt
+  631  grep "<s.?>" /public/zaciatocnik.txt
+  632  grep "\<s.?\>" /public/zaciatocnik.txt
+  633  grep "\<s.\?\>" /public/zaciatocnik.txt
+  634  less /etc/shadow
+  635  sudo less /etc/shadow
+  636  man /etc/shadow
+  637  man shadow
+  638  man passwd
+  639  man 5 passwd
+  640  less /etc/passwd
+  641  grep "\<\(subor\|system\)\>" /public/zaciatocnik.txt 
+  642  grep -E "\<(subor|system)\>" /public/zaciatocnik.txt 
+  643  grep -E -e "\<subor\> -e "\<system\>" /public/zaciatocnik.txt 
+  644  grep -E -e "\<subor\>" -e "\<system\>" /public/zaciatocnik.txt 
+  645  grep -r "grep" /public/ucebnove/historia
+  646  grep -r "find" /public/ucebnove/historia
+  647  grep -r "grep" /public/ucebnove/historia
+  648  touch script
+  649  rm script 
+  650  touch script
+  651  ./script
+  652  bash script
+  653  chmod +x script 
+  654  ./script
+  655  vim script 
+  656  less script 
+  657  ./script
+  658  bash script
+  659  vim script 
+  660  ./script
+  661  vim script 
+  662  ./script
+  663  vim script 
+  664  ./script
+  665  vim script 
+  666  ./script
+  667  vim script 
+  668  ./script
+  669  vim script 
+  670  ./script
+  671  vim script 
+  672  ./script
+  673  vim script 
+  674  bash script 
+  675  vim script 
+  676  cd bash
+  677  ls -la 
+  678  less z
+  679  less x.bc 
+  680  man bc
+  681  less x.bc 
+  682  ./x.bc 
+  683  less y.sh
+  684  less cow.sh 
+  685  vim cow.sh 
+  686  ./cow.sh
+  687  bash ./cow.sh
+  688  bash 1.sh
+  689  ls
+  690  ls | wc -l
+  691  set
+  692  ls | tr -s -d " "
+  693  ls | tr -d " " -s
+  694  ls | tr -s " "
+  695  ls | less
+  696  help for
+  697  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  698  set
+  699  echo $ahoj
+  700  set
+  701  env
+  702  set
+  703  ahoj=svet
+  704  set
+  705  echo $ahoj
+  706  ahoj=asdf echo $ahoj
+  707  ahoj=asdf; echo $ahoj
+  708  unset ahoj
+  709  ahoj=asdf echo $ahoj
+  710  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; done
+  711  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; echo "" done
+  712  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n $d;         ls $d | wc -l; echo ""; done
+  713  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n "$d ";         ls $d | wc -l; done
+  714  for d in /public/prednasky /public/ucebnove /public/priklady; do         echo -n "$d $(ls $d | wc -l)"; done
+  715  for d in /public/prednasky /public/ucebnove /public/priklady; do       echo -n "$d $(ls $d | wc -l)"; done
+  716  for d in /public/prednasky /public/ucebnove /public/priklady; do       echo "$d $(ls $d | wc -l)"; done
+  717  for (( i=0 ; i<5 ; i++ )); do     echo "opakovanie $i"; done
+  718  for ( i=0 ; i<5 ; i++ ); do     echo "opakovanie $i"; done
+  719  for (( i=0; i<5; i++ )); do     echo "opakovanie $i"; done
+  720  for ((i=0; i<5; i++)); do     echo "opakovanie $i"; done
+  721  help for
+  722  help
+  723  help "for (("
+  724  for ((i="asdf"; i<5; i++)); do     echo "opakovanie $i"; done
+  725  veta=ahoj svet
+  726  veta=ahoj echo $veta
+  727  vim script
+  728  vim ../script 
+  729  veta=ahoj echo $veta
+  730  veta=ahoj ../script 
+  731  veta=ahoj echo $veta
+  732  vim ../script 
+  733  veta=ahoj ../script 
+  734  set
+  735  veta=ahoj; ../script 
+  736  set
+  737  export veta=ahoj ../script 
+  738  export veta=ahoj; ../script 
+  739  env
+  740  veta="ahoj         svet"
+  741  pocet=3
+  742  echo $pocet $veta
+  743  echo $pocet "$veta"
+  744  echo $pocet     $veta
+  745  echo "$pocet    $veta"
+  746  echo '$pocet    $veta'
+  747  echo "'$pocet    $veta'"
+  748  echo '"$pocet    $veta"'
+  749  echo ''$pocet    $veta''
+  750  echo ""$pocet    $veta""
+  751  echo "'"$pocet    $veta"'"
+  752  echo "$pocet    $veta
+$pocet"
+  753  echo '$pocet    $veta
+gggg $pocet'
+  754  echo \$pocet    \$veta
+  755  help while
+  756  help test
+  757  history
+  758  history 
+  759  history > ../h
