@@ -1,0 +1,35 @@
+Úloha
+
+Máte N celých čísel a chcete zistiť ich priemer zaokrúhlene na tri desatinné miesta.
+
+Vstup
+
+Prvý riadok obsahuje celé číslo N.
+
+Každý z nasledujúcich N riadkov obsahuje jedno celé číslo.
+
+Výstup
+
+Zobrazte priemer N čísel, zaokrúhlene na tri desatinné miesta.
+
+Obmedzenia
+
+1 ≤ N ≤ 500
+
+−10000 ≤ x ≤ 10000 (x odkazuje na prvky zoznamu čísel, pre ktoré je priemer počítaný)
+
+Ukážka vstupu
+
+4 1 2 9 8
+
+Ukážka výstupu
+
+5.000
+
+Vysvetlenie
+
+V prvom riadku sa nachádza číslo 4, ktoré znamená, že je tu štyri čísla, ktoré sa majú použiť na výpočet priemeru.
+
+Priemer je (1 + 2 + 9 + 8) / 4 = 20/4 = 5.000 (zaokrúhlene na tri desatinné miesta).
+
+Poznámka: Ak sú nuly na konci čísla, môžete ich zahrnúť aj napriek tomu, že sú redundantné (napr. 0.000 namiesto 0).
