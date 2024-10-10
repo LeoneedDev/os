@@ -1,0 +1,29 @@
+
+Zadané sú dve celé čísla, X a Y, nájdi ich súčet, rozdiel, súčin a podiel.
+
+Vstupný formát
+Dva riadky, kde každý obsahuje jedno celé číslo (X a Y, v tomto poradí).
+
+Obmedzenia
+−100 ≤ X, Y ≤ 100
+Y ≠ 0
+
+Výstupný formát
+Štyri riadky, kde sa postupne nachádzajú súčet (X + Y), rozdiel (X − Y), súčin (X × Y) a podiel (X ÷ Y).
+(Pri výpočte podielu uveď iba celú časť.)
+
+Ukážkový vstup
+5
+2
+
+Ukážkový výstup
+7
+3
+10
+2
+
+Vysvetlenie
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2 (celá časť)
