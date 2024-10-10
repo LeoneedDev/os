@@ -1,0 +1,35 @@
+check_constraints() {
+    if (( $1 < -100 || $1 > 100 )); then
+        echo "X musí byť v rozsahu -100 až 100."
+        exit 1
+    fi
+
+    if (( $2 < -100 || $2 > 100 )); then
+        echo "Y musí byť v rozsahu -100 až 100."
+        exit 1
+    fi
+
+    if (( $2 == 0 )); then
+        echo "Y nesmie byť 0."
+        exit 1
+    fi
+}
+
+
+read -p "Zadajte hodnotu X: " X
+read -p "Zadajte hodnotu Y: " Y
+
+
+check_constraints $X $Y
+
+
+sucet=$((X + Y))
+rozdiel=$((X - Y))
+sucin=$((X * Y))
+podiel=$((X / Y))
+
+
+echo $sucet
+echo $rozdiel
+echo $sucin
+echo $podiel

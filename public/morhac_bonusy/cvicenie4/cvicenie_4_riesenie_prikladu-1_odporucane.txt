@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read X
+read Y
+
+if [[ $X -ge -100 || $Y -le 100 || $Y -ne 0 ]]; then
+        exit 1
+
+fi
+
+echo $(($X + $Y))
+echo $(($X - $Y))
+echo $(($X * $Y))
+echo $(($X / $Y))
