@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read N
+
+if [ "$N" -lt 1 ] || [ "$N" -gt 500 ]; then
+  echo "N must be between 1 and 500."
+  exit 1
+fi
+
+sum=0
+
+for ((i = 1; i <= N; i++)); do
+  read -p "Enter integer #$i: " num
+  sum=$((sum + num))
+done
+
+average=$(echo "scale=3; $sum / $N" | bc)
+
+echo "The average is: $average"
