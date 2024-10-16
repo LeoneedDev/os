@@ -1,0 +1,247 @@
+ 1331  cat 1.sh 
+ 1332  echo $0
+ 1333  echo $SHELL
+ 1334  cat 2.sh
+ 1335  cat 3.sh 
+ 1336  cat 4.sh 
+ 1337  echo {1..10}
+ 1338  `echo duti | tr 'u' 'a' | tr 'i' 'e'`
+ 1339  shellcheck 4.sh
+ 1340  cat 5.sh
+ 1341  bash 5.sh jeden dva tri
+ 1342  echo $?
+ 1343  bash 5.sh -d
+ 1344  echo $?
+ 1345  bash 5.sh -d dalsi jeden dva
+ 1346  bash 5.sh -abc
+ 1347  echo $?
+ 1348  bash 5.sh abc
+ 1349  bash 5.sh cba
+ 1350  bash 5.sh cba abc neviem
+ 1351  bash 5.sh cba abc -d neviem
+ 1352  cat 5.sh
+ 1353  bash 5.sh -ne
+ 1354  vim 5.sh
+ 1355  set
+ 1356  echo $debug
+ 1357  debug=""
+ 1358  set
+ 1359  vim 5.sh
+ 1360  help getopt
+ 1361  ls -la 
+ 1362  ls -l -a
+ 1363  cat 6.sh 
+ 1364  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1365  set
+ 1366  clear
+ 1367  echo $zoznam
+ 1368  echo ${zoznam[2]}
+ 1369  echo ${#zoznam[2]}
+ 1370  echo ${#zoznam[5]}
+ 1371  echo ${#zoznam[@]}
+ 1372  echo ${zoznam[@]:2:4}
+ 1373  zoznam2=(${zoznam[@]} osem)
+ 1374  echo ${#zoznam2[@]}
+ 1375  echo ${zoznam2[@]}
+ 1376  set
+ 1377  zoznam2=("${zoznam[@]}" osem)
+ 1378  set
+ 1379  echo ${zoznam[@]}
+ 1380  for prvok in "${zoznam[@]}"; do         echo "$prvok"; done
+ 1381  for prvok in ${zoznam[@]}; do         echo "$prvok"; done
+ 1382  ${#zoznam[@]}
+ 1383  echo ${#zoznam[@]}
+ 1384  echo ${zoznam[@]:0:6}
+ 1385  echo ${zoznam[$((7-${#zoznam[@]}))]}
+ 1386  echo ${zoznam[((7-${#zoznam[@]}))]}
+ 1387  echo ${zoznam[$((7-${#zoznam[@]}))]}
+ 1388  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1389  echo ${zoznam1[@]}
+ 1390  echo ${#zoznam[@]}
+ 1391  echo ${#zoznam1[@]}
+ 1392  cat 7.sh 
+ 1393  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1394  man dirname
+ 1395  man basename
+ 1396  echo $(dirname $cesta)
+ 1397  echo $(basename $cesta)
+ 1398  echo $(dirname $(dirname $cesta))
+ 1399  echo $(basename $(dirname $cesta))
+ 1400  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 1401  echo $(dirname $cesta)
+ 1402  echo $(basename $cesta)
+ 1403  echo $(dirname "$cesta")
+ 1404  echo $(dirname $(dirname $cesta))
+ 1405  echo $(basename $(dirname $cesta))
+ 1406  cat 7.sh 
+ 1407  cat 8.sh 
+ 1408  ls -l
+ 1409  cat 8.sh 
+ 1410  ls -l | head -3
+ 1411  for f in $(ls -l | head -3); do         echo $f; done
+ 1412  cat 8.sh 
+ 1413  IFS='
+'
+ 1414  for f in $(ls -l | head -3); do         echo $f; done
+ 1415  cat 9.sh
+ 1416  bash 9.sh
+ 1417  bash ./9.sh
+ 1418  ./9.sh
+ 1419  chmod +x 9.sh
+ 1420  bash ./9.sh
+ 1421  ll
+ 1422  chmod -x 9.sh 
+ 1423  cat 9-2.sh 
+ 1424  bash 9-2.sh 
+ 1425  bash ./9-2.sh 
+ 1426  chmod +x 9-2.sh 
+ 1427  bash ./9-2.sh 
+ 1428  echo "Debug: piaty raz, status = $?"
+ 1429  man bash
+ 1430  bash -v ./9-2.sh 
+ 1431  bash -x ./9-2.sh 
+ 1432  bash -xv ./9-2.sh 
+ 1433  man bash
+ 1434  clear
+ 1435  IFS=$' \t\n'
+ 1436  clear
+ 1437  less /public/priklady/1.sh 
+ 1438  cat /public/priklady/1.sh 
+ 1439  ll
+ 1440  bash 1.sh
+ 1441  cat s
+ 1442  bash s
+ 1443  ./s
+ 1444  cat 1.sh
+ 1445  echo $SHELL
+ 1446  echo $0
+ 1447  cat 2.sh 
+ 1448  man for
+ 1449  help for
+ 1450  cat 3.sh 
+ 1451  man shellcheck
+ 1452  shellcheck 3.sh 
+ 1453  cat 3.sh 
+ 1454  cat 4.sh 
+ 1455  echo *
+ 1456  shellcheck 4.sh
+ 1457  `echo duti | tr "u" "a" | tr "i" "e"`
+ 1458  ll
+ 1459  echo [A-Z]*
+ 1460  cat 4.sh 
+ 1461  cat 5.sh 
+ 1462  bash 5.sh
+ 1463  echo $?
+ 1464  bash 5.sh -d dalsie
+ 1465  bash 5.sh dalsie
+ 1466  echo $?
+ 1467  bash 5.sh -D dalsie
+ 1468  bash 5.sh cba 
+ 1469  bash 5.sh cba abc
+ 1470  bash 5.sh cba abc -d dalsi prepinac
+ 1471  echo $?
+ 1472  bash 5.sh cba abc -h dalsi prepinac
+ 1473  echo $?
+ 1474  bash 5.sh cba abc -j dalsi prepinac
+ 1475  bash 5.sh cba abc -jh dalsi prepinac
+ 1476  echo $?
+ 1477  bash 5.sh cb
+ 1478  man getopts
+ 1479  help getopts
+ 1480  ls -la 
+ 1481  ls -l -a
+ 1482  cat 6.sh
+ 1483  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1484  set
+ 1485  clear
+ 1486  echo $zoznam
+ 1487  echo ${zoznam[2]}
+ 1488  echo ${#zoznam[2]}
+ 1489  echo ${#zoznam[5]}
+ 1490  echo ${#zoznam[@]}
+ 1491  echo ${zoznam[@]:2:4}
+ 1492  zoznam2=(${zoznam[@]} osem)
+ 1493  echo ${#zoznam2[@]}
+ 1494  echo ${zoznam[@]}
+ 1495  echo ${zoznam2[@]}
+ 1496  zoznam2=("${zoznam[@]}" osem)
+ 1497  echo ${#zoznam2[@]}
+ 1498  echo ${zoznam2[@]}
+ 1499  for prvok in "${zoznam[@]}"; do         echo "$prvok"; done
+ 1500  for prvok in ${zoznam[@]}; do         echo "$prvok"; done
+ 1501  for prvok in "${zoznam[@]}"; do         echo $prvok; done
+ 1502  zoznam2=("${zoznam[@]}" "osem       ")
+ 1503  for prvok in ${zoznam[@]}; do         echo "$prvok"; done
+ 1504  for prvok in ${zoznam2[@]}; do         echo "$prvok"; done
+ 1505  for prvok in "${zoznam2[@]}"; do         echo "$prvok"; done
+ 1506  zoznam2=("${zoznam[@]}" "osem       dalsi")
+ 1507  for prvok in "${zoznam2[@]}"; do         echo "$prvok"; done
+ 1508  for prvok in ${zoznam2[@]}; do         echo "$prvok"; done
+ 1509  for prvok in "${zoznam2[@]}"; do         echo $prvok; done
+ 1510  for prvok in ${zoznam2[@]}; do         echo $prvok; done
+ 1511  echo ${zoznam[@]:2:}
+ 1512  echo ${zoznam[@]:2:10}
+ 1513  cat 6.csh 
+ 1514  cat 6.sh
+ 1515  echo ${zoznam[@]}
+ 1516  echo ${#zoznam[@]}
+ 1517  cat 6.sh
+ 1518  echo ${zoznam[$((7-${#zoznam[@]}))]}
+ 1519  echo ${zoznam[((7-${#zoznam[@]}))]}
+ 1520  echo ${zoznam[$((7-${#zoznam[@]}))]}
+ 1521  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1522  echo ${zoznam1[@]}
+ 1523  echo ${#zoznam1[@]}
+ 1524  zoznam1=("${zoznam[@]:0:6}" sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1525  echo ${#zoznam1[@]}
+ 1526  cat 7.sh
+ 1527  man dirname
+ 1528  man basename
+ 1529  cesta=/public/ucebnove/seminar_1/vim.txt
+ 1530  echo $(dirname $cesta)
+ 1531  echo $(basename $cesta)
+ 1532  echo $(dirname $(dirname $cesta))
+ 1533  echo $(basename $(dirname $cesta))
+ 1534  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 1535  $(dirname $cesta)
+ 1536  echo $(dirname $cesta)
+ 1537  echo $(basename $cesta)
+ 1538  echo $(basename "$cesta")
+ 1539  echo $(dirname "$cesta")
+ 1540  echo $(dirname $(dirname $cesta))
+ 1541  echo $(basename $(dirname $cesta))
+ 1542  cat 8.sh 
+ 1543  ls -l | head -3
+ 1544  for f in $(ls -l | head -3); do         echo $f; done
+ 1545  tmp="$IFS"
+ 1546  IFS='
+'
+ 1547  for f in $(ls -l | head -3); do         echo $f; done
+ 1548  IFS="$tmp"
+ 1549  man bash
+ 1550  cat 8.sh
+ 1551  cat 9.sh
+ 1552  man source
+ 1553  help source
+ 1554  man exec
+ 1555  help exec
+ 1556  bash 9.sh 
+ 1557  9.sh
+ 1558  bash ./9.sh 
+ 1559  chmod +x ./9.sh 
+ 1560  bash ./9.sh 
+ 1561  man bash
+ 1562  bash -v ./9.sh 
+ 1563  bash -x ./9.sh 
+ 1564* bash ./9.sh 
+ 1565  man export
+ 1566  help export
+ 1567  9-2.sh
+ 1568  bash 9-2.sh
+ 1569  bash ./9-2.sh
+ 1570  chmod -x 9-2.sh
+ 1571  bash ./9-2.sh
+ 1572  chmod +x 9-2.sh
+ 1573  bash ./9-2.sh
+ 1574  echo "Debug: piaty raz, status = $?"
+ 1575  echo koniec
