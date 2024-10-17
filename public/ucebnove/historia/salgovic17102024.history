@@ -1,0 +1,208 @@
+    1  clear
+    2  ls
+    3  cd /public/ucebnove/
+    4  less kw5.txt 
+    5  cd 
+    6  ls
+    7  cd priklady/
+    8  ls
+    9  cat 1.sh 
+   10  cat 2.sh 
+   11  man for
+   12  help for
+   13  cat 3.sh 
+   14  cat 4.sh 
+   15  man tr
+   16  man mv
+   17  echo [A-Z]*
+   18* 
+   19  bash 4.sh 
+   20  ls
+   21  cat 4.sh 
+   22  echo {1..10}
+   23  tr 'A-Z' 'a-z'
+   24  echo duti
+   25  duti
+   26  echo duti | tr 'u' 'a' | tr 'i' 'e'
+   27  echo `duti | tr 'u' 'a' | tr 'i' 'e'`
+   28  echo `(duti | tr 'u' 'a' | tr 'i' 'e')`
+   29  echo $(duti | tr 'u' 'a' | tr 'i' 'e')
+   30  clear
+   31  man spellcheck
+   32  spellcheck 4.sh
+   33  apt-get install spellcheck
+   34  spellcheck 4.sh
+   35  cat 4.sh 
+   36  touch Subor
+   37  bash 4.sh 
+   38  ls
+   39  5.sh
+   40  less5.sh
+   41  less 5.sh
+   42  bash 5.sh -D prvy druhy treti
+   43  less 5.sh
+   44  bash 5.sh
+   45  bash 5.sh -h
+   46  bash 5.sh abc cba prvy druhy
+   47  set
+   48  asdf=qwert
+   49  set
+   50  unset asdf
+   51  set
+   52  less 5.sh
+   53  getopt
+   54  man getopt
+   55  less 6.sh
+   56  cat 6.sh
+   57  cat 7.sh
+   58  man dirname
+   59  man basename
+   60  cat 8.sh 
+   61  set
+   62  cat 8.sh 
+   63  cat 9.sh 
+   64  bash 9.sh
+   65  bash ./9.sh
+   66  chmod +x 9.sh
+   67  bash ./9.sh
+   68  $?
+   69  echo $?
+   70  bash ./9.sh
+   71  echo $?
+   72  bash ./6.sh
+   73  cat ./6.sh
+   74  cat ./5.sh
+   75  bash 5.sh -c
+   76  echo $?
+   77  cat 9-2.sh 
+   78  bash 9-2.sh 
+   79  cat ./9-2.sh 
+   80  bash ./9-2.sh 
+   81  chmod +x ./9-2.sh 
+   82  bash ./9-2.sh 
+   83  echo "Debug: piaty raz, status = $?"
+   84  man bash
+   85  bash -v ./9-2.sh
+   86  bash -x ./9-2.sh
+   87  bash -vx ./9-2.sh
+   88  history
+   89  clear
+   90  cd /public/ucebnove/
+   91  ls
+   92  cat kw5.txt 
+   93  cd 
+   94  cd priklady/
+   95  ls
+   96  chmod -x 9.sh 
+   97  chmod -x 9-2.sh 
+   98  clear
+   99  ls
+  100  cat 1.sh 
+  101  bash 1.sh
+  102  ./1.sh
+  103  ./3.sh
+  104  cat 2.sh 
+  105  cat 3.sh 
+  106* 
+  107  cat 4.sh 
+  108  man tr
+  109  touch Subor
+  110  ls
+  111  bash 4.sh 
+  112  ls
+  113  rm subor 
+  114  bash 4.sh 
+  115  ls
+  116  echo {1..10}
+  117  echo {1..100}
+  118  spellcheck
+  119  spellcheck 4.sh
+  120  cat 5.sh 
+  121  bash 5.sh 
+  122  man unset
+  123  help unset
+  124  bash 5.sh -D prvy druhy
+  125  bash 5.sh -h
+  126  bash 5.sh abc cba asdf
+  127  echo $?
+  128  bash 5.sh abc cba -f
+  129  echo $?
+  130  bash 5.sh abc cba -d
+  131  echo debug
+  132  echo $debug
+  133  set
+  134  debug=ahoj
+  135  set
+  136  unset debug
+  137  set
+  138  cat 5.sh 
+  139  man getopt
+  140  ls -l -a
+  141  getopt
+  142  getopt --help
+  143  getopt -h
+  144  cat 6.sh
+  145  clear
+  146  zoznam=(jeden dva tri styri pat "sest cele sedem")
+  147  echo $zoznam
+  148  echo ${zoznam[2]}
+  149  echo ${#zoznam[2]}
+  150  echo ${#zoznam[5]}
+  151  echo ${#zoznam[@]}
+  152  echo ${zoznam[@]}
+  153  echo ${zoznam[@]:2:4}
+  154  echo ${zoznam[@]:2:3}
+  155  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+  156  echo ${zoznam1[@]}
+  157  zoznam2=(${zoznam[@]} osem)
+  158  echo ${#zoznam2[@]}
+  159  echo ${zoznam2[@]}
+  160  set
+  161  zoznam2=("${zoznam[@]}" osem)
+  162  set
+  163  echo ${#zoznam2[@]}
+  164  echo ${zoznam2[@]}
+  165  help dirname
+  166  man dirname
+  167  cesta=/public/ucebnove/seminar_1/vim.txt
+  168  echo $(dirname $cesta)
+  169  man basename
+  170  echo $(basename $cesta)
+  171  echo $(dirname $(dirname $cesta))
+  172  echo $(basename $(dirname $cesta))
+  173  cesta="/public/ucebnove/seminar _1/vim.txt"
+  174  echo $(dirname $cesta)
+  175  echo $(basename $cesta)
+  176  echo $(basename "$cesta")
+  177  echo $(dirname $(dirname $cesta))
+  178  echo $(basename $(dirname $cesta))
+  179  echo $(basename "$(dirname $cesta)")
+  180  set
+  181  ls -l
+  182  for f in $(ls -l | head -3); do 	echo $f; done
+  183  IFS='
+'
+  184  for f in $(ls -l | head -3); do 	echo $f; done
+  185  set
+  186  clear
+  187  man source
+  188  help source
+  189  hel exec
+  190  help exec
+  191  bash 9.sh
+  192  bash ./9.sh
+  193  chmod +x 9.sh
+  194  bash ./9.sh
+  195  echo "$var2"
+  196  set
+  197  clear
+  198  bash ./9-2.sh
+  199  chmod +x 9-2.sh
+  200  bash ./9-2.sh
+  201  echo "Debug: piaty raz, status = $?"
+  202  man bash
+  203  bash -v ./9-2.sh
+  204  bash -x ./9-2.sh
+  205  bash -vx ./9-2.sh
+  206  history
+  207  history | sudo tee /public/ucebnove/historia/salgovic17102024.history
