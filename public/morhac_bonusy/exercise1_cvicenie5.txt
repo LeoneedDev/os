@@ -1,0 +1,41 @@
+Cieľ: Vytvorte Bash skript, ktorý umožní používateľom spravovať zoznam úloh uložených v textovom súbore. Skript by mal umožniť používateľom pridávať, odstraňovať, prezerať a označovať úlohy ako splnené.
+
+Požiadavky:
+Štruktúra súboru:
+
+Úlohy by mali byť uložené v súbore s názvom tasks.txt.
+Každá úloha by mala byť uložená na novom riadku vo formáte:
+
+[Stav] Popis úlohy
+
+Stav môže byť buď [ ] pre nesplnené alebo [x] pre splnené.
+
+Funkcionalita skriptu:
+Skript by mal zobraziť ponuku s nasledujúcimi možnosťami:
+Pridať novú úlohu
+Odstrániť úlohu
+Zobraziť všetky úlohy
+Označiť úlohu ako splnenú
+Ukončiť
+
+Pridanie úlohy:
+Keď používateľ vyberie možnosť pridať úlohu, vyzvite ho, aby zadal popis úlohy.
+Novú úlohu pridajte do tasks.txt s nastavením [ ].
+
+Odstránenie úlohy:
+Keď používateľ vyberie možnosť odstrániť úlohu, zobrazte zoznam úloh s číslami riadkov.
+Vyžiadajte si od používateľa číslo riadku úlohy, ktorú chce odstrániť.
+Odstráňte úlohu zo súboru tasks.txt.
+
+Zobrazenie úloh:
+Keď používateľ vyberie možnosť zobraziť všetky úlohy, zobrazte všetky úlohy so statusmi.
+Označenie úlohy ako splnenej:
+Keď používateľ vyberie túto možnosť, zobrazte zoznam úloh s číslami riadkov.
+Vyžiadajte si od používateľa číslo riadku úlohy, ktorú chce označiť ako splnenú.
+Aktualizujte status úlohy z [ ] na [x] v tasks.txt.
+
+Ukončiť:
+Keď používateľ vyberie možnosť ukončiť, skript by sa mal ukončiť.
+
+Skript by mal ďalej spĺňať:
+- Implementujte spracovanie chýb pre neplatné vstupy (napr. nečíselné vstupy pre čísla úloh).
