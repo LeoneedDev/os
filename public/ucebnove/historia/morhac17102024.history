@@ -1,0 +1,1000 @@
+  588  grep .*d morhac26092024.history 
+  589  cd 
+  590  cd /public
+  591  grep zaciatocnik.txt 
+  592  grep ^A zaciatocnik.txt 
+  593  grep ^[0-9] zaciatocnik.txt 
+  594  grep [0-9]$ zaciatocnik.txt 
+  595  grep a$ zaciatocnik.txt 
+  596  grep .$ zaciatocnik.txt 
+  597  grep ^[0-9]$ zaciatocnik.txt 
+  598  grep "$" zaciatocnik.txt 
+  599  cd ucebnove/historia/
+  600  grep -w 'help' morhac26092024.history 
+  601  grep 'help' morhac26092024.history 
+  602  grep -w 'hel' morhac26092024.history 
+  603  grep 'help' morhac26092024.history 
+  604  grep -w 'help' morhac26092024.history 
+  605  grep -w 'help' morhac26092024.history | sort
+  606  grep -w 'help' morhac26092024.history | sort -r
+  607  man sort
+  608  grep -w 'help' morhac26092024.history | sort -rn
+  609  man grep
+  610  grep -w .{9,} morhac26092024.history 
+  611  grep -w `.{9,}` morhac26092024.history 
+  612  grep -w `[[:alpha]]\{10\}` morhac26092024.history 
+  613  cd /public/
+  614  grep -w `[[:alpha]]\{10\}` zaciatocnik.txt 
+  615  grep -Ew `[[:alpha]]{21}` zaciatocnik.txt 
+  616  grep -Ew `[[:alpha:]]{21}` zaciatocnik.txt 
+  617  grep -Ew '[[:alpha:]]{21}' zaciatocnik.txt 
+  618  grep -w '[[:alpha]]\{10\}' ./ucebnove/historia/morhac26092024.history 
+  619  grep -w '[[:alpha:]]\{10\}' ./ucebnove/historia/morhac26092024.history 
+  620  cd
+  621  find / | grep "Permission denied"
+  622  find / |& grep "Permission denied"
+  623  grep -w ''.{9,}' /public/zaciatocnik.txt 
+  624  grep -w '.{9,}' /public/zaciatocnik.txt 
+  625  grep -w '.{10,}' /public/zaciatocnik.txt 
+  626  grep -w '.{21,}' /public/zaciatocnik.txt 
+  627  cd /public/
+  628  ls
+  629  cat Morhac_Exercise.txt 
+  630  exit
+  631  cd /public/
+  632  cat Morhac_Exercise.txt 
+  633  exit
+  634  cd /public/
+  635  ls
+  636  ls ucebnove
+  637  cat ucebnove/kw3.txt
+  638  find . -f
+  639  find . -type f
+  640  find . -type d
+  641  find . -type l
+  642  find /dev -type l
+  643  find . -type f -mtime 7
+  644  find . -type f -mtime 8
+  645  find . -type f -mtime -7
+  646  wc brach_cviko3.txt 
+  647  man -w
+  648  wc -w brach_cviko3.txt 
+  649  wc -l brach_cviko3.txt 
+  650  wc -c brach_cviko3.txt 
+  651  find . -type f -mtime -7
+  652  find . -type f -mtime -7 | tail
+  653  find . -type f -mtime -7 | tail 2
+  654  find . -type f -mtime -7 | tail -2
+  655  find . -type f -mtime -7 -exec tail -2 
+  656  find . -type f -mtime -7 -exec {tail -2} 
+  657  find . -type f -mtime -7 -exec tail -2 ;
+  658  find . -type f -mtime -7 -exec f tail -2 ;
+  659  find . -type f -mtime -7 -exec {tail -2};
+  660  find . -type f -mtime -7 -exec tail -2 {} \;
+  661  find . -type f -mtime -7 | tail -2
+  662  find . -type f -mtime -7 -exec tail -2 \;
+  663  tail -2 `find -type f -mtime -7`
+  664  tail -2 'find -type f -mtime -7'
+  665  tail -2 `find -type f -mtime -7`
+  666  tail -2 $(find -type f -mtime -7)
+  667  tail -n 2 `find -type f -mtime -7`
+  668  tail -n 2 'find -type f -mtime -7'
+  669  tail -n 2 $(find -type f -mtime -7)
+  670  fortune | cowsay
+  671  man grep
+  672  cd ucebnove/
+  673  cd historia/
+  674  ls
+  675  grep find morhac26092024.history 
+  676  ll
+  677  grep find morhac26092024.history 
+  678  alias
+  679  grep .d morhac26092024.history 
+  680  grep .*d morhac26092024.history 
+  681  grep *d morhac26092024.history 
+  682  grep * morhac26092024.history 
+  683  man grep 
+  684  cd /public/
+  685  ls
+  686  cat zaciatocnik.txt 
+  687  cd ucebnove/historia/
+  688  grep * morhac26092024.history 
+  689  cd /public/
+  690  grep ^[0-9] zaciatocnik.txt 
+  691  cd ucebnove/historia/
+  692  grep -w "help" morhac26092024.history 
+  693  grep -w "hel" morhac26092024.history 
+  694  grep -w "help" morhac26092024.history | sort 
+  695  grep -w "help" morhac26092024.history | sort -r
+  696  grep -w "help" morhac26092024.history | sort -rn
+  697  cd /public/
+  698  grep -Ew '[[:alpha:]]' zaciatocnik.txt 
+  699  grep -Ew '[[:alpha:]]{21}' zaciatocnik.txt 
+  700  grep -Ew '[a-zA-Z]{21}' zaciatocnik.txt 
+  701  find | grep "Permission denied"
+  702  find / | grep "Permission denied"
+  703  find / |& grep "Permission denied"
+  704  ls
+  705  less Morhac_Exercise.txt 
+  706  cd 
+  707  cd /public/
+  708  less Morhac_Exercise.txt 
+  709  exit
+  710  cd /public/
+  711  ls
+  712  ls ucebnove/
+  713  cat ucebnove/kw3.txt
+  714  find -type f
+  715  find -type d
+  716  find -type l
+  717  find /dev -type l
+  718  find -type f -mtime +7
+  719  find -type f -mtime 7
+  720  find -type f -atime 7
+  721  find -type f -atime -7
+  722  ls
+  723  wc brach_cviko3.txt 
+  724  wc -l brach_cviko3.txt 
+  725  find -type f 
+  726  find -type f -mtime 7
+  727  find -type f -mtime 7 -exec tail -n 2 
+  728  find -type f -mtime 7 -exec tail -n 2 ;
+  729  find -type f -mtime 7 -exec tail -n 2 \;
+  730  find -type f -mtime 7 -exec tail -n 2 {}  \;
+  731  tail -n 2 find -type f -mtime 7
+  732  tail -n 2 $(find -type f -mtime 7)
+  733  tail -n 2 `find -type f -mtime 7`
+  734  fortune | cowsay
+  735  man grep
+  736  cd ucebnove/historia/
+  737  ls
+  738  grep find morhac26092024.history 
+  739  ll
+  740  grep find morhac26092024.history 
+  741  alias
+  742  grep .d morhac26092024.history 
+  743  grep .*d morhac26092024.history 
+  744  grep .*d morhac26092024.history cd /public/
+  745  cd /public/
+  746  ls
+  747  cat zaciatocnik.txt 
+  748  man grep
+  749  grep ^[:digit:] zaciatocnik.txt 
+  750  grep ^[[:digit:]] zaciatocnik.txt 
+  751  grep ^[0-9] zaciatocnik.txt 
+  752  cd ucebnove/historia/
+  753  ls
+  754  grep -w help morhac26092024.history 
+  755  grep -w hel morhac26092024.history 
+  756  grep hel morhac26092024.history 
+  757  grep hel morhac26092024.history | sort
+  758  grep hel morhac26092024.history | sort -r
+  759  grep hel morhac26092024.history | sort -rn
+  760  cd /public/
+  761  grep -Ew '[a-zA-Z]{21}' zaciatocnik.txt 
+  762  grep -Ew '[[:alpha:]]{21}' zaciatocnik.txt 
+  763  find / | grep "Permission denied"
+  764  find / |&  grep "Permission denied"
+  765  grep -Ew [[:alpha:]]{21} zaciatocnik.txt 
+  766  man grep
+  767  grep -w [[:alpha:]]{21} zaciatocnik.txt 
+  768  grep -Ew [[:alpha:]]{21} zaciatocnik.txt 
+  769  ls
+  770  cat Morhac_Exercise.txt 
+  771  less Morhac_Exercise.txt 
+  772  cd /public
+  773  ls
+  774  less Morh
+  775  less Morhac_Exercise.txt 
+  776  history
+  777  cd /public
+  778  ls
+  779  ls ucebnove
+  780  less ucebnove/historia/morhac26092024.history 
+  781  history | sudo tee /public/ucebnove/historia/morhac03102024.history
+  782  ls
+  783  ls ucebnove/historia/
+  784  less ucebnove/historia/morhac03102024.history 
+  785  ls
+  786  sudo mkdir morhac_bonusy
+  787  ls
+  788  suo mv morhac_bonusy/ Morhac_Exercise.txt 
+  789  sudo mv morhac_bonusy/ Morhac_Exercise.txt 
+  790  sudo mv Morhac_Exercise.txt morhac_bonusy/
+  791  ls
+  792  ls morhac_bonusy/
+  793  cd morhac_bonusy/
+  794  wget https://github.com/user-attachments/files/17249345/odpovede.txt
+  795  sudo wget https://github.com/user-attachments/files/17249345/odpovede.txt
+  796  cd mo
+  797  ls
+  798  car odpovede.txt 
+  799  less odpovede.txt 
+  800  man rename
+  801  sudo rename Morhac_Exercise.txt cvicenie.txt
+  802  rename Morhac_Exercise.txt cvicenie.txt
+  803  man rename
+  804  sudo mv Morhac_Exercise.txt exercise_morhac.txt
+  805  ls
+  806  less exercise_morhac.txt 
+  807  cd ..
+  808  ls
+  809  exit
+  810  cd /public
+  811  ls
+  812  cd morhac_bonusy/
+  813  ls
+  814  less exercise_morhac.txt 
+  815  sudo wget https://github.com/user-attachments/files/17243600/sample.txt
+  816  less exercise_morhac.txt 
+  817  sudo wget https://github.com/user-attachments/files/17243599/sample_two.txt
+  818  s
+  819  ls
+  820  exit
+  821  wget https://github.com/user-attachments/files/17327574/morhac_exercise_extra_lecture_4.txt
+  822  ls
+  823  cat morhac_exercise_extra_lecture_4.txt 
+  824  rm -r morhac_exercise_extra_lecture_4.txt 
+  825  ls
+  826  exit
+  827  history
+  828  cd /public/ucebnove/historia
+  829  ls
+  830  less morhac03102024.history 
+  831  less morhac26092024.history 
+  832  less morhac03102024.history 
+  833  grep -E Ahoj < zaciatocnik.txt
+  834  cd ..
+  835  grep -E Ahoj < zaciatocnik.txt
+  836  grep -E Ahoj << zaciatocnik.txt 
+  837  ahoj
+  838  cau
+  839  man grep
+  840  grep -E Ahoj << EOF
+  841  f
+  842  Ahoj
+  843  a
+  844  EOF
+  845  grep -E Ahoj <<< "Test vstup Ahoj"
+  846  find / | grep "Permission denied"
+  847  find / |& grep "Permission denied"
+  848  find / 
+  849  find / |& grep "Permission denied"
+  850  find / > /dev/null
+  851  find / 2> /dev/null
+  852  find / &> /dev/null
+  853  find / > /dev/null
+  854  find / 2> /dev/null
+  855  find / &> /dev/null
+  856  find / 2>&1 /dev/null
+  857  cd /dev
+  858  ll
+  859  find / 2>&1 /dev/null
+  860  echo "Hello, World!" > output.txt
+  861  cd 
+  862  echo "Hello, World!" > output.txt
+  863  cat output.txt 
+  864  echo "Hello again!" >> output.txt
+  865  cat output.txt 
+  866  echo "This is a message." &>> output.txt
+  867  cat output.txt 
+  868  ls
+  869  mv output.txt output
+  870  ls
+  871  cat output 
+  872  mv output output.txt
+  873  cat output 
+  874  cat output.txt 
+  875  less output.txt 
+  876  jobs
+  877  fg
+  878  mkdir stvrte
+  879  cd stvrte
+  880  cp -R /public/priklady
+  881  cp -R /public/priklady/
+  882  cp -R /public/priklady .
+  883  ll
+  884  cd priklady/
+  885  l
+  886  ll
+  887  cat s
+  888  bash s
+  889  ./s
+  890  chmod +x s
+  891  chmod +x sll
+  892  ll
+  893  ./s
+  894  chmod -x s
+  895  echo $PATH
+  896  PATH = $PATH:~.
+  897  PATH = $PATH:~/stvrte/priklady
+  898  export PATH = $PATH:~.
+  899  export PATH = $PATH:~/stvrte/priklady
+  900  export PATH=$PATH:~/stvrte/priklady
+  901  echo $PATH
+  902  s
+  903  chmod +x s
+  904  s
+  905  chmod -x s
+  906  export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  907  echo $PATH
+  908  s
+  909  cat z
+  910  help for
+  911  ./z
+  912  bash z
+  913  ll
+  914  bash x.bc
+  915  cat x.bc 
+  916  sudo apt-get install bc
+  917  bc x.bc
+  918  man bc
+  919  bc -q x.bc 
+  920  bc
+  921  ll
+  922  cat y.sh 
+  923  bash y.sh 
+  924  jobs
+  925  fg
+  926  bg
+  927  echo "Ahoj"
+  928  jobs
+  929  kill %1
+  930  jobs
+  931  bg
+  932  bash y.sh 
+  933  bg
+  934  ps
+  935  ls
+  936  ll
+  937  kill %1
+  938  less 1.sh 
+  939  man wc
+  940  bash 1.sh 
+  941  man wc
+  942  bash 1.sh 
+  943  less 1.sh 
+  944  ls
+  945  ll
+  946  less 1.sh 
+  947  ls
+  948  less 2.sh
+  949  bash 2.sh 
+  950  cat 2.sh
+  951  cat 3sn
+  952  cat 3.sh
+  953  bash 3.sh
+  954  cat 4.sh
+  955  ll
+  956  mv pos.sh Pos.sh
+  957  bash 4.sh
+  958  ll
+  959  cat 4.sh
+  960  man tr
+  961  man mv
+  962  cd ..
+  963  rm -r stvrte/
+  964  ls
+  965  exit
+  966  history
+  967  cd /public/ucebnove/historia
+  968  ls
+  969  less morhac03102024.history 
+  970  cd /public/
+  971  grep "Ahoj" < zaciatocnik.txt 
+  972  grep "Ahoj" zaciatocnik.txt 
+  973  grep "Ahoj" << EOF
+  974  bla bla bla
+  975  ahoj bla bla
+  976  Ahoj bla bla
+  977  EOF
+  978  grep "Ahoj" <<< "Toto je string Ahoj"
+  979  less morhac03102024.history 
+  980  cd ucebnove/historia
+  981  less morhac03102024.history 
+  982  /dev
+  983  ll
+  984  cd /dev
+  985  ll
+  986  cd /public/
+  987  find / > /dev/null
+  988  find / 2> /dev/null
+  989  find / &> /dev/null
+  990  cd 
+  991  touch subor.txt
+  992  ls
+  993  echo "Ahoj" > subor.txt
+  994  cat subor.txt 
+  995  echo "Ahoj" >> subor.txt
+  996  cat subor.txt 
+  997  echo "Ahoj" &>> subor.txt
+  998  cat subor.txt 
+  999  ll
+ 1000  mv subor.txt subor
+ 1001  ll
+ 1002  less subor 
+ 1003  ps
+ 1004  jobs
+ 1005  fg
+ 1006  cp -R /public/priklady .
+ 1007  ls
+ 1008  cd priklady/
+ 1009  ll
+ 1010  cat s
+ 1011  chmod x s
+ 1012  chmod +x s
+ 1013  ll
+ 1014  ./s
+ 1015  chmod -x s
+ 1016  ll
+ 1017  bash s
+ 1018  echo $PATH
+ 1019  PATH=$PATH
+ 1020  cd 
+ 1021  PATH=$PATH:~/stvrte/priklady
+ 1022  ls
+ 1023  PATH=$PATH:~/priklady
+ 1024  echo $PATH
+ 1025  cd priklady/
+ 1026  ls
+ 1027  s
+ 1028  chmod +x s
+ 1029  s
+ 1030  chmod -x s
+ 1031  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+ 1032  s
+ 1033  ll
+ 1034  cat z
+ 1035  bash z
+ 1036  man for
+ 1037  help for
+ 1038  ll
+ 1039  cat x.bc 
+ 1040  man bx
+ 1041  man bc
+ 1042  bash x.bc
+ 1043  sudo apt-get bc
+ 1044  sudo apt-get intall bc
+ 1045  sudo apt-get install bc
+ 1046  man bc
+ 1047  bc x.bc 
+ 1048  man bc
+ 1049  bc -q x.bc 
+ 1050  bc
+ 1051  ll
+ 1052  cat y.sh
+ 1053  y.sh
+ 1054  bash y.sh
+ 1055  fg
+ 1056  bg
+ 1057  cat 1.sh
+ 1058  ps
+ 1059  jobs
+ 1060  kill 1
+ 1061  kill %1
+ 1062  jobs
+ 1063  ll
+ 1064  cat 1.sh
+ 1065  ls
+ 1066  bash 1.sh
+ 1067  cat 2.sh
+ 1068  bash 2.sh
+ 1069  cat 3.sh
+ 1070  bash 3.sh
+ 1071  cat 4.sh
+ 1072  man tr
+ 1073  man mv
+ 1074  ls
+ 1075  mv fragment.txt FRAGMENT.TXT
+ 1076  ls
+ 1077  bash 4.sh
+ 1078  ls
+ 1079  mv fragment.txt fRAGMENT.TXT
+ 1080  bash 4.sh
+ 1081  ls
+ 1082  mv fragment.txt FRAGMENT.TXT
+ 1083  mv fRAGMENT.TXT FRAGMENT.TXT
+ 1084  bash 4.sh
+ 1085  l
+ 1086  cd ..
+ 1087  cd /public
+ 1088  ls
+ 1089  cd morhac_bonusy/
+ 1090  wget https://github.com/user-attachments/files/17327570/morhac_exercise_1_lecture_4.txt
+ 1091  sudo wget https://github.com/user-attachments/files/17327570/morhac_exercise_1_lecture_4.txt
+ 1092  ls
+ 1093  cat morhac_exercise_1_lecture_4.txt 
+ 1094  sudo wget https://github.com/user-attachments/files/17327571/morhac_exercise_2_lecture_4.txt
+ 1095  ls
+ 1096  sudo rm morhac_exercise_1_lecture_4.txt 
+ 1097  ls
+ 1098  cat morhac_exercise_2_lecture_4.txt 
+ 1099  sudo wget https://github.com/user-attachments/files/17327572/morhac_exercise_3_lecture_4.txt
+ 1100  ls
+ 1101  sudo rm morhac_exercise_2_lecture_4.txt 
+ 1102  cat morhac_exercise_3_lecture_4.txt 
+ 1103  ls
+ 1104  sudo rm morhac_exercise_3_lecture_4.txt 
+ 1105  ls
+ 1106  exit
+ 1107  history
+ 1108  cd /public/ucebnove/historia
+ 1109  ls
+ 1110  less morhac03102024.history 
+ 1111  cd /public
+ 1112  ls
+ 1113  grep "Ahoj" zaciatocnik.txt
+ 1114  grep "Ahoj" < zaciatocnik.txt
+ 1115  grep "Ahoj" << EOF
+ 1116  random text
+ 1117  ahoj
+ 1118  Ahoj
+ 1119  AHOJ
+ 1120  EOF
+ 1121  grep "Ahoj" <<< "Toto je string Ahoj"
+ 1122  cd ucebnove/historia
+ 1123  ls
+ 1124  less morhac03102024.history 
+ 1125  cd /dev
+ 1126  ll
+ 1127  cd /public
+ 1128  find / 2> /dev/null
+ 1129  ll /dev
+ 1130  find / &> /dev/null
+ 1131  >cd
+ 1132  cd
+ 1133  echo "Ahoj"  > example.txt
+ 1134  cat example.txt 
+ 1135  echo "AhojCau"  > example.txt
+ 1136  cat example.txt 
+ 1137  echo "AhojCau" >> example.txt
+ 1138  cat example.txt 
+ 1139  echo "AhojCau" &>> example.txt
+ 1140  cat example.txt 
+ 1141  ls
+ 1142  mv example.txt example
+ 1143  ls
+ 1144  less example 
+ 1145  fg
+ 1146  ps
+ 1147  jobs
+ 1148  fg
+ 1149  cp /public/priklady .
+ 1150  cp -r /public/priklady .
+ 1151  ls
+ 1152  cd priklady/
+ 1153  ll
+ 1154  cat s
+ 1155  ./s
+ 1156  chmod +x s
+ 1157  ll
+ 1158  chmod -x s
+ 1159  ll
+ 1160  bash s
+ 1161  echo $PATH
+ 1162  cd ..
+ 1163  PATH=$PATH:~/priklady/
+ 1164  echo $PATH
+ 1165  s
+ 1166  cd priklady/
+ 1167  chmod +x s
+ 1168  cd ..
+ 1169  s
+ 1170  cd priklady/
+ 1171  cat s
+ 1172  chmod -x s
+ 1173  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+ 1174  cd ..
+ 1175  s
+ 1176  ll
+ 1177  cd priklady/
+ 1178  ll
+ 1179  cat x.bc 
+ 1180  bash x.bc 
+ 1181  bc x.bc
+ 1182  man bc
+ 1183  sudo apt-get install bc
+ 1184  bc x.bc 
+ 1185  bc
+ 1186  cd priklady/
+ 1187  ls
+ 1188  cat y.sh 
+ 1189  bash y.sh 
+ 1190  fg
+ 1191  bg
+ 1192  echo ""
+ 1193  echo "Ahoj"
+ 1194  jobs
+ 1195  kill 
+ 1196  kill 1
+ 1197  kill %1
+ 1198  jobs
+ 1199  ll
+ 1200  cat 1.sh
+ 1201  bash 1.sh
+ 1202  ls
+ 1203  man wc
+ 1204  cat 2.sh
+ 1205  man for
+ 1206  help for
+ 1207  bash 2.sh
+ 1208  cat 3.sh 
+ 1209  bash 4.sh
+ 1210  bash 3.sh
+ 1211  cat 4.sh
+ 1212  man grep
+ 1213  man tr
+ 1214  ls
+ 1215  mv fragment.txt FRAGMENT.TXT
+ 1216  cat 4.sh
+ 1217  bash 4.sh
+ 1218  ll
+ 1219  mv fragment.txt FRAGMENT.TXT
+ 1220  ll
+ 1221  bash 4.sh
+ 1222  ll
+ 1223  cat 4.sh
+ 1224  mv fragment.txt fRAGMENT.TXT
+ 1225  cat 4.sh
+ 1226  bash 4.sh
+ 1227  mv fRAGMENT.txt Fragment.txt
+ 1228  ll
+ 1229  mv fRAGMENT.TXT Fragment.txt
+ 1230  bash 4.sh
+ 1231  ll
+ 1232  cd /public
+ 1233  ls
+ 1234  cd morhac_bonusy/
+ 1235  ls
+ 1236  sudo wget https://github.com/user-attachments/files/17327570/morhac_exercise_1_lecture_4.txt
+ 1237  ls
+ 1238  cat morhac_exercise_1_lecture_4.txt 
+ 1239  sudo wget https://github.com/user-attachments/files/17327571/morhac_exercise_2_lecture_4.txt
+ 1240  sudo wget https://github.com/user-attachments/files/17327572/morhac_exercise_3_lecture_4.txt
+ 1241  sudo wget https://github.com/user-attachments/files/17327574/morhac_exercise_extra_lecture_4.txt
+ 1242  ls
+ 1243  cat morhac_exercise_2\
+ 1244  cat morhac_exercise_2_lecture_4.txt 
+ 1245  ls
+ 1246  cd /public
+ 1247  cd morhac_bonusy/
+ 1248  mkdir cvicenie 4
+ 1249  sudo mkdir cvicenie4
+ 1250  ls
+ 1251  sudo cp morhac_exercise_1_lecture_4.txt /cvicenie4
+ 1252  ls
+ 1253  sudo cp morhac_exercise_2_lecture_4.txt /cvicenie4
+ 1254  sudo cp morhac_exercise_3_lecture_4.txt /cvicenie4
+ 1255  sudo cp morhac_exercise_extra_lecture_4.txt /cvicenie4
+ 1256  ls cvicenie4/
+ 1257  cd cvicenie4/
+ 1258  ls
+ 1259  cd ..
+ 1260  ls
+ 1261  cd ..
+ 1262  ls
+ 1263  cd morhac_bonusy/
+ 1264  man cd
+ 1265  man cp
+ 1266  cd cvicenie4/
+ 1267  sudo wget https://github.com/user-attachments/files/17333444/cvicenie_4_riesenie_prikladu_1.txt
+ 1268  sudo wget https://github.com/user-attachments/files/17333443/cvicenie_4_riesenie_prikladu-1_odporucane.txt
+ 1269  ls
+ 1270  cd ..
+ 1271  ls
+ 1272  sudo mv *4* cvicenie4/
+ 1273  sudo mv *4.txt cvicenie4/
+ 1274  sudo mv morhac_exercise*_lecture_4.txt cvicenie4/
+ 1275  ls
+ 1276  cd cvicenie4/
+ 1277  ls
+ 1278  cd ..
+ 1279  ls
+ 1280  sudo mkdir cvicenie3
+ 1281  sudo mv exercise_morhac.txt odpovede.txt sample.txt sample_two.txt cvicenie3
+ 1282  ls
+ 1283  cd cvicenie3
+ 1284  ls
+ 1285  cd ..
+ 1286  ls
+ 1287  cd ..
+ 1288  ls
+ 1289  ls
+ 1290  cd /public
+ 1291  cd ucebnove/historia
+ 1292  ls
+ 1293  cat morhac26092024.history 
+ 1294  history | sudo tee /public/ucebnove/historia/morhac10102024.history
+ 1295  ls
+ 1296  cd ..
+ 1297  ls
+ 1298  cd morhac_bonusy/
+ 1299  ls
+ 1300  cd ..
+ 1301  ls
+ 1302  cd /public
+ 1303  ls
+ 1304  cd morhac_bonusy/
+ 1305  cd /public/morhac_bonusy/
+ 1306  l
+ 1307  cd cvicenie
+ 1308  cd cvicenie4
+ 1309  ls
+ 1310  sudo wget https://github.com/user-attachments/files/17355468/cvicenie_4_riesenie_prikladu_4.txt
+ 1311  sudo wget https://github.com/user-attachments/files/17355467/cvicenie_4_riesenie_prikladu_2.txt
+ 1312  sudo wget https://github.com/user-attachments/files/17355466/cvicenie_4_riesnie_prikladu_2_.txt
+ 1313  ls
+ 1314  sudo mv cvicenie_4_riesnie_prikladu_2_.txt cvicenie_4_riesenie_prikladu_2_
+ 1315  ls
+ 1316  sudo mv cvicenie_4_riesenie_prikladu_2_ cvicenie_4_riesenie_prikladu_2_.txt
+ 1317  ls
+ 1318  cd ..
+ 1319  ls
+ 1320  cd cvicenie
+ 1321  cd cvicenie3
+ 1322  ls
+ 1323  exit
+ 1324  cd
+ 1325  ls
+ 1326  vim example 
+ 1327  bash example 
+ 1328  rm -r example 
+ 1329  ls
+ 1330  exit
+ 1331  cd priklady/
+ 1332  ls
+ 1333  cat 
+ 1334  s
+ 1335  cat 
+ 1336  cat s
+ 1337  bash s
+ 1338  cat x
+ 1339  cat x.bc 
+ 1340  cat y.sh 
+ 1341  cat z
+ 1342  bash z
+ 1343  cat 1.sh 
+ 1344  bash 1.sh
+ 1345  cat 2.sh 
+ 1346  bash 2.sh
+ 1347  cat 3.sh 
+ 1348  bash 3.sh
+ 1349  cat 4.sh
+ 1350  bash 4.sh
+ 1351  cat 4.sh
+ 1352  echo duti | tr 'u''a'| tr 'i' 'e'
+ 1353  echo duti | tr 'u' 'a'| tr 'i' 'e'
+ 1354  echo $PATH
+ 1355  echo $SHELL
+ 1356  echo {1..10}
+ 1357  shellcheck
+ 1358  shellcheck 1.sh
+ 1359  cat 5.sh
+ 1360  bash 5.sh help
+ 1361  bash 5.sh help d
+ 1362  bash 5.sh help -D
+ 1363  bash 
+ 1364  bash 5.sh -d
+ 1365  man set
+ 1366  help set
+ 1367  set -a debug
+ 1368  man getopt
+ 1369  getopt ls-la
+ 1370  getopt ls -la
+ 1371  cat 5.sh
+ 1372  bash 5.sh abc cba
+ 1373  bash 5.sh -D
+ 1374  bash 5.sh -*
+ 1375  bash 5.sh *
+ 1376  bash 5.sh \*
+ 1377  cat 5.sh -d \* -* -h abc cba 
+ 1378  bash 5.sh -d \* -* -h abc cba 
+ 1379  bash 5.sh -d -* -h abc cba 
+ 1380  bash 5.sh -d -h abc cba 
+ 1381  bash 5.sh -d abc cba 
+ 1382  cat 6.sh
+ 1383  bash 6.sh
+ 1384  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1385  echo $zoznam
+ 1386  echo ${zoznam[2]}
+ 1387  echo ${#zoznam[2]}
+ 1388  echo ${#zoznam[5]}
+ 1389  echo ${#zoznam[@]}
+ 1390  echo ${zoznam[@]:2:4}
+ 1391  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1392  echo $zoznam1
+ 1393  vim 6.sh
+ 1394  echo $zoznam1[@]
+ 1395  vim 6.sh
+ 1396  echo ${#zoznam[@]}
+ 1397  echo ${#zoznam1[@]}
+ 1398  echo ${zoznam1[@]}
+ 1399  cat 7.sh
+ 1400  bash 7.sh
+ 1401  cat 8.sh
+ 1402  bash 8.sh
+ 1403  cat 9.sh
+ 1404  bash 9.sh
+ 1405  bash ./9.sh
+ 1406  chmod +x 9.sh
+ 1407  bash ./9.sh
+ 1408  ./9.sh
+ 1409  bash ./9.sh
+ 1410  chmod -x 9.sh
+ 1411  bash ./9.sh
+ 1412  cat 9-2.sh
+ 1413  cat ..
+ 1414  cd ..
+ 1415  cd /public
+ 1416  ls ucebnove/
+ 1417  cat ucebnove/kw5.txt
+ 1418  cd
+ 1419  cd priklady/
+ 1420  cat 9.sh
+ 1421  bash ./9.sh -sd
+ 1422  bash ./9.sh -dq
+ 1423  bash ./9.sh dq
+ 1424  bash ./9.sh
+ 1425  cat 9.sh
+ 1426  bash ./9.sh sd hs
+ 1427  cat 9.sh help man
+ 1428  bash ./9.sh help man
+ 1429  bash ./9.sh
+ 1430  chmod +x 9.sh
+ 1431  bash ./9.sh
+ 1432  chmod -x 9.sh
+ 1433  exit
+ 1434  cat /public/ucebnove/kw5.txt 
+ 1435  cd priklady/
+ 1436  ls
+ 1437  cat s
+ 1438  cat x.bc
+ 1439  cat y.sh 
+ 1440  cat z 
+ 1441  cat 1.sh
+ 1442  cat 2.sh
+ 1443  cat 3.sh
+ 1444  cat 4.sh
+ 1445  shellcheck 1.sh
+ 1446  echo {1..10}
+ 1447  echo duti | tr 'u''a' | tr 'i' 'e'
+ 1448  echo duti | tr 'u' 'a' | tr 'i' 'e'
+ 1449  cat 5.sh
+ 1450  which $SHELL
+ 1451  echo $SHELL
+ 1452  cat 5.sh
+ 1453  bash 5.sh
+ 1454  bash 5.sh -d
+ 1455  bash 5.sh abc
+ 1456  bash 5.sh -h
+ 1457  bash 5.sh -*
+ 1458  cd /dev
+ 1459  ls
+ 1460  ll
+ 1461  cd 
+ 1462  cd priklady/
+ 1463  ls
+ 1464  ll
+ 1465  cat 5.sh
+ 1466  cat 5.sh -hocico
+ 1467  bash 5.sh -hocico
+ 1468  bash 5.sh *
+ 1469  bash 5.sh \*
+ 1470  cat 6.sh
+ 1471  bash 6.sh
+ 1472  cat 7.sh
+ 1473  bash 7.sh
+ 1474  cesta=/public/ucebnove/seminar _1/vim.txt
+ 1475  cesta="/public/ucebnove/seminar _1/vim.txt"
+ 1476  echo $cesta
+ 1477  cat 8.sh
+ 1478  ls -l
+ 1479  cat 8.sh
+ 1480  cat 9.sh
+ 1481  bash 9.sh
+ 1482  bash ./9.sh
+ 1483  chmod +x 9.sh
+ 1484  bash ./9.sh
+ 1485  cat 9.sh
+ 1486  bash ./9.sh
+ 1487  vim 9.sh 
+ 1488  bash ./9.sh
+ 1489  vim 9.sh 
+ 1490  chmod -x 9.sh
+ 1491  cd /public/morhac_bonusy/
+ 1492  sudo wget https://github.com/user-attachments/files/17413133/exercise1_cvicenie5.txt
+ 1493  cat exercise1_cvicenie5.txt 
+ 1494  ls
+ 1495  cd cvicenie4
+ 1496  ls
+ 1497  exit
+ 1498  cd /public/morhac_bonusy/
+ 1499  ls
+ 1500  sudo rm exercise1_cvicenie5.txt 
+ 1501  ls
+ 1502  exit
+ 1503  cat /public/ucebnove/kw5.txt 
+ 1504  cd priklady/
+ 1505  ls
+ 1506  cat s
+ 1507  cat x.bc
+ 1508  cat y.sh 
+ 1509  bc x.bc
+ 1510  cat y.sh 
+ 1511  cat z
+ 1512  cat 1.sh
+ 1513  cat 2.sh
+ 1514  bash 2.sh
+ 1515  cat 3.sh
+ 1516  bash 3.sh
+ 1517  cat 4.sh
+ 1518  shellcheck 1.sh 
+ 1519  echo 1 10
+ 1520  echo {1..10}
+ 1521  echo dudi | tr 'u' 'a'
+ 1522  echo duti | tr 'u' 'a' | tr 'i' 'e'
+ 1523  cat 5.sh
+ 1524  bash 5.sh
+ 1525  bash 5.sh -d
+ 1526  bash 5.sh -d abc
+ 1527  cat 5.sh
+ 1528  bash 5.sh -efewh
+ 1529  bash 5.sh *
+ 1530  bash 5.sh "*"
+ 1531  bash 5.sh \*
+ 1532  cat 6.sh
+ 1533  vim 6.sh
+ 1534  bash 6.sh 
+ 1535  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1536  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1537  echo $zoznam1
+ 1538  zoznam2=zoznam[$((7-${#zoznam[@]}))]
+ 1539  echo $zoznam2
+ 1540  zoznam2=$(zoznam[$((7-${#zoznam[@]}))])
+ 1541  zoznam=(jeden dva tri styri pat "sest cele sedem")
+ 1542  echo $zoznam
+ 1543  echo ${zoznam[2]}
+ 1544  echo ${#zoznam[2]}
+ 1545  echo ${#zoznam[5]}
+ 1546  echo ${#zoznam[@]}
+ 1547  echo ${zoznam[@]:2:4}
+ 1548  zoznam1=(${zoznam[@]:0:6} sedem ${zoznam[$((7-${#zoznam[@]}))]})
+ 1549  echo $zoznam1
+ 1550  zoznam3=jeden dva tri
+ 1551  zoznam3=(jeden dva tri)
+ 1552  echo $zoznam3
+ 1553  vim 6.sh
+ 1554  bash 6.sh
+ 1555  vim 6.sh
+ 1556  bash 6.sh
+ 1557  cat 6.sh
+ 1558  cat 7.sh
+ 1559  bash 7.sh
+ 1560  cat 8.sh
+ 1561  bash 8.sh
+ 1562  cat z
+ 1563  cat y.sh
+ 1564  cat 1.sh
+ 1565  cat 2.sh
+ 1566  cat 9.sh
+ 1567  bash 9.sh
+ 1568  bash ./9.sh
+ 1569  chmod +x 9.sh
+ 1570  bash ./9.sh
+ 1571  cd
+ 1572  cd /public/morhac_bonusy/
+ 1573  sudo wget https://github.com/user-attachments/files/17413133/exercise1_cvicenie5.txt
+ 1574  ls
+ 1575  cat exercise1_cvicenie5.txt 
+ 1576  cd 
+ 1577  cd /public/morhac_bonusy/
+ 1578  cat exercise1_cvicenie5.txt 
+ 1579  ls 
+ 1580  cd cvicenie4
+ 1581  ls
+ 1582  cd /public/ucebnove/historia
+ 1583  cat morhac26092024.history 
+ 1584  sudo history | sudo tee /public/ucebnove/historia/morhac26092024.history
+ 1585  history | sudo tee /public/ucebnove/historia/morhac26092024.history
+ 1586  ls
+ 1587  history | sudo tee /public/ucebnove/historia/morhac17102024.history
