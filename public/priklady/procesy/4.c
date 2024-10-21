@@ -10,7 +10,8 @@ void *printed(void *num)
 {
     sleep(1); //skus ma presuvat
     printf("hello from thread ");
-    printf("%d - %d", *(int *)num, j);
+    printf("%d - %d", *(int *)num, j); //#1
+    //printf("%d - %d", *(int)num, j); //#2
     printf("\n");
     cnt = cnt+1;
     return NULL;
@@ -23,7 +24,8 @@ int main(int argc, char *argv[])
     assert(ctx);
     int i;
     for (i = 0; i < number; ++i, ++j) {
-        assert(pthread_create(ctx+i, NULL, printed, &i) == 0);
+        assert(pthread_create(ctx+i, NULL, printed, &i) == 0); //#1
+        //assert(pthread_create(ctx+i, NULL, printed, (void *)i) == 0); //#2
     }
     sleep(1); // skus ma presuvat
     for (i = 0; i < number; ++i) {
