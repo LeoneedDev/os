@@ -10,7 +10,7 @@ void *printed(void *num)
 {
     sleep(1); //skus ma presuvat
     printf("hello from thread ");
-    printf("%d - %d", *(intptr_t)num, j); //#1
+    printf("%d - %d", *(int *)num, j); //#1
     //printf("%d - %d", (int)(intptr_t)num, j); //#2
     printf("\n");
     cnt = cnt+1;
