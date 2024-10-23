@@ -1,0 +1,213 @@
+ 1256  cd bash/
+ 1257  ls -la
+ 1258  cat 9.sh
+ 1259  help source
+ 1260  vim asdf
+ 1261  source asdf 
+ 1262  . asdf 
+ 1263  ls .
+ 1264  help exec
+ 1265  ls -la ./9sh
+ 1266  ls -la ./9.sh
+ 1267  ./9.sh
+ 1268  bash ./9.sh
+ 1269  chmod +x 9.sh 
+ 1270  bash ./9.sh
+ 1271  ./9.sh
+ 1272  cat ./9.sh
+ 1273  cat ./9-2.sh
+ 1274  echo "PID: $$"
+ 1275  chmod +x 9-2.sh 
+ 1276  ./9-2.sh 
+ 1277  ./9-2.sh "piaty raz"
+ 1278  ./9-2.sh
+ 1279  echo $?
+ 1280  cd ..
+ 1281  mkdir cv6
+ 1282  cd cv6/
+ 1283  cp /public/priklady/awk.txt .
+ 1284  man awk
+ 1285  awk
+ 1286  awk ''
+ 1287  awk '' /public/samples/zamestnanci.txt 
+ 1288  awk '{print}' /public/samples/zamestnanci.txt
+ 1289  cat /public/samples/zamestnanci.txt
+ 1290  awk '{print NR,$0}' /public/samples/zamestnanci.txt
+ 1291  awk '{print NR OFS $0}' /public/samples/zamestnanci.txt
+ 1292  awk '{print NR $0}' /public/samples/zamestnanci.txt
+ 1293  awk '{print "NR $0"}' /public/samples/zamestnanci.txt
+ 1294  awk '{print NR" "$0}' /public/samples/zamestnanci.txt
+ 1295  awk '{print NR asdf $0}' /public/samples/zamestnanci.txt
+ 1296  awk '{print NR" asdf "$0}' /public/samples/zamestnanci.txt
+ 1297  cp /public/samples/zamestnanci.txt 
+ 1298  cp /public/samples/zamestnanci.txt .
+ 1299  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1300  awk 'END { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1301  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1302  awk '!/^z/' zamestnanci.txt
+ 1303  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1304  awk '/^z/ { print $1 ":" $NF ":" NF }' zamestnanci.txt
+ 1305  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1306  awk '$NF > 10000 {print NR,$0}' zamestnanci.txt
+ 1307  awk 'NF > 10000 {print NR,$0}' zamestnanci.txt
+ 1308  awk 'NF > 2 {print NR,$0}' zamestnanci.txt
+ 1309  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1310  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1311  awk '/^z|^b/ { poc+=1; sum+=$NF } END {print "prem : " sum/poc }' zamestnanci.txt
+ 1312  awk '/^z|^b/ { poc+=1; sum+=$NF } END {print "priem : " sum/poc }' zamestnanci.txt
+ 1313  awk '/^z|^b/ { poc+=1; sum+=$NF } END {print "priem : " sum/NR }' zamestnanci.txt
+ 1314  awk '/^z|^b/ { poc+=1; sum+=NF } END {print "priem : " sum/NR }' zamestnanci.txt
+ 1315  awk '/^z|^b/ { poc+=1; sum+=NF } END {print "priem : " sum/poc }' zamestnanci.txt
+ 1316  awk '/^z|^b/ { poc+=1; sum+=NF } END {print "priem : " sum/NF }' zamestnanci.txt
+ 1317  awk '/^z|^b/ { poc+=1; sum+=$NF } END {print "priem : " sum/NF }' zamestnanci.txt
+ 1318  awk '/^z|^b/ { print }' zamestnanci.txt
+ 1319  less /public/samples/access.log 
+ 1320  less /public/samples/logformat.txt 
+ 1321  cat /public/samples/logformat.txt 
+ 1322  less /public/samples/access.log 
+ 1323  awk ' { sum+=$10 } END { "size "sum/2^20"MB"}' /public/samples/access.log 
+ 1324  awk ' { sum+=$10 } END { print "size "sum/2^20"MB"}' /public/samples/access.log 
+ 1325  awk ' { sum+=$10 } END { print "size "sum/1000000"MB"}' /public/samples/access.log 
+ 1326  cut -d " " -f1 /public/samples/access.log 
+ 1327  cut -d " " -f1 /public/samples/access.log | sort
+ 1328  cut -d " " -f1 /public/samples/access.log | sort | uniq
+ 1329  cut -d " " -f1 /public/samples/access.log | sort | uniq | sort -nr
+ 1330  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr
+ 1331  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head 10
+ 1332  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10
+ 1333  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | tr -s ""
+ 1334  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | tr -s "" | cut -d " " -f2
+ 1335  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | tr -s "" | cut -d " " -f1
+ 1336  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | awk { print $2 }
+ 1337  cut -d " " -f1 /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | awk '{ print $2 }'
+ 1338  awk '{ print $1}' /public/samples/access.log | sort | uniq -c | sort -nr | head -10 | awk '{ print $2 }'
+ 1339  awk '/android|iPhone/ {zar+=1;data+=$10} END {print NR }'
+ 1340  awk '/android|iPhone/ {zar+=1;data+=$10} END {print NR }' /public/samples/access.log 
+ 1341  awk '/android|iPhone/ {zar+=1;data+=$10} END {print zar zar/NR*100"%" }' /public/samples/access.log 
+ 1342  awk '/android|iPhone/ {zar+=1;data+=$10} END {print zar zar/NR"%" }' /public/samples/access.log 
+ 1343  awk '/android|iPhone/ {zar+=1;data+=$10} END {print zar"%" }' /public/samples/access.log 
+ 1344  awk '/android|iPhone/ {zar+=1;data+=$10} END {print zar/NR"%" }' /public/samples/access.log 
+ 1345  awk '/android|iPhone/ {zar+=1;data+=$10} END {print zar/NR*100"%" }' /public/samples/access.log 
+ 1346  awk '/android|iPhone/ {zar+=1;data+=$10} END {print zar/NR*100"% "data/NR*100"%"}' /public/samples/access.log 
+ 1347  awk '/android|iPhone/ {zar+=1;data+=$10} {allData+=$10} END {print zar/NR*100"% "data/allData*100"%"}' /public/samples/access.log 
+ 1348  awk '$15=android || $15=iPhone {zar+=1;data+=$10} {allData+=$10} END {print zar/NR*100"% "data/allData*100"%"}' /public/samples/access.log 
+ 1349  awk '$15==android || $15==iPhone {zar+=1;data+=$10} {allData+=$10} END {print zar/NR*100"% "data/allData*100"%"}' /public/samples/access.log 
+ 1350  awk '$15==Android || $15==iPhone {zar+=1;data+=$10} {allData+=$10} END {print zar/NR*100"% "data/allData*100"%"}' /public/samples/access.log 
+ 1351  cd ..
+ 1352  cd bash
+ 1353  cat 9.sh
+ 1354  chmod -x 9.sh 
+ 1355  help source
+ 1356  less asdf 
+ 1357  source asdf
+ 1358  . asdf
+ 1359  vim asdf
+ 1360  source asdf
+ 1361  ps aux | grep -bash
+ 1362  ps aux | grep -- "-bash"
+ 1363  bash asdf
+ 1364  ./9.sh
+ 1365  bash 9.sh
+ 1366  bash ./9.sh
+ 1367  chmod +x 9.sh 
+ 1368  bash ./9.sh
+ 1369  vim 9.sh 
+ 1370  bash ./9.sh
+ 1371  vim 9.sh 
+ 1372  bash ./9.sh
+ 1373  vim 9.sh 
+ 1374  bash ./9.sh
+ 1375  vim 9.sh 
+ 1376  bash ./9.sh
+ 1377  vim 9.sh 
+ 1378  bash ./9.sh
+ 1379  vim 9.sh 
+ 1380  bash ./9.sh
+ 1381  vim 9.sh 
+ 1382  bash ./9.sh
+ 1383  help set
+ 1384  ./9-2.sh 
+ 1385  echo $?
+ 1386  cd ../cv6/
+ 1387  ls -la
+ 1388  cat /public/priklady/awk.txt 
+ 1389  man awk
+ 1390  less /public/samples/zamestnanci.txt 
+ 1391  awk
+ 1392  awk ''
+ 1393  awk '{print}' zamestnanci.txt
+ 1394  cat zamestnanci.txt
+ 1395  awk '{print NR,$0}' zamestnanci.txt
+ 1396  awk '{print NR OFS $0}' zamestnanci.txt
+ 1397  awk '{print NROFS $0}' zamestnanci.txt
+ 1398  awk '{print NR" "$0}' zamestnanci.txt
+ 1399  awk '{print NR " " $0}' zamestnanci.txt
+ 1400  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1401  awk 'BEGIN { print "zoznam zamestnancov:"} { print } END { print asdf }' zamestnanci.txt
+ 1402  awk 'BEGIN { print "zoznam zamestnancov:"} { print } END { print "asdf" }' zamestnanci.txt
+ 1403  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1404  awk '/^z/' zamestnanci.txt
+ 1405  awk '!/^z/' zamestnanci.txt
+ 1406  awk '!/^z|^b/' zamestnanci.txt
+ 1407  awk '!/^[zb]/' zamestnanci.txt
+ 1408  awk '/^[zb]/' zamestnanci.txt
+ 1409  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1410  awk '/^z/ { print $1 ":" $NF ":" NF }' zamestnanci.txt
+ 1411  awk '/^z/ { print $1 ":" $NF ":" NF ":" NR }' zamestnanci.txt
+ 1412  awk '/^z/ { print $1 ":" $NF ":" NF ":" NR ":" $NR }' zamestnanci.txt
+ 1413  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1414  awk '$NF > 10000 {print NR,$0}' zamestnanci.txt
+ 1415  awk '$NF == 13000 {print NR,$0}' zamestnanci.txt
+ 1416  awk '$NF == 13000 || $NF == 23000 {print NR,$0}' zamestnanci.txt
+ 1417  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1418  awk '{sum+=$NF; print NR} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1419  awk '{sum+=$NF; print NR} END { print "Priemerny plat = " NR sum/NR}' zamestnanci.txt
+ 1420  awk '{sum+=$NF; print NR} END { print "Priemerny plat = " NR ,sum/NR}' zamestnanci.txt
+ 1421  awk '{print NR} END { print "Priemerny plat = " NR ,sum/NR}' zamestnanci.txt
+ 1422  awk 'END { print "Priemerny plat = " NR ,sum/NR}' zamestnanci.txt
+ 1423  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1424  awk '/^z|^b/ { sum+=$NF; poc+=1 } END {print "priem: " sum/poc}' zamestnanci.txt
+ 1425  less /public/samples/access.log 
+ 1426  cat /public/samples/logformat.txt 
+ 1427  awk '{ sum+=$10 } END { print sum/2^20}' /public/samples/access.log 
+ 1428  awk '{ sum+=$10 } END { print sum/1000000}' /public/samples/access.log 
+ 1429  awk '{ print $1 }' /public/samples/access.log | 
+ 1430  awk '{ print $1 }' /public/samples/access.log
+ 1431  awk '{ print $1 }' /public/samples/access.log | sort
+ 1432  awk '{ print $1 }' /public/samples/access.log | sort | uniq
+ 1433  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c
+ 1434  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort
+ 1435  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -r
+ 1436  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort
+ 1437  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -n |
+ 1438  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -n
+ 1439  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -n | tail -10
+ 1440  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -n | tail -10 | sort -r
+ 1441  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -n | tail -10 | sort -r | awk '{print $2}'
+ 1442  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -n | tail | sort -r | awk '{print $2}'
+ 1443  awk '{ print $1 }' /public/samples/access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1444  grep iPhone /public/samples/access.log 
+ 1445  grep android /public/samples/access.log 
+ 1446  grep Android /public/samples/access.log 
+ 1447  grep -i Android /public/samples/access.log 
+ 1448  grep android /public/samples/access.log 
+ 1449  awk '/Android|iPhone/ { print }' /public/samples/access.log 
+ 1450  awk '/Android|iPhone/ { sum+=1; data+=$10 } {dataA+=$10} END { print "podiel1 " sum/NR*100 "podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1451  awk '/Android|iPhone/ { sum+=1; data+=$10 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1452  awk '/android|iPhone/ { sum+=1; data+=$10 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1453  awk '$15==Android || $15==iPhone { sum+=1; data+=$10 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1454  awk '$15==Android || $15==iPhone { sum+=1; data+=$10; print $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1455  awk '$15==Android { sum+=1; data+=$10; print $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1456  awk '$15==Android { sum+=1; data+=$10; print "a " $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1457  awk '$15 == Android { sum+=1; data+=$10; print "a " $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1458  awk '{ sum+=1; data+=$10; print "a " $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1459  awk '{ sum+=1; data+=$10; print "a " $14 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1460  awk '{ sum+=1; data+=$10; print "a " $13 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1461  awk ' { sum+=1; data+=$10; print "a " $14 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1462  awk '$14 == NT { sum+=1; data+=$10; print "a " $14 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1463  awk '$14 == "NT" { sum+=1; data+=$10; print "a " $14 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1464  awk '$14 == "iPhone" { sum+=1; data+=$10; print "a " $14 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1465  awk '$15 == "iPhone" { sum+=1; data+=$10; print "a " $14 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1466  awk '$15 == "iPhone" { sum+=1; data+=$10; print "a " $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1467  awk '$15 == "iPhone" || $15 == "Android" { sum+=1; data+=$10; print "a " $15 } {dataA+=$10} END { print "podiel1 " sum/NR*100 " podiel2 " data/dataA*100}' /public/samples/access.log 
+ 1468  history > /tmp/hist
