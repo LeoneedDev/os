@@ -1,0 +1,1000 @@
+ 1073    328  find -type f -name "kw*" -size +70c -and -size -200c  -print
+ 1074    329  man file
+ 1075    330  cd ucebnove/
+ 1076    331  file kw10.txt
+ 1077    332  cd dev
+ 1078    333  cd ..
+ 1079    334  cd /dev
+ 1080    335  ls -ls
+ 1081    336  file zero
+ 1082    337  file stderr
+ 1083    338  file mqueue
+ 1084    339  cd .
+ 1085    340  Najdite mi subory ktore obsahuju kw, maju velkost 50 az 100 alebo su mensie ako 25
+ 1086    341  cd
+ 1087    342  find /public -type f \( -name "*kw*" -a \(\( -size +50c -a -size -100c \) -o -size -25c \)\)
+ 1088    343  cd /public/
+ 1089    344  ls
+ 1090    345  cd priklady
+ 1091    346  ls
+ 1092    347  9-2.sh 10-200.sh
+ 1093    348  exit
+ 1094    349  hisotry
+ 1095    350  history
+ 1096    351  exit
+ 1097    352  man less
+ 1098    353  man more
+ 1099    354  cd /public/
+ 1100    355  ls
+ 1101    356  less zaciatocnik.txt 
+ 1102    357  cd prednasky/
+ 1103    358  lôs
+ 1104    359  ls
+ 1105    360  cd ..
+ 1106    361  ls
+ 1107    362  cd 
+ 1108    363  ls
+ 1109    364  cd /public/
+ 1110    365  less ls
+ 1111    366  ./ls 
+ 1112    367  cd
+ 1113    368  ls
+ 1114    369  ./file.txt 
+ 1115    370  cd /public/
+ 1116    371  ls
+ 1117    372  ls samples/
+ 1118    373  ls priklady
+ 1119    374  cat 1.sh
+ 1120    375  cd priklady/
+ 1121    376  less 1.sh
+ 1122    377  cd ..
+ 1123    378  ls
+ 1124    379  echo $PATH
+ 1125    380  ls
+ 1126    381  cd /dev
+ 1127    382  ls
+ 1128    383  ls -la
+ 1129    384  cd 
+ 1130    385  ls -la
+ 1131    386  man chmod
+ 1132    387  chmod u-x file.txt 
+ 1133    388  ls -la
+ 1134    389  chmod 764  file.txt 
+ 1135    390  ls -la
+ 1136    391  chmod 767  file.txt 
+ 1137    392  ls -la
+ 1138    393  chmod 764  file.txt 
+ 1139    394  man groups
+ 1140    395  groups
+ 1141    396  ls -la
+ 1142    397  ll
+ 1143    398  alias
+ 1144    399  man w
+ 1145    400  w
+ 1146    401  who
+ 1147    402  man who
+ 1148    403  who
+ 1149    404  last
+ 1150    405  cd /public/
+ 1151    406  ls
+ 1152    407  cd priklady/
+ 1153    408  ls
+ 1154    409  cd ..
+ 1155    410  ls
+ 1156    411  cd zadania/\
+ 1157    412  cd zadania/
+ 1158    413  ls
+ 1159    414  cd ..
+ 1160    415  cd ucebnove/
+ 1161    416  ls
+ 1162    417  cd ..
+ 1163    418  ls
+ 1164    419  ls samples
+ 1165    420  cd samples/
+ 1166    421  less wtmp.2020
+ 1167    422  y
+ 1168    423  less wtmp.2020
+ 1169    424  hexdump -C wtmp.2020
+ 1170    425  ls
+ 1171    426  man last
+ 1172    427  last -f wtmp.2020
+ 1173    428  cd
+ 1174    429  ls -la
+ 1175    430  less .bashrc 
+ 1176    431  less .profile 
+ 1177    432  whoami
+ 1178    433  man sudo
+ 1179    434  man whoami
+ 1180    435  ps
+ 1181    436  man ps
+ 1182    437  top
+ 1183    438  jobs
+ 1184    439  man jobs
+ 1185    440  help jobs
+ 1186    441  ls
+ 1187    442  touch subor.txt
+ 1188    443  vim subor.txt 
+ 1189    444  less subor.txt 
+ 1190    445  vim subor.txt 
+ 1191    446  ll | cat
+ 1192    447  cowsay "Ahoj toto som vykonal: history"
+ 1193    448  ll | cat
+ 1194    449  cowsay "Ahoj toto som vykonal: ll | cat"
+ 1195    450  cowsay "Ahoj toto som vykonal: "cowsay "Ahoj toto som vykonal: ll | cat"""
+ 1196    451  cowsay "Ahoj toto som vykonal: cowsay "Ahoj toto som vykonal: "cowsay "Ahoj toto som vykonal: ll | cat"""cowsay "Ahoj toto som vykonal: "cowsay "Ahoj toto som vykonal: ll | cat""""
+ 1197    452  ll | cat
+ 1198    453  cowsay 'Ahoj toto som vykonal: !!'
+ 1199    454  sudo apt install cowsay
+ 1200    455  ls
+ 1201    456  sl
+ 1202    457  fortune
+ 1203    458  man fortune
+ 1204    459  fortune -o
+ 1205    460  man find
+ 1206    461  cd /public
+ 1207    462  find /public -print
+ 1208    463  find . -print
+ 1209    464  ls 
+ 1210    465  ls samples
+ 1211    466  ls ucebnove
+ 1212    467  less kw2.txt
+ 1213    468  cd ucebnove/
+ 1214    469  less kw2.txt
+ 1215    470  cd ..
+ 1216    471  find -type f -name "kw*" -print
+ 1217    472  find -type f -name "kw*" -size >70c  -print
+ 1218    473  find -type f -name "kw*" -size 70c  -print
+ 1219    474  find -type f -name "kw*" -size -70c  -print
+ 1220    475  man file
+ 1221    476  cd ucebnove/
+ 1222    477  file kw3.txt 
+ 1223    478  cd /dev
+ 1224    479  ls
+ 1225    480  ls -la
+ 1226    481  file zero
+ 1227    482  file stderr
+ 1228    483  file mqueue
+ 1229    484  cd
+ 1230    485  ls
+ 1231    486  cd /public
+ 1232    487  ls
+ 1233    488  cd ucebnove/
+ 1234    489  ls
+ 1235    490  cd ..
+ 1236    491  ls
+ 1237    492  cd priklady/
+ 1238    493  ls
+ 1239    494  [Cislo]-[Cislo]blabot
+ 1240    495  9-2.sh 100-23478.sh
+ 1241    496  Najdite vsetky skripty ktore obsahuju cislo - a cislo 
+ 1242    497  ls
+ 1243    498  cd ..
+ 1244    499  ls
+ 1245    500  cd ucebnove
+ 1246    501  ls
+ 1247    502  cd historia
+ 1248    503  ls
+ 1249    504  less morhac19092024.history 
+ 1250    505  history | sudo tee /public/ucebnove/historia/morhac26092024.history"  > morhac26092024.history 
+ 1251  echo "    1  ls
+ 1252      2  cd home
+ 1253      3  cd ~
+ 1254      4  ls -la
+ 1255      5  sudo adduser
+ 1256      6  cd ..
+ 1257      7  ls
+ 1258      8  pwd
+ 1259      9  cd dudo
+ 1260     10  ls -l
+ 1261     11  ls -la
+ 1262     12  touch file.txt
+ 1263     13  cd ~
+ 1264     14  touch file.txt
+ 1265     15  ls
+ 1266     16  man cat
+ 1267     17  cat file.txt 
+ 1268     18  man touch
+ 1269     19  nano file.txt 
+ 1270     20  cat >> file.txt 
+ 1271     21  cat file.txt 
+ 1272     22  echo "New content" >> file.txt 
+ 1273     23  cat file.txt 
+ 1274     24  echo "New content" > file.txt 
+ 1275     25  cat file.txt 
+ 1276     26  cd
+ 1277     27  cd ..
+ 1278     28  man cd
+ 1279     29  help
+ 1280     30  help cd
+ 1281     31  cd
+ 1282     32  cd ..
+ 1283     33  cd ~
+ 1284     34  ls -la
+ 1285     35  disconnect
+ 1286     36  exit
+ 1287     37  sudo adduser halo
+ 1288     38  exit
+ 1289     39  sudo adduser bla
+ 1290     40  cd .
+ 1291     41  cd ..
+ 1292     42  ls
+ 1293     43  cd ..
+ 1294     44  ls
+ 1295     45  cd etc/
+ 1296     46  cat passwd
+ 1297     47  exit
+ 1298     48  whoami
+ 1299     49  jobs
+ 1300     50  ls
+ 1301     51  less
+ 1302     52  man less
+ 1303     53  less /public/
+ 1304     54  cd punlic
+ 1305     55  less ./public/
+ 1306     56  less /public/zaciatocnik.txt 
+ 1307     57  ls
+ 1308     58  cd public
+ 1309     59  cd /public
+ 1310     60  ls
+ 1311     61  ./ls 
+ 1312     62  less ls
+ 1313     63  echo Zaskodnicke Ls
+ 1314     64  ls -la
+ 1315     65  ls .
+ 1316     66  ls ..
+ 1317     67  echo $PATH 
+ 1318     68  cd ..
+ 1319     69  cd /dev
+ 1320     70  ls
+ 1321     71  less zero
+ 1322     72  less -f zero
+ 1323     73  less -f random
+ 1324     74  hexdump random
+ 1325     75  hexdump zero
+ 1326     76  cd 
+ 1327     77  l
+ 1328     78  ls -la
+ 1329     79  man chmod
+ 1330     80  man 2 chmod
+ 1331     81  chmod u+x file.txt 
+ 1332     82  ls -la
+ 1333     83  vim file
+ 1334     84  ./file.txt 
+ 1335     85  vim file
+ 1336     86  cd ..
+ 1337     87  cd 
+ 1338     88  cd /public
+ 1339     89  cat ls
+ 1340     90  cd 
+ 1341     91  vim file
+ 1342     92  ./file.txt 
+ 1343     93  vim file
+ 1344     94  cat file.txt
+ 1345     95  cat file
+ 1346     96  ./file
+ 1347     97  ls -la
+ 1348     98  rm -r file
+ 1349     99  ls
+ 1350    100  ls -la
+ 1351    101  vim file.txt 
+ 1352    102  ./file.txt 
+ 1353    103  chmod u-x file.txt 
+ 1354    104  ls -la
+ 1355    105  ./file.txt 
+ 1356    106  less file.txt 
+ 1357    107  chmod 777 file.txt 
+ 1358    108  ls -la
+ 1359    109  chmod 774 file.txt 
+ 1360    110  ls -la
+ 1361    111  chmod 764 file.txt 
+ 1362    112  ls -la
+ 1363    113  chmod 664 file.txt 
+ 1364    114  groups
+ 1365    115  man groups
+ 1366    116  man sudo
+ 1367    117  ll
+ 1368    118  alias
+ 1369    119  ll | cat
+ 1370    120  w
+ 1371    121  man w
+ 1372    122  who
+ 1373    123  man who
+ 1374    124  cd public
+ 1375    125  cd /public
+ 1376    126  ls
+ 1377    127  cd priklady/
+ 1378    128  ls
+ 1379    129  cd ..
+ 1380    130  ls seminare/
+ 1381    131  ls ucebnove/
+ 1382    132  ls zadania/
+ 1383    133  ls prednasky/
+ 1384    134  ls samples/
+ 1385    135  ls testovaci_adresar/
+ 1386    136  ls 
+ 1387    137  ls ucebnove/
+ 1388    138  ls ucebnove/historia/
+ 1389    139  cd ucebnove/historia/
+ 1390    140  less morhac19092024.history 
+ 1391    141  cd ..
+ 1392    142  ls
+ 1393    143  last samples/wtmp.2020 
+ 1394    144  man last
+ 1395    145  last -f samples/wtmp.2020 
+ 1396    146  ls -la
+ 1397    147  cd
+ 1398    148  ls
+ 1399    149  ls -la
+ 1400    150  less .profile
+ 1401    151  less .bash
+ 1402    152  less .bashr
+ 1403    153  less .bashrc 
+ 1404    154  mkdir adresar
+ 1405    155  rm -r
+ 1406    156  rm -r adresar/
+ 1407    157  whami
+ 1408    158  whoami
+ 1409    159  man whoami
+ 1410    160  man su
+ 1411    161  ps
+ 1412    162  man ps
+ 1413    163  jobs
+ 1414    164  man jobs
+ 1415    165  help jobs
+ 1416    166  ls
+ 1417    167  vim file.txt 
+ 1418    168  man vim
+ 1419    169  vim
+ 1420    170  ls
+ 1421    171  vim file.txt 
+ 1422    172  ls
+ 1423    173  cd file.txt 
+ 1424    174  cat file.txt 
+ 1425    175  ll | cat
+ 1426    176  sudo apt-get insstall cowsay
+ 1427    177  exit
+ 1428    178  sudo apt-get insstall cowsay
+ 1429    179  sudo apt-get install cowsay
+ 1430    180  cowsay "Hello"
+ 1431    181  history
+ 1432    182  cowsay "Hellohistory"
+ 1433    183  cowsay "Hellocowsay "Hellohistory""
+ 1434    184  cowsay "Hellocowsay "Hellocowsay "Hellohistory"""
+ 1435    185  cowsay "Hellocowsaycowsay "Hellocowsay "Hellocowsay "Hellohistory"""c"
+ 1436    186  cowsay `Hellocowsay "Hellocowsaycowsay "Hellocowsay "Hellocowsay "Hellohistory"""c"`
+ 1437    187  cowsay 'Hello!!!'
+ 1438    188  cowsay 'Hello cat | ll'
+ 1439    189  cowsay "Hello cat | ll"
+ 1440    190  fortune
+ 1441    191  sudo apt-get install fortune
+ 1442    192  fortune
+ 1443    193  man fortune
+ 1444    194  fortune -o
+ 1445    195  man find
+ 1446    196  find . -true -print
+ 1447    197  man find
+ 1448    198  find . -print
+ 1449    199  cd public
+ 1450    200  cd /public
+ 1451    201  ls
+ 1452    202  ls ucebnove/
+ 1453    203  less ucebnove/kw2.txt
+ 1454    204  cd ucebnove/
+ 1455    205  find /public -type f -name "kw*" -print
+ 1456    206  man file
+ 1457    207  file kw3.txt 
+ 1458    208  cd /dev
+ 1459    209  file urandom 
+ 1460    210  file ptmx
+ 1461    211  file zero
+ 1462    212  cd /public/priklady
+ 1463    213  ls
+ 1464    214  find /public/priklady/ -type f -name [0-9]-[0-9].sh
+ 1465    215  exit
+ 1466    216  man less
+ 1467    217  ls
+ 1468    218  less file.txt 
+ 1469    219  touch f.txt
+ 1470    220  ls
+ 1471    221  less file.txt 
+ 1472    222  cd /public
+ 1473    223  ls
+ 1474    224  ./ls 
+ 1475    225  less ls 
+ 1476    226  echo $PATH
+ 1477    227  cd /dev
+ 1478    228  ls
+ 1479    229  ls -la
+ 1480    230  cd 
+ 1481    231  man chmod
+ 1482    232  ls
+ 1483    233  rm f.txt 
+ 1484    234  chmod u+x file.txt 
+ 1485    235  ls
+ 1486    236  ./file.txt 
+ 1487    237  less file.txt 
+ 1488    238  chmod u-x file.txt 
+ 1489    239  chmod u+x file.txt 
+ 1490    240  chmod u-x file.txt 
+ 1491    241  ls -la
+ 1492    242  chmod u+x file.txt 
+ 1493    243  ls -la
+ 1494    244  chmod 777 file.txt 
+ 1495    245  ls -la
+ 1496    246  chmod 774 file.txt 
+ 1497    247  ls -la
+ 1498    248  chmod 764 file.txt 
+ 1499    249  ls -la
+ 1500    250  groups
+ 1501    251  man groups
+ 1502    252  man sudo
+ 1503    253  ls -la
+ 1504    254  ll
+ 1505    255  alias
+ 1506    256  w
+ 1507    257  man who
+ 1508    258  man w
+ 1509    259  man who
+ 1510    260  cd /public
+ 1511    261  ls
+ 1512    262  ls priklady/
+ 1513    263  ls seminare/
+ 1514    264  ls ucebnove/
+ 1515    265  ls zadania/
+ 1516    266  ls prednasky/
+ 1517    267  ls samples/
+ 1518    268  less zaciatocnik.txt 
+ 1519    269  last
+ 1520    270  man last
+ 1521    271  cd samples/
+ 1522    272  ls
+ 1523    273  last wtmp.2020
+ 1524    274  man last
+ 1525    275  last -f wtmp.2020
+ 1526    276  head wtmp.2020
+ 1527    277  last -f wtmp.2020
+ 1528    278  cd
+ 1529    279  ls -la
+ 1530    280  cat bash_history
+ 1531    281  less .bash_history
+ 1532    282  less .bashrc
+ 1533    283  less .profile
+ 1534    284  whoami
+ 1535    285  man whoami
+ 1536    286  man ps
+ 1537    287  ps
+ 1538    288  man jobs
+ 1539    289  help jobs
+ 1540    290  ls
+ 1541    291  vim file.txt 
+ 1542    292  clear
+ 1543    293  vim file.txt 
+ 1544    294  ./file.txt 
+ 1545    295  vim file.txt 
+ 1546    296  ./file.txt 
+ 1547    297  vim file.txt 
+ 1548    298  ll | cat
+ 1549    299  cowsay "Ahoj pouzil som ll | cat"
+ 1550    300  cowsay "Ahoj pouzil som \!\!"
+ 1551    301  cowsay 'Ahoj pouzil som !!'
+ 1552    302  sudo apt-get install cowsay
+ 1553    303  sudo apt install cowsay
+ 1554    304  sudo apt instal sl
+ 1555    305  sudo apt install sl
+ 1556    306  man sl
+ 1557    307  sl
+ 1558    308  fortune
+ 1559    309  man fortune
+ 1560    310  fortune -o
+ 1561    311  sudo apt install fortunes-off
+ 1562    312  fortune -o
+ 1563    313  man find
+ 1564    314  find . -print
+ 1565    315  cd /public/
+ 1566    316  ls
+ 1567    317  ls priklady
+ 1568    318  ls ucebnove
+ 1569    319  less kw2.txt
+ 1570    320  cd ucebnove/
+ 1571    321  less kw2.txt
+ 1572    322  less kw3.txt
+ 1573    323  cd ..
+ 1574    324  find -type f -name "kw*" -print
+ 1575    325  find -type f -name "kw*" -size 70c  -print
+ 1576    326  find -type f -name "kw*" -size +70c  -print
+ 1577    327  find -type f -name "kw*" -size +70c -size -200c  -print
+ 1578    328  find -type f -name "kw*" -size +70c -and -size -200c  -print
+ 1579    329  man file
+ 1580    330  cd ucebnove/
+ 1581    331  file kw10.txt
+ 1582    332  cd dev
+ 1583    333  cd ..
+ 1584    334  cd /dev
+ 1585    335  ls -ls
+ 1586    336  file zero
+ 1587    337  file stderr
+ 1588    338  file mqueue
+ 1589    339  cd .
+ 1590    340  Najdite mi subory ktore obsahuju kw, maju velkost 50 az 100 alebo su mensie ako 25
+ 1591    341  cd
+ 1592    342  find /public -type f \( -name "*kw*" -a \(\( -size +50c -a -size -100c \) -o -size -25c \)\)
+ 1593    343  cd /public/
+ 1594    344  ls
+ 1595    345  cd priklady
+ 1596    346  ls
+ 1597    347  9-2.sh 10-200.sh
+ 1598    348  exit
+ 1599    349  hisotry
+ 1600    350  history
+ 1601    351  exit
+ 1602    352  man less
+ 1603    353  man more
+ 1604    354  cd /public/
+ 1605    355  ls
+ 1606    356  less zaciatocnik.txt 
+ 1607    357  cd prednasky/
+ 1608    358  lôs
+ 1609    359  ls
+ 1610    360  cd ..
+ 1611    361  ls
+ 1612    362  cd 
+ 1613    363  ls
+ 1614    364  cd /public/
+ 1615    365  less ls
+ 1616    366  ./ls 
+ 1617    367  cd
+ 1618    368  ls
+ 1619    369  ./file.txt 
+ 1620    370  cd /public/
+ 1621    371  ls
+ 1622    372  ls samples/
+ 1623    373  ls priklady
+ 1624    374  cat 1.sh
+ 1625    375  cd priklady/
+ 1626    376  less 1.sh
+ 1627    377  cd ..
+ 1628    378  ls
+ 1629    379  echo $PATH
+ 1630    380  ls
+ 1631    381  cd /dev
+ 1632    382  ls
+ 1633    383  ls -la
+ 1634    384  cd 
+ 1635    385  ls -la
+ 1636    386  man chmod
+ 1637    387  chmod u-x file.txt 
+ 1638    388  ls -la
+ 1639    389  chmod 764  file.txt 
+ 1640    390  ls -la
+ 1641    391  chmod 767  file.txt 
+ 1642    392  ls -la
+ 1643    393  chmod 764  file.txt 
+ 1644    394  man groups
+ 1645    395  groups
+ 1646    396  ls -la
+ 1647    397  ll
+ 1648    398  alias
+ 1649    399  man w
+ 1650    400  w
+ 1651    401  who
+ 1652    402  man who
+ 1653    403  who
+ 1654    404  last
+ 1655    405  cd /public/
+ 1656    406  ls
+ 1657    407  cd priklady/
+ 1658    408  ls
+ 1659    409  cd ..
+ 1660    410  ls
+ 1661    411  cd zadania/\
+ 1662    412  cd zadania/
+ 1663    413  ls
+ 1664    414  cd ..
+ 1665    415  cd ucebnove/
+ 1666    416  ls
+ 1667    417  cd ..
+ 1668    418  ls
+ 1669    419  ls samples
+ 1670    420  cd samples/
+ 1671    421  less wtmp.2020
+ 1672    422  y
+ 1673    423  less wtmp.2020
+ 1674    424  hexdump -C wtmp.2020
+ 1675    425  ls
+ 1676    426  man last
+ 1677    427  last -f wtmp.2020
+ 1678    428  cd
+ 1679    429  ls -la
+ 1680    430  less .bashrc 
+ 1681    431  less .profile 
+ 1682    432  whoami
+ 1683    433  man sudo
+ 1684    434  man whoami
+ 1685    435  ps
+ 1686    436  man ps
+ 1687    437  top
+ 1688    438  jobs
+ 1689    439  man jobs
+ 1690    440  help jobs
+ 1691    441  ls
+ 1692    442  touch subor.txt
+ 1693    443  vim subor.txt 
+ 1694    444  less subor.txt 
+ 1695    445  vim subor.txt 
+ 1696    446  ll | cat
+ 1697    447  cowsay "Ahoj toto som vykonal: history"
+ 1698    448  ll | cat
+ 1699    449  cowsay "Ahoj toto som vykonal: ll | cat"
+ 1700    450  cowsay "Ahoj toto som vykonal: "cowsay "Ahoj toto som vykonal: ll | cat"""
+ 1701    451  cowsay "Ahoj toto som vykonal: cowsay "Ahoj toto som vykonal: "cowsay "Ahoj toto som vykonal: ll | cat"""cowsay "Ahoj toto som vykonal: "cowsay "Ahoj toto som vykonal: ll | cat""""
+ 1702    452  ll | cat
+ 1703    453  cowsay 'Ahoj toto som vykonal: !!'
+ 1704    454  sudo apt install cowsay
+ 1705    455  ls
+ 1706    456  sl
+ 1707    457  fortune
+ 1708    458  man fortune
+ 1709    459  fortune -o
+ 1710    460  man find
+ 1711    461  cd /public
+ 1712    462  find /public -print
+ 1713    463  find . -print
+ 1714    464  ls 
+ 1715    465  ls samples
+ 1716    466  ls ucebnove
+ 1717    467  less kw2.txt
+ 1718    468  cd ucebnove/
+ 1719    469  less kw2.txt
+ 1720    470  cd ..
+ 1721    471  find -type f -name "kw*" -print
+ 1722    472  find -type f -name "kw*" -size >70c  -print
+ 1723    473  find -type f -name "kw*" -size 70c  -print
+ 1724    474  find -type f -name "kw*" -size -70c  -print
+ 1725    475  man file
+ 1726    476  cd ucebnove/
+ 1727    477  file kw3.txt 
+ 1728    478  cd /dev
+ 1729    479  ls
+ 1730    480  ls -la
+ 1731    481  file zero
+ 1732    482  file stderr
+ 1733    483  file mqueue
+ 1734    484  cd
+ 1735    485  ls
+ 1736    486  cd /public
+ 1737    487  ls
+ 1738    488  cd ucebnove/
+ 1739    489  ls
+ 1740    490  cd ..
+ 1741    491  ls
+ 1742    492  cd priklady/
+ 1743    493  ls
+ 1744    494  [Cislo]-[Cislo]blabot
+ 1745    495  9-2.sh 100-23478.sh
+ 1746    496  Najdite vsetky skripty ktore obsahuju cislo - a cislo 
+ 1747    497  ls
+ 1748    498  cd ..
+ 1749    499  ls
+ 1750    500  cd ucebnove
+ 1751    501  ls
+ 1752    502  cd historia
+ 1753    503  ls
+ 1754    504  less morhac19092024.history 
+ 1755    505  history | sudo tee /public/ucebnove/historia/morhac26092024.history"  > morhac26092024.history 
+ 1756  echo "" > morhac26092024.history 
+ 1757  sudo echo "" > morhac26092024.history 
+ 1758  sudo rm  morhac26092024.history 
+ 1759  ls
+ 1760  sudo touch morhac26092024.history
+ 1761  ls
+ 1762  sudo vim morhac26092024.history 
+ 1763  ls
+ 1764  cat morhac26092024.history 
+ 1765  cat morhac17102024.history 
+ 1766  exit
+ 1767  cd /public/ucebnove/historia
+ 1768  cat morhac26092024.history 
+ 1769  sudo history | sudo tee /public/ucebnove/historia/morhac26092024.history
+ 1770  history | sudo tee /public/ucebnove/historia/morhac26092024.history
+ 1771  ls
+ 1772  history | sudo tee /public/ucebnove/historia/morhac17102024.history
+ 1773  ls
+ 1774  cat file.txt -rm 
+ 1775  mkdir awk
+ 1776  ls
+ 1777  cd awk
+ 1778  cp /public/samples/ {access.log, logformat.txt, zamestnanci.txt}
+ 1779  ls /public/samples
+ 1780  cp /public/samples/ {access.log,logformat.txt,zamestnanci.txt}
+ 1781  cp /public/samples {access.log,logformat.txt,zamestnanci.txt}
+ 1782  cp /public/samples/access.log /public/samples/logformat.txt /public/samples/zamestnanci.txt /destination/directory/
+ 1783  cp /public/samples/access.log /public/samples/logformat.txt /public/samples/zamestnanci.txt .
+ 1784  ls
+ 1785  cp /public/pirklady/awk.txt
+ 1786  cp /public/pirklady/awk.txt .
+ 1787  cp /public/priklady/awk.txt .
+ 1788  cat awk.txt 
+ 1789  man awk
+ 1790  man grep
+ 1791  man awk
+ 1792  awp '{print}' zamestnanci.txt 
+ 1793  awk '{print}' zamestnanci.txt 
+ 1794  man awk
+ 1795  awk '{print NR}' zamestnanci.txt 
+ 1796  awk '{print NR $0}' zamestnanci.txt 
+ 1797  awk '{print NR,$0}' zamestnanci.txt 
+ 1798  awk 'BEGIN {print "Zoznam zamestnancov:"}{print NR,$0}' zamestnanci.txt 
+ 1799  man awk
+ 1800  awk 'END {print "Zoznam zamestnancov:"}{print NR,$0}' zamestnanci.txt 
+ 1801  awk '{print NR,$1}' zamestnanci.txt 
+ 1802  awk '{print NR,$1,$0}' zamestnanci.txt 
+ 1803  awk '{print /^z/}' zamestnanci.txt 
+ 1804  cd awk
+ 1805  awk {print /^z/} zamestnanci.txt 
+ 1806  awk '{print /^z/}' zamestnanci.txt 
+ 1807  awk '{print /^z/ $0}' zamestnanci.txt 
+ 1808  awk '/^z/' zamestnanci.txt 
+ 1809  awk '{print '/^z/'} zamestnanci.txt 
+ 1810  awk '{print '/^z/'}' zamestnanci.txt 
+ 1811  awk '/^z/' zamestnanci.txt 
+ 1812  awk '/!^z/' zamestnanci.txt 
+ 1813  awk ' zamestnanci.txt 
+ 1814  awk '{print NF,$0}' zamestnanci.txt 
+ 1815  awk '{print $NF,$0}' zamestnanci.txt 
+ 1816  awk '{print $NF}' zamestnanci.txt 
+ 1817  awk '{print NF,$0}' zamestnanci.txt 
+ 1818  awk '{print $NF}' zamestnanci.txt 
+ 1819  awk '{print $NF,$2}' zamestnanci.txt 
+ 1820  awk '$NF> 1000 {print $NR,$0}' zamestnanci.txt 
+ 1821  awk '$3> 1000 {print $NR,$0}' zamestnanci.txt 
+ 1822  man awk
+ 1823  awk '$NF> 1000 {print $NR,$0}' zamestnanci.txt 
+ 1824  awk '{print $NF}' zamestnanci.txt 
+ 1825  awk '{suma=+$NF}' zamestnanci.txt 
+ 1826  awk END {sum} '{suma=+$NF}' zamestnanci.txt 
+ 1827   '{suma}' '{suma=+$NF}' zamestnanci.txt 
+ 1828  awk 'END {sum} {suma=+$NF}' zamestnanci.txt 
+ 1829  awk 'END {print sum} {suma=+$NF}' zamestnanci.txt 
+ 1830  awk 'END {print suma} {suma=+$NF}' zamestnanci.txt 
+ 1831  awk 'END {print suma} {suma+=$NF}' zamestnanci.txt 
+ 1832  awk 'END {print suma/NR} {suma+=$NF}' zamestnanci.txt 
+ 1833  awk '/^z/^b/ {suma+=$NF; count+=1} END {print "Priemerny plat: " suma/count' zamestnanci.txt 
+ 1834  awk '/^z/^b/ {suma+=$NF; count+=1} END {print "Priemerny plat: " suma/count}' zamestnanci.txt 
+ 1835  awk '/^z/^b/ {suma+=$NF; count+=1} END { print "Priemerny plat: " suma/count}' zamestnanci.txt 
+ 1836  awk '/^z|^b/ {suma+=$NF; count+=1} END { print "Priemerny plat: " suma/count}' zamestnanci.txt 
+ 1837  cat access.log 
+ 1838  cat logformat.txt 
+ 1839  awk {print $10}
+ 1840  awk {print $10} access.log 
+ 1841  awk '{print $10}' access.log 
+ 1842  cat logformat.txt 
+ 1843  head access.log 
+ 1844  head access.log | awk '{print $10}' access.log 
+ 1845  head access.log | awk '{print $10}' 
+ 1846  head access.log 
+ 1847  head access.log | awk '{print $10}' 
+ 1848  awk ‘{print $1} ’ access.log | sort | uniq -c | sort -nr | head | awk ‘’{print $2}
+ 1849  awk ‘{print $1} ’ access.log | sort | uniq -c | sort -nr | head | awk ‘{print $2}'
+ 1850  awk ‘{print $1}’ access.log | sort | uniq -c | sort -nr | head | awk ‘{print $2}'
+ 1851  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1852  ls
+ 1853  cat awk.txt 
+ 1854  man uniq
+ 1855  man sort
+ 1856  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1857  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1858  cat access.log 
+ 1859  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1860  awk '{print $2}' access.log 
+ 1861  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1862  cat awk.txt 
+ 1863  head access.log 
+ 1864  tail access.log 
+ 1865  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1866  cat awk.txt 
+ 1867  awk ‘/i[pP]hone|[aA]ndroid/{sum+=$10} {sumA+=$10} END {print sum/sumA*100”%”}’ access.log
+ 1868  awk '/[iI]phone|[aA]ndroid/ {sum+=$10} {sumA+=$10} END {print sum/sumA*100 "%"}' access.log
+ 1869  awk ‘/i[pP]hone|[aA]ndroid/ {sum+=$10} {sumA+=$10} END {print sum/sumA*100 "%"}' access.log
+ 1870  awk '/i[pP]hone|[aA]ndroid/ {sum+=$10} {sumA+=$10} END {print sum/sumA*100 "%"}' access.log
+ 1871  cat awk.txt 
+ 1872  awk ‘$9 == 404 {print $7}’ access.log | sort | uniq -c | sort -n | tr -s “ “ | tail -1 | cut -d “ “ -f 3
+ 1873  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1874  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n
+ 1875  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' 
+ 1876  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | 
+ 1877  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 
+ 1878  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' '
+ 1879  awk ‘$9 == 404 {print $7}’ access.log | sort | uniq -c | sort -n | tr -s “ “ | tail -1 | cut -d “ “ -f 2
+ 1880  awk ‘$9 == 404 {print $7}’ access.log | sort | uniq -c | sort -n | tr -s “ “ | tail -1 | cut -d “ “ -f 3
+ 1881  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1882  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' 
+ 1883  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 2
+ 1884  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 1
+ 1885  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1886  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 
+ 1887  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1888  cat awk.txt 
+ 1889  awk '$9 == 4.. {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1890  awk '$9 == 4[0-9][0-9] {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1891  awk '$9 ~ /^4[0-9][0-9]/ {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1892  history
+ 1893  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1894  ‘{sum+=$10;} END { print sum/2ˆ20 “ MB”}’
+ 1895  awk ‘{sum+=$10;} END { print sum/2ˆ20 “ MB”}’
+ 1896  awk '{sum+=$10} END {print sum/(2^20) " MB"}' access.log
+ 1897  exit
+ 1898  cd /public/ucebnove/
+ 1899  ls
+ 1900  cat kw6.txt
+ 1901  exit
+ 1902  cat /public/ucebnove/kw6.txt 
+ 1903  man awk
+ 1904  man grep
+ 1905  man awk
+ 1906  mkdir awk
+ 1907  ls
+ 1908  ll
+ 1909  touch file
+ 1910  ll
+ 1911  touch file
+ 1912  ll
+ 1913  touch file
+ 1914  ll
+ 1915  rm -rf awk
+ 1916  mkdir awk
+ 1917  cp /public/priklady/awk.txt /awk
+ 1918  ls
+ 1919  cp /public/priklady/awk.txt /awk
+ 1920  cp /public/priklady/awk.txt ~/awk
+ 1921  cd awk/
+ 1922  ls
+ 1923  cp /public/priklady/awk.txt /awk/
+ 1924  cd
+ 1925  cp /public/priklady/awk.txt /awk/
+ 1926  cp /public/priklady/awk.txt ./awk
+ 1927  cd awk/
+ 1928  cp /public/priklady/awk.txt .
+ 1929  cat awk.txt 
+ 1930  cp /public/samples/access.log .
+ 1931  cp /public/samples/logformat.txt .
+ 1932  cp /public/samples/zamestnanci.txt .
+ 1933  man awk
+ 1934  awk '{print}' zamestnanci.txt
+ 1935  awk '{print NR,$0}' zamestnanci.txt
+ 1936  awk '{print NR $0}' zamestnanci.txt
+ 1937  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1938  awk 'END { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1939  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1940  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 1941  awk '/^z/' zamestnanci.txt
+ 1942  awk '!/^z/' zamestnanci.txt
+ 1943  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1944  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1945  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1946  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1947  vim zamestnanci.txt 
+ 1948  awk '/^zZ|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1949  awk '/|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1950  awk '/^[zZ]|^b/ {sum+=$NF} END {print "priemerny plat: " sum/NR }' zamestnanci.txt 
+ 1951  awk '/^[zZ]|^b/ {sum+=$NF count++} END {print "priemerny plat: " sum/count }' zamestnanci.txt 
+ 1952  awk '/^[zZ]|^b/ {sum+=$NF count+=1} END {print "priemerny plat: " sum/count }' zamestnanci.txt 
+ 1953  awk '/^[zZ]|^b/ {sum+=$NF; count+=1} END {print "priemerny plat: " sum/count }' zamestnanci.txt 
+ 1954  cat access.log 
+ 1955  ls
+ 1956  cat logformat.txt 
+ 1957  cat awk.txt 
+ 1958  tail access.log 
+ 1959  awk '{print $1}'
+ 1960  ls
+ 1961  awk '{print $1}' access.log
+ 1962  awk '{print $1}' access.log | sort | uniq.c
+ 1963  awk '{print $1}' access.log | sort | uniq -c
+ 1964  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 1965  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1966  cat awk.txt 
+ 1967  head access.log
+ 1968  tail access.log
+ 1969  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1970  awk '{sum+=$10} END {print sum/(2^20) " MB"}'
+ 1971  awk '{sum+=$10} END {print sum/(2^20)" MB"}'
+ 1972  awk '{sum+=$10} END {print sum/(2^20) " MB"}' access.log 
+ 1973  cat awk.txt 
+ 1974  head access.log 
+ 1975  tail access.log 
+ 1976  cat awk.txt 
+ 1977  ls
+ 1978  cat access.log 
+ 1979  cat awk.txt 
+ 1980  cat access.log 
+ 1981  cat awk.txt 
+ 1982  4ka
+ 1983  awk '$9 ~ /^4[0-9][0-9]/ {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1984  3la
+ 1985  3ka
+ 1986  awk '/iPhone|iphone|Android|android/ {mobile_req += 1; mobile_data += $10}
+ 1987  {total_req += 1; total_data += $10}
+ 1988  END {
+ 1989      mobile_percent = (mobile_req / total_req) * 100;
+ 1990      data_percent = (mobile_data / total_data) * 100;
+ 1991      print "Mobile requests: " mobile_percent "%";
+ 1992      print "Mobile data: " data_percent "%";
+ 1993  }' access.log
+ 1994  exit
+ 1995  ls
+ 1996  cat file
+ 1997  cat output.txt 
+ 1998  cat output.txt | grep Hello
+ 1999  cat output.txt
+ 2000  cat output.txt | grep Hello
+ 2001  head -1 output.txt | tail -1 output.txt 
+ 2002  head -1 output.txt | tail -1 
+ 2003  cat /public/ucebnove/kw6.txt
+ 2004  rm -rf awk/
+ 2005  mkdir awk
+ 2006  cp /public/priklady/awk.txt 
+ 2007  cp /public/priklady/awk.txt ~/awk
+ 2008  ls awk/
+ 2009  cp /public/priklady/awk.txt awk
+ 2010  ls
+ 2011  ls awk/
+ 2012  rm -rf awk/
+ 2013  cp /public/priklady/awk.txt awk
+ 2014  ls
+ 2015  cat awk 
+ 2016  rm awk 
+ 2017  cp /public/priklady/awk.txt ~/awk
+ 2018  cd awk 
+ 2019  ls
+ 2020  rm awk 
+ 2021  mkdir awk
+ 2022  cp /public/priklady/awk.txt awk
+ 2023  ls awk/
+ 2024  cp /public/samples/access.log awk
+ 2025  cp /public/samples/logformat.txt awk
+ 2026  cp /public/samples/zamestnanci.txt awk
+ 2027  cd awk/
+ 2028  ls
+ 2029  cat awk.txt 
+ 2030  awk '{print}' zamestnanci.txt
+ 2031  awk '{print NR,$0}' zamestnanci.txt
+ 2032  awk '{print NR $0}' zamestnanci.txt
+ 2033  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 2034  awk 'END { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 2035  awk '{print} BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 2036  awk 'BEGIN {print} BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 2037  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print}' zamestnanci.txt
+ 2038  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print premenna=1}' zamestnanci.txt
+ 2039  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print premenna=[zamestnanci.txt]}' zamestnanci.txt
+ 2040  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print premenna=$0}' zamestnanci.txt
+ 2041  cat awk.txt 
+ 2042  cat zamestnanci.txt 
+ 2043  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 2044  awk '/^z/' zamestnanci.txt
+ 2045  awk '/^[zZ]/' zamestnanci.txt
+ 2046  awk '!/^z/' zamestnanci.txt
+ 2047  { print $1 ":" $NF }awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 2048  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 2049  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 2050  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 2051  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 2052  awk '/^z|^b/ {premenna+=$NF} END {print premenna}' zamestnanci.txt 
+ 2053  awk '/^z|^b/ {premenna+=$NF} END {print premenna/NR}' zamestnanci.txt 
+ 2054  awk '/^z|^b/ {premenna+=$NF pocitadlo+=1} END {print premenna/pocitadlo}' zamestnanci.txt 
+ 2055  awk '/^z|^b/ {premenna+=$NF, pocitadlo+=1} END {print premenna/pocitadlo}' zamestnanci.txt 
+ 2056  awk '/^z|^b/ {premenna+=$NF; pocitadlo+=1} END {print premenna/pocitadlo}' zamestnanci.txt 
+ 2057  cat access.log 
+ 2058  head access.log 
+ 2059  ls
+ 2060  cat logformat.txt 
+ 2061  cat awk.txt 
+ 2062  head access.log 
+ 2063  cat awk.txt 
+ 2064  tail access.log 
+ 2065  iphone iPhone android Android
+ 2066  5.93116% druha otazka
+ 2067  cd /public/
+ 2068  ls
+ 2069  cd ucebnove/historia
+ 2070  ls
+ 2071  cat morhac03102024.history 
+ 2072  history | sudo tee /public/ucebnove/historia/morhac24102024.history
