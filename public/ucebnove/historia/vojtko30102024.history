@@ -1,0 +1,194 @@
+ 1576  man sed
+ 1577  sed
+ 1578  info sed
+ 1579  mkdir cv7
+ 1580  cd cv7
+ 1581  cp /public/samples/sedinput.txt .
+ 1582  sed sedinput.txt
+ 1583  sed '' sedinput.txt
+ 1584  less sedinput.txt 
+ 1585  sed -n '' sedinput.txt
+ 1586  sed -n 'p' sedinput.txt
+ 1587  sed -n '1p' sedinput.txt
+ 1588  sed -n '7p' sedinput.txt
+ 1589  sed -n '6p' sedinput.txt
+ 1590  sed -n '=' sedinput.txt
+ 1591  sed '=' sedinput.txt
+ 1592  sed -n '=;p' sedinput.txt
+ 1593  sed -n '=p' sedinput.txt
+ 1594  sed 'i vkladam pred riadok' sedinput.txt
+ 1595  sed 'i "vkladam pred riadok"' sedinput.txt
+ 1596  sed 'i"vkladam pred riadok"' sedinput.txt
+ 1597  sed 'ivkladam pred riadok' sedinput.txt
+ 1598  sed 'ivkladam    pred riadok' sedinput.txt
+ 1599  sed 'i       vkladam    pred riadok' sedinput.txt
+ 1600  sed 'i"       vkladam    pred riadok' sedinput.txt
+ 1601  sed 'i       vkladam    pred riadok' sedinput.txt
+ 1602  sed 'i\       vkladam    pred riadok' sedinput.txt
+ 1603  sed 'a vkladam za riadok' sedinput.txt
+ 1604  sed '3a vkladam za treti riadok' sedinput.txt
+ 1605  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 1606  sed '3c\ vkladam namiesto tretieho riadka' sedinput.txt
+ 1607  sed '3c\ vkladam namiesto \tretieho riadka' sedinput.txt
+ 1608  sed '3c\ vkladam namiesto \\tretieho riadka' sedinput.txt
+ 1609  sed '3c\\ vkladam namiesto \\tretieho riadka' sedinput.txt
+ 1610  sed '3c\\\ vkladam namiesto \\tretieho riadka' sedinput.txt
+ 1611  sed '3d' sedinput.txt ;# vymazem treti riadok
+ 1612  sed '3a vkladam namiesto tretieho riadka;3a asdf' sedinput.txt
+ 1613  sed '3a vkladam namiesto tretieho riadka; 3a asdf' sedinput.txt
+ 1614  sed '3a vkladam namiesto tretieho riadka' -e '3a asdf' sedinput.txt
+ 1615  sed '3a vkladam namiesto tretieho riadka;a asdf' sedinput.txt
+ 1616  sed '3a vkladam namiesto tretieho riadka\;a asdf' sedinput.txt
+ 1617  sed '3a vkladam namiesto tretieho riadka\n asdf' sedinput.txt
+ 1618  sed 's/hello/world/' sedinput.txt
+ 1619  sed 's/hello/world/g' sedinput.txt
+ 1620  echo 's/hello/world/g' > mojscript.sed
+ 1621  sed -f mojscript.sed sedinput.txt
+ 1622  cp /public/samples/list.txt .
+ 1623  less list.txt 
+ 1624  sed '7,10d' list.txt
+ 1625  sed '' list.txt
+ 1626  sed '7,10d' list.txt
+ 1627  sed '7d;8d;9d;10d' list.txt
+ 1628  sed '3 s/Zuzka/Lucka/g' list.txt
+ 1629  sed 's/Zuzka, ja Ta milujem./Lucka, ja Ta milujem./g' list.txt
+ 1630  sed 's/Zuzka/Lucka/2' list.txt
+ 1631  sed '3s/Zuzka, ja Ta milujem./Lucka, ja Ta milujem./g' list.txt
+ 1632  sed '3s/Zuzka(, ja Ta milujem.)/Lucka\1/g' list.txt
+ 1633  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\1/g' list.txt
+ 1634  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\0/g' list.txt
+ 1635  sed 's/Zuzka/ZUZKA/g' list.txt
+ 1636  sed 's/Zuzka/\U/g' list.txt
+ 1637  sed 's/Zuzka/\U\0/g' list.txt
+ 1638  sed 's/Zuzka/\U&/g' list.txt
+ 1639  sed 's/\<z[^ ]*/\U&/g' list.txt
+ 1640  sed 's/\<\([A-Z]\)\([^ ]*\)/\L\1\U\2/g' list.txt
+ 1641  sed 's/\bmozno\b/nemozno/g' list.txt
+ 1642  sed 's/\b\(mozno\)\b/\1/g' list.txt
+ 1643  sed 's/\b\(mozno\)\b/ne1/g' list.txt
+ 1644  sed 's/\b\(mozno\)\b/ne\1/g' list.txt
+ 1645  sed -n '7~2' list.txt
+ 1646  sed -n '7~2p' list.txt
+ 1647  sed '1,7d;18d;1~2d' list.txt
+ 1648  sed -n '7,18p' list.txt | sed -n '1~2p'
+ 1649  sed -n '8,16p' list.txt | sed -n '1~2p'
+ 1650  sed -n 'n;7,16p' list.txt
+ 1651  sed -n '' list.txt
+ 1652  sed '' list.txt
+ 1653  sed -n '3n;7,16p' list.txt
+ 1654  sed -n 'n;n;7,16p' list.txt
+ 1655  sed -n 'n;n;7,16p;n' list.txt
+ 1656  sed -n '=;7,16p' list.txt
+ 1657  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /g'
+ 1658  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /g' | sed -n '4,12p'
+ 1659  man passwd
+ 1660  man 5 passwd
+ 1661  bash qwert
+ 1662  bash .\qwert s
+ 1663  cd ..
+ 1664  bash .\qwert s
+ 1665  bash ./qwert s
+ 1666  less qwert 
+ 1667  PREMENNA=$(echo ahoj)
+ 1668  set -x
+ 1669  PREMENNA=$(echo ahoj)
+ 1670  zoznam=(jeden dva tri styri pat "sest sedem"); zoznam2=("${zoznam[@]} osem");
+ 1671  echo "${zoznam2[@]}"
+ 1672  echo "${#zoznam2[@]}"
+ 1673  for i in "${zoznam2[@]}"; do echo $i; done
+ 1674  set +x
+ 1675  for i in "${zoznam2[@]}"; do echo $i; done
+ 1676  `*`
+ 1677  echo *
+ 1678  reset
+ 1679  man sed
+ 1680  sed
+ 1681  sed ''
+ 1682  sed '' /public/samples/sedinput.txt 
+ 1683  sed '5~10' /public/samples/list.txt 
+ 1684  sed -n '5~10p' /public/samples/list.txt 
+ 1685  less /public/samples/list.txt 
+ 1686  sed sedinput.txt
+ 1687  cd cv7/
+ 1688  sed sedinput.txt
+ 1689  sed ledinput.txt
+ 1690  sed 5edinput.txt
+ 1691  sed '' sedinput.txt
+ 1692  sed -n '' sedinput.txt
+ 1693  sed -n 'p' sedinput.txt
+ 1694  sed -n '3p' sedinput.txt
+ 1695  sed -n '=' sedinput.txt
+ 1696  sed -n '=;p' sedinput.txt
+ 1697  sed -n '=;3p' sedinput.txt
+ 1698  sed 'i vkladam pred riadok' sedinput.txt
+ 1699  sed 'ivkladam pred riadok' sedinput.txt
+ 1700  sed 'i\ vkladam pred riadok' sedinput.txt
+ 1701  sed 'i\ pvkladam pred riadok' sedinput.txt
+ 1702  sed 'pvkladam pred riadok' sedinput.txt
+ 1703  sed 'dvkladam pred riadok' sedinput.txt
+ 1704  sed 'ivkladam pred riadok' sedinput.txt
+ 1705  sed 'i\vkladam pred riadok' sedinput.txt
+ 1706  sed 'i\\vkladam pred riadok' sedinput.txt
+ 1707  sed 'i\\\vkladam pred riadok' sedinput.txt
+ 1708  sed 'i\\\vkladam pred \\riadok' sedinput.txt
+ 1709  sed 'i\\\vkladam pred \\\riadok' sedinput.txt
+ 1710  sed 'i\\\vkladam pred \\riadok' sedinput.txt
+ 1711  sed 'i\\\vkladam pred \riadok' sedinput.txt
+ 1712  sed 'i\\\vkladam pred \\riadok' sedinput.txt
+ 1713  sed 'i\\\vkladam pred \\\riadok' sedinput.txt
+ 1714  sed 'i\vkladam pred \\\riadok' sedinput.txt
+ 1715  sed 'i\vkladam pred riadok' sedinput.txt
+ 1716  sed '3a vkladam za treti riadok' sedinput.txt
+ 1717  sed -e '3a vkladam za treti riadok' -e '3a aaaa' sedinput.txt
+ 1718  sed -e '3a vkladam za treti riadok\nasdf' -e '3a aaaa' sedinput.txt
+ 1719  sed -e '3a vkladam za treti riadok\nasdf;3a aaaa' sedinput.txt
+ 1720  sed '3d' sedinput.txt
+ 1721  sed 's/hello/world/' sedinput.txt
+ 1722  sed 's/hello/world/g' sedinput.txt
+ 1723  echo 's/hello/world/g' > mojscript.sed
+ 1724  sed -f mojscript.sed sedinput.txt
+ 1725  cat list.txt 
+ 1726  sed '7,10d' list.txt 
+ 1727  sed '7d,8d,9d,10d' list.txt 
+ 1728  sed '7d;8d;9d;10d' list.txt 
+ 1729  sed -n '7,10!p' list.txt 
+ 1730  sed -n '1,6p;11,$p' list.txt 
+ 1731  sed '3s/Zuzka/Lucka/g' list.txt 
+ 1732  sed '3/Zuzka/Lucka/2' list.txt 
+ 1733  sed '3s/Zuzka/Lucka/2' list.txt 
+ 1734  sed '3s/Zuzka, ja Ta milujem./Lucka, ja Ta milujem./' list.txt 
+ 1735  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\1/2' list.txt 
+ 1736  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\0/2' list.txt 
+ 1737  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\0/' list.txt 
+ 1738  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\1/' list.txt 
+ 1739  sed '3s/Zuzka\(, ja Ta \(milujem.\)\)/Lucka\1/' list.txt 
+ 1740  sed '3s/Zuzka\(, ja Ta \(milujem.\)\)/Lucka\1\2/' list.txt 
+ 1741  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\1/' list.txt 
+ 1742  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka\0/' list.txt 
+ 1743  sed '3s/Zuzka\(, ja Ta milujem.\)/Lucka&/' list.txt 
+ 1744  sed 's/Zuzka/ZUZKA/' list.txt 
+ 1745  sed 's/Zuzka/ZUZKA/g' list.txt 
+ 1746  sed 's/Zuzka/\U&/g' list.txt 
+ 1747  sed 's/Zuzka/\U\0/g' list.txt 
+ 1748  sed 's/\<\([A-Z]\)\([a-zA-Z]*\)/\L\1\U\2/g' list.txt 
+ 1749  sed 's/\<mozno\>/nemozno/g' list.txt 
+ 1750* 
+ 1751  sed 'n;7,16p' list.txt 
+ 1752  sed -n 'n;7,16p' list.txt 
+ 1753  sed -n '7,16p;n' list.txt 
+ 1754  sed -n '7,16p;n;n' list.txt 
+ 1755  sed -n 'n;7,16p;n;n' list.txt 
+ 1756  sed -n '7,16p' list.txt 
+ 1757  sed -n '7,16p' list.txt | sed -n '2~2p'
+ 1758  sed -n '7,16p' list.txt | sed -n '1~2p'
+ 1759  sed -n '7,16p' -e '1~2p' list.txt 
+ 1760  sed -n -e '7,16p' -e '1~2p' list.txt 
+ 1761  sed -n -e '1,6d' -e '1~2p' list.txt 
+ 1762  sed -n -e '1,6d' -e '17,$d' -e '1~2p' list.txt 
+ 1763  sed -n -e '' list.txt 
+ 1764  sed -e '' list.txt 
+ 1765  sed -n '=;p' list.txt 
+ 1766  sed -n '7,16=;p' list.txt 
+ 1767  sed -n '7,16=;7,16p' list.txt 
+ 1768  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /'
+ 1769  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /g'
