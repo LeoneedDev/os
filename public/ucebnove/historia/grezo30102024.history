@@ -1,0 +1,233 @@
+ 1968  clear
+ 1969  cd awk/
+ 1970  ll
+ 1971  vim awk.txt 
+ 1972  grep -R "nslookup" /public/ucebnove/historia
+ 1973  vim awk.txt 
+ 1974  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head -10 | awk '{print $2}' | nslookup
+ 1975  grep -R "host" /public/ucebnove/historia
+ 1976  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}'
+ 1977  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 
+ 1978  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}'
+ 1979  host 66.249.73.135
+ 1980  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}' | xargs -n 1 host
+ 1981  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}' | xargs -n 1 host  | awk '{print $NF}'
+ 1982  man xargs
+ 1983  cd ..
+ 1984  mkdir sed
+ 1985  cp /public/samples/{input.txt sedinput.txt list.txt} sed/
+ 1986  cp /public/samples/{input.txt,sedinput.txt,list.txt} sed/
+ 1987  cd sed/
+ 1988  ll
+ 1989  cp /public/priklady/sed.txt .
+ 1990  ll
+ 1991  less sed.txt 
+ 1992  man sed
+ 1993  less sed.txt 
+ 1994  vim sed.txt 
+ 1995  less sed.txt 
+ 1996  info sed
+ 1997  less sed.txt 
+ 1998  cat sedinput.txt 
+ 1999  sed sedinput.txt
+ 2000  sed '' sedinput.txt
+ 2001  sed -n '' sedinput.txt
+ 2002  sed -n 'p' sedinput.txt
+ 2003  sed -n '=' sedinput.txt
+ 2004  sed -n '=;p' sedinput.txt
+ 2005  sed '=;p' sedinput.txt
+ 2006  sed 'i vkladam pred riadok' sedinput.txt
+ 2007  sed 'a vkladam za riadok' sedinput.txt
+ 2008  sed '3a vkladam za treti riadok' sedinput.txt
+ 2009  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 2010  sed '3d' sedinput.txt ;# vymazem treti riadok
+ 2011  sed -n 'p' sedinput.txt
+ 2012  sed 's/hello/world/' sedinput.txt
+ 2013  sed 's/hello/world/g' sedinput.txt
+ 2014  ll
+ 2015  echo 's/hello/world/g' > mojscript.sed
+ 2016  cat mojscript.sed 
+ 2017  sed -f mojscript.sed sedinput.txt
+ 2018  ll
+ 2019  rm mojscript.sed 
+ 2020  ll
+ 2021  less list.txt 
+ 2022  sed '=' list.txt 
+ 2023  sed '7,10d' list.txt 
+ 2024  sed '3s/Zuzka/Lucka/' list.txt 
+ 2025  sed '3s/Zuzka/Lucka/g' list.txt 
+ 2026  sed '3s/Zuzka/Lucka/2' list.txt 
+ 2027  sed '3s/Zuzka/Lucka/3' list.txt 
+ 2028  sed ',10d' list.txt 
+ 2029  sed 's/Zuzka/LUCKA/g' list.txt 
+ 2030  sed 's/Zuzka/Y/g' list.txt 
+ 2031  sed 'y/Zuzka//g' list.txt 
+ 2032  sed 's/Zuzka/\U/g' list.txt 
+ 2033  sed 's/\(Zuzka\)/\U\1/g' list.txt 
+ 2034  sed 's/Zuzka/\U&/g' list.txt 
+ 2035  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt 
+ 2036  sed 's/\(Zu\)\(zka\)/\L\1\U\2/g' list.txt 
+ 2037  sed 's/mozno/nemozno/g' list.txt 
+ 2038  sed 's/^mozno/nemozno/g' list.txt 
+ 2039  sed 's/[Mm]ozno/nemozno/g' list.txt 
+ 2040  sed 's/^[Mm]ozno/nemozno/g' list.txt 
+ 2041  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt 
+ 2042  sed 's/^[Mm]ozno/nemozno/g' list.txt 
+ 2043  sed '=' list.txt 
+ 2044  sed '1~2d' list.txt 
+ 2045  sed '1,6d1~2d' list.txt 
+ 2046  sed '1,6d;1~2d' list.txt 
+ 2047  sed '1,6d;1~2d;18d' list.txt 
+ 2048  sed '2~2' list.txt 
+ 2049  sed '2~2p' list.txt 
+ 2050  sed -n '2~2p' list.txt 
+ 2051  sed -n 'n' list.txt 
+ 2052  sed -n '7,16p;n' list.txt
+ 2053  sed -n '7,16p' list.txt
+ 2054  sed -n 'n;7,16p' list.txt
+ 2055  sed -n '7,16p;n' list.txt
+ 2056  sed -n ';n' list.txt
+ 2057  sed -n 'p;n' list.txt
+ 2058  sed -n 'n;p' list.txt
+ 2059  cp list.txt list.bkp
+ 2060  sed -i 's/Zuzka/Lucka/g' list.bkp 
+ 2061  cat list.bkp 
+ 2062  sed '=' list.txt
+ 2063  sed '7,16p;=' list.txt
+ 2064  sed -n '7,16p;=' list.txt
+ 2065  sed -n '=;7,16p' list.txt | sed 
+ 2066  sed -n '=;7,16p' list.txt 
+ 2067  sed -n '=;7,16p' list.txt | sed -n '7,30p'
+ 2068  sed -n '=;7,16p' list.txt | sed -n '7,25p'
+ 2069  sed -n '=;7,16p' list.txt | sed -n '7,26p'
+ 2070  sed -n '=;7,16p' list.txt | sed -n '7,26p' | sed "n1"
+ 2071  sed -n '=;7,16p' list.txt | sed -n '7,26p' | sed "N;s/\n/ /"
+ 2072  sed -n '=;7,16p' list.txt | sed -n '7,26p' | sed "n;s/\n/ /"
+ 2073  sed -n '=;7,16p' list.txt | sed -n '7,26p' | sed "N;s/\n/ /"
+ 2074  ll /public/priklady/
+ 2075  less /etc/groups
+ 2076  ll /etc/
+ 2077  less /etc/group
+ 2078  man grep
+ 2079  clear
+ 2080  cd ..
+ 2081  cd awk
+ 2082  ll
+ 2083  cut -d " " -f 1 access.log 
+ 2084  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr
+ 2085  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head
+ 2086  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " "
+ 2087  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3
+ 2088  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3 | nslookup
+ 2089  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3 | nslookup | 
+ 2090  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3 
+ 2091  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3 | nslookup
+ 2092  cut -d " " -f 1 access.log | sort | uniq -c | sort -nr | head | tr -s " " | cut -d " " -f 3 
+ 2093  host 66.249.73.135
+ 2094  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}'
+ 2095* awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}' | xargs -n 1 host | 
+ 2096  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}' | xargs -n 1 host  | awk '{print $NF}'
+ 2097  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 | awk '{print $2}'
+ 2098  host 75.97.9.59
+ 2099  cd ../sed
+ 2100  ll
+ 2101  cat sed.txt
+ 2102  man sed
+ 2103  cat input.txt 
+ 2104  sed input.txt 
+ 2105  sed '' input.txt 
+ 2106  sed sedinput.txt
+ 2107  sed '' sedinput.txt
+ 2108  cat sedinput.txt
+ 2109  sed -n '' sedinput.txt
+ 2110  sed -n 'p' sedinput.txt
+ 2111  sed -n 'p;p' sedinput.txt
+ 2112  sed 'p;p' sedinput.txt
+ 2113  sed -n '=' sedinput.txt
+ 2114  sed '=' sedinput.txt
+ 2115  sed -n '=;p' sedinput.txt
+ 2116  sed -n 'p;=' sedinput.txt
+ 2117  sed 'i vkladam pred riadok' sedinput.txt
+ 2118  sed 'a vkladam za riadok' sedinput.txt
+ 2119  sed '3a vkladam za treti riadok' sedinput.txt
+ 2120  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 2121  sed '3d' sedinput.txt ;# vymazem treti riadok
+ 2122  cat sedinput.txt
+ 2123  sed 's/hello/world/' sedinput.txt
+ 2124  sed 's/hello/world/g' sedinput.txt
+ 2125  echo 's/hello/world/g' > mojscript.sed
+ 2126  ll
+ 2127  sed -f mojscript.sed sedinput.txt
+ 2128  ll
+ 2129  ll /public/samples/list.txt 
+ 2130  sed -n 'p' list.txt
+ 2131  sed '7,10d' list.txt
+ 2132  sed '3s/Zuzka/Lucka/' list.txt
+ 2133  sed '3s/Zuzka/Lucka/g' list.txt
+ 2134  sed '3s/Zuzka/Lucka/2' list.txt
+ 2135  sed 's/Zuzka/ZUZKA/g' list.txt
+ 2136  sed 's/Zuzka/\U&/g' list.txt
+ 2137  sed 's/Zuzka/\U/g' list.txt
+ 2138  sed 's/Zuzka/\L&/g' list.txt
+ 2139  sed 's/Zuzka/\Lz/g' list.txt
+ 2140  sed 's/Zuzka/\LZ/g' list.txt
+ 2141  sed 's/Zuzka/zUZKA/g' list.txt
+ 2142  sed 's/\(Z\)\(uzka\)/\L2\U1/g' list.txt
+ 2143  sed 's/\(Z\)\(uzka\)/\L1\U2/g' list.txt
+ 2144  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+ 2145  sed 's/\(Z\)\(uzka\)/\L\2\U\1/g' list.txt
+ 2146  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+ 2147  sed 's/\(Zu\)\(zka\)/\L\1\U\2/g' list.txt
+ 2148  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt
+ 2149  sed '=' sedinput.txt
+ 2150  sed '=' list.txt 
+ 2151  sed -n '7,16p' list.txt 
+ 2152  sed -n '7,16p' list.txt | sed -n "1~2p"
+ 2153  sed -n '7,16p;' list.txt
+ 2154  sed -n '7,16p' list.txt | sed -n "1~2p"
+ 2155  sed -n '7,16p' list.txt | sed -n "0~2p"
+ 2156  sed -n '4,16p' list.txt | sed -n "1~2p"
+ 2157  sed -n '7,16p;n' list.txt
+ 2158  sed -n 'n;7,16p' list.txt
+ 2159  sed -n 'n;p' list.txt
+ 2160  sed -n 'p;n' list.txt
+ 2161  ll
+ 2162  cp list.txt list.bkp 
+ 2163  cat list.bkp 
+ 2164  sed -i 's/Zuzka/Lucka/g' list.bkp 
+ 2165  cat list.bkp 
+ 2166  sed -n '7,16p' list.txt
+ 2167  sed -n '=;7,16p' list.txt
+ 2168  which sed
+ 2169  whereis sed
+ 2170  man sed
+ 2171  info sed
+ 2172  man sed
+ 2173  sed -n '=;7,16p' list.txt
+ 2174  sed -n '=;7,16p' list.txt | sed 'N;s/\n//'
+ 2175  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /'
+ 2176  sed -n '=;7,16p' list.txt
+ 2177  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /'
+ 2178  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /' | sed '4,12p'
+ 2179  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /' | sed -n '4,12p'
+ 2180  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /' | sed -n '4,13p'
+ 2181  sed -n '=;7,16p' list.txt | sed 'n;s/\n/ /' | sed -n '4,13p'
+ 2182  info sed
+ 2183  awk '{print $1}' access.log | sort | uniq -c | sort -nr |head -10 
+ 2184  awk '{print $1}' ../awk/access.log | sort | uniq -c | sort -nr |head -10 
+ 2185  cd 
+ 2186  pwd
+ 2187  PREMENNA=ahoj
+ 2188  echo "$PREMENNA"
+ 2189  echo '$PREMENNA'
+ 2190  echo $(pwd)
+ 2191  pwd
+ 2192  echo /home/rgrezo
+ 2193  touch subor
+ 2194  wc -l subor
+ 2195  ll
+ 2196  wc -l historia.prve
+ 2197  echo "test" | wc -lw | tr -d " "
+ 2198  echo "test" | wc -lwc | tr -d " "
+ 2199  $RANDOM
+ 2200  echo $RANDOM
