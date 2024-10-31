@@ -1,0 +1,131 @@
+    1  clear
+    2  history
+    3  clear
+    4  cd /public/ucebnove/
+    5  less kw7.txt 
+    6  cd
+    7  mkdir sed
+    8  cd sed
+    9  cp public/samples/{input.txt,sedinput.txt,list.txt} .
+   10  cp /public/samples/{input.txt,sedinput.txt,list.txt} .
+   11  lw
+   12  ls
+   13  cp /public/priklady/sed.txt
+   14  cp /public/priklady/sed.txt .
+   15  ls
+   16  man sed
+   17  info sed
+   18  sed sedinput.txt
+   19  sed sedinput.txt ;
+   20  sed '' sedinput.txt
+   21  cat sedinput.txt
+   22  sed -n '' sedinput.txt
+   23  sed -n 'p' sedinput.txt
+   24  sed -n '=' sedinput.txt
+   25  sed -n '=;p' sedinput.txt
+   26  sed 'i vkladam pred riadok' sedinput.txt
+   27  sed '=;p' sedinput.txt
+   28  sed 'a vkladam za riadok' sedinput.txt
+   29  sed '3a vkladam za treti riadok' sedinput.txt
+   30  sed '3c vkladam namiesto tretieho riadka' sedinpu
+   31  t.txt
+   32  sed '3c vkladam namiesto tretieho riadka' sedinpu
+   33  t.txt
+   34  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+   35  sed '3d' sedinput.txt
+   36  sed '=;3d' sedinput.txt
+   37  sed '3d;=' sedinput.txt
+   38  sed 's/hello/world/' sedinput.txt
+   39  cat sedinput.txt
+   40  echo 's/hello/world/g' > mojscript.sed
+   41  cat mojscript.sed 
+   42  sed -f mojscript.sed sedinput.txt
+   43  ls
+   44  cat list.txt 
+   45  sed '' list.txt
+   46  sed '7,10d' list.txt
+   47  sed '3s/Zuzka/Lucka/' list.txt
+   48  sed '3s/Zuzka/Lucka/g' list.txt
+   49  sed '3s/Zuzka/Lucka/2' list.txt
+   50  sed 's/Zuzka/\U&/g' list.txt
+   51  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+   52  sed 's/\<[Mm]ozno\>/nemozno/g' list.txt
+   53  sed 'n;7,16p' list.txt
+   54  sed -n 'n;7,16p' list.txt
+   55  sed -n '7,16p;n' list.txt
+   56  sed -i 's/Zuzka/Lucka/g' list.txt
+   57  cat list.txt 
+   58  sed -n '=;7,16p' list.txt
+   59  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g"
+   60  sed -n '=;7,16p' list.txt | sed "N;s/\n/ /g" | sed -n '4,12p'
+   61  ls
+   62  cd ../
+   63  cd awk/
+   64  less access.log 
+   65  cd ../
+   66  ls
+   67  rm -rf sed
+   68  ls
+   69  clear
+   70  less /public/ucebnove/kw7.txt 
+   71  cd
+   72  mkdir sed
+   73  cd sed
+   74  ls
+   75  cp public/samples/{input.txt,sedinput.txt,list.txt} .
+   76  cp /public/samples/{input.txt,sedinput.txt,list.txt} .
+   77  cp /public/priklady/sed.txt .
+   78  ls
+   79  man sed
+   80  sed sedinput.txt
+   81  sed '' sedinput.txt
+   82  cat sedinput
+   83  cat sedinput.txt
+   84  sed -n '' sedinput.txt
+   85  sed -n 'p' sedinput.txt
+   86  sed -n '=' sedinput.txt
+   87  sed -n '=;p' sedinput.txt
+   88  sed '=;p' sedinput.txt
+   89  sed 'i vkladam pred riadok' sedinput.txt
+   90  sed 'a vkladam za riadok' sedinput.txt
+   91  sed '3a vkladam za treti riadok' sedinput.txt
+   92  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+   93  sed '=;3c vkladam namiesto tretieho riadka' sedinput.txt
+   94  sed '3d' sedinput.txt
+   95  sed '=;3d' sedinput.txt
+   96  sed '3d;=' sedinput.txt
+   97  sed 's/hello/world/' sedinput.txt
+   98  echo 's/hello/world/g' > mojscript.sed
+   99  ls
+  100  sed -f mojscript.sed sedinput.txt
+  101  sed 's/hello/world/g' sedinput.txt
+  102  sed '' list.txt
+  103  sed '7,10d' list.txt
+  104  sed '3s/Zuzka/Lucka/g' list.txt
+  105  sed '3s/Zuzka/Lucka/2' list.txt
+  106  sed 's/Zuzka/\U&/g' list.txt
+  107  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt
+  108  sed 's/nemozno/mozno/g' list.txt | sed 's/mozno/nemozno'
+  109  sed 's/nemozno/mozno/g' list.txt | sed 's/mozno/nemozno/'
+  110  sed 's/nemozno/mozno/g' list.txt | sed 's/Mozno/mozno' |sed 's/mozno/nemozno/'
+  111  sed 's/nemozno/mozno/g' list.txt | sed 's/Mozno/mozno/' |sed 's/mozno/nemozno/'
+  112  sed 's/nemozno/mozno/g' list.txt | sed 's/[Mm]ozno/nemozno/'
+  113  sed 's/\<[Mm]ozno\>/nemozno/' list.txt 
+  114  sed 's/[Mm]ozno/nemozno/' list.txt 
+  115  sed -n '7,16p' list.txt 
+  116  sed -n 'n;7,16p' list.txt 
+  117  sed -n '7,16p;n' list.txt 
+  118  sed -i 's/Zuzka/Lucka/g' list.txt 
+  119  cat list.txt 
+  120  sed -n '=;7,16p' list.txt 
+  121  sed -n '=;7,16p' list.txt | sed 's/\n/ /g'
+  122  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /g'
+  123  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /g' | sed -n '4,12p'
+  124  cd ../awk/
+  125  less access.log 
+  126  cd /public/priklady/
+  127  ls
+  128  ls /public/seminare/
+  129  ls /public/ucebnove/
+  130  ls /public/ucebnove/historia
+  131  history | sudo tee /public/ucebnove/historia/salgovic31102024.history
