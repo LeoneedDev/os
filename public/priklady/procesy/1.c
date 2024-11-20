@@ -15,14 +15,14 @@ int main (int argc, char * argcv[])
     if (pid == 0)
     {
         do {
-            printf("executing child:  pid - %d; tid - %d\n", getpid(), gettid());
+            printf("executing child:  pid - %d; tid - %ld\n", getpid(), gettid());
             sleep(3);
         } while(indefinite);
     }
     else
     {
         do {
-            printf("executing parent: pid - %d; tid - %d\n", getpid(), gettid());
+            printf("executing parent: pid - %d; tid - %ld\n", getpid(), gettid());
             sleep(2);
         } while(indefinite);
     }

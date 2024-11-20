@@ -1,0 +1,1000 @@
+ 1004  awk '$9 == 404 {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1005  cat awk.txt 
+ 1006  awk '$9 == 4.. {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1007  awk '$9 == 4[0-9][0-9] {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1008  awk '$9 ~ /^4[0-9][0-9]/ {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1009  history
+ 1010  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1011  ‘{sum+=$10;} END { print sum/2ˆ20 “ MB”}’
+ 1012  awk ‘{sum+=$10;} END { print sum/2ˆ20 “ MB”}’
+ 1013  awk '{sum+=$10} END {print sum/(2^20) " MB"}' access.log
+ 1014  exit
+ 1015  cd /public/ucebnove/
+ 1016  ls
+ 1017  cat kw6.txt
+ 1018  exit
+ 1019  cat /public/ucebnove/kw6.txt 
+ 1020  man awk
+ 1021  man grep
+ 1022  man awk
+ 1023  mkdir awk
+ 1024  ls
+ 1025  ll
+ 1026  touch file
+ 1027  ll
+ 1028  touch file
+ 1029  ll
+ 1030  touch file
+ 1031  ll
+ 1032  rm -rf awk
+ 1033  mkdir awk
+ 1034  cp /public/priklady/awk.txt /awk
+ 1035  ls
+ 1036  cp /public/priklady/awk.txt /awk
+ 1037  cp /public/priklady/awk.txt ~/awk
+ 1038  cd awk/
+ 1039  ls
+ 1040  cp /public/priklady/awk.txt /awk/
+ 1041  cd
+ 1042  cp /public/priklady/awk.txt /awk/
+ 1043  cp /public/priklady/awk.txt ./awk
+ 1044  cd awk/
+ 1045  cp /public/priklady/awk.txt .
+ 1046  cat awk.txt 
+ 1047  cp /public/samples/access.log .
+ 1048  cp /public/samples/logformat.txt .
+ 1049  cp /public/samples/zamestnanci.txt .
+ 1050  man awk
+ 1051  awk '{print}' zamestnanci.txt
+ 1052  awk '{print NR,$0}' zamestnanci.txt
+ 1053  awk '{print NR $0}' zamestnanci.txt
+ 1054  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1055  awk 'END { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1056  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1057  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 } END { print "koniec"}' zamestnanci.txt
+ 1058  awk '/^z/' zamestnanci.txt
+ 1059  awk '!/^z/' zamestnanci.txt
+ 1060  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1061  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1062  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1063  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1064  vim zamestnanci.txt 
+ 1065  awk '/^zZ|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1066  awk '/|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1067  awk '/^[zZ]|^b/ {sum+=$NF} END {print "priemerny plat: " sum/NR }' zamestnanci.txt 
+ 1068  awk '/^[zZ]|^b/ {sum+=$NF count++} END {print "priemerny plat: " sum/count }' zamestnanci.txt 
+ 1069  awk '/^[zZ]|^b/ {sum+=$NF count+=1} END {print "priemerny plat: " sum/count }' zamestnanci.txt 
+ 1070  awk '/^[zZ]|^b/ {sum+=$NF; count+=1} END {print "priemerny plat: " sum/count }' zamestnanci.txt 
+ 1071  cat access.log 
+ 1072  ls
+ 1073  cat logformat.txt 
+ 1074  cat awk.txt 
+ 1075  tail access.log 
+ 1076  awk '{print $1}'
+ 1077  ls
+ 1078  awk '{print $1}' access.log
+ 1079  awk '{print $1}' access.log | sort | uniq.c
+ 1080  awk '{print $1}' access.log | sort | uniq -c
+ 1081  awk '{print $1}' access.log | sort | uniq -c | sort -nr
+ 1082  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head
+ 1083  cat awk.txt 
+ 1084  head access.log
+ 1085  tail access.log
+ 1086  awk '{print $1}' access.log | sort | uniq -c | sort -nr | head | awk '{print $2}'
+ 1087  awk '{sum+=$10} END {print sum/(2^20) " MB"}'
+ 1088  awk '{sum+=$10} END {print sum/(2^20)" MB"}'
+ 1089  awk '{sum+=$10} END {print sum/(2^20) " MB"}' access.log 
+ 1090  cat awk.txt 
+ 1091  head access.log 
+ 1092  tail access.log 
+ 1093  cat awk.txt 
+ 1094  ls
+ 1095  cat access.log 
+ 1096  cat awk.txt 
+ 1097  cat access.log 
+ 1098  cat awk.txt 
+ 1099  4ka
+ 1100  awk '$9 ~ /^4[0-9][0-9]/ {print $7}' access.log | sort | uniq -c | sort -n | tr -s ' ' | tail -1 | cut -d ' ' -f 3
+ 1101  3la
+ 1102  3ka
+ 1103  awk '/iPhone|iphone|Android|android/ {mobile_req += 1; mobile_data += $10}
+ 1104  {total_req += 1; total_data += $10}
+ 1105  END {
+ 1106      mobile_percent = (mobile_req / total_req) * 100;
+ 1107      data_percent = (mobile_data / total_data) * 100;
+ 1108      print "Mobile requests: " mobile_percent "%";
+ 1109      print "Mobile data: " data_percent "%";
+ 1110  }' access.log
+ 1111  exit
+ 1112  ls
+ 1113  cat file
+ 1114  cat output.txt 
+ 1115  cat output.txt | grep Hello
+ 1116  cat output.txt
+ 1117  cat output.txt | grep Hello
+ 1118  head -1 output.txt | tail -1 output.txt 
+ 1119  head -1 output.txt | tail -1 
+ 1120  cat /public/ucebnove/kw6.txt
+ 1121  rm -rf awk/
+ 1122  mkdir awk
+ 1123  cp /public/priklady/awk.txt 
+ 1124  cp /public/priklady/awk.txt ~/awk
+ 1125  ls awk/
+ 1126  cp /public/priklady/awk.txt awk
+ 1127  ls
+ 1128  ls awk/
+ 1129  rm -rf awk/
+ 1130  cp /public/priklady/awk.txt awk
+ 1131  ls
+ 1132  cat awk 
+ 1133  rm awk 
+ 1134  cp /public/priklady/awk.txt ~/awk
+ 1135  cd awk 
+ 1136  ls
+ 1137  rm awk 
+ 1138  mkdir awk
+ 1139  cp /public/priklady/awk.txt awk
+ 1140  ls awk/
+ 1141  cp /public/samples/access.log awk
+ 1142  cp /public/samples/logformat.txt awk
+ 1143  cp /public/samples/zamestnanci.txt awk
+ 1144  cd awk/
+ 1145  ls
+ 1146  cat awk.txt 
+ 1147  awk '{print}' zamestnanci.txt
+ 1148  awk '{print NR,$0}' zamestnanci.txt
+ 1149  awk '{print NR $0}' zamestnanci.txt
+ 1150  awk 'BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1151  awk 'END { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1152  awk '{print} BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1153  awk 'BEGIN {print} BEGIN { print "zoznam zamestnancov:"} { print } ' zamestnanci.txt
+ 1154  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print}' zamestnanci.txt
+ 1155  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print premenna=1}' zamestnanci.txt
+ 1156  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print premenna=[zamestnanci.txt]}' zamestnanci.txt
+ 1157  awk 'BEGIN { print "zoznam zamestnancov:"} { print } BEGIN {print premenna=$0}' zamestnanci.txt
+ 1158  cat awk.txt 
+ 1159  cat zamestnanci.txt 
+ 1160  awk 'BEGIN { print "zoznam zamestnancov:"} { print "zamestnanec: " $1 }' zamestnanci.txt
+ 1161  awk '/^z/' zamestnanci.txt
+ 1162  awk '/^[zZ]/' zamestnanci.txt
+ 1163  awk '!/^z/' zamestnanci.txt
+ 1164  { print $1 ":" $NF }awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1165  awk '/^z/ { print $1 ":" $NF }' zamestnanci.txt
+ 1166  awk '$NF > 1000 {print NR,$0}' zamestnanci.txt
+ 1167  awk '{sum+=$NF} END { print "Priemerny plat = " sum/NR}' zamestnanci.txt
+ 1168  awk '/^z|^b/ { print $1 ":" $NF }' zamestnanci.txt
+ 1169  awk '/^z|^b/ {premenna+=$NF} END {print premenna}' zamestnanci.txt 
+ 1170  awk '/^z|^b/ {premenna+=$NF} END {print premenna/NR}' zamestnanci.txt 
+ 1171  awk '/^z|^b/ {premenna+=$NF pocitadlo+=1} END {print premenna/pocitadlo}' zamestnanci.txt 
+ 1172  awk '/^z|^b/ {premenna+=$NF, pocitadlo+=1} END {print premenna/pocitadlo}' zamestnanci.txt 
+ 1173  awk '/^z|^b/ {premenna+=$NF; pocitadlo+=1} END {print premenna/pocitadlo}' zamestnanci.txt 
+ 1174  cat access.log 
+ 1175  head access.log 
+ 1176  ls
+ 1177  cat logformat.txt 
+ 1178  cat awk.txt 
+ 1179  head access.log 
+ 1180  cat awk.txt 
+ 1181  tail access.log 
+ 1182  iphone iPhone android Android
+ 1183  5.93116% druha otazka
+ 1184  cd /public/
+ 1185  ls
+ 1186  cd ucebnove/historia
+ 1187  ls
+ 1188  cat morhac03102024.history 
+ 1189  history | sudo tee /public/ucebnove/historia/morhac24102024.history
+ 1190  ls
+ 1191  exit
+ 1192  cd /etc
+ 1193  ls
+ 1194  cd passwd
+ 1195  cat passwd
+ 1196  cd
+ 1197  ls
+ 1198  cat file
+ 1199  cat file.txt 
+ 1200  head -2 file.txt 
+ 1201  find -true -print
+ 1202  find -print
+ 1203  find -false -print
+ 1204  find -true -print
+ 1205  touch djasdjahojadhi
+ 1206  ls -la | grep ahoj
+ 1207  ls $HOME
+ 1208  cd priklady/
+ 1209  ls $HOME
+ 1210  	grep -E "\<;.{2}\>;"
+ 1211  grep "\<;.{2}\>;"
+ 1212  grep -E "\<.{2}\>"
+ 1213  grep -E ".{2}"
+ 1214  cat file.txt
+ 1215  cat file.ctxt
+ 1216  cd
+ 1217  cat file.txt
+ 1218  vim file.txt
+ 1219  grep "\<;.{2}\>;" file.txt 
+ 1220  grep "\<.{2}\>" file.txt 
+ 1221  grep ".{2}" file.txt 
+ 1222  grep .{2} file.txt 
+ 1223  grep -E .{2} file.txt 
+ 1224  grep -E ".{2}" file.txt 
+ 1225  grep -E "\<.{2}\>" file.txt 
+ 1226  grep -E "\<;.{2}\>;" file.txt 
+ 1227  grep '\<[a-zA-Z]\{5,\}\>' < file.txt
+ 1228  echo "test"
+ 1229  echo test
+ 1230  man wc
+ 1231  bash sleep 60 & echo $! 
+ 1232  jobs
+ 1233  fg
+ 1234  mkdir zlozka
+ 1235  cd zlozka/
+ 1236  ls
+ 1237  ls -la
+ 1238  ls subor2 > subor2
+ 1239  cat subor2 
+ 1240  zoznam=(jeden dva tri styri pat "sest sedem"); zoznam2=("${zoznam[@]} osem");
+ 1241  echo ${#zoznam2[@]}
+ 1242  echo $zoznam2
+ 1243  echo $zoznam2[@]
+ 1244  echo ${zoznam2[@]}
+ 1245  echo $zoznam2
+ 1246  echo $zoznam2[1]
+ 1247  echo ${zoznam2[1]}
+ 1248  echo ${zoznam2[2]}
+ 1249  echo ${zoznam2[3]}
+ 1250  echo ${zoznam2[4]}
+ 1251  echo ${zoznam2[5]}
+ 1252  zoznam=(jeden dva tri styri pat "sest sedem"); zoznam2=("${zoznam[@]} "osem"");
+ 1253  echo ${#zoznam2[@]}
+ 1254  zoznam=(jeden dva tri styri pat "sest sedem"); zoznam2=("${zoznam[@]} + "osem"");
+ 1255  echo ${#zoznam2[@]}
+ 1256  zoznam=(jeden dva tri styri pat "sest sedem"); zoznam2=("${zoznam[@]}  " osem"");
+ 1257  echo ${#zoznam2[@]}
+ 1258  history
+ 1259  ls
+ 1260  cd priklady/
+ 1261  ls
+ 1262  cd ..
+ 1263  cd awk/
+ 1264  ls
+ 1265  cat awk.txt 
+ 1266  cat access.log 
+ 1267  grep man
+ 1268  man grep
+ 1269  grep -R "find" /public/ucebnove/historia
+ 1270  cd 
+ 1271  wget https://github.com/williambrach/history-diff/blob/main/history-diff.sh
+ 1272  ls
+ 1273  chmod +x history-diff.sh 
+ 1274  ./history-diff.sh 
+ 1275  bash history-diff.sh 
+ 1276  cat history-diff.sh 
+ 1277  rm history-diff.sh 
+ 1278  wget https://github.com/williambrach/history-diff.git
+ 1279  ls
+ 1280  rm history-diff.git 
+ 1281  sudo apt-get install git
+ 1282  git clone https://github.com/williambrach/history-diff.git
+ 1283  ls
+ 1284  cd history-diff/
+ 1285  bash history-diff.sh 
+ 1286  chmod +x history-diff.sh 
+ 1287  bash history-diff.sh 
+ 1288  . history-diff.sh 
+ 1289  vim history-diff.sh 
+ 1290  cd ..
+ 1291  cd /public/ucebnove/
+ 1292  ls
+ 1293  cat kw7.txt 
+ 1294  cd ..
+ 1295  cd
+ 1296  cp /public/priklady/sed.txt .
+ 1297  cat sed.txt 
+ 1298  man sed
+ 1299  info sed
+ 1300  sed sedinput.txt ;#zlyha
+ 1301  sed '' sedinput.txt
+ 1302  sed -n '' sedinput.txt
+ 1303  cp public/samples/{input.txt, sedinput.txt, list.txt} .
+ 1304  cp public/samples/{input.txt, sedinput.txct, list.txt} .
+ 1305  cat /public/samples
+ 1306  ls /public/samples
+ 1307  cp /public/samples/{input.txt, sedinput.txct, list.txt} .
+ 1308  cp /public/samples/sedinput.txt .
+ 1309  cp /public/samples/list.txt .
+ 1310  cp /public/samples/input.txt .
+ 1311  ls
+ 1312  cat sed
+ 1313  cat sed.txt
+ 1314  sed sedinput.txt ;#zlyha
+ 1315  cat sed
+ 1316  cat sedinput.txt 
+ 1317  sed '' sedinput.txt
+ 1318  sed -n '' sedinput.txt
+ 1319  sed -n 'p' sedinput.txt
+ 1320  sed -n '=' sedinput.txt
+ 1321  sed -n '=;p' sedinput.txt
+ 1322  sed -n '=,p' sedinput.txt
+ 1323  sed -n '= p' sedinput.txt
+ 1324  sed -n '=; p' sedinput.txt
+ 1325  sed -n 'N;s/\n/ /' sedinput.txt
+ 1326  sed = sedinput.txt | sed 'N;s/\n/ /'
+ 1327  sed 'i vkladam pred riadok' sedinput.txt
+ 1328  sed 'a vkladam za riadok' sedinput.txt
+ 1329  sed '3a vkladam za treti riadok' sedinput.txt
+ 1330  sed '3c vkladam namiesto tretieho riadka' sedinput.txt
+ 1331  sed '3d' sedinput.txt ;# vymazem treti riadok
+ 1332  cat sedinput.txt 
+ 1333  sed 's/hello/world/' sedinput.txt
+ 1334  echo 's/hello/world/g' > mojscript.sed
+ 1335  cat mojscript.sed 
+ 1336  sed mojscript.sed sedinput.txt 
+ 1337  sed mojscript.sed sedinput.txt sed -f mojscript.sed sedinput.txt
+ 1338  sed -f mojscript.sed sedinput.txt
+ 1339  cat list.txt 
+ 1340  sed '7,10d' list.txt 
+ 1341  ls
+ 1342  rm sed.txt 
+ 1343  rm tasks.txt 
+ 1344  rm sedinput.txt 
+ 1345  rm list.txt 
+ 1346  cd /public/ucebnove/
+ 1347  cat kw7.txt
+ 1348  cd 
+ 1349  cat awk/
+ 1350  cat awk
+ 1351  cd awk/
+ 1352  cat awk.txt 
+ 1353  awk '{print $NR}' zamestnanci.txt
+ 1354  awk '{print $NF}' zamestnanci.txt
+ 1355  awk '{print $NR $0}' zamestnanci.txt
+ 1356  awk '{END print $NR $0}' zamestnanci.txt
+ 1357  awk '{sum+=1}' zamestnanci.txt
+ 1358  awk '{sum+=1} END {print sum} ' zamestnanci.txt
+ 1359  awk '{sum+=1} END {print $sum} ' zamestnanci.txt
+ 1360  awk '{sum+=1} END {print sum} ' zamestnanci.txt
+ 1361  awk 'END {print NR}' zamestnanci.txt 
+ 1362  grep "\bfind\b" /public/ucebnove/historia
+ 1363  grep -R "\bfind\b" /public/ucebnove/historia
+ 1364  grep -r "\bfind\b" /public/ucebnove/historia
+ 1365  man grep
+ 1366  grep -r "\bfind\b" /public/ucebnove/historia
+ 1367  git clone https://github.com/williambrach/history-diff.git
+ 1368  ls
+ 1369  cd history-diff/
+ 1370  vim history-diff.sh 
+ 1371  chmod +x history-diff.sh 
+ 1372  ./history-diff.sh 
+ 1373  . history-diff.sh 
+ 1374  man dd
+ 1375  man sl
+ 1376  sl
+ 1377  https://github.com/williambrach/history-diff
+ 1378  cd /public/samples/input.txt .
+ 1379  cp /public/samples/input.txt .
+ 1380  cp /public/samples/sedinput.txt .
+ 1381  cp /public/samples/list.txt .
+ 1382  cp /public/priklady/sed.txt .
+ 1383  cat sed.txt 
+ 1384  sed sedinput.txt ;#zlyha
+ 1385  sed '' sedinput.txt
+ 1386  sed -n '' sedinput.txt
+ 1387  sed -n 'p' sedinput.txt
+ 1388  sed -n '$' sedinput.txt
+ 1389  sed -n '1' sedinput.txt
+ 1390  sed -n '$1' sedinput.txt
+ 1391  sed '1' sedinput.txt
+ 1392  sed '$' sedinput.txt
+ 1393  sed '1p' sedinput.txt
+ 1394  sed -n '1p' sedinput.txt
+ 1395  sed -n '=' sedinput.txt
+ 1396  sed -n '=;p' sedinput.txt
+ 1397  sed -n '=p' sedinput.txt
+ 1398  sed -n '= p' sedinput.txt
+ 1399  sed -n '=;p' sedinput.txt
+ 1400  cat sedinput.txt 
+ 1401  sed -n '= | p' sedinput.txt
+ 1402  sed -n '= AND  p' sedinput.txt
+ 1403  sed -n '= AND p' sedinput.txt
+ 1404  sed -n '= & p' sedinput.txt
+ 1405  sed -n '\(= AND p\)' sedinput.txt
+ 1406  sed = sedinput.txt | sed 'N; s/\n/ /'
+ 1407  sed -n '=;p' sedinput.txt
+ 1408  sed -n '=' -e 'p' sedinput.txt
+ 1409  sed 'i vkladam pred riadok' sedinput.txt
+ 1410  sed 'a vkladam pred riadok' sedinput.txt
+ 1411  sed '3a vkladam za treti riadok' sedinput.txt
+ 1412  sed '$a vkladam za treti riadok' sedinput.txt
+ 1413  sed '3a vkladam za treti riadok' sedinput.txt
+ 1414  sed '1~3a vkladam za treti riadok' sedinput.txt
+ 1415  sed '~3a vkladam za treti riadok' sedinput.txt
+ 1416  sed '0~3a vkladam za treti riadok' sedinput.txt
+ 1417  sed 's/hello/world/' sedinput.txt
+ 1418  echo 's/hello/world/g' > mojscript.sed
+ 1419  cat mojscript.sed 
+ 1420  sed -f mojscript.sed sedinput.txt
+ 1421  sed 's/hello/world/g' sedinput.txt
+ 1422  cat list.txt 
+ 1423  sed '7,10' list.txt 
+ 1424  sed '7,10d' list.txt 
+ 1425  cat sed.txt 
+ 1426  set '3s/Zuzka/Lucka' list.txt 
+ 1427  sed '3s/Zuzka/Lucka' list.txt 
+ 1428  sed '3s/Zuzka/Lucka/' list.txt 
+ 1429  sed '3s/Zuzka/Lucka/g' list.txt 
+ 1430  sed '3s/Zuzka/Lucka/' list.txt 
+ 1431  sed '3s/Zuzka/Lucka/2' list.txt 
+ 1432  sed 's/Zuzka/ZUZKA/g' list.txt 
+ 1433  sed 's/Zuzka/zUZKA/g' list.txt 
+ 1434  sed 's/Zuzka/\U&/g' list.txt 
+ 1435  sed 's/Zuzka/\U/g' list.txt 
+ 1436  sed 's/Zuzka/\U&/g' list.txt 
+ 1437  sed 's/Zuzka/U&/g' list.txt 
+ 1438  sed 's/Zuzka/\U&/g' list.txt 
+ 1439  sed 's/Zuzka/\L&/g' list.txt 
+ 1440  sed 's/Zuzka/\U&/g' list.txt 
+ 1441  sed 's/Zuzka/\L&/g' list.txt 
+ 1442  sed '/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt 
+ 1443  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt 
+ 1444  sed 's/\(Z\)\(uzka\)/\L\2\U\1/g' list.txt 
+ 1445  cat sed.txt 
+ 1446  cat list.txt 
+ 1447  sed 's/\<[mM]ozno\>/nemozno/g' list.txt 
+ 1448  sed 's/\<[mM]ozno\>/[nN]emozno/g' list.txt 
+ 1449  sed 's/\<[mM]ozno\>/\<[nN]emozno>\/g' list.txt 
+ 1450  sed 's/\<[mM]ozno\>/\<[nN]emozno\>/g' list.txt 
+ 1451  sed 's/\<[mM]ozno\>/"\<[nN]emozno\>"/g' list.txt 
+ 1452  sed 's/\<\([mM]\)\(ozno\)\>/\<nemozno\>/g' list.txt 
+ 1453  sed 's/\<\([mM]\)\(ozno\)\>/\<nem\2\>/g' list.txt 
+ 1454  sed 's/\<\([mM]\)\(ozno\)\>/\nem\2\/g' list.txt 
+ 1455  sed 's/\<\([mM]\)\(ozno\)\>/nem\2/g' list.txt 
+ 1456  sed -n '' list.txt 
+ 1457  sed '8~2p' list.txt 
+ 1458  sed -n '8~2p' list.txt 
+ 1459  sed '1,7d;0~2d' list.txt 
+ 1460  cat list.txt 
+ 1461  sed '1,7d;0~2d' list.txt 
+ 1462  sed -n 'n;7,16p;n' list.txt 
+ 1463  sed -n 'n;7,16p;' list.txt 
+ 1464  cat list.txt 
+ 1465  sed -n '7,16p;n' list.txt 
+ 1466  cat sed.txt 
+ 1467  sed -i 's/Zuzka/Lucka/g' list.txt 
+ 1468  cat list.txt 
+ 1469  sed '=;7,16p' list.txt 
+ 1470  sed -n '=;7,16p' list.txt 
+ 1471  sed -n '=;7,16p' list.txt
+ 1472  sed -n '=;7,16p' list.txt | paste -d ' ' - -
+ 1473  sed -n '7,16p;=' list.txt
+ 1474  sed -n '7,16=;7,16p' list.txt 
+ 1475  sed -n '7,16=;7,16p' list.txt | paste -d ' ' - -
+ 1476  cat /public/ucebnove/kw7.txt
+ 1477  ls
+ 1478  cd awk/
+ 1479  cat awk.txt 
+ 1480  awk END {print NR,$0} zamestnanci.txt 
+ 1481  awk END '{print NR,$0}' zamestnanci.txt 
+ 1482  awk 'END {print NR,$0}' zamestnanci.txt 
+ 1483  awk 'END {print NR,$1}' zamestnanci.txt 
+ 1484  awk 'END {print NR}' zamestnanci.txt 
+ 1485  awk '{sum+=1} END {print sum}' zamestnanci.txt 
+ 1486  grep -r "find" /public/ucebnove/historia
+ 1487  ls
+ 1488  cd history-diff/
+ 1489  ls
+ 1490  man history-diff.sh 
+ 1491  help history-diff.sh 
+ 1492  ls
+ 1493  . history-diff.sh 
+ 1494  https://github.com/williambrach/history-diff
+ 1495  cd
+ 1496  ls
+ 1497  mkdir sed
+ 1498  cd sed/
+ 1499  cp /public/samples/input.txt . 
+ 1500  cp /public/samples/sedinput.txt . 
+ 1501  cp /public/samples/list.txt . 
+ 1502  cp /public/priklady/sed.txt 
+ 1503  cp /public/priklady/sed.txt .
+ 1504  cat sed.txt 
+ 1505  sed sedinput.txt ;#zlyha
+ 1506  sed '' sedinput.txt
+ 1507  sed -n '=;p' sedinput.txt
+ 1508  sed 'i vkladam pred riadok' sedinput.txt
+ 1509  sed '\i vkladam pred riadok' sedinput.txt
+ 1510  sed 'i\i vkladam pred riadok' sedinput.txt
+ 1511  cat sedinput.txt 
+ 1512  sed 's/hello/world/' sedinput.txt
+ 1513  sed 's/hello/world/p' sedinput.txt
+ 1514  sed 's/hello/world/g' sedinput.txt
+ 1515  sed 's/hello/world/2' sedinput.txt
+ 1516  echo 's/hello/world/g' > mojscript.sed
+ 1517  sed mojscript.sed sedinput.txt 
+ 1518  sed -f mojscript.sed sedinput.txt 
+ 1519  cat list.txt 
+ 1520  sed '0,6p' list.txt 
+ 1521  sed 'p' list.txt 
+ 1522  sed '0,6p' list.txt 
+ 1523  sed '1,6p' list.txt 
+ 1524  sed '7,10d' list.txt 
+ 1525  sed 's/Zuzka/Lucka/3' list.txt 
+ 1526  sed '3s/Zuzka/Lucka/' list.txt 
+ 1527  sed '3s/Zuzka/Lucka/g' list.txt 
+ 1528  cat list.txt 
+ 1529  sed '3s/Zuzka/Lucka/2' list.txt 
+ 1530  cat sed.txt 
+ 1531  sed 's/Zuzka/ZUZKA/g' list.txt 
+ 1532  man sed
+ 1533  sed 's/Zuzka/U&/g' list.txt 
+ 1534  sed 's/Zuzka/\U&/g' list.txt 
+ 1535  sed 's/Zuzka/\L&/g' list.txt 
+ 1536  sed 's/\(Z\)\(uzka\)/\LU&/g' list.txt 
+ 1537  sed 's/\(Z\)\(uzka\)/\L&U&/g' list.txt 
+ 1538  sed 's/\(Z\)\(uzka\)/\L&\U&/g' list.txt 
+ 1539  sed 's/\(Z\)\(uzka\)/\L1\U2/g' list.txt 
+ 1540  sed 's/\(Z\)\(uzka\)/\L\1\U\2/g' list.txt 
+ 1541  sed 's/\(Z\)\(uzka\)/\L&\U&/g' list.txt 
+ 1542  sed 's/Zuzka/\L\1/g' list.txt 
+ 1543  sed 's/Zuzka/\L\0/g' list.txt 
+ 1544  sed 's/Zuzka/\L\&/g' list.txt 
+ 1545  sed 's/Zuzka/\L&/g' list.txt 
+ 1546  sed 's/Zuzka/\L\0/g' list.txt 
+ 1547  sed 's/\(Z\)\(uzka\/\L\0\U\2/g' list.txt 
+ 1548  sed 's/\(Z\)\(uzka\/\L\0\U\1/g' list.txt 
+ 1549  sed 's/Zuzka/\L\0/g' list.txt 
+ 1550  cat sed.txt 
+ 1551  sed 's/\(Zu\)\(zka\)/\L\1\U\2/g' list.txt 
+ 1552  sed 's/\bmozno\b/nemozno/g' list.txt 
+ 1553  sed 's/\b[mM]ozno\b/nemozno/g' list.txt 
+ 1554  sed 's/\b[mM]ozno\b/Nemozno/g' list.txt 
+ 1555  sed 's/\b[mM]ozno\b/nemozno/g' list.txt 
+ 1556  sed 's/\bmozno\b/nemozno/g' list.txt | sed 's/\bMozno\b/Nemozno/g'
+ 1557  cat sed.txt 
+ 1558  cat list.txt 
+ 1559  sed '8,17' list.txt 
+ 1560  sed '8,17p' list.txt 
+ 1561  sed -n '8,16p' list.txt 
+ 1562  sed -n '7,16p' list.txt 
+ 1563  sed -n '7~2p' list.txt 
+ 1564  sed -n '7,16p;n' list.txt 
+ 1565  sed 'n' list.txt 
+ 1566  sed -n 'n' list.txt 
+ 1567  sed -n 'pn' list.txt 
+ 1568  sed -n 'p;n' list.txt 
+ 1569  sed -n '7,16p;n' list.txt 
+ 1570  sed -n 'n;7,16p;n' list.txt 
+ 1571  sed -n 'n;7,16p' list.txt 
+ 1572  cat list.txt 
+ 1573  sed -n '6,17{p;n;}' list.txt 
+ 1574  sed -n '7,17{p;n;}' list.txt 
+ 1575  sed -n '6,17{p;n;}' list.txt 
+ 1576  sed -n '6,17{p;n}' list.txt 
+ 1577  sed -n '6,17{p;n;n}' list.txt 
+ 1578  sed -i 's/Zuzka/Lucku/g' list.txt 
+ 1579  cat list.txt 
+ 1580  cat sed.txt 
+ 1581  cat list.txt 
+ 1582  sed '=' list.txt 
+ 1583  sed '=7,16' list.txt 
+ 1584  sed -n '=7,16' list.txt 
+ 1585  sed -n '=;7,16p' list.txt 
+ 1586  sed -n '7,16=;7,16p' list.txt 
+ 1587  sed -n 'i7,16=;7,16p' list.txt 
+ 1588  sed -n '7,16=;7,16p' list.txt 
+ 1589  sed -n '7,16=;7,16p' list.txt | sed  
+ 1590  man sed
+ 1591  sed -n '7,16=;7,16p' list.txt | sed 'N'  
+ 1592  sed -n '7,16=;7,16p' list.txt | paste -d ' ' - -  
+ 1593  man paste
+ 1594  sed -n '7,16=;7,16p' list.txt | paste -d ' ' - -  
+ 1595  sed -n '=;7,16p' list.txt | sed "N;s/\n /g;" | sed -n '4,12p'
+ 1596  sed -n '=;7,16p' list.txt | sed 'N;s/\n /g;' | sed -n '4,12p'
+ 1597  sed -n '=;7,16p' list.txt |
+ 1598  sed -n '=;7,16p' list.txt 
+ 1599  sed -n '=;7,16p' list.txt | sed 'N;s/\n /g;'
+ 1600  sed -n '=;7,16p' list.txt | sed 'N;s/\n//g;'
+ 1601  sed -n '=;7,16p' list.txt | sed 'N;s/\n/ /g;' | sed -n '4,12p'
+ 1602  sed -n '7,16=;7,16p' list.txt | sed 'N;s/\n/ /g;'
+ 1603  cat sed.txt t
+ 1604  cd /public/ucebnove/historia
+ 1605  ls
+ 1606  cat mor
+ 1607  cat morhac03102024.history 
+ 1608  history | sudo tee /public/ucebnove/historia/morhac31102024.history
+ 1609  ls
+ 1610  exit
+ 1611  PREMENNA="echo ahoj"
+ 1612  echo $PREMENNA
+ 1613  cat /etc/passwd
+ 1614  ls -la
+ 1615  touch random.txt
+ 1616  ls
+ 1617  ls -la
+ 1618  chmod 244 random.txt 
+ 1619  ls -la
+ 1620  chmod 244 random.txt 
+ 1621  ls -l
+ 1622  cat file
+ 1623  	PREMENNA="echo ahoj"
+ 1624  echo $PREMENNA
+ 1625  zoznam=(jeden dva tri styri pat "sest sedem"); zoznam2=("${zoznam[@]} osem");
+ 1626  echo $zoznam
+ 1627  echo {$zoznam[@]}
+ 1628  echo "{$zoznam[@]}"
+ 1629  echo ${zoznam[@]}
+ 1630  echo ${zoznam[#]}
+ 1631  echo ${#zoznam[@]}
+ 1632  echo ${#zoznam2[@]}
+ 1633  echo ${zoznam2[@]}
+ 1634  echo ${zoznam2[5]}
+ 1635  ps -elf
+ 1636  ps aux
+ 1637  kill -s USR1
+ 1638  kill -USR1
+ 1639  kill -USR1 100193
+ 1640  ps aux
+ 1641  kill -USR1 100193
+ 1642  kill -USR1 100185
+ 1643  ps aux
+ 1644  kill -USR1 100172
+ 1645  kill -USR1 100179
+ 1646  ps aux
+ 1647  kill -USR1 100239
+ 1648  ps aux
+ 1649  kill -USR1 100242
+ 1650  kill -USR1 100193
+ 1651  kill -USR1 100295
+ 1652  kill 100295
+ 1653  -ps -elf
+ 1654  ps -elf
+ 1655  kill -USR1 100306
+ 1656  ps -elf
+ 1657  ps aux
+ 1658  kill -USR1 100326
+ 1659  ps aux
+ 1660  ps
+ 1661  ps aux
+ 1662  jobs
+ 1663  kill -USR1 100326
+ 1664  ps aux
+ 1665  kill -USR1 100370
+ 1666  ps aux
+ 1667  killall(1)
+ 1668  killall
+ 1669  killall -9
+ 1670  kill -9
+ 1671  p
+ 1672  ps aux
+ 1673  exit
+ 1674  cd /public/ucebnove/
+ 1675  ls
+ 1676  cd kw8.txt 
+ 1677  cat kw8.txt 
+ 1678  cd
+ 1679  man cp
+ 1680  cp -r /public/priklady/signaly/
+ 1681  cp -r /public/priklady/signaly/ .
+ 1682  ls
+ 1683  cd sig
+ 1684  cd signaly/
+ 1685  ls
+ 1686  cat examples/
+ 1687  ls examples/
+ 1688  cat nekoncim.sh 
+ 1689  bach nekoncim.sh 
+ 1690  bash nekoncim.sh 
+ 1691  fg
+ 1692  ps alf
+ 1693  fg
+ 1694  man kill
+ 1695  kill -s 100083
+ 1696  kill -p 100083
+ 1697  man kill
+ 1698  kill -9 -100083
+ 1699  jobs
+ 1700  man kill
+ 1701  fg
+ 1702  ps alf
+ 1703  bash losovac.sh 
+ 1704  cat losovac.sh 
+ 1705  bash losovac.sh 
+ 1706  bash losovac.sh 1
+ 1707  cat losovac.sh 
+ 1708  bash losovac.sh &
+ 1709  cat losovac.sh 
+ 1710  vim losovac.sh 
+ 1711  bash losovac.sh &
+ 1712  cat losovac.sh 
+ 1713  bash losovac.sh &
+ 1714  bash losovac.sh
+ 1715  exit
+ 1716  ps aux
+ 1717  kill -9 -100193
+ 1718  kill -9 -100250
+ 1719  kill -9 -100296
+ 1720  bash losovac.sh &
+ 1721  cd signaly/
+ 1722  bash losovac.sh &
+ 1723  d
+ 1724  ps aux
+ 1725  kill -9 100451
+ 1726  ps aux
+ 1727  kill -9 100459
+ 1728  cat vyberac.sh 
+ 1729  bash vyberac.sh 
+ 1730  sudo bash vyberac.sh 
+ 1731  ls
+ 1732  chmod 777 losovac.sh 
+ 1733  bash vyberac.sh 
+ 1734  ls
+ 1735  cat signaly.txt 
+ 1736  help trap
+ 1737  cat
+ 1738  ls
+ 1739  cd examples/
+ 1740  ls
+ 1741  ls /public/priklady/procesy
+ 1742  cat Makefile 
+ 1743  sudo apt-get instal build-essential
+ 1744  sudo apt-get install build-essential
+ 1745  make
+ 1746  ls
+ 1747  cat 1.c
+ 1748  ./1.exe 
+ 1749  ls
+ 1750  cd ..
+ 1751  cp /public/signal/proces
+ 1752  cp /public/signal/procesy
+ 1753  cp /public/signal/procesy .
+ 1754  cp -r /public/signal/procesy .
+ 1755  cp -r /public/priklady/procesy .
+ 1756  cd procesy/
+ 1757  ls
+ 1758  make
+ 1759  cat 1.c
+ 1760  ./1.exe
+ 1761  ./1.exe 1
+ 1762  cat 2.c
+ 1763  ./1.exe
+ 1764  ./1.exe 1
+ 1765  cat 2.c
+ 1766  ls
+ 1767  cd pr
+ 1768  cd procesy/
+ 1769  ls
+ 1770  cat 2.
+ 1771  cat 2.c
+ 1772  ./2.exe
+ 1773  ./2.exe 1
+ 1774  cd ..
+ 1775  ls
+ 1776  rm -rf procesy/
+ 1777  rm -rf signaly/
+ 1778  ls
+ 1779  rm -r .
+ 1780  rm -rf ./
+ 1781  ps -aux
+ 1782  USR1 101739
+ 1783  kill -USR1 101739
+ 1784  man kill
+ 1785  kill -USR1 101739
+ 1786  ps -aux -forrest
+ 1787  ps -aux --forrest
+ 1788  ps -aux -forest
+ 1789  ps -aux --forest
+ 1790  ps -aux
+ 1791  ps -aux --forest
+ 1792  ps -eLf
+ 1793  ls
+ 1794  cd signaly/
+ 1795  ls
+ 1796  cat signaly.txt 
+ 1797  kill -SIGINT 100528
+ 1798  kill -SIGINT 100626
+ 1799  kill -SIGINT 100627
+ 1800  kill -9 100627
+ 1801  kill -9 100626
+ 1802  ,ps -aux --forest
+ 1803  ps -aux --forest
+ 1804  killall 100306
+ 1805  sudo apt-get update
+ 1806  sudo apt-get install psmisc
+ 1807  killall 100306
+ 1808  ls
+ 1809  cd signaly/
+ 1810  cat signaly.txt 
+ 1811  ps -elf
+ 1812  ,ps -aux --forest
+ 1813  ps -aux --forest
+ 1814  ps -eLf --forest
+ 1815  ps -eLf
+ 1816  ps -eLf --forest
+ 1817  ps -aux --forest
+ 1818  ps -eLf
+ 1819  ps -aux --forest
+ 1820  kilall
+ 1821  ps -aux --forest
+ 1822  kill -9 100428
+ 1823  for pid in $(ps aux | grep “3\.exe” | tr -s “ ” | cut -d “ ” -f2); do kill $pid; done  
+ 1824  for pid in $(ps aux | grep “1\.exe” | tr -s “ ” | cut -d “ ” -f2); do kill $pid; done  
+ 1825  ps -aux --forest
+ 1826  cd ..
+ 1827  cd /public/ucebnove/
+ 1828  cat kw8.txt 
+ 1829  cd
+ 1830  cp /public/priklady/signaly/ .
+ 1831  cp -r /public/priklady/signaly/ .
+ 1832  cd signaly/
+ 1833  ls
+ 1834  cat signaly.txt 
+ 1835  help trap
+ 1836  help wait
+ 1837  ps -eLf
+ 1838  ps -aux --forest
+ 1839  cat nekoncim.sh 
+ 1840  bash nekoncim.sh 
+ 1841  jobs
+ 1842  kill -9 nekoncim.sh
+ 1843  ps -aux
+ 1844  kill -9 101671
+ 1845  jobs
+ 1846  fg
+ 1847  cat nekoncim.sh 
+ 1848  cat losovac.sh 
+ 1849  bash nekoncim.sh &
+ 1850  bash nekoncim.sh &jobs
+ 1851  fg
+ 1852  ps -aux
+ 1853  kill -9 101689
+ 1854  fg
+ 1855  ps -aux
+ 1856  kill -9 101708
+ 1857  ps -aux
+ 1858  cat losovac.sh 
+ 1859  bash losovac.sh 
+ 1860  vim losovac.sh 
+ 1861  bash losovac.sh 
+ 1862  vim losovac.sh 
+ 1863  bash losovac.sh 
+ 1864  cat vyberac.sh 
+ 1865  cat losovac.sh 
+ 1866  cat vyberac.sh 
+ 1867  bash vyberac.sh 
+ 1868  chmod +x losovac.sh 
+ 1869  bash vyberac.sh 
+ 1870  ls
+ 1871  cat enh_losovac.sh 
+ 1872  ls
+ 1873  cd examples/
+ 1874  ls
+ 1875  cd
+ 1876  cp /public/priklady/proces
+ 1877  cp /public/priklady/procesy
+ 1878  cp /public/priklady/procesy .
+ 1879  cp -r /public/priklady/procesy .
+ 1880  cd procesy/
+ 1881  ls
+ 1882  cat Makefile 
+ 1883  ls
+ 1884  sudo apt-get install build-essential
+ 1885  make
+ 1886  ls
+ 1887  1.exe
+ 1888  ./1.exe
+ 1889  cat 1.c
+ 1890  man syscall
+ 1891  man fork
+ 1892  ./1.exe d
+ 1893  c2.c
+ 1894  man pthread_create
+ 1895  ./2.exe d
+ 1896  cd 
+ 1897  cd signaly/
+ 1898  cat signaly.txt 
+ 1899  find . -noleaf -type f
+ 1900  ls
+ 1901  find . -type f
+ 1902  man find
+ 1903  exit
+ 1904  rm -r signaly/
+ 1905  rm -r procesy/
+ 1906  ls
+ 1907  cat /public/ucebnove/kw8.txt 
+ 1908  cp -r /public/priklady/signaly .
+ 1909  cd signaly/
+ 1910  ls
+ 1911  cat signaly.txt 
+ 1912  help trap
+ 1913  trap -l
+ 1914  ps -eLf
+ 1915  ps -aux --forest
+ 1916  kill -9 100517
+ 1917  ps -aux --forest
+ 1918  cat nekoncim.sh 
+ 1919  bash nekoncim.sh 
+ 1920  kill $!
+ 1921  kill -9 $!
+ 1922  kill -9 "$!"
+ 1923  bg
+ 1924  kill -9 $!
+ 1925  bg
+ 1926  cat nekoncim.sh 
+ 1927  trap -l
+ 1928  vim nekoncim.sh 
+ 1929  bash nekoncim.sh 
+ 1930  vim nekoncim.sh 
+ 1931  bash nekoncim.sh 
+ 1932  cat losovac.sh 
+ 1933  bash nekoncim.sh &
+ 1934  bg
+ 1935  jobs
+ 1936  fg
+ 1937  ps -aux
+ 1938  kill -9 102343
+ 1939  kill -9 10220
+ 1940  kill -9 102343
+ 1941  ps -au
+ 1942  kill -9 102320
+ 1943  cat losovac.sh 
+ 1944  bash losovac.sh 
+ 1945  cat signaly.txt 
+ 1946  bash losovac.sh 
+ 1947  bash losovac.sh &
+ 1948  kill -USR1 102474
+ 1949  cat vyberac.sh 
+ 1950  cat losovac.sh 
+ 1951  cat vyberac.sh 
+ 1952  bash vyberac.sh 
+ 1953  chmod 777 losovac.sh 
+ 1954  bash vyberac.sh 
+ 1955  ps -aux --forest
+ 1956  ps -eLf
+ 1957  cd ..
+ 1958  cp -r /public/priklady/procesy .
+ 1959  cd procesy/
+ 1960  ls
+ 1961  man pkill
+ 1962  cat Makefile 
+ 1963  make
+ 1964  man make
+ 1965  make
+ 1966  cat 1.c
+ 1967  man syscall
+ 1968  man fork
+ 1969  man getpid
+ 1970  man gettid
+ 1971  ./1.exe
+ 1972  ./1.exe d
+ 1973  ./1.exe &
+ 1974  man
+ 1975  ./1.exe d &
+ 1976  da
+ 1977  jobs
+ 1978  fg
+ 1979  ps -aux
+ 1980  ps eLf
+ 1981  ps -eLf
+ 1982  kill -9 102768
+ 1983  ps -eLf
+ 1984  kill -9 102769
+ 1985  cat 1.c
+ 1986  2.c
+ 1987  cat 2.c
+ 1988  man pthread_create
+ 1989  ./2.exe
+ 1990  cd 
+ 1991  cd signaly/
+ 1992  cat signaly.txt 
+ 1993  ps -aux --forest
+ 1994  man kill
+ 1995  kill -s USR1 102403
+ 1996  man kill
+ 1997  kill -s USR1 102403
+ 1998  ps -aux --forest
+ 1999  ls
+ 2000  cd /public
+ 2001  cd ucebnove/historia
+ 2002  cat morhac19092024.history 
+ 2003  history | sudo tee /public/ucebnove/historia/morhac14112024.history

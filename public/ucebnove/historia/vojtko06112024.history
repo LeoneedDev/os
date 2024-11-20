@@ -1,0 +1,175 @@
+ 1800  man 7 signal
+ 1801  help trap
+ 1802  trap -l
+ 1803  grep
+ 1804  grep "asdf"
+ 1805  man 7 signal
+ 1806  man trap
+ 1807  help trap
+ 1808  mkdir cv8
+ 1809  cd cv8
+ 1810  cp -r /public/priklady/signaly/*
+ 1811  cp -r /public/priklady/signaly/* .
+ 1812  ls -la
+ 1813  less nekoncim.sh 
+ 1814  chmod +x nekoncim.sh 
+ 1815  ./nekoncim.sh 
+ 1816  vim nekoncim.sh 
+ 1817  ./nekoncim.sh 
+ 1818  vim nekoncim.sh 
+ 1819  ./nekoncim.sh 
+ 1820  fg
+ 1821  jobs
+ 1822  bg
+ 1823  jobs
+ 1824  less losovac.sh 
+ 1825  vim losovac.sh 
+ 1826  chmod +x losovac.sh 
+ 1827  ./losovac.sh 
+ 1828  vim losovac.sh 
+ 1829  ./losovac.sh 
+ 1830  vim losovac.sh 
+ 1831  ./losovac.sh 
+ 1832  vim losovac.sh 
+ 1833  ./losovac.sh 
+ 1834  vim losovac.sh 
+ 1835  ./losovac.sh 
+ 1836  vim losovac.sh 
+ 1837  ./losovac.sh 
+ 1838  vim losovac.sh 
+ 1839  fg
+ 1840  ./losovac.sh 
+ 1841  bg
+ 1842  ps aux
+ 1843  kill -10 33725
+ 1844  grep "asdf"
+ 1845  kill -10 33725
+ 1846  fg
+ 1847  vim losovac.sh 
+ 1848  ./losovac.sh & 
+ 1849  ps aux
+ 1850  kill -10 33734
+ 1851  fg
+ 1852  less vyberac.sh 
+ 1853  chmod +x vyberac.sh 
+ 1854  ./vyberac.sh 
+ 1855  ps aux
+ 1856  killall "sleep infinity"
+ 1857  sudo apt install psutils
+ 1858  sudo apt update
+ 1859  sudo apt install psutils
+ 1860  killall "sleep infinity"
+ 1861  killall5 "sleep infinity"
+ 1862  ps aux
+ 1863  ps aux | grep "sleep infinity"
+ 1864  ps aux | grep "sleep infinity$"
+ 1865  ps aux | grep "sleep infinity$" | tr -s " "
+ 1866  ps aux | grep "sleep infinity$" | tr -s " " | cut -d " " -f2
+ 1867  kill $(ps aux | grep "sleep infinity$" | tr -s " " | cut -d " " -f2)
+ 1868  ps aux
+ 1869  kill $(ps aux | grep "sleep infinity$" | tr -s " " | cut -d " " -f2)
+ 1870  ps aux
+ 1871  kill 33804
+ 1872  ps aux
+ 1873  kill -9 33804
+ 1874  ps aux
+ 1875  cp -r /public/priklady/signaly/* .
+ 1876  vim losovac.sh 
+ 1877  ./losovac.sh 
+ 1878  less losovac.sh 
+ 1879  cd
+ 1880  touch .vimrc
+ 1881  vim .vimrc
+ 1882  less losovac.sh 
+ 1883  cd cv8
+ 1884  vim losovac.sh 
+ 1885  less vyberac.sh 
+ 1886  vim vyberac.sh 
+ 1887  less ./vyberac.sh 
+ 1888  ./vyberac.sh 
+ 1889  vim vyberac.sh 
+ 1890  ./vyberac.sh 
+ 1891  jobs
+ 1892  kill $(ps aux | grep "sleep infinity$" | tr -s " " | cut -d " " -f2)
+ 1893  ps aux
+ 1894  kill $(ps aux | grep "vyberac.sh$" | tr -s " " | cut -d " " -f2)
+ 1895  kill $(ps aux | grep "losovac.sh$" | tr -s " " | cut -d " " -f2)
+ 1896  ps aux
+ 1897  ps aux | grep "losovac.sh$"
+ 1898  jobs
+ 1899  kill -9 $(ps aux | grep "losovac.sh$" | tr -s " " | cut -d " " -f2)
+ 1900  jobs
+ 1901  kill -9 $(ps aux | grep "vyberac.sh$" | tr -s " " | cut -d " " -f2)
+ 1902  jobs
+ 1903  ps aux
+ 1904  cp -r /public/priklady/signaly/* .
+ 1905  trap -l
+ 1906  help trap
+ 1907  man 7 signal
+ 1908  help wait
+ 1909  vim nekoncim.sh 
+ 1910  ./nekoncim.sh 
+ 1911  jobs
+ 1912  fg
+ 1913  vim nekoncim.sh 
+ 1914  ./nekoncim.sh 
+ 1915  kill -2 35433
+ 1916  bg
+ 1917  jobs
+ 1918  ./nekoncim.sh 
+ 1919  bg
+ 1920  jobs
+ 1921  kill -2 35433
+ 1922  ./nekoncim.sh 
+ 1923  bg
+ 1924  jobs
+ 1925  kill -9 $(ps aux | grep "nekoncim.sh$" | tr -s " " | cut -d " " -f2)
+ 1926  jobs
+ 1927  ./nekoncim.sh 
+ 1928  jobs
+ 1929  kill -15 35599
+ 1930  jobs
+ 1931  fg
+ 1932  ./nekoncim.sh 
+ 1933  kill -9 35615
+ 1934  jobs
+ 1935  less nekoncim.sh 
+ 1936  vim losovac.sh 
+ 1937  ./losovac.sh 
+ 1938  kill -9 $(ps aux | grep "sleep infinity$" | tr -s " " | cut -d " " -f2)
+ 1939  ./losovac.sh 
+ 1940  ./losovac.sh
+ 1941  bg
+ 1942  ps aux
+ 1943  kill -10 35967
+ 1944  ps aux
+ 1945  kill -15 35967
+ 1946  ./losovac.sh &
+ 1947  ps aux
+ 1948  kill -10 35993
+ 1949  jobs
+ 1950  kill 2
+ 1951  kill &2
+ 1952  jobs
+ 1953  ps aux
+ 1954  kill -9 35993
+ 1955  kill -9 $(ps aux | grep "sleep infinity$" | tr -s " " | cut -d " " -f2)
+ 1956  ps aux
+ 1957  vim vyberac.sh 
+ 1958  ./vyberac.sh 
+ 1959  vim vyberac.sh 
+ 1960  ./vyberac.sh 
+ 1961  vim vyberac.sh 
+ 1962  ./vyberac.sh 
+ 1963  vim losovac.sh 
+ 1964  ./vyberac.sh 
+ 1965  less losovac.sh 
+ 1966  vim losovac.sh 
+ 1967  ./losovac.sh 
+ 1968  less vyberac.sh 
+ 1969  vim vyberac.sh 
+ 1970  shellcheck ./vyberac.sh 
+ 1971  ./vyberac.sh 
+ 1972  vim vyberac.sh 
+ 1973  ./vyberac.sh 
+ 1974  history > /tmp/hist

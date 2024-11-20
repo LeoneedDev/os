@@ -1,0 +1,201 @@
+    1  clear
+    2  ls
+    3  cd /public/ucebnove/
+    4  ls
+    5  less kw5.txt 
+    6  cd
+    7  ls
+    8  mkdir signaly
+    9  cd signaly/
+   10  cp -r /public/priklady/signaly/ .
+   11  ls
+   12  cd signaly/
+   13  ls
+   14  cd ../
+   15  rm -rf signaly/
+   16  cp -r /public/priklady/signaly/ .
+   17  ls
+   18  cd signaly/
+   19  ls
+   20  help trap
+   21  trap -l
+   22  man 7 signal
+   23  help wait
+   24  ls
+   25  less nekoncim.sh 
+   26  bash nekoncim.sh 
+   27  fg
+   28  trap -l
+   29  fg
+   30  kill 12341
+   31  man kill
+   32  fg
+   33  bash nekoncim.sh 
+   34  jobs
+   35  kill 12503
+   36  jobs
+   37  fg
+   38  jobs
+   39  bash nekoncim.sh 
+   40  jobs
+   41  fg %2
+   42  fg %1
+   43  kill %1
+   44  fg %1
+   45  jobs
+   46  kill %2
+   47  jobs
+   48  fg %2
+   49  less losovac.sh 
+   50  bash losovac.sh 
+   51  bash losovac.sh &
+   52  kill -USR1 12572
+   53  kill -9 12572
+   54  jobs
+   55  killall sleep
+   56  kill 12580
+   57  bash losovac.sh &
+   58  killall 12592
+   59  kill 12592
+   60  kill 12593
+   61  jobs
+   62  less vyberac.sh 
+   63  ll
+   64  bash vyberac.sh 
+   65  kill -9 12622
+   66  chmod +x losovac.sh 
+   67  ls
+   68  bash vyberac.sh 
+   69  less vyberac.sh 
+   70  jobs
+   71  fg
+   72  bash vyberac.sh 
+   73  cd ../
+   74  cp -r /public/priklady/procesy/ .
+   75  ls
+   76  cd procesy/
+   77  ls
+   78  less Makefile 
+   79  man make
+   80  sudo apt-get install buil-essential
+   81  sudo apt-get install build-essential
+   82  ls
+   83  make
+   84  ls
+   85  less 1.c
+   86  ./1.exe 
+   87  ./1.exe asdsadfsdf
+   88  less 2.c
+   89  ./2.exe
+   90  ./2.exe asdf
+   91  nano 2.c
+   92  make
+   93  ./2.exe
+   94  nano 2.c
+   95  make
+   96  ./2.exe
+   97  nano 2.c
+   98  make
+   99  ./2.exe
+  100  nano 2.c
+  101  make
+  102  nano 2.c
+  103  make
+  104  ./2.exe
+  105  ls
+  106  touch asd
+  107  nano asd
+  108  bash asd
+  109  cd ../
+  110  ls
+  111  rm -rf procesy/
+  112  rm -rf signaly/
+  113  ls
+  114  cd
+  115  clear
+  116  cd /public/ucebnove/
+  117  ls
+  118  less kw5.txt 
+  119  cd
+  120  cp -r /public/priklady/signaly/ .
+  121  ls
+  122  cd signaly
+  123  ls
+  124  help trap
+  125  trap -l
+  126  man 7 signal
+  127  help wait
+  128  q
+  129  ls
+  130  less nekoncim.sh 
+  131  bash nekoncim.sh 
+  132  jobs
+  133  fg
+  134  kill 13104
+  135  man kill
+  136  trap -l
+  137  fg
+  138  jobs
+  139  bash nekoncim.sh 
+  140  jobs
+  141  bash nekoncim.sh 
+  142  jobs
+  143  fg %2
+  144  fg %1
+  145  kill %1
+  146  jobs
+  147  fg %1
+  148  jobs
+  149  fg
+  150  kill %1
+  151  kill %2
+  152  fg
+  153  less losovac.sh 
+  154  bash losovac.sh 
+  155  less losovac.sh 
+  156  bash losovac.sh &
+  157  kill -USR1 13270
+  158  kill -9 13270
+  159  less vyberac.sh 
+  160  bash vyberac.sh 
+  161  kill -9 13289
+  162  chmod +x losovac.sh
+  163  ls
+  164  ll
+  165  bash vyberac.sh 
+  166  cd ../
+  167  clear
+  168  ls
+  169  cp -r /public/priklady/procesy/ .
+  170  ls
+  171  cd procesy/
+  172  ls
+  173  less Makefile 
+  174  man make
+  175  sudo apt-get install build-essential
+  176  make
+  177  ls
+  178  ll
+  179  alias
+  180  ls
+  181  less 1.c
+  182  ./1.exe 
+  183  ./1.exe asdfsdf
+  184  less 2.c
+  185  ./2.exe 
+  186  ./2.exe ert
+  187  less 2.c
+  188  nano 2.c
+  189  make
+  190  ./2.exe ert
+  191  ./2.exe
+  192  nano 2.c
+  193  make
+  194  ./2.exe
+  195  nano 2.c
+  196  make
+  197  ./2.exe
+  198  ls
+  199  ls /public/ucebnove/historia/
+  200  history
+  201  history | sudo tee /public/ucebnove/historia/salgovic14112024.history

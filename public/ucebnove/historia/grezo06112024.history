@@ -1,0 +1,211 @@
+ 2021  clear
+ 2022  ll
+ 2023  cp -r /public/priklady/signaly/ .
+ 2024  ll
+ 2025  clear
+ 2026  help trap
+ 2029  ps -eLf
+ 2030  kill -USR1 27870
+ 2031  ps -eLf
+ 2032  bash
+ 2033  echo ahoj
+ 2034  ps -eLf
+ 2035  bash
+ 2036  ps -eLf
+ 2037  ps
+ 2038  kill -USR1 27870
+ 2039  ps -eLf
+ 2040  trap -l
+ 2041  ps -eLf
+ 2042  kill -9 27933
+ 2043  ps -eLf
+ 2044  ps eli
+ 2045  ps elf
+ 2046  man pthread_create
+ 2047  grep -R "RAND" /public/ucebnove/historia
+ 2048* 
+ 2049  cat /public/ucebnove/kw5.txt 
+ 2050  cat /public/ucebnove/kw6.txt 
+ 2051  cat /public/ucebnove/kw7.txt 
+ 2052  cd ..
+ 2053  cd signaly/
+ 2054  ll
+ 2055  signaly.txt
+ 2056  vim signaly.txt
+ 2057  cat nekoncim.sh
+ 2058  bash nekoncim.sh 
+ 2059  fg %1
+ 2060  cat nekoncim.sh
+ 2061  trap -l
+ 2062  help trap
+ 2063  man 7 signal
+ 2064  fg
+ 2065  cat losovac.sh
+ 2066  trap -l
+ 2067  jobs
+ 2068  fg %2
+ 2069  jobs
+ 2070  fg
+ 2071  cat losovac.sh
+ 2072  bash losovac.sh 
+ 2073  fg
+ 2074  bash losovac.sh &
+ 2075  jobs
+ 2076  kill -s USR1 26943
+ 2077  ps aux
+ 2078  kill -9 26943
+ 2079  ps aux
+ 2080  ps -elf
+ 2081  kill -9 26952
+ 2082  ps -elf
+ 2083  cat vyberac.sh 
+ 2084  chmod +x vyberac.sh losovac.sh 
+ 2085  ll
+ 2086  ./vyberac.sh 
+ 2087  fg
+ 2088  kill -9 %2
+ 2089  ps aux
+ 2090  fg
+ 2091  cd ../procesy/
+ 2092  cat /public/ucebnove/kw5.txt 
+ 2093  ll
+ 2094  man make
+ 2095  cat Makefile
+ 2096  sudo apt-get update
+ 2097  sudo apt-get install build-essential
+ 2098  ll
+ 2099  cp -r /public/priklady/procesy/ .
+ 2100  ll
+ 2101  make
+ 2102  ll
+ 2103  cat 1.c 
+ 2104  man syscall
+ 2105  cat 1.c 
+ 2106  man fork
+ 2107  cat 1.c 
+ 2108  man getpid
+ 2109  cat 1.c 
+ 2110  ll
+ 2111  cat 1.c 
+ 2112  ./1.exe 
+ 2113  ./1.exe argumentOS
+ 2114  ./1.exe 
+ 2115  cat 2.c 
+ 2116  ./2.exe 
+ 2117  vim 2.c 
+ 2118  make
+ 2119  ./2.exe 
+ 2120  vim 2.c 
+ 2121  make
+ 2122  ./2.exe 
+ 2123  ./2.exe asdfaf
+ 2124  cat /public/ucebnove/kw5.txt 
+ 2125  cat /public/ucebnove/kw7.txt 
+ 2126  ll
+ 2127  cat 5.c 
+ 2128  cat 4.c 
+ 2129  cat 3.c 
+ 2130  find /public/ -name "*.ppt"
+ 2131  clear
+ 2132  cat /public/ucebnove/kw5.txt 
+ 2133  cat /public/ucebnove/kw6.txt 
+ 2134  cat /public/ucebnove/kw7.txt 
+ 2135  cd ..
+ 2136  cd signaly/
+ 2137  ll
+ 2138  less signaly.txt 
+ 2139  trap -l
+ 2140  less signaly.txt 
+ 2141  man kill
+ 2142  help wait
+ 2143  man 7 signal
+ 2144  The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
+ 2145  man 7 signal
+ 2146  ps
+ 2147  man 7 signal
+ 2148  ll
+ 2149  less signaly.txt 
+ 2150  cat nekoncim.sh
+ 2151  vim nekoncim.sh 
+ 2152  bash nekoncim.sh 
+ 2153  jobs
+ 2154  fg
+ 2155  kill %1
+ 2156  less signaly.txt 
+ 2157  bash nekoncim.sh 
+ 2158  bg
+ 2159  ll
+ 2160  kill -SIGINT 27827
+ 2161  kill %1
+ 2162  less signaly
+ 2163  less signaly.txt 
+ 2164  cat losovac.sh
+ 2165  echo $RANDOM
+ 2166  ./losovac.sh 
+ 2167* cat losovac.s
+ 2168  less signaly.txt 
+ 2169  ./losovac.sh &
+ 2170  kill -USR1 27966
+ 2171  ps -eLf
+ 2172  jobs
+ 2173  fg
+ 2174  jobs
+ 2175  kill -USR1 27966
+ 2176  bg
+ 2177  jobs
+ 2178  kill %1
+ 2179  jobs
+ 2180  ps -eLf
+ 2181  less signaly.txt 
+ 2182  cat vyberac.sh
+ 2183  ./vyberac.sh 
+ 2184  kill %1
+ 2185  ps -eLf
+ 2186  ./vyberac.sh &
+ 2187  ps elf
+ 2188  kill -INT 28062
+ 2189  ps elf
+ 2190  kill -INT 28063
+ 2191  kill -KILL 28063
+ 2192  ps elf
+ 2193  kill -KILL 28062
+ 2194  ps elf
+ 2195  cd ../procesy/
+ 2196  ll
+ 2197  rm *.exe
+ 2198  ll
+ 2199  sudo apt-get update
+ 2200  sudo apt-get install build-essential
+ 2201  man make
+ 2202  ll
+ 2203  cat Makefile
+ 2204  man make
+ 2205  make
+ 2206  ll
+ 2207  cat 1.c
+ 2208  man syscall
+ 2209  man fork
+ 2210  ./1.exe 
+ 2211  cat 1.c
+ 2212  ./1.exe oasjhdio h
+ 2213  cat 1.c
+ 2214  cat 2.c 
+ 2215  ./2.exe 
+ 2216  ./1.exe 
+ 2217  ./2.exe &
+ 2218  ps elf
+ 2219  ps -eLf
+ 2220  ./2.exe asfasd  &
+ 2221  ps -eLf
+ 2222  kill %1
+ 2223  cat 2.c 
+ 2224  vim 2.c 
+ 2225  cat 2.c 
+ 2226  make
+ 2227  ./2.exe 
+ 2228  vim 2.c 
+ 2229  make
+ 2230  ./2.exe 
+ 2231  vim 2.c 
+ 2232  make
+ 2233  cat 2.c 

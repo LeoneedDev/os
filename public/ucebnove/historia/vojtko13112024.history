@@ -1,0 +1,175 @@
+ 1889  mkdir cv8
+ 1890  mkdir cv9
+ 1891  exit
+ 1892  htop
+ 1893  top
+ 1894  less cv8/s.c 
+ 1895  vim cv8/s.c
+ 1896  cd cv8/
+ 1897  gcc s.c
+ 1898  man fork
+ 1899  ps elf
+ 1900  ps aux
+ 1901  ps elF
+ 1902  ps elf
+ 1903  man ps
+ 1904  ps eLf
+ 1905  ps -eLf
+ 1906  ps aux
+ 1907  top
+ 1908  ps aux
+ 1909  kill -15 36438
+ 1910  kill -15 36445
+ 1911  ps aux
+ 1912  kill -15 36107 36211 36238
+ 1913  ps aux
+ 1914  cd ../cv9
+ 1915  ./3.exe 
+ 1916  ./3.exe 4
+ 1917  ./3.exe jj
+ 1918  man atoi
+ 1919  ps aux
+ 1920  ps -eLf
+ 1921  kill -15 104554{4,5,6,7}
+ 1922  kill -15 10455{4,5,6,7}
+ 1923  ps -eLf
+ 1924  kill -15 1045[89][8901]
+ 1925  kill -15 10458{8,9}
+ 1926  kill -15 10459{0,1}
+ 1927  ps -eLf
+ 1928  exit
+ 1929  cd cv8/
+ 1930  less
+ 1931  ls -la
+ 1932  less s.c
+ 1933  gcc s.c 
+ 1934  ./a.out
+ 1935  cd ../cv9
+ 1936  ls -la
+ 1937  less Makefile 
+ 1938  make
+ 1939  rm *.exe
+ 1940  make
+ 1941  ls -la
+ 1942  vim 1.c
+ 1943  ./1.exe 
+ 1944  ./1.exe fgfdgdf
+ 1945  vim 2.c
+ 1946  ./2.c
+ 1947  ./2.exe
+ 1948  ./2.exe ffff
+ 1949  vim 3.c
+ 1950  vim 2.c
+ 1951  ./2.exe ffff
+ 1952  vim 2.c
+ 1953  make
+ 1954  ./2.exe ffff
+ 1955  vim 2.c
+ 1956  make
+ 1957  ./2.exe ffff
+ 1958  vim 3.c
+ 1959  ./3.exe 
+ 1960  ./3.exe 4
+ 1961  ./3.exe 4 ggggg
+ 1962  vim 3.c
+ 1963  make
+ 1964  ./3.exe 4 ggggg
+ 1965  vim 3.c
+ 1966  vim 4.c
+ 1967  ./4.exe 4
+ 1968  vim 4.c
+ 1969  make
+ 1970  ./4.exe 4
+ 1971  vim 4.c
+ 1972  vim 5.c
+ 1973  ./4.exe 10
+ 1974  ./4.exe 100
+ 1975  ./4.exe 200
+ 1976  vim 4.c
+ 1977  make
+ 1978  ./4.exe 200
+ 1979  vim 4.c
+ 1980  make
+ 1981  vim 4.c
+ 1982  ./4.exe 200
+ 1983  ./5.exe 
+ 1984  ./5.exe 100
+ 1985  vim 5.c
+ 1986  make
+ 1987  ./5.exe 10
+ 1988  vim 5.c
+ 1989  vim 6.c
+ 1990  vim 7.c
+ 1991  ./7.exe 
+ 1992  exit
+ 1993  cd cv7
+ 1994  cd ../cv8
+ 1995  ls -la
+ 1996  vim s.c
+ 1997  gcc s.c
+ 1998  ./a.out 
+ 1999  vim s.c
+ 2000  make
+ 2001  gcc s.c
+ 2002  ./a.out 
+ 2003  cd ../cv9
+ 2004  rm *.exe
+ 2005  ls -la
+ 2006  less Makefile 
+ 2007  make
+ 2008  ls -la
+ 2009  vim 1.c
+ 2010  ./1.exe 
+ 2011  ./1.exe ggggg
+ 2012  vim 2.c
+ 2013  vim 1.c
+ 2014  vim 2.c
+ 2015  ./2.exe 
+ 2016  vim 2.c
+ 2017  ./2.exe asdf 
+ 2018  vim 2.c
+ 2019  bash
+ 2020  vim 3.c
+ 2021  ./3.exe 
+ 2022  ./3.exe 5
+ 2023  vim 3.c
+ 2024  ./3.exe 3 fdgdgdfgdf
+ 2025  vim 3.c
+ 2026  make
+ 2027  ./3.exe 3 fdgdgdfgdf
+ 2028  :
+ 2029  vim 4.c
+ 2030  make
+ 2031  vim 4.c
+ 2032  make
+ 2033  ./4.exe 
+ 2034  ./4.exe 5
+ 2035  vim 4.c
+ 2036  make
+ 2037  ./4.exe 5
+ 2038  vim 4.c
+ 2039  ./4.exe 5
+ 2040  vim 4.c
+ 2041  make
+ 2042  vim 4.c
+ 2043  ./4.exe 5
+ 2044  vim 4.c
+ 2045  make
+ 2046  ./4.exe 5
+ 2047  vim 5.c
+ 2048  ./5.exe 5
+ 2049  ./5.exe 10
+ 2050  vim 5.c
+ 2051  make
+ 2052  vim 5.c
+ 2053  make
+ 2054  ./5.exe 10
+ 2055  vim 5.c
+ 2056  vim 6.c
+ 2057  vim 7.c
+ 2058  ./7.exe 
+ 2059  sudo apt install strace
+ 2060  strace ./7.exe 
+ 2061  ./7.exe 
+ 2062  history
+ 2063  history > /tmp/hist

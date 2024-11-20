@@ -1,0 +1,122 @@
+ 1995  exit
+ 1996  cd priklady/
+ 1997  ll
+ 1998  cd signaly/
+ 1999  ll
+ 2000  cat s.c 
+ 2001  less /public/ucebnove/kw6.txt 
+ 2002  cat /public/ucebnove/kw7.txt 
+ 2003  cat /public/ucebnove/kw8.txt 
+ 2004  cat /public/ucebnove/kw9.txt 
+ 2005  cat /public/ucebnove/kw7.txt 
+ 2006  cd ..
+ 2007  cd procesy/
+ 2008  ll
+ 2009  cat 1.c 
+ 2010  ps aux
+ 2011  ps -eLf
+ 2012  ps -aux
+ 2013  ps -alf
+ 2014  ps aux --forest
+ 2015  cat 1.c 
+ 2016  cat 2.c 
+ 2017  vim 3.c 
+ 2018  ./3.exe 
+ 2019  vim 3.c 
+ 2020  ll
+ 2021  make
+ 2022  grep -R "build" .
+ 2023  ./3.exe 10
+ 2024  cat 3.c
+ 2025  vim 3.c 
+ 2026  ./3.exe 10
+ 2027  ./3.exe 10 asdf
+ 2028  killall ./3.exe
+ 2029  kill -9 1069[1..9}
+ 2030  kill -9 1069{1..9}
+ 2031  kill -9 1069{21..29}
+ 2032  kill -9 1069{20..29}
+ 2033  vim 4.c 
+ 2034  vim 3.c 
+ 2035  make
+ 2036  ./3.exe 10
+ 2037  vim 3.c 
+ 2038  make
+ 2039  vim 3.c 
+ 2040  ./3.exe 10
+ 2041  vim 3.c 
+ 2042  make
+ 2043  vim 4.c 
+ 2044  ./4.exe 10
+ 2045  ./4.exe 20
+ 2046  vim 4.c 
+ 2047  cat 5.c 
+ 2048  ll
+ 2049  vim 5.c 
+ 2050  vim os_base.h
+ 2051  vim os_base.c
+ 2052  vim 5.c 
+ 2053  ./5.exe 
+ 2054  ./5.exe 10
+ 2055  vim 6.c 
+ 2056  cat 6.c 
+ 2057  vim 6.c 
+ 2058* 
+ 2059  vim 7..c 
+ 2060  vim 7.c 
+ 2061  vim 8.c 
+ 2062  ll
+ 2063  cat ../signaly/s.c 
+ 2064  ll
+ 2065  grep -R "build" .
+ 2066  make
+ 2067  ll
+ 2068  cat 1.c 
+ 2069  cat 2.c 
+ 2070  ps aux
+ 2071  ps -eLf
+ 2072  ps aux --forest
+ 2073  ps -alf
+ 2074  ps -elf
+ 2075  cat 3.c 
+ 2076  ./3.exe 
+ 2077  ./3.exe 10
+ 2078  cat 3.c 
+ 2079  :q
+ 2080  ./3.exe 10 12jisfdsdij
+ 2081  killall
+ 2082  kill -9 1072{79..88}
+ 2083  cat 4.c 
+ 2084  ./3.exe 10
+ 2085  vim 3.c 
+ 2086  make
+ 2087  ./3.exe 10
+ 2088  vim 3.c 
+ 2089  make
+ 2090  ./3.exe 10
+ 2091  vim 3.c 
+ 2092  make
+ 2093  ./3.exe 10
+ 2094  vim 3.c 
+ 2095  ./3.exe 10
+ 2096  make
+ 2097  ./3.exe 10
+ 2098  cat 4.c 
+ 2099  ./4.exe 10
+ 2100  cat 4.c 
+ 2101  ./4.exe 10
+ 2102  cat 4.c 
+ 2103  cat 5.c 
+ 2104  cat os_base.h
+ 2105  cat os_base.c
+ 2106  cat 5.c 
+ 2107  ./4.exe 10
+ 2108  ./5.exe 
+ 2109  ./5.exe 15
+ 2110  cat 5.c 
+ 2111  ./5.exe 15
+ 2112  cat 6.c 
+ 2113  ./6.exe 
+ 2114  cat 7.c 
+ 2115  cat 8.c 
+ 2116  history | tail -200 > grezo13112024.history
