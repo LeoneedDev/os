@@ -1,0 +1,83 @@
+    1  ls
+    2  rm -rf procesy/
+    3  ls
+    4  cp -r /public/priklady/procesy .
+    5  ls
+    6  cd procesy
+    7  ls
+    8  less Makefile 
+    9  clear
+   10  ls
+   11  make
+   12  sudo apt-get install build-essential
+   13  ls
+   14  ll
+   15  nano 1.c
+   16  ./1.exe
+   17  ./1.exe ads
+   18  nano 2.c
+   19  ./2.exe
+   20  ./2.exe asd
+   21  nano 2.c
+   22  ./2.exe asd
+   23  ./2.exe
+   24  make
+   25  ./2.exe
+   26  nano 3.c
+   27  ./3.c
+   28  ./3.exe
+   29  ./3.exe asdf
+   30  ./3.exe 10
+   31  nano 4.c
+   32  ./4.exe
+   33  ./4.exe 10
+   34  ./4.exe 20
+   35  nano 5.c
+   36  ./5.exe 10
+   37  ./5.exe 20
+   38  nano 6.c
+   39  ./6.exe
+   40  nano 7.c
+   41  make
+   42  nano 7.c
+   43  make
+   44  ls
+   45  nano 8.c
+   46  clear
+   47  cd ../
+   48  rm -rf procesy/
+   49  cp /public/priklady/procesy
+   50  cp -rf /public/priklady/procesy .
+   51  ls
+   52  cd procesy
+   53  ls
+   54  make
+   55  nano 1.c
+   56  make
+   57  less Makefile 
+   58  ls
+   59  ./1.exe
+   60  ./1.exe asd
+   61  nano 2.c
+   62  ./2.exe asd
+   63  nano 3.c
+   64  ./3.exe
+   65  ./3.exe 5
+   66  ./3.exe 10
+   67  ./4.exe 10
+   68  make
+   69  ./4.exe 10
+   70  nano os_base.h
+   71  nano os_base.c
+   72  ./5.exe 10
+   73  ./6.exe
+   74  ./7.exe
+   75  make
+   76  ./7.exe
+   77  clear
+   78  ./8.exe
+   79  ./8.exe 10
+   80  ./8.exe 1
+   81  ls
+   82  history
+   83  history | sudo tee /public/ucebnove/historia/salgovic21112024.history
